@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web3 Skill Marketplace Competitive Landscape 2026</title>
+<meta name="description" content="Deep analysis of 12+ Web3 skill/plugin/agent marketplaces with real metrics, pricing models, and strategic positioning for ClawFriend">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#07070c;--bg2:#0e0e17;--bg3:#161628;--bg4:#20203a;
+--text:#e6e6f2;--text2:#9a9ab4;--text3:#5e5e78;
+--accent:#7060f0;--accent2:#a898ff;
+--g:#00c8a4;--g2:#48ecc0;--gbg:rgba(0,200,164,.07);--gbd:rgba(0,200,164,.18);
+--r:#dc3c3c;--r2:#ff6868;--rbg:rgba(220,60,60,.07);--rbd:rgba(220,60,60,.18);
+--y:#e8b830;--ybg:rgba(232,184,48,.07);--ybd:rgba(232,184,48,.18);
+--o:#e06838;--b:#2888e0;--b2:#58a8ff;--bbg:rgba(40,136,224,.07);--bbd:rgba(40,136,224,.18);
+--c:#18b8c8;--pk:#d858a0;
+--bdr:#1c1c34;--rad:12px;
+}
+html{scroll-behavior:smooth;font-size:15px}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#fff}
+a{color:var(--accent2);text-decoration:none;transition:color .2s}a:hover{color:#fff}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
+.ctn{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* Top bar */
+.topbar{background:var(--bg2);border-bottom:1px solid var(--bdr);padding:10px 0}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.topbar-nav{display:flex;align-items:center;gap:5px}
+.topbar-nav a{padding:5px 11px;border-radius:6px;font-weight:500;font-size:.76rem;color:var(--text3);transition:all .2s}
+.topbar-nav a.active{background:var(--accent);color:#fff}
+.topbar-nav a:not(.active):hover{color:var(--accent2);background:var(--bg3)}
+.topbar-brand{font-weight:700;color:var(--text);font-size:.84rem}
+
+/* Hero */
+.hero{padding:64px 0 48px;border-bottom:1px solid var(--bdr);background:linear-gradient(155deg,#07071a 0%,#101030 45%,#081828 100%);position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 50% 0%,rgba(112,96,240,.06),transparent);pointer-events:none}
+.hero-in{position:relative;z-index:1}
+.tag{display:inline-flex;align-items:center;gap:5px;background:rgba(112,96,240,.12);border:1px solid rgba(112,96,240,.25);color:var(--accent2);padding:4px 12px;border-radius:16px;font-size:.72rem;font-weight:600;margin-bottom:16px}
+h1{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;letter-spacing:-.02em;background:linear-gradient(135deg,#fff,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
+.hero .sub{font-size:1rem;color:var(--text2);max-width:700px}
+.hero-kpi{display:flex;flex-wrap:wrap;gap:16px;margin-top:24px}
+.kpi{padding:14px 18px;background:rgba(0,0,0,.3);border:1px solid var(--bdr);border-radius:10px;min-width:140px}
+.kpi .v{font-size:1.4rem;font-weight:800;line-height:1}.kpi .l{font-size:.68rem;color:var(--text3);text-transform:uppercase;letter-spacing:.04em;margin-top:3px}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(7,7,12,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--bdr)}
+.nav-in{display:flex;overflow-x:auto;scrollbar-width:none}.nav-in::-webkit-scrollbar{display:none}
+.nav a{padding:12px 15px;font-size:.78rem;font-weight:500;color:var(--text3);white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
+.nav a:hover,.nav a.act{color:var(--accent2);border-color:var(--accent)}
+
+/* Section */
+section{padding:52px 0;border-bottom:1px solid var(--bdr)}section:last-of-type{border-bottom:none}
+.sl{font-size:.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+h2{font-size:1.6rem;font-weight:800;letter-spacing:-.01em;margin-bottom:5px}
+h3{font-size:1.05rem;font-weight:700;margin:24px 0 10px}h3:first-child{margin-top:0}
+.desc{color:var(--text2);font-size:.9rem;max-width:700px;margin-bottom:28px}
+
+/* Card */
+.cd{background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--rad);padding:20px;transition:border-color .2s}.cd:hover{border-color:var(--bg4)}
+.cg{display:grid;gap:14px}.cg2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}.cg3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.cg4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.cd-h{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.cd-i{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;flex-shrink:0}
+.cd-h h4{font-size:.95rem;font-weight:700;line-height:1.2}.cd-h small{font-size:.7rem;color:var(--text3)}
+.bg{display:inline-block;font-size:.66rem;font-weight:600;padding:2px 7px;border-radius:4px;text-transform:uppercase}
+.bg-g{background:var(--gbg);color:var(--g);border:1px solid var(--gbd)}
+.bg-r{background:var(--rbg);color:var(--r2);border:1px solid var(--rbd)}
+.bg-y{background:var(--ybg);color:var(--y);border:1px solid var(--ybd)}
+.bg-b{background:var(--bbg);color:var(--b2);border:1px solid var(--bbd)}
+.bg-a{background:rgba(112,96,240,.1);color:var(--accent2);border:1px solid rgba(112,96,240,.2)}
+
+/* Table */
+.tw{overflow-x:auto;border:1px solid var(--bdr);border-radius:var(--rad);margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:.82rem;min-width:800px}
+thead{background:var(--bg3)}
+th{padding:10px 12px;text-align:left;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text2);border-bottom:1px solid var(--bdr);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid rgba(28,28,52,.5);color:var(--text2);vertical-align:top}
+tr:last-child td{border-bottom:none}tr:hover td{background:rgba(112,96,240,.02)}
+td strong{color:var(--text)}.hl{background:rgba(112,96,240,.03)}
+.cg2{color:var(--g2)}.cr{color:var(--r2)}.cy{color:var(--y)}.cb{color:var(--b2)}.ca{color:var(--accent2)}.cw{color:var(--text)}.cgr{color:var(--text3)}.fw{font-weight:700}
+
+/* Bar */
+.br{display:flex;align-items:center;gap:8px;margin:6px 0}
+.br-l{width:120px;font-size:.8rem;color:var(--text2);flex-shrink:0}
+.br-t{flex:1;height:26px;background:var(--bg4);border-radius:5px;overflow:hidden}
+.br-f{height:100%;border-radius:5px;display:flex;align-items:center;padding:0 8px;font-size:.68rem;font-weight:600;color:#fff;white-space:nowrap}
+.br-v{width:100px;text-align:right;font-size:.8rem;font-weight:600;flex-shrink:0;white-space:nowrap}
+
+/* Callout */
+.co{padding:16px 20px;border-left:3px solid var(--accent);background:rgba(112,96,240,.04);border-radius:0 var(--rad) var(--rad) 0;margin:16px 0;font-size:.88rem;color:var(--text2);line-height:1.7}
+.co strong{color:var(--text)}
+.co.warn{border-color:var(--y);background:var(--ybg)}
+.co.bad{border-color:var(--r);background:var(--rbg)}
+.co.ok{border-color:var(--g);background:var(--gbg)}
+
+/* Metric inline */
+.mi{display:inline-flex;flex-direction:column;padding:8px 14px;background:var(--bg3);border-radius:8px;min-width:90px}
+.mi .n{font-size:1.1rem;font-weight:800;line-height:1}.mi .t{font-size:.65rem;color:var(--text3);text-transform:uppercase;margin-top:2px}
+
+/* Lists */
+.pros li,.cons li{font-size:.84rem;color:var(--text2);line-height:1.9;padding-left:4px}
+.pros{list-style:none}.pros li::before{content:'+ ';color:var(--g2);font-weight:700}
+.cons{list-style:none}.cons li::before{content:'- ';color:var(--r2);font-weight:700}
+
+/* Footer */
+footer{padding:32px 0;text-align:center;font-size:.76rem;color:var(--text3);border-top:1px solid var(--bdr)}
+footer a{color:var(--text2)}
+
+.fade{opacity:0;transform:translateY(14px);transition:opacity .45s,transform .45s}.fade.in{opacity:1;transform:none}
+@media(max-width:768px){.hero{padding:44px 0 32px}h2{font-size:1.3rem}section{padding:36px 0}.cg2,.cg3,.cg4{grid-template-columns:1fr}.br-l{width:80px;font-size:.72rem}.br-v{width:70px;font-size:.72rem}.hero-kpi{gap:10px}.kpi{min-width:120px;padding:10px 14px}.kpi .v{font-size:1.1rem}}
+</style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar"><div class="ctn"><div class="topbar-inner">
+<div class="topbar-brand">ClawFriend.ai Reports</div>
+<div class="topbar-nav">
+<a href="/">Evaluation</a>
+<a href="/competitors">Competitors</a>
+<a href="/landscape" class="active">Landscape</a>
+</div>
+</div></div></div>
+
+<!-- Hero -->
+<header class="hero"><div class="ctn hero-in">
+<div class="tag">DELIVERABLE 1: COMPETITIVE LANDSCAPE</div>
+<h1>Web3 Skill & Agent Marketplace</h1>
+<p class="sub">12 direct competitors analyzed with real metrics, pricing models, GMV data. Where ClawFriend fits in a $4.3B+ market.</p>
+<div class="hero-kpi">
+<div class="kpi"><div class="v ca">12</div><div class="l">Direct Competitors</div></div>
+<div class="kpi"><div class="v cg2">$39.5M</div><div class="l">Top Platform Revenue</div></div>
+<div class="kpi"><div class="v" style="color:var(--b2)">2.5M+</div><div class="l">Largest Agent Registry</div></div>
+<div class="kpi"><div class="v cy">5M+</div><div class="l">Largest User Base</div></div>
+<div class="kpi"><div class="v" style="color:var(--c)">17K+</div><div class="l">MCP Servers (No Monetization)</div></div>
+</div>
+</div></header>
+
+<!-- Nav -->
+<nav class="nav"><div class="ctn"><div class="nav-in">
+<a href="#taxonomy" class="nav act">Market Map</a>
+<a href="#tier1">Tier 1: Leaders</a>
+<a href="#tier2">Tier 2: Challengers</a>
+<a href="#tier3">Tier 3: Emerging</a>
+<a href="#mega">Master Comparison</a>
+<a href="#market-stage">Market Stage</a>
+<a href="#clawfriend">ClawFriend Position</a>
+</div></div></nav>
+
+<!-- 1. Market Taxonomy -->
+<section id="taxonomy">
+<div class="ctn">
+<div class="sl fade">01 / Market Map</div>
+<h2 class="fade">3 Categories of AI Agent Marketplaces</h2>
+<p class="desc fade">The market splits into 3 distinct segments. ClawFriend competes across all three but fits none perfectly &mdash; which is both its opportunity and its challenge.</p>
+
+<div class="cg cg3 fade">
+<div class="cd" style="border-color:var(--gbd)">
+<h4 style="color:var(--g2);margin-bottom:10px">A. Web3 Agent Launchpads</h4>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:10px">Agents as tokenized assets. Buy/sell agent tokens via bonding curves or DEX.</p>
+<ul style="padding-left:14px;font-size:.8rem;color:var(--text2);line-height:1.9">
+<li><strong>Virtuals Protocol</strong> &mdash; $39.5M revenue, 18K agents</li>
+<li><strong>MyShell</strong> &mdash; 5M users, 200K agents</li>
+<li><strong>CreatorBid</strong> &mdash; 3,500 agents, Base</li>
+<li><strong>Griffin AI</strong> &mdash; 15K agents, 265K signups</li>
+<li><strong style="color:var(--accent2)">ClawFriend</strong> &mdash; bonding curve, BNB</li>
+</ul>
+</div>
+<div class="cd" style="border-color:var(--bbd)">
+<h4 style="color:var(--b2);margin-bottom:10px">B. Skill/Plugin Registries</h4>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:10px">Developer tools, plugins, skills for AI agent frameworks. Mostly free/open-source.</p>
+<ul style="padding-left:14px;font-size:.8rem;color:var(--text2);line-height:1.9">
+<li><strong>ClawHub</strong> &mdash; 3,286 skills, free</li>
+<li><strong>ElizaOS Registry</strong> &mdash; 268 plugins, free</li>
+<li><strong>MCP Marketplaces</strong> &mdash; 17K+ servers, free</li>
+<li><strong>SkillsMP</strong> &mdash; 96K+ skills, free</li>
+<li><strong style="color:var(--accent2)">ClawFriend Skill Market</strong> &mdash; 2 skills</li>
+</ul>
+</div>
+<div class="cd" style="border-color:var(--ybd)">
+<h4 style="color:var(--y);margin-bottom:10px">C. On-Chain Agent Services</h4>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:10px">Autonomous agents doing real work on-chain. Pay-per-use or staking model.</p>
+<ul style="padding-left:14px;font-size:.8rem;color:var(--text2);line-height:1.9">
+<li><strong>Fetch.ai Agentverse</strong> &mdash; 2.5M agents, 34M tx</li>
+<li><strong>Olas/Pearl</strong> &mdash; 6M+ tx, $13.8M funded</li>
+<li><strong>SingularityNET</strong> &mdash; ~70 services, ASI migration</li>
+<li><strong>Morpheus</strong> &mdash; $320M TVL, Forge</li>
+<li><strong>Bittensor</strong> &mdash; 130 subnets, TAO mining</li>
+</ul>
+</div>
+</div>
+
+<div class="co fade" style="margin-top:20px">
+<strong>ClawFriend's unique position:</strong> It sits at the intersection of all 3 categories &mdash; bonding curve trading (A) + skill marketplace (B) + social feed (A) within one ecosystem. No other platform combines all three. But this also means competing with specialists in each segment.
+</div>
+</div>
+</section>
+
+<!-- 2. Tier 1: Market Leaders -->
+<section id="tier1">
+<div class="ctn">
+<div class="sl fade">02 / Tier 1: Market Leaders</div>
+<h2 class="fade">Platforms With Proven Revenue & Scale</h2>
+<p class="desc fade">These platforms have real users, real revenue, and real market position. They set the standard.</p>
+
+<!-- Virtuals -->
+<div class="cd fade" style="margin-bottom:18px;border-color:rgba(112,96,240,.25)">
+<div class="cd-h">
+<div class="cd-i" style="background:rgba(112,96,240,.15);color:var(--accent2)">V</div>
+<div><h4>Virtuals Protocol <span class="bg bg-a">Leader</span></h4><small><a href="https://www.virtuals.io/" target="_blank">virtuals.io</a> &bull; Base + Solana &bull; $VIRTUAL</small></div>
+</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:14px">Full-stack AI agent launchpad. Agents are tokenized via bonding curve, graduate to Uniswap LP at 42K VIRTUAL. Agent Commerce Protocol (ACP) + x402 micropayments enable agent-to-agent paid services.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+<div class="mi"><div class="n cg2">$39.5M</div><div class="t">Cum. Revenue</div></div>
+<div class="mi"><div class="n ca">$8B+</div><div class="t">DEX Volume</div></div>
+<div class="mi"><div class="n">18K+</div><div class="t">Agents</div></div>
+<div class="mi"><div class="n">$415M</div><div class="t">Market Cap</div></div>
+<div class="mi"><div class="n cy">1%</div><div class="t">Commission</div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div><h4 style="font-size:.78rem;color:var(--g2);margin-bottom:4px">STRENGTHS</h4><ul class="pros"><li>Highest proven revenue ($39.5M)</li><li>Agent-to-agent commerce (x402 + ACP)</li><li>Multi-chain (Base + Solana)</li><li>Moving into robotics (BitRobotNetwork)</li><li>Clear 1% commission model</li></ul></div>
+<div><h4 style="font-size:.78rem;color:var(--r2);margin-bottom:4px">WEAKNESSES</h4><ul class="cons"><li>Activity cooled from peak (24h fees ~$12K now)</li><li>Agent quality highly variable</li><li>Complex tokenomics confuse newcomers</li><li>No OpenClaw integration</li></ul></div>
+</div>
+</div>
+
+<!-- MyShell -->
+<div class="cd fade" style="margin-bottom:18px;border-color:rgba(40,136,224,.25)">
+<div class="cd-h">
+<div class="cd-i" style="background:var(--bbg);color:var(--b2)">M</div>
+<div><h4>MyShell AIpp Store <span class="bg bg-g">Largest Users</span></h4><small><a href="https://myshell.ai/" target="_blank">myshell.ai</a> &bull; BNB Chain &bull; $SHELL</small></div>
+</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:14px">Consumer-facing AI agent platform. No-code builder for chatbots, tools, and creative agents. Viral growth via meme agents (Labubu: 900% creation spike). Open marketplace for creators.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+<div class="mi"><div class="n cg2">5M+</div><div class="t">Users</div></div>
+<div class="mi"><div class="n cb">200K+</div><div class="t">Agents</div></div>
+<div class="mi"><div class="n">170K</div><div class="t">Creators</div></div>
+<div class="mi"><div class="n">$8M</div><div class="t">Market Cap</div></div>
+<div class="mi"><div class="n cy">SHELL</div><div class="t">Token Payments</div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div><h4 style="font-size:.78rem;color:var(--g2);margin-bottom:4px">STRENGTHS</h4><ul class="pros"><li>Largest user base (5M+)</li><li>No-code agent builder = low barrier</li><li>Binance listed (SHELL)</li><li>Same chain as ClawFriend (BNB)</li><li>Viral consumer loop</li></ul></div>
+<div><h4 style="font-size:.78rem;color:var(--r2);margin-bottom:4px">WEAKNESSES</h4><ul class="cons"><li>Revenue per agent likely very low</li><li>Revenue metrics undisclosed</li><li>Agents mostly chatbots, not economic agents</li><li>Creator monetization unclear</li></ul></div>
+</div>
+<div class="co bad" style="margin-top:12px;font-size:.82rem"><strong>Direct threat to ClawFriend:</strong> Same BNB Chain, 200K agents vs 2 skills, 5M users vs ~0. ClawFriend must differentiate or get absorbed.</div>
+</div>
+
+<!-- Fetch.ai -->
+<div class="cd fade" style="margin-bottom:18px;border-color:rgba(24,184,200,.25)">
+<div class="cd-h">
+<div class="cd-i" style="background:rgba(24,184,200,.1);color:var(--c)">F</div>
+<div><h4>Fetch.ai Agentverse <span class="bg bg-g">Largest Registry</span></h4><small><a href="https://agentverse.ai/" target="_blank">agentverse.ai</a> &bull; Fetch Chain (Cosmos) &bull; $FET/ASI</small></div>
+</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:14px">Autonomous agent registry with 2.5M+ registered agents. Part of ASI Alliance (+ SingularityNET + Ocean Protocol). Agents discover and pay each other via FET micropayments. First AI-to-AI payment completed Dec 2025.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+<div class="mi"><div class="n" style="color:var(--c)">2.5M+</div><div class="t">Agents Registered</div></div>
+<div class="mi"><div class="n">15K</div><div class="t">Deployed</div></div>
+<div class="mi"><div class="n">34M</div><div class="t">Tx in 2025</div></div>
+<div class="mi"><div class="n">2,500</div><div class="t">Active Builders</div></div>
+<div class="mi"><div class="n">$120M+</div><div class="t">24h Volume</div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div><h4 style="font-size:.78rem;color:var(--g2);margin-bottom:4px">STRENGTHS</h4><ul class="pros"><li>Largest agent count (2.5M registered)</li><li>ASI Alliance backing (SingularityNET + Ocean)</li><li>Real AI-to-AI payments working</li><li>Custom L1 chain (Cosmos SDK)</li></ul></div>
+<div><h4 style="font-size:.78rem;color:var(--r2);margin-bottom:4px">WEAKNESSES</h4><ul class="cons"><li>Most agents inactive/test (only 15K deployed)</li><li>Complex multi-chain setup</li><li>ASI migration causing confusion</li><li>Developer experience can be rough</li></ul></div>
+</div>
+</div>
+
+<!-- Olas Pearl -->
+<div class="cd fade" style="margin-bottom:18px;border-color:var(--gbd)">
+<div class="cd-h">
+<div class="cd-i" style="background:var(--gbg);color:var(--g2)">O</div>
+<div><h4>Olas Pearl &mdash; AI Agent App Store <span class="bg bg-g">Best Infra</span></h4><small><a href="https://olas.network/pearl" target="_blank">olas.network/pearl</a> &bull; 9 Chains &bull; $OLAS</small></div>
+</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:14px">First dedicated AI Agent App Store. Components minted as ERC-721 NFTs. Pearl agents run DeFi strategies autonomously. Registry spans 9 chains. $13.8M raised led by 1kx specifically for Pearl launch.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+<div class="mi"><div class="n cg2">6M+</div><div class="t">Total Tx</div></div>
+<div class="mi"><div class="n">3.8M</div><div class="t">Agent-to-Agent Tx</div></div>
+<div class="mi"><div class="n">500</div><div class="t">Daily Active Agents</div></div>
+<div class="mi"><div class="n">9</div><div class="t">Chains</div></div>
+<div class="mi"><div class="n cb">$13.8M</div><div class="t">Funding (1kx)</div></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div><h4 style="font-size:.78rem;color:var(--g2);margin-bottom:4px">STRENGTHS</h4><ul class="pros"><li>Most chains supported (9)</li><li>Real on-chain agents (not just tokens)</li><li>Pearl agent earned 150% ROI in 150 days</li><li>$13.8M funding for app store specifically</li><li>Components as NFTs = composable</li></ul></div>
+<div><h4 style="font-size:.78rem;color:var(--r2);margin-bottom:4px">WEAKNESSES</h4><ul class="cons"><li>Pearl very early (2 agents at launch)</li><li>Developer-focused, not consumer-friendly</li><li>500 daily agents = still small</li><li>Complex setup for new users</li></ul></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 3. Tier 2 -->
+<section id="tier2">
+<div class="ctn">
+<div class="sl fade">03 / Tier 2: Challengers</div>
+<h2 class="fade">Growing Platforms With Traction Signals</h2>
+
+<div class="cg cg2 fade">
+<!-- ElizaOS -->
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(225,104,56,.12);color:var(--o)">E</div><div><h4>ElizaOS Plugin Registry</h4><small><a href="https://github.com/elizaos-plugins" target="_blank">github.com/elizaos-plugins</a> &bull; Multi-chain &bull; Free/OSS</small></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+<div class="mi"><div class="n" style="color:var(--o)">268</div><div class="t">Plugins</div></div>
+<div class="mi"><div class="n">OSS</div><div class="t">Pricing</div></div>
+</div>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:10px">Hot-swappable plugin system for ElizaOS agents. Covers model providers, social integrations, blockchain actions. All open-source on GitHub/npm.</p>
+<ul class="pros" style="margin-bottom:6px"><li>Open-source = trust + contributions</li><li>npm distribution = dev-friendly</li></ul>
+<ul class="cons"><li>No monetization = no creator incentive</li><li>268 plugins is modest vs 3K+ (ClawHub)</li></ul>
+</div>
+
+<!-- Griffin -->
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(216,88,160,.12);color:var(--pk)">G</div><div><h4>Griffin AI Marketplace</h4><small><a href="https://www.griffinai.io/" target="_blank">griffinai.io</a> &bull; TBD Chain &bull; Token planned</small></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+<div class="mi"><div class="n" style="color:var(--pk)">15K+</div><div class="t">Agents</div></div>
+<div class="mi"><div class="n">265K</div><div class="t">Signups</div></div>
+<div class="mi"><div class="n">5.2M</div><div class="t">Requests</div></div>
+</div>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:10px">Community-built DeFi AI agents. Marketplace with sales, licensing, subscription models planned Q2 2025. Focus on trading bots, research agents.</p>
+<ul class="pros" style="margin-bottom:6px"><li>265K signups = strong demand signal</li><li>Clear monetization plan (3 pricing models)</li></ul>
+<ul class="cons"><li>Marketplace not yet live</li><li>Token not launched = speculative</li></ul>
+</div>
+
+<!-- CreatorBid -->
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(232,184,48,.12);color:var(--y)">CB</div><div><h4>CreatorBid</h4><small><a href="https://creator.bid/" target="_blank">creator.bid</a> &bull; Base &bull; $BID ($34M MCap)</small></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+<div class="mi"><div class="n cy">3,500+</div><div class="t">Agents</div></div>
+<div class="mi"><div class="n">$2.5M</div><div class="t">IDO Raised</div></div>
+</div>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:10px">Tokenized AI agents with NFT naming (Agent Name Service) + Agent Keys. Each agent gets tradeable membership tokens. Active on X and Telegram.</p>
+<ul class="pros" style="margin-bottom:6px"><li>Agent Keys model similar to ClawFriend</li><li>$34M market cap = market validation</li></ul>
+<ul class="cons"><li>Base only (not BNB)</li><li>3,500 agents = still small</li></ul>
+</div>
+
+<!-- Morpheus -->
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(0,200,164,.12);color:var(--g)">Mo</div><div><h4>Morpheus</h4><small><a href="https://mor.org/" target="_blank">mor.org</a> &bull; Arbitrum &bull; $MOR</small></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+<div class="mi"><div class="n cg2">$320M</div><div class="t">TVL Staked</div></div>
+<div class="mi"><div class="n">$10M</div><div class="t">Builder Rewards</div></div>
+<div class="mi"><div class="n">300+</div><div class="t">Developers</div></div>
+</div>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:10px">Decentralized marketplace for AI inference. Forge tool for no-code agent building. 4-way incentive: builders, coders, capital, compute. $320M TVL from stETH staking.</p>
+<ul class="pros" style="margin-bottom:6px"><li>$320M TVL = massive capital locked</li><li>$10M builder rewards = real incentive</li></ul>
+<ul class="cons"><li>TVL is staked capital, not marketplace GMV</li><li>Forge still early, agent count unknown</li></ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 4. Tier 3 -->
+<section id="tier3">
+<div class="ctn">
+<div class="sl fade">04 / Tier 3: Emerging & Adjacent</div>
+<h2 class="fade">Niche Players & Infrastructure</h2>
+
+<div class="cg cg3 fade">
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(112,96,240,.1);color:var(--accent2)">SN</div><div><h4>SingularityNET</h4><small><a href="https://marketplace.singularitynet.io/" target="_blank">marketplace.singularitynet.io</a></small></div></div>
+<div style="display:flex;gap:8px;margin-bottom:8px"><div class="mi"><div class="n">~70</div><div class="t">AI Services</div></div><div class="mi"><div class="n cgr">Low</div><div class="t">Usage</div></div></div>
+<p style="font-size:.8rem;color:var(--text2)">OG AI marketplace (2017). Pay-per-API-call. Migrating to ASI Alliance (+ Fetch + Ocean). Low actual usage despite high token MCap.</p>
+</div>
+
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(40,136,224,.1);color:var(--b2)">CH</div><div><h4>ClawHub (OpenClaw)</h4><small><a href="https://clawhub.ai/" target="_blank">clawhub.ai</a></small></div></div>
+<div style="display:flex;gap:8px;margin-bottom:8px"><div class="mi"><div class="n cb">3,286</div><div class="t">Skills</div></div><div class="mi"><div class="n">1.5M+</div><div class="t">Downloads</div></div></div>
+<p style="font-size:.8rem;color:var(--text2)">Official OpenClaw skill registry. Free, open-source. Top skill: 35K downloads. Had security incident (ClawHavoc: 2,419 malicious skills removed). Like npm for agents.</p>
+</div>
+
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(24,184,200,.1);color:var(--c)">MC</div><div><h4>MCP Marketplaces</h4><small><a href="https://mcp.so/" target="_blank">mcp.so</a> / <a href="https://smithery.ai/" target="_blank">smithery.ai</a></small></div></div>
+<div style="display:flex;gap:8px;margin-bottom:8px"><div class="mi"><div class="n" style="color:var(--c)">17K+</div><div class="t">MCP Servers</div></div><div class="mi"><div class="n cr">$0</div><div class="t">Revenue</div></div></div>
+<p style="font-size:.8rem;color:var(--text2)">17,837 MCP servers on mcp.so. All free. No monetization. MCP donated to Linux Foundation (Dec 2025). Biggest untapped opportunity in agent tooling.</p>
+</div>
+
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(232,184,48,.1);color:var(--y)">BT</div><div><h4>Bittensor</h4><small><a href="https://bittensor.com/" target="_blank">bittensor.com</a></small></div></div>
+<div style="display:flex;gap:8px;margin-bottom:8px"><div class="mi"><div class="n cy">130</div><div class="t">Subnets</div></div><div class="mi"><div class="n">$TAO</div><div class="t">Mining</div></div></div>
+<p style="font-size:.8rem;color:var(--text2)">Decentralized AI compute marketplace. Each subnet is a specialized AI workspace. Proof-of-Intelligence consensus. One of the largest AI x crypto by MCap.</p>
+</div>
+
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(225,104,56,.1);color:var(--o)">WF</div><div><h4>Wayfinder</h4><small><a href="https://www.wayfinder.ai/" target="_blank">wayfinder.ai</a></small></div></div>
+<div style="display:flex;gap:8px;margin-bottom:8px"><div class="mi"><div class="n" style="color:var(--o)">$PROMPT</div><div class="t">Token</div></div><div class="mi"><div class="n">Multi</div><div class="t">Chains</div></div></div>
+<p style="font-size:.8rem;color:var(--text2)">Marketplace for "paths" &mdash; instruction sets that guide AI agents through DeFi protocols. Developers create paths, users spend PROMPT to activate agents ("shells").</p>
+</div>
+
+<div class="cd">
+<div class="cd-h"><div class="cd-i" style="background:rgba(216,88,160,.1);color:var(--pk)">AL</div><div><h4>AgentLayer</h4><small><a href="https://agentlayer.xyz/" target="_blank">agentlayer.xyz</a></small></div></div>
+<div style="display:flex;gap:8px;margin-bottom:8px"><div class="mi"><div class="n" style="color:var(--pk)">$AGENT</div><div class="t">Token</div></div><div class="mi"><div class="n">$1.5M</div><div class="t">Seed</div></div></div>
+<p style="font-size:.8rem;color:var(--text2)">Agent Exchange where AI agents are minted and traded as assets ("AgentFi"). AgentSwap DEX for agent trading. Backed by Redpoint, GGV Capital, NGC Ventures.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 5. Master Comparison -->
+<section id="mega">
+<div class="ctn">
+<div class="sl fade">05 / Master Comparison Table</div>
+<h2 class="fade">All 12 Competitors: Side-by-Side</h2>
+
+<div class="tw fade">
+<table>
+<thead><tr><th>#</th><th>Platform</th><th>Type</th><th>Items</th><th>Users</th><th>Revenue/GMV</th><th>Monetization</th><th>Chain</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Virtuals Protocol</strong></td><td>Agent Launchpad</td><td class="fw ca">18K+ agents</td><td>Large (token)</td><td class="fw cg2">$39.5M rev, $8B DEX</td><td>1% trading fee</td><td>Base + Sol</td></tr>
+<tr><td>2</td><td><strong>MyShell</strong></td><td>Agent Store</td><td class="fw cb">200K+ agents</td><td class="fw cg2">5M+</td><td class="cgr">Undisclosed</td><td>SHELL token usage</td><td>BNB</td></tr>
+<tr><td>3</td><td><strong>Fetch.ai Agentverse</strong></td><td>Agent Registry</td><td class="fw" style="color:var(--c)">2.5M registered</td><td>2,500 builders</td><td>34M tx/yr</td><td>FET micropayments</td><td>Fetch (Cosmos)</td></tr>
+<tr><td>4</td><td><strong>Olas Pearl</strong></td><td>Agent App Store</td><td>2 at launch</td><td>500 daily agents</td><td>6M+ tx, 3.8M A2A</td><td>Free + OLAS staking</td><td>9 chains</td></tr>
+<tr><td>5</td><td><strong>ClawHub</strong></td><td>Skill Registry</td><td class="fw cb">3,286 skills</td><td>220K GH stars</td><td class="cgr">Free (no revenue)</td><td>Free/open-source</td><td>None</td></tr>
+<tr><td>6</td><td><strong>ElizaOS Plugins</strong></td><td>Plugin Registry</td><td>268 repos</td><td>Dev community</td><td class="cgr">Free (no revenue)</td><td>Free/open-source</td><td>Multi</td></tr>
+<tr><td>7</td><td><strong>Griffin AI</strong></td><td>Agent Marketplace</td><td class="fw">15K+ agents</td><td>265K signups</td><td class="cgr">Pre-revenue</td><td>Sales/license/sub (planned)</td><td>TBD</td></tr>
+<tr><td>8</td><td><strong>CreatorBid</strong></td><td>Tokenized Agents</td><td>3,500+ agents</td><td>Growing</td><td>$2.5M IDO</td><td>BID token + Agent Keys</td><td>Base</td></tr>
+<tr><td>9</td><td><strong>Morpheus</strong></td><td>AI Infra</td><td>Early (Forge)</td><td>5K holders</td><td>$320M TVL</td><td>MOR reward-based</td><td>Arbitrum</td></tr>
+<tr><td>10</td><td><strong>SingularityNET</strong></td><td>AI Services</td><td>~70 services</td><td>Low</td><td class="cgr">Minimal</td><td>Pay-per-API-call</td><td>ETH (ASI)</td></tr>
+<tr><td>11</td><td><strong>Bittensor</strong></td><td>AI Compute</td><td>130 subnets</td><td>Large</td><td>TAO mining</td><td>Proof-of-Intelligence</td><td>Subtensor</td></tr>
+<tr><td>12</td><td><strong>MCP Ecosystem</strong></td><td>Tool Directory</td><td class="fw" style="color:var(--c)">17K+ servers</td><td>Devs</td><td class="cr fw">$0 (all free)</td><td>None yet</td><td>None</td></tr>
+<tr class="hl"><td style="color:var(--accent2);font-weight:700">*</td><td><strong style="color:var(--accent2)">ClawFriend</strong></td><td>Agent Economy</td><td class="cr fw">2 skills</td><td class="cr fw">~0</td><td class="cr fw">N/A</td><td>Trading fees</td><td>BNB</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="fade">Revenue Model Comparison</h3>
+<div class="tw fade">
+<table>
+<thead><tr><th>Model</th><th>Platform</th><th>How It Works</th><th>Proven Revenue</th></tr></thead>
+<tbody>
+<tr><td><strong>Trading Fee (% of volume)</strong></td><td>Virtuals, ClawFriend</td><td>1% on every agent token trade</td><td class="cg2 fw">$39.5M (Virtuals)</td></tr>
+<tr><td><strong>Token Usage Fee</strong></td><td>MyShell, ChainGPT</td><td>Spend tokens to access agents/tools</td><td class="cy">Eight-figure (ChainGPT)</td></tr>
+<tr><td><strong>Agent Micropayments</strong></td><td>Fetch.ai, Olas</td><td>Agents pay each other per service</td><td>34M tx/year (Fetch)</td></tr>
+<tr><td><strong>Subscription</strong></td><td>3Commas, Griffin (planned)</td><td>Monthly plans ($19-99/mo)</td><td class="cg2 fw">$20M/yr (3Commas)</td></tr>
+<tr><td><strong>Staking/Rewards</strong></td><td>Morpheus, Olas</td><td>Stake capital to earn + fund agents</td><td>$320M TVL (Morpheus)</td></tr>
+<tr><td><strong>Free/Open-Source</strong></td><td>ClawHub, ElizaOS, MCP</td><td>No revenue model</td><td class="cr">$0</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- 6. Market Stage -->
+<section id="market-stage">
+<div class="ctn">
+<div class="sl fade">06 / Market Stage Analysis</div>
+<h2 class="fade">Where Is This Market Right Now?</h2>
+
+<div class="cg cg2 fade" style="margin-bottom:24px">
+<div class="cd" style="border-color:var(--gbd)">
+<h4 style="color:var(--g2);margin-bottom:10px">Market Signals: EARLY GROWTH</h4>
+<ul style="padding-left:14px;font-size:.84rem;color:var(--text2);line-height:2">
+<li>550+ AI agent crypto projects, $4.3B combined MCap</li>
+<li>Only 1 platform with proven revenue &gt;$10M (Virtuals: $39.5M)</li>
+<li>Most platforms launched 2024-2025 = all still young</li>
+<li>MCP ecosystem (17K servers) has ZERO monetization</li>
+<li>ClawHub (3,286 skills) is free = no one charges yet</li>
+<li>Agent-to-agent payments just started (Fetch: Dec 2025)</li>
+</ul>
+</div>
+<div class="cd" style="border-color:var(--ybd)">
+<h4 style="color:var(--y);margin-bottom:10px">What This Means</h4>
+<ul style="padding-left:14px;font-size:.84rem;color:var(--text2);line-height:2">
+<li><strong>No dominant winner yet</strong> &mdash; Virtuals leads but only 1% of total AI agent market</li>
+<li><strong>Monetization is unsolved</strong> &mdash; Most registries/stores are free</li>
+<li><strong>Supply &gt; demand</strong> &mdash; 200K+ agents (MyShell) but unclear how many earn money</li>
+<li><strong>Infrastructure is being built</strong> &mdash; x402, ACP, Pearl = foundations for paid marketplace</li>
+<li><strong>Window of opportunity: 12-18 months</strong> before market consolidates</li>
+<li><strong>Room for new entrant?</strong> YES, but only with unique value prop</li>
+</ul>
+</div>
+</div>
+
+<h3 class="fade">Who's Leading Each Segment?</h3>
+<div class="tw fade">
+<table>
+<thead><tr><th>Segment</th><th>Leader</th><th>Why</th><th>Runner-Up</th><th>Opportunity for ClawFriend?</th></tr></thead>
+<tbody>
+<tr><td><strong>Agent Token Trading</strong></td><td class="ca fw">Virtuals</td><td>$39.5M revenue, 18K agents, 1% fee</td><td>CreatorBid</td><td class="cy">Yes &mdash; no BNB Chain leader</td></tr>
+<tr><td><strong>Consumer Agent Store</strong></td><td class="cb fw">MyShell</td><td>5M users, 200K agents, no-code</td><td>Griffin AI</td><td class="cr">Hard &mdash; MyShell dominates BNB</td></tr>
+<tr><td><strong>Skill/Plugin Registry</strong></td><td class="fw">ClawHub</td><td>3,286 skills, 1.5M downloads</td><td>ElizaOS (268)</td><td class="cg2">Yes &mdash; ClawHub has no trading layer</td></tr>
+<tr><td><strong>On-chain Agent Services</strong></td><td class="fw" style="color:var(--c)">Fetch.ai</td><td>2.5M agents, 34M tx</td><td>Olas</td><td class="cy">Partial &mdash; different model</td></tr>
+<tr><td><strong>DeFi Agent Trading</strong></td><td class="fw">3Commas</td><td>$400B volume, $20M revenue</td><td>Hummingbot</td><td class="cr">No &mdash; different market entirely</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- 7. ClawFriend Position -->
+<section id="clawfriend">
+<div class="ctn">
+<div class="sl fade">07 / ClawFriend's Position</div>
+<h2 class="fade">Where ClawFriend Fits &mdash; And Doesn't</h2>
+
+<h3 class="fade">ClawFriend vs Every Competitor (Key Metrics)</h3>
+<div class="tw fade">
+<table>
+<thead><tr><th>Metric</th><th class="hl" style="color:var(--accent2)">ClawFriend</th><th>Virtuals</th><th>MyShell</th><th>ClawHub</th><th>Fetch.ai</th><th>Gap</th></tr></thead>
+<tbody>
+<tr><td><strong>Skills/Agents</strong></td><td class="hl cr fw">2</td><td>18,000+</td><td>200,000+</td><td>3,286</td><td>2,500,000</td><td class="cr fw">9,000x-1.25Mx behind</td></tr>
+<tr><td><strong>Users</strong></td><td class="hl cr fw">~0</td><td>Large</td><td>5,000,000+</td><td>220K devs</td><td>2,500 builders</td><td class="cr fw">Critical</td></tr>
+<tr><td><strong>Revenue</strong></td><td class="hl cr fw">$0</td><td>$39,500,000</td><td>Undisclosed</td><td>$0</td><td>34M tx</td><td class="cr fw">$39.5M behind leader</td></tr>
+<tr><td><strong>Downloads</strong></td><td class="hl cr fw">20</td><td>N/A</td><td>N/A</td><td>1,500,000</td><td>N/A</td><td class="cr fw">75,000x behind ClawHub</td></tr>
+<tr><td><strong>Token</strong></td><td class="hl cr">None</td><td>$VIRTUAL</td><td>$SHELL</td><td>None</td><td>$FET</td><td class="cy">Missing</td></tr>
+<tr><td><strong>Trading Layer</strong></td><td class="hl cg2 fw">Yes</td><td>Yes</td><td>No</td><td class="cr">No</td><td>No</td><td class="cg2 fw">Advantage</td></tr>
+<tr><td><strong>Social Feed</strong></td><td class="hl cg2 fw">Yes</td><td>Yes</td><td>Yes</td><td class="cr">No</td><td>No</td><td class="cg2">Match leaders</td></tr>
+<tr><td><strong>OpenClaw Native</strong></td><td class="hl cg2 fw">Yes</td><td class="cr">No</td><td class="cr">No</td><td>Indirect</td><td class="cr">No</td><td class="cg2 fw">Unique</td></tr>
+<tr><td><strong>Audit</strong></td><td class="hl cr fw">No</td><td>Yes</td><td>Yes</td><td>N/A</td><td>Yes</td><td class="cr">Trust gap</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="fade">What ClawFriend Wins At</h3>
+<div class="cg cg3 fade">
+<div class="cd" style="border-color:var(--gbd)">
+<h4 style="color:var(--g2);font-size:.9rem;margin-bottom:8px">1. Only Trading + Social + Skills in One</h4>
+<p style="font-size:.82rem;color:var(--text2)"><strong>Virtuals</strong> has trading but no skill market like ClawHub. <strong>ClawHub</strong> has skills but no trading/social. <strong>MyShell</strong> has agents but no bonding curve. ClawFriend combines all three &mdash; unique in the market.</p>
+</div>
+<div class="cd" style="border-color:var(--gbd)">
+<h4 style="color:var(--g2);font-size:.9rem;margin-bottom:8px">2. OpenClaw Native (214K+ GH Stars)</h4>
+<p style="font-size:.82rem;color:var(--text2)">OpenClaw is the viral open-source project of early 2026. ClawFriend is the <strong>only</strong> platform where OpenClaw agents can trade keys and earn. ClawHub is free but has no economic layer.</p>
+</div>
+<div class="cd" style="border-color:var(--gbd)">
+<h4 style="color:var(--g2);font-size:.9rem;margin-bottom:8px">3. BNB Chain Agent Economy Gap</h4>
+<p style="font-size:.82rem;color:var(--text2)">Virtuals owns Base. Fetch.ai owns Cosmos. No one owns the <strong>agent economy layer on BNB Chain</strong>. MyShell is on BNB but doesn't have bonding curve trading. ClawFriend has a lane.</p>
+</div>
+</div>
+
+<h3 class="fade">What ClawFriend Loses At</h3>
+<div class="cg cg3 fade">
+<div class="cd" style="border-color:var(--rbd)">
+<h4 style="color:var(--r2);font-size:.9rem;margin-bottom:8px">1. Zero Traction vs Everyone</h4>
+<p style="font-size:.82rem;color:var(--text2)"><strong>2 skills, 20 downloads, 0 Twitter mentions</strong>. Even the smallest competitor (SingularityNET with ~70 services) has more. MyShell on the same chain has 5M users. The gap is not just large &mdash; it's existential.</p>
+</div>
+<div class="cd" style="border-color:var(--rbd)">
+<h4 style="color:var(--r2);font-size:.9rem;margin-bottom:8px">2. No Token = No Flywheel</h4>
+<p style="font-size:.82rem;color:var(--text2)">Every competitor has a token ($VIRTUAL, $SHELL, $FET, $OLAS, $BID). Tokens create buy pressure, staking, governance, and community. ClawFriend has no token = no speculative flywheel to bootstrap.</p>
+</div>
+<div class="cd" style="border-color:var(--rbd)">
+<h4 style="color:var(--r2);font-size:.9rem;margin-bottom:8px">3. Unproven Core Thesis</h4>
+<p style="font-size:.82rem;color:var(--text2)">Virtuals has $39.5M proven revenue. Olas Pearl agents earned 150% ROI. Fetch.ai completed first AI-to-AI payment. ClawFriend claims agents "bring money in" but has <strong>zero evidence</strong>.</p>
+</div>
+</div>
+
+<h3 class="fade">Final Verdict: Market Positioning</h3>
+<div class="co ok fade">
+<strong>There IS room for ClawFriend</strong>, but only if it executes on its unique position:<br><br>
+<strong>1.</strong> ClawHub has 3,286 skills + 1.5M downloads but <strong>no economic layer</strong> (no trading, no monetization). ClawFriend adds bonding curve trading + social feed on top of OpenClaw skills = the missing piece.<br><br>
+<strong>2.</strong> Virtuals dominates Base ($39.5M revenue) but has <strong>zero presence on BNB Chain</strong>. ClawFriend + BNB = uncontested territory for agent trading.<br><br>
+<strong>3.</strong> MyShell has 5M users on BNB but focuses on <strong>consumer chatbots, not economic agents</strong>. ClawFriend targets a different use case (autonomous agents that earn).<br><br>
+<strong>4.</strong> The Skill Marketplace gap is real: 17K+ MCP servers and 3,286 ClawHub skills all have <strong>$0 monetization</strong>. First platform to credibly monetize skills wins a massive opportunity.
+</div>
+
+<div class="co bad fade" style="margin-top:0">
+<strong>But ClawFriend will fail if:</strong><br><br>
+<strong>1.</strong> It can't get past 2 skills and 20 downloads in the next 3 months. Time-to-traction is everything.<br>
+<strong>2.</strong> It doesn't audit its smart contract. Virtuals, MyShell, Olas &mdash; all audited. No audit = no institutional trust.<br>
+<strong>3.</strong> It can't prove ONE agent earning real external value. The entire thesis depends on this single proof point.<br>
+<strong>4.</strong> MyShell adds a trading layer. If MyShell copies bonding curves, ClawFriend's entire differentiation disappears overnight.
+</div>
+
+<h3 class="fade">Strategic Summary</h3>
+<div class="tw fade">
+<table>
+<thead><tr><th>Dimension</th><th>Status</th><th>Action Required</th></tr></thead>
+<tbody>
+<tr><td><strong>Unique positioning</strong></td><td class="cg2 fw">Exists</td><td>Only trading + social + skills combo for OpenClaw on BNB</td></tr>
+<tr><td><strong>Market timing</strong></td><td class="cg2 fw">Good</td><td>OpenClaw viral (214K stars), no BNB agent economy leader</td></tr>
+<tr><td><strong>Traction</strong></td><td class="cr fw">Critical</td><td>Must reach 100+ skills, 1K+ users within 3 months</td></tr>
+<tr><td><strong>Revenue proof</strong></td><td class="cr fw">Zero</td><td>Need 1-3 agents demonstrating real external earnings</td></tr>
+<tr><td><strong>Trust / safety</strong></td><td class="cr fw">Absent</td><td>Smart contract audit + team doxx = non-negotiable</td></tr>
+<tr><td><strong>Competitive moat</strong></td><td class="cy fw">Fragile</td><td>Skill ecosystem depth is the only defensible moat. Build it fast.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<div style="padding:44px 0;background:linear-gradient(135deg,rgba(112,96,240,.07),rgba(0,200,164,.05));border-bottom:1px solid var(--bdr)">
+<div class="ctn" style="text-align:center">
+<h3 style="font-size:1.2rem;font-weight:800;margin-bottom:6px">Read the other reports</h3>
+<p style="color:var(--text2);font-size:.88rem;margin-bottom:18px">Platform evaluation with scoring breakdown, or head-to-head competitor comparison.</p>
+<div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+<a href="/" style="padding:10px 22px;background:var(--accent);color:#fff;border-radius:8px;font-weight:600;font-size:.88rem">&larr; Evaluation Report</a>
+<a href="/competitors" style="padding:10px 22px;background:var(--bg4);border:1px solid var(--bdr);color:var(--text);border-radius:8px;font-weight:600;font-size:.88rem">Competitor Analysis &rarr;</a>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+<div class="ctn">
+<div style="display:flex;justify-content:center;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+<a href="/" style="padding:5px 12px;background:var(--bg3);border:1px solid var(--bdr);border-radius:5px;font-size:.76rem">Evaluation</a>
+<a href="/competitors" style="padding:5px 12px;background:var(--bg3);border:1px solid var(--bdr);border-radius:5px;font-size:.76rem">Competitors</a>
+<a href="/landscape" style="padding:5px 12px;background:var(--bg3);border:1px solid var(--bdr);border-radius:5px;font-size:.76rem">Landscape</a>
+</div>
+<p style="margin-bottom:6px">Data sourced from CoinGecko, CoinMarketCap, DeFiLlama, official docs, GitHub, and web research. Feb 24, 2026.</p>
+<p style="font-size:.68rem">
+Sources:
+<a href="https://www.virtuals.io" target="_blank">Virtuals</a> &middot;
+<a href="https://myshell.ai" target="_blank">MyShell</a> &middot;
+<a href="https://agentverse.ai" target="_blank">Fetch.ai</a> &middot;
+<a href="https://olas.network" target="_blank">Olas</a> &middot;
+<a href="https://clawhub.ai" target="_blank">ClawHub</a> &middot;
+<a href="https://mcp.so" target="_blank">MCP.so</a> &middot;
+<a href="https://mor.org" target="_blank">Morpheus</a> &middot;
+<a href="https://creator.bid" target="_blank">CreatorBid</a> &middot;
+<a href="https://www.griffinai.io" target="_blank">Griffin</a> &middot;
+<a href="https://marketplace.singularitynet.io" target="_blank">SingularityNET</a> &middot;
+<a href="https://bittensor.com" target="_blank">Bittensor</a>
+</p>
+<p style="font-size:.66rem;margin-top:6px">Not financial advice. All data from publicly verifiable sources.</p>
+</div>
+</footer>
+
+<script>
+const ss=document.querySelectorAll('section[id]'),ns=document.querySelectorAll('.nav a');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){ns.forEach(n=>n.classList.remove('act'));const l=document.querySelector(`.nav a[href="#${e.target.id}"]`);if(l)l.classList.add('act')}}),{rootMargin:'-18% 0px -82% 0px'});
+ss.forEach(s=>io.observe(s));
+document.querySelectorAll('.fade').forEach(el=>new IntersectionObserver(e=>{e[0].isIntersecting&&el.classList.add('in')},{threshold:.08}).observe(el));
+</script>
+</body>
+</html>
