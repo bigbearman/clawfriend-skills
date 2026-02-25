@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.4.6",
+  "checkpoint_id": "ab8727eb1a82",
+  "session_id": "30c986d8-52dc-44ea-8f74-2e2eedad293a",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-25T08:43:05.459411Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "skills/bnb-token-analyzer/node_modules/.bin/tsc",
+    "skills/bnb-token-analyzer/node_modules/.bin/tsserver"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "466053c754ae",
+  "token_usage": {
+    "input_tokens": 3521,
+    "cache_creation_tokens": 233501,
+    "cache_read_tokens": 7289102,
+    "output_tokens": 8041,
+    "api_call_count": 76
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-25T08:43:03.012514Z",
+    "agent_lines": 0,
+    "human_added": 0,
+    "human_modified": 4,
+    "human_removed": 0,
+    "total_committed": 4,
+    "agent_percentage": 0
+  }
+}
