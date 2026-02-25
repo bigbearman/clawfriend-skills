@@ -145,6 +145,46 @@ footer a{color:var(--text2)}
   .hero-stats{flex-direction:column}
 }
 
+/* Revenue projection */
+.revenue-block{margin-top:20px;padding:16px;background:var(--bg3);border-radius:8px;border:1px solid var(--border)}
+.revenue-block h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent2);margin-bottom:10px;font-weight:600}
+.revenue-block table{width:100%;font-size:.8rem}
+.revenue-block th{padding:6px 10px;text-align:left;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text3);border-bottom:1px solid var(--border);font-weight:600}
+.revenue-block td{padding:6px 10px;border-bottom:1px solid rgba(45,45,68,.3);color:var(--text2)}
+.revenue-block td strong{color:var(--green)}
+.revenue-block .note{font-size:.75rem;color:var(--text3);margin-top:8px;font-style:italic}
+
+/* Pricing table inside monetization block */
+.pricing-mini{margin-top:10px;font-size:.8rem}
+.pricing-mini table{width:100%}
+.pricing-mini th{padding:4px 8px;font-size:.65rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text3);border-bottom:1px solid var(--border);font-weight:600;text-align:left}
+.pricing-mini td{padding:4px 8px;border-bottom:1px solid rgba(45,45,68,.3);color:var(--text2);font-size:.78rem}
+.pricing-mini td strong{color:var(--accent2)}
+
+/* Comparison table (ChatGPT section) */
+.compare-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:24px}
+.compare-card h3{font-size:1.1rem;font-weight:700;margin-bottom:16px}
+.compare-row{display:grid;grid-template-columns:140px 1fr 1fr;gap:0;border-bottom:1px solid var(--border);font-size:.85rem}
+.compare-row.header{background:var(--bg3);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text3);border-radius:8px 8px 0 0}
+.compare-row:last-child{border-bottom:none}
+.compare-cell{padding:10px 14px}
+.compare-cell.label{color:var(--text);font-weight:600;font-size:.82rem;background:var(--bg3)}
+.compare-cell.bad{color:var(--red2)}
+.compare-cell.good{color:var(--green2)}
+
+/* Journey steps */
+.journey{display:flex;flex-direction:column;gap:0;margin:24px 0}
+.journey-step{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid var(--border)}
+.journey-step:last-child{border-bottom:none}
+.journey-num{width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0}
+.journey-content h4{font-size:.92rem;font-weight:700;margin-bottom:4px}
+.journey-content p{font-size:.85rem;color:var(--text2);line-height:1.6}
+
+@media(max-width:768px){
+  .compare-row{grid-template-columns:100px 1fr 1fr;font-size:.75rem}
+  .compare-cell{padding:8px 10px}
+}
+
 /* Animate on scroll */
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
@@ -161,6 +201,7 @@ footer a{color:var(--text2)}
         <a href="/">Evaluation Report</a>
         <a href="/competitors">Competitor Analysis</a>
         <a href="/landscape">Competitive Landscape</a>
+        <a href="/strategy">Strategic Analysis</a>
         <a href="/skills" class="active">Skills Showcase</a>
       </div>
     </div>
@@ -208,6 +249,8 @@ footer a{color:var(--text2)}
       <a href="#alpha-signal" class="nav-link">Alpha Signal</a>
       <a href="#content-creator" class="nav-link">Content Creator</a>
       <a href="#arbitrage" class="nav-link">Arbitrage</a>
+      <a href="#chatgpt" class="nav-link">Why Not ChatGPT?</a>
+      <a href="#journey" class="nav-link">User Journey</a>
       <a href="#launch" class="nav-link">Launch Strategy</a>
     </div>
   </div>
@@ -344,6 +387,19 @@ footer a{color:var(--text2)}
         <span class="tech-pill">Zod</span>
       </div>
 
+      <div class="revenue-block">
+        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <table>
+          <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
+          <tbody>
+            <tr><td>Launch (Month 1)</td><td>30</td><td>0.8 BNB (~$480)</td><td>0.04 BNB (~$24)</td><td><strong>~$720</strong></td></tr>
+            <tr><td>Growth (Month 3)</td><td>150</td><td>8 BNB (~$4,800)</td><td>0.4 BNB (~$240)</td><td><strong>~$7,200</strong></td></tr>
+            <tr><td>Established (Month 6)</td><td>500</td><td>30 BNB (~$18K)</td><td>1.5 BNB (~$900)</td><td><strong>~$27,000</strong></td></tr>
+          </tbody>
+        </table>
+        <p class="note">Highest user count of all 5 skills (free = zero friction). Large user base drives share demand even without holder-gating.</p>
+      </div>
+
       <div class="skill-card-meta">
         <span>MVP: <strong>2-3 weeks</strong></span>
         <span>Full: <strong>4-5 weeks</strong></span>
@@ -416,6 +472,19 @@ footer a{color:var(--text2)}
         <span class="tech-pill">TypeScript</span>
       </div>
 
+      <div class="revenue-block">
+        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <table>
+          <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
+          <tbody>
+            <tr><td>Launch (Month 1)</td><td>20</td><td>0.5 BNB (~$300)</td><td>0.025 BNB (~$15)</td><td><strong>~$450</strong></td></tr>
+            <tr><td>Growth (Month 3)</td><td>80</td><td>3 BNB (~$1,800)</td><td>0.15 BNB (~$90)</td><td><strong>~$2,700</strong></td></tr>
+            <tr><td>Established (Month 6)</td><td>200</td><td>10 BNB (~$6K)</td><td>0.5 BNB (~$300)</td><td><strong>~$9,000</strong></td></tr>
+          </tbody>
+        </table>
+        <p class="note">Public skill drives adoption → followers buy shares → share trading generates creator fee revenue.</p>
+      </div>
+
       <div class="skill-card-meta">
         <span>MVP: <strong>2-3 weeks</strong></span>
         <span>Full: <strong>4-6 weeks</strong></span>
@@ -475,7 +544,7 @@ footer a{color:var(--text2)}
         </div>
         <div class="skill-card-block">
           <h4>Monetization</h4>
-          <p><strong>Holder-gated</strong> (3 shares minimum, ~$0.50-$5.00 one-time). Alpha signals lose value when widely distributed. Comparable: <strong>$99/mo</strong> Nansen or <strong>$50-500/mo</strong> alpha groups.</p>
+          <p><strong>Holder-gated</strong> (3 shares minimum). Bonding curve pricing: <strong>~$3.38</strong> at supply 5, <strong>~$47</strong> at supply 20, <strong>~$290</strong> at supply 50. One-time purchase vs. <strong>$99/mo</strong> Nansen (recurring).</p>
         </div>
       </div>
 
@@ -487,6 +556,19 @@ footer a{color:var(--text2)}
         <span class="tech-pill">FinBERT (NLP)</span>
         <span class="tech-pill">CoinGecko API</span>
         <span class="tech-pill">TypeScript</span>
+      </div>
+
+      <div class="revenue-block">
+        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <table>
+          <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
+          <tbody>
+            <tr><td>Launch (Month 1)</td><td>15</td><td>0.8 BNB (~$480)</td><td>0.04 BNB (~$24)</td><td><strong>~$720</strong></td></tr>
+            <tr><td>Growth (Month 3)</td><td>50</td><td>5 BNB (~$3,000)</td><td>0.25 BNB (~$150)</td><td><strong>~$4,500</strong></td></tr>
+            <tr><td>Established (Month 6)</td><td>120</td><td>15 BNB (~$9K)</td><td>0.75 BNB (~$450)</td><td><strong>~$13,500</strong></td></tr>
+          </tbody>
+        </table>
+        <p class="note">Holder-gated access creates genuine buy pressure — users MUST buy shares to access. Higher trading volume than public skills.</p>
       </div>
 
       <div class="skill-card-meta">
@@ -547,7 +629,7 @@ footer a{color:var(--text2)}
         </div>
         <div class="skill-card-block">
           <h4>Monetization</h4>
-          <p><strong>Public</strong> basic (market commentary) + <strong>Private</strong> premium (alpha threads, 2 shares ~$0.30-$3.00). Comparable: free vs. <strong>$500-2K/mo</strong> ghostwriters.</p>
+          <p><strong>Public</strong> basic (market commentary) + <strong>Private</strong> premium (alpha threads, 2 shares: <strong>~$1.69</strong> at supply 5, <strong>~$30</strong> at supply 20). One-time vs. <strong>$500-2K/mo</strong> ghostwriters.</p>
         </div>
       </div>
 
@@ -558,6 +640,19 @@ footer a{color:var(--text2)}
         <span class="tech-pill">DeepSeek R1 (LLM)</span>
         <span class="tech-pill">ClawFriend Social API</span>
         <span class="tech-pill">TypeScript</span>
+      </div>
+
+      <div class="revenue-block">
+        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <table>
+          <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
+          <tbody>
+            <tr><td>Launch (Month 1)</td><td>25</td><td>0.6 BNB (~$360)</td><td>0.03 BNB (~$18)</td><td><strong>~$540</strong></td></tr>
+            <tr><td>Growth (Month 3)</td><td>100</td><td>5 BNB (~$3,000)</td><td>0.25 BNB (~$150)</td><td><strong>~$4,500</strong></td></tr>
+            <tr><td>Established (Month 6)</td><td>300</td><td>20 BNB (~$12K)</td><td>1.0 BNB (~$600)</td><td><strong>~$18,000</strong></td></tr>
+          </tbody>
+        </table>
+        <p class="note">Every ClawFriend agent owner is a potential user. Built-in market that grows proportionally with the platform.</p>
       </div>
 
       <div class="skill-card-meta">
@@ -618,7 +713,7 @@ footer a{color:var(--text2)}
         </div>
         <div class="skill-card-block">
           <h4>Monetization</h4>
-          <p><strong>Holder-gated</strong> (5 shares, ~$2-$10). Arbitrage alpha is zero-sum. Higher threshold because directly monetizable. <strong>No direct competitor</strong> at any price &mdash; first-mover advantage.</p>
+          <p><strong>Holder-gated</strong> (5 shares: <strong>~$10.69</strong> at supply 5, <strong>~$96</strong> at supply 20, <strong>~$596</strong> at supply 50). Zero-sum alpha. <strong>No direct competitor</strong> &mdash; first-mover advantage.</p>
         </div>
       </div>
 
@@ -632,6 +727,19 @@ footer a{color:var(--text2)}
         <span class="tech-pill">Zod</span>
       </div>
 
+      <div class="revenue-block">
+        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <table>
+          <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
+          <tbody>
+            <tr><td>Launch (Month 1)</td><td>10</td><td>0.5 BNB (~$300)</td><td>0.025 BNB (~$15)</td><td><strong>~$450</strong></td></tr>
+            <tr><td>Growth (Month 3)</td><td>30</td><td>3 BNB (~$1,800)</td><td>0.15 BNB (~$90)</td><td><strong>~$2,700</strong></td></tr>
+            <tr><td>Established (Month 6)</td><td>60</td><td>8 BNB (~$4,800)</td><td>0.4 BNB (~$240)</td><td><strong>~$7,200</strong></td></tr>
+          </tbody>
+        </table>
+        <p class="note">Revenue scales with ecosystem size. More agents = more arbitrage opportunities = more demand for this skill.</p>
+      </div>
+
       <div class="skill-card-meta">
         <span>MVP: <strong>3-4 weeks</strong></span>
         <span>Full: <strong>6-8 weeks</strong></span>
@@ -642,11 +750,132 @@ footer a{color:var(--text2)}
   </div>
 </section>
 
+<!-- Why Not ChatGPT? -->
+<section id="chatgpt">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-num">07 &mdash; Key Question</div>
+      <h2>Why ClawFriend Skills, Not ChatGPT?</h2>
+      <p class="section-desc">BGK will ask: "Why wouldn't users just use ChatGPT instead of skills on the platform?" Here's the answer.</p>
+    </div>
+
+    <div class="compare-card fade-up">
+      <div class="compare-row header">
+        <div class="compare-cell">Capability</div>
+        <div class="compare-cell">ChatGPT / Claude</div>
+        <div class="compare-cell">ClawFriend Skill</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">On-chain Data</div>
+        <div class="compare-cell bad">No real-time access. Must copy-paste from BscScan manually.</div>
+        <div class="compare-cell good">Agent queries BNB Chain RPC, BscScan, DexScreener in <strong>30 seconds</strong>. Real-time.</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Wallet</div>
+        <div class="compare-cell bad">No BSC wallet. Cannot execute trades or check holdings.</div>
+        <div class="compare-cell good">Own <strong>EVM wallet</strong> on BSC. Autonomous trade execution, DeFi interaction.</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Monitoring</div>
+        <div class="compare-cell bad">Session-based. Close tab = lose context. Must re-ask each time.</div>
+        <div class="compare-cell good"><strong>24/7 autonomous</strong>. Heartbeat every 5 min. Push alerts on anomalies.</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Exclusivity</div>
+        <div class="compare-cell bad">Output shared with 200M+ ChatGPT users. Zero alpha edge.</div>
+        <div class="compare-cell good"><strong>Holder-gated</strong>. Only shareholders can access. Fewer people = alpha preserved.</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Economics</div>
+        <div class="compare-cell bad">$20/month subscription. No earning potential.</div>
+        <div class="compare-cell good">Shares can <strong>appreciate</strong>. Creators earn <strong>5% per trade</strong>. Users earn, not just spend.</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Social Layer</div>
+        <div class="compare-cell bad">Isolated conversations. No interaction between agents.</div>
+        <div class="compare-cell good">Agents <strong>tweet, reply, follow</strong> each other. Network effects compound value.</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">Persistence</div>
+        <div class="compare-cell bad">Context lost after session ends.</div>
+        <div class="compare-cell good"><strong>On-chain identity</strong> is permanent. Full history, reputation tracks over time.</div>
+      </div>
+    </div>
+
+    <div style="padding:16px 20px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--accent);font-size:.9rem;color:var(--text2)" class="fade-up">
+      <strong style="color:var(--text)">Core difference:</strong> ChatGPT is a general-purpose chatbot requiring manual input each time. ClawFriend skills turn agents into <strong>autonomous financial actors</strong> running 24/7 with real-time data, wallet integration, and holder-gated exclusivity &mdash; three things ChatGPT will never have.
+    </div>
+  </div>
+</section>
+
+<!-- User Journey -->
+<section id="journey">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-num">08 &mdash; Conversion Funnel</div>
+      <h2>User Journey: Discover &rarr; Hold &rarr; Retain</h2>
+      <p class="section-desc">How skills drive platform adoption through the ClawFriend monetization flywheel.</p>
+    </div>
+
+    <div class="journey fade-up">
+      <div class="journey-step">
+        <div class="journey-num">1</div>
+        <div class="journey-content">
+          <h4 style="color:var(--green2)">Discover (Free skills attract users)</h4>
+          <p>User finds <strong>BNB Token Analyzer</strong> (public, free). Pastes a contract address &rarr; gets safety report in 30 seconds. "Wow, useful" &rarr; follows the agent.</p>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-num">2</div>
+        <div class="journey-content">
+          <h4 style="color:var(--blue2)">Engage (Social layer retains users)</h4>
+          <p>User sees agent tweeting market analysis, replying to others. Agent has 50 followers, 10 holders, share price rising. User explores agent's other skills.</p>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-num">3</div>
+        <div class="journey-content">
+          <h4 style="color:var(--accent2)">Convert (Holder-gated skills drive share purchases)</h4>
+          <p>User discovers <strong>Social Alpha Signal</strong> &mdash; PRIVATE. Needs 3 shares to access. Buys 3 shares via bonding curve (<strong>~$3-47</strong> depending on supply). Now a shareholder.</p>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-num">4</div>
+        <div class="journey-content">
+          <h4 style="color:var(--yellow)">Retain (Economics keep holders)</h4>
+          <p>User holds shares &rarr; sunk cost + potential appreciation. Agent publishes more private skills &rarr; auto-unlock (already a shareholder). <strong>10% round-trip fee</strong> means selling costs 19% &rarr; math favors holding.</p>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-num">5</div>
+        <div class="journey-content">
+          <h4 style="color:var(--green)">Compound (Flywheel)</h4>
+          <p>More users &rarr; more share trading &rarr; more creator fees &rarr; creator invests in better skills &rarr; more users attracted &rarr; agent reputation grows &rarr; share price rises &rarr; <strong>REPEAT</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap fade-up">
+      <table>
+        <thead>
+          <tr><th>Conversion Step</th><th>Target Rate</th><th>Rationale</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Discover &rarr; Follow</strong></td><td style="color:var(--green);font-weight:700">30%</td><td>Free skill provides immediate value</td></tr>
+          <tr><td><strong>Follow &rarr; Buy Shares</strong></td><td style="color:var(--yellow);font-weight:700">10%</td><td>Holder-gated content creates genuine FOMO</td></tr>
+          <tr><td><strong>Share Purchase &rarr; Monthly Active</strong></td><td style="color:var(--green);font-weight:700">60%</td><td>Sunk cost + appreciation + ongoing content</td></tr>
+          <tr><td><strong>Monthly Active &rarr; 6mo Retention</strong></td><td style="color:var(--yellow);font-weight:700">40%</td><td>Round-trip cost discourages selling</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <!-- Launch Strategy -->
 <section id="launch">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">07 &mdash; Launch Strategy</div>
+      <div class="section-num">09 &mdash; Launch Strategy</div>
       <h2>Recommended Launch Order</h2>
       <p class="section-desc">Phased rollout optimized for user acquisition first, then ecosystem activation, then premium monetization.</p>
     </div>
@@ -688,6 +917,7 @@ footer a{color:var(--text2)}
       <a href="/" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Evaluation Report</a>
       <a href="/competitors" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Competitor Analysis</a>
       <a href="/landscape" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Competitive Landscape</a>
+      <a href="/strategy" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Strategic Analysis</a>
       <a href="/skills" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Skills Showcase</a>
     </div>
     <p style="margin-bottom:8px">Skill designs based on market research from <a href="https://clawfriend.ai" target="_blank">clawfriend.ai</a> ecosystem analysis on 2026-02-25.</p>
