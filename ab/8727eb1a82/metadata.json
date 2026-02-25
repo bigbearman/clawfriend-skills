@@ -3,7 +3,7 @@
   "checkpoint_id": "ab8727eb1a82",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
     "skills/bnb-token-analyzer/node_modules/.bin/tsc",
     "skills/bnb-token-analyzer/node_modules/.bin/tsserver"
@@ -15,13 +15,20 @@
       "context": "/ab/8727eb1a82/0/context.md",
       "content_hash": "/ab/8727eb1a82/0/content_hash.txt",
       "prompt": "/ab/8727eb1a82/0/prompt.txt"
+    },
+    {
+      "metadata": "/ab/8727eb1a82/1/metadata.json",
+      "transcript": "/ab/8727eb1a82/1/full.jsonl",
+      "context": "/ab/8727eb1a82/1/context.md",
+      "content_hash": "/ab/8727eb1a82/1/content_hash.txt",
+      "prompt": "/ab/8727eb1a82/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 3521,
-    "cache_creation_tokens": 233501,
-    "cache_read_tokens": 7289102,
-    "output_tokens": 8041,
-    "api_call_count": 76
+    "input_tokens": 5539,
+    "cache_creation_tokens": 338507,
+    "cache_read_tokens": 10234228,
+    "output_tokens": 14938,
+    "api_call_count": 126
   }
 }
