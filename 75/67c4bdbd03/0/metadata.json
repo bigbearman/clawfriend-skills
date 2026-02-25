@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.6",
+  "checkpoint_id": "7567c4bdbd03",
+  "session_id": "30c986d8-52dc-44ea-8f74-2e2eedad293a",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-25T08:57:27.321022Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "public/landscape.html"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "2ddbffd57623",
+  "token_usage": {
+    "input_tokens": 3560,
+    "cache_creation_tokens": 279574,
+    "cache_read_tokens": 12304865,
+    "output_tokens": 18705,
+    "api_call_count": 111
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-25T08:57:23.496347Z",
+    "agent_lines": 0,
+    "human_added": 296,
+    "human_modified": 3,
+    "human_removed": 0,
+    "total_committed": 296,
+    "agent_percentage": 0
+  }
+}
