@@ -1,20 +1,17 @@
 {
   "cli_version": "0.4.6",
   "checkpoint_id": "c9287efe4845",
+  "session_id": "67d6ba0d-b570-4f99-93d1-b2efef98f429",
   "strategy": "manual-commit",
+  "created_at": "2026-02-25T08:41:39.451935Z",
   "branch": "main",
-  "checkpoints_count": 7,
+  "checkpoints_count": 3,
   "files_touched": [
     "CLAUDE.md",
     "competitive-landscape.md",
     "data/README.md",
-    "distribution-plan.md",
-    "public/competitors.html",
-    "public/index.html",
-    "public/landscape.html",
     "public/skills.html",
     "public/strategy.html",
-    "skill-research.md",
     "skills/bnb-token-analyzer/SKILL.md",
     "skills/bnb-token-analyzer/node_modules/.bin/tsc",
     "skills/bnb-token-analyzer/node_modules/.bin/tsserver",
@@ -2667,34 +2664,22 @@
     "skills/social-alpha-signal/tsconfig.json",
     "strategic-analysis.md"
   ],
-  "sessions": [
-    {
-      "metadata": "/c9/287efe4845/0/metadata.json",
-      "transcript": "/c9/287efe4845/0/full.jsonl",
-      "context": "/c9/287efe4845/0/context.md",
-      "content_hash": "/c9/287efe4845/0/content_hash.txt",
-      "prompt": "/c9/287efe4845/0/prompt.txt"
-    },
-    {
-      "metadata": "/c9/287efe4845/1/metadata.json",
-      "transcript": "/c9/287efe4845/1/full.jsonl",
-      "context": "/c9/287efe4845/1/context.md",
-      "content_hash": "/c9/287efe4845/1/content_hash.txt",
-      "prompt": "/c9/287efe4845/1/prompt.txt"
-    },
-    {
-      "metadata": "/c9/287efe4845/2/metadata.json",
-      "transcript": "/c9/287efe4845/2/full.jsonl",
-      "context": "/c9/287efe4845/2/context.md",
-      "content_hash": "/c9/287efe4845/2/content_hash.txt",
-      "prompt": "/c9/287efe4845/2/prompt.txt"
-    }
-  ],
+  "agent": "Claude Code",
+  "turn_id": "48e8997111fb",
   "token_usage": {
-    "input_tokens": 5543,
-    "cache_creation_tokens": 378055,
-    "cache_read_tokens": 9813330,
-    "output_tokens": 16034,
-    "api_call_count": 128
+    "input_tokens": 2018,
+    "cache_creation_tokens": 105006,
+    "cache_read_tokens": 2945126,
+    "output_tokens": 6897,
+    "api_call_count": 50
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-25T08:41:38.760789Z",
+    "agent_lines": 807942,
+    "human_added": 320,
+    "human_modified": 4,
+    "human_removed": 0,
+    "total_committed": 808266,
+    "agent_percentage": 99.95991418666627
   }
 }
