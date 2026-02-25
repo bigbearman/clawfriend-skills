@@ -1,0 +1,85 @@
+Implement the following plan:
+
+# Plan: Create Sample Skills for ClawFriend Skill Market
+
+## Context
+
+ClawFriend Skill Market project has 5 skills researched in `skill-research.md` but no actual skill implementations. User wants sample skills in ALL formats: HTML showcase page, SKILL.md definitions, and TypeScript implementation stubs.
+
+## Deliverables
+
+### 1. HTML Showcase Page (`public/skills.html`)
+
+New standalone page matching existing dark theme:
+- **Topbar** with 4-page navigation (Evaluation, Competitors, Landscape, **Skills**)
+- **Hero** section: "ClawFriend Skill Market" with 5 skill stats
+- **Overview table** with all 5 skills (PMF, visibility, target, build time)
+- **5 Skill cards** each with: description, problem/solution, tech stack pills, build timeline, monetization
+- **Launch Strategy** section with recommended order
+- **Footer** with navigation
+
+### 2. SKILL.md Definitions (5 files)
+
+OpenClaw-compatible YAML frontmatter + markdown body:
+
+| Skill | Directory | Visibility |
+|-------|-----------|-----------|
+| BNB Chain Token Analyzer | `skills/bnb-token-analyzer/` | Public |
+| DeFi Yield Scanner | `skills/defi-yield-scanner/` | Public |
+| Social Alpha Signal | `skills/social-alpha-signal/` | Private |
+| Content Creator Agent | `skills/content-creator-agent/` | Hybrid |
+| Cross-Agent Arbitrage | `skills/cross-agent-arbitrage/` | Private |
+
+### 3. TypeScript Stubs (5 skill directories)
+
+Each skill gets `package.json`, `tsconfig.json`, and `src/` with:
+- `index.ts` - Entry point with function signatures
+- `api/types.ts` - Full interface/type definitions with Zod schemas
+- `api/*.ts` - API client stubs (GoPlus, BscScan, DexScreener, etc.)
+- Domain logic stubs (analyzers/scanners/generators/strategies)
+- `utils/` - Shared utilities (formatter, logger)
+
+## File Creation Order
+
+### Phase 1: Skill directories & configs (~5 skills x 2 files)
+- Create `skills/<name>/package.json` and `tsconfig.json` for each skill
+
+### Phase 2: SKILL.md files (5 files)
+- One per skill, 100-200 lines each
+
+### Phase 3: TypeScript stubs (~35 files total)
+- `types.ts` first (all other files depend on types)
+- API clients, then business logic, then utils, then index.ts
+
+### Phase 4: HTML showcase page
+- `public/skills.html` - self-contained, ~60-80KB
+
+### Phase 5: Navigation update
+- Add "Skills" link to topbar-nav and footer in `index.html`, `competitors.html`, `landscape.html`
+
+## Key Files to Reference/Modify
+
+- `public/index.html` - CSS vars, topbar/footer pattern, needs nav update
+- `public/competitors.html` - Card grid, bar chart patterns, needs nav update
+- `public/landscape.html` - Needs nav update
+- `skill-research.md` - Source of all skill details
+- `docs/PROJECT-SPEC.md` - TypeScript structure and SKILL.md format
+
+## Verification
+
+1. Open `public/skills.html` in browser - verify dark theme, responsive layout, all 5 skills render
+2. Check all navigation links work across 4 pages
+3. Verify TypeScript compiles: `cd skills/bnb-token-analyzer && npx tsc --noEmit`
+4. Verify SKILL.md files have valid YAML frontmatter
+5. Deploy preview: `vercel` and test all pages
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /Users/kienduong/.claude/projects/-Users-kienduong-works-kien-ai-space-projects-clawfriend-skill/105308ad-53ec-42f0-a9b4-3cdd4c770ce9.jsonl
+
+---
+
+tạo claude research skill cho project này
+
+---
+
+[Request interrupted by user for tool use]
