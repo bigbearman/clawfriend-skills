@@ -9,18 +9,18 @@ This folder contains raw data sources and references used throughout the ClawFri
 ### Competitive Landscape
 | Competitor | Source | Link | Date Accessed | Key Data Point |
 |------------|--------|------|---------------|----------------|
-| Virtuals Protocol | CoinGecko + Official Site | https://www.virtuals.io | 2026-02-24 | $39.5M revenue, 18K agents |
-| MyShell | Official Site + Press | https://myshell.ai | 2026-02-24 | 5M users, 200K agents |
-| Fetch.ai | Official Site + CoinMarketCap | https://fetch.ai | 2026-02-24 | 2.5M agents, 34M tx |
-| Olas Pearl | Official Site + Crunchbase | https://olas.network | 2026-02-24 | $13.8M funding, 6M tx |
-| ElizaOS | GitHub + Docs | https://elizaos.github.io/eliza/ | 2026-02-24 | 268 plugins, 16K stars |
-| Griffin AI | Official Site | https://griffain.com | 2026-02-24 | 15K agents, 265K signups |
-| CreatorBid | Official Site | https://creatorbid.com | 2026-02-24 | 3,500 agents |
-| Morpheus | Official Site + DeFiLlama | https://mor.org | 2026-02-24 | $320M TVL |
+| Virtuals Protocol | CoinGecko + Official Site + WebSearch | https://www.virtuals.io | 2026-02-25 | $39.5M+ rev, 18K agents, $430.5M mcap, Revenue Network + Eastworld Labs |
+| MyShell | CoinGecko + WebSearch | https://myshell.ai | 2026-02-25 | 5M users, 200K agents, $7.95M mcap, ShellAgent 2.0 |
+| Fetch.ai | CoinGecko | https://fetch.ai | 2026-02-25 | $349M mcap, $0.154 FET |
+| Olas Pearl | CoinGecko | https://olas.network | 2026-02-25 | $9.09M mcap, $0.039 OLAS |
+| ElizaOS | CoinGecko + WebSearch | https://elizaos.github.io/eliza/ | 2026-02-25 | Token migrated to ELIZAOS, $921K mcap, Plugin Registry planned |
+| Griffin AI | CoinGecko | https://griffain.com | 2026-02-25 | $7.77M mcap, $0.0077 GRIFFAIN |
+| CreatorBid | CoinGecko | https://creatorbid.com | 2026-02-25 | $3.28M mcap, $0.0088 CB |
+| Morpheus | CoinGecko | https://mor.org | 2026-02-25 | $4.6M mcap, $0.668 MOR (TVL unverified) |
 | ClawHub | Official Registry | https://clawhub.com | 2026-02-24 | 3,286 skills, 1.5M downloads |
 | MCP Ecosystem | Official Docs | https://modelcontextprotocol.io | 2026-02-24 | 17K+ servers |
-| Bittensor | Official Site | https://bittensor.com | 2026-02-24 | 130 subnets |
-| SingularityNET | Official Site | https://singularitynet.io | 2026-02-24 | ~70 services |
+| Bittensor | CoinGecko | https://bittensor.com | 2026-02-25 | $1.64B mcap, $171.03 TAO, 130 subnets |
+| SingularityNET | CoinGecko | https://singularitynet.io | 2026-02-25 | $18.3M mcap, $0.068 AGIX |
 
 ### Platform Analysis (ClawFriend)
 | Page | URL | Status | Key Finding |
@@ -64,12 +64,13 @@ This folder contains raw data sources and references used throughout the ClawFri
 | Day 1 | Platform crawl + business model + initial competitors | PLATFORM-ANALYSIS.md, BUSINESS-MODEL.md, COMPETITOR-ANALYSIS.md, PROJECT-SPEC.md |
 | Day 2 | Evaluation report + HTML reports + deployment | EVALUATION-REPORT.md, index.html, competitors.html |
 | Day 3 | Deep competitive landscape + skill research + GTM | landscape.html, competitive-landscape.md, skill-research.md, distribution-plan.md |
+| Day 4 | `/research competitors` + `/research market` — prices, TVL, market trends | competitive-landscape.md, strategic-analysis.md, data/README.md |
 
 ---
 
 ## Verification Notes
 
-- All competitor metrics are point-in-time (2026-02-24) and may change rapidly
+- All competitor metrics are point-in-time (2026-02-25 for prices, 2026-02-24 for qualitative) and may change rapidly
 - TVL and token prices in crypto fluctuate significantly day-to-day
 - ClawFriend traction data limited by JS-rendered pages (actual on-chain data may differ)
 - "0 Twitter mentions" needs manual verification (web search API may miss recent posts)

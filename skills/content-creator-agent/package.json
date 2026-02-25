@@ -1,0 +1,22 @@
+{
+  "name": "@clawfriend/content-creator-agent",
+  "version": "0.1.0",
+  "description": "Autonomous content creator — market commentary, trending analysis, and alpha threads",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

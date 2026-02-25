@@ -1,6 +1,6 @@
 # Deliverable 1: Competitive Landscape
 
-> **Weight:** 25% | **Date:** 2026-02-24
+> **Weight:** 25% | **Date:** 2026-02-25
 
 ---
 
@@ -15,7 +15,7 @@
 | 5 | ElizaOS (ai16z) | [elizaos.ai](https://elizaos.github.io/eliza/) | Chain-agnostic | 268 plugins, 16K GitHub stars | Open-source + $ai16z token |
 | 6 | Griffin AI | [griffain.com](https://griffain.com) | Solana | 15K agents, 265K signups | SaaS subscription |
 | 7 | CreatorBid | [creatorbid.com](https://creatorbid.com) | Base | 3,500+ agents | Token bonding curves |
-| 8 | Morpheus Network | [mor.org](https://mor.org) | Multi-chain | $320M TVL | $MOR compute marketplace |
+| 8 | Morpheus Network | [mor.org](https://mor.org) | Multi-chain | $4.6M mcap (TVL unverified) | $MOR compute marketplace |
 | 9 | SingularityNET | [singularitynet.io](https://singularitynet.io) | Cardano/Ethereum | ~70 services | AGIX pay-per-call |
 | 10 | ClawHub (OpenClaw) | [clawhub.com](https://clawhub.com) | N/A (registry) | 3,286 skills, 1.5M downloads | FREE (open-source) |
 | 11 | MCP Ecosystem | [modelcontextprotocol.io](https://modelcontextprotocol.io) | N/A (protocol) | 17K+ servers | $0 (no monetization) |
@@ -61,16 +61,21 @@ Category C: On-Chain Agent Services (infrastructure)
 - **Chain / Ecosystem:** Base + Solana (multi-chain)
 - **Data:**
   - 18,000+ agents deployed
-  - $39.5M cumulative protocol revenue
-  - $477.57M total aGDP (agent GDP)
-  - $VIRTUAL FDV ~$1.2B (Feb 2026)
+  - $39.5M+ cumulative protocol revenue
+  - $470M+ total aGDP (agent GDP)
+  - $VIRTUAL market cap ~$430.5M, price $0.656 (Source: CoinGecko, 2026-02-25)
+  - $13.23B monthly trading volume
   - 100K+ unique token holders
+- **Recent Developments (Feb 2026):**
+  - **Revenue Network** (Feb 12, 2026) — on-chain AI network for autonomous agent-to-agent commerce via ACP
+  - **Eastworld Labs** (Feb 23, 2026) — AI accelerator for humanoid robots with 30+ Unitree G1 robots, hybrid human-agent economy
+  - **Ethy AI** — standout agent processing 2M+ transactions
 - **Monetization:** 1% commission on every agent token launch that graduates from bonding curve. Revenue Network distributes earnings. x402 micropayment protocol for agent-to-agent transactions.
 - **Strengths:**
-  - Proven revenue model ($39.5M is not speculative)
-  - Agent-to-agent commerce actually works (ACP + x402)
+  - Proven revenue model ($39.5M+ is not speculative)
+  - Agent-to-agent commerce actually works (ACP + x402 + Revenue Network)
   - Multi-chain (Base + Solana) = broader reach
-  - Moving into physical robotics (BitRobotNetwork)
+  - Moving into physical robotics (Eastworld Labs, 30+ humanoid robots)
   - Strong developer ecosystem (GAME framework, Unicorn, Butler)
 - **Weaknesses:**
   - Agent quality varies wildly (many spam/meme agents)
@@ -89,8 +94,13 @@ Category C: On-Chain Agent Services (infrastructure)
 - **Data:**
   - 5M+ registered users
   - 200K+ agents created
-  - Backed by Polychain Capital, Binance Labs
-  - Shell token on BNB Chain
+  - Backed by YZi Labs, Dragonfly, OKX Ventures, GSR, Animoca Brands ($16.6M total funding)
+  - $SHELL market cap ~$7.95M, price $0.029 (Source: CoinGecko, 2026-02-25)
+- **Recent Developments (Feb 2026):**
+  - **ShellAgent 2.0** — BNB Chain integration, single-prompt-to-app capability
+  - **ShellAgent framework updates** (Feb 16) — protocol improvements, IM integration, on-chain intelligence
+  - **CARV Partnership** (Aug 2025) — decentralized data tools for AI agents
+  - **Binance Airdrop** — 25M SHELL distributed to BNB stakers (Sept 2025)
 - **Monetization:** Freemium (free tier + paid credits). Shell token for premium features and creator rewards.
 - **Strengths:**
   - Massive user base (5M) on the SAME chain as ClawFriend
@@ -166,9 +176,16 @@ Category C: On-Chain Agent Services (infrastructure)
 - **Data:**
   - 268 official plugins
   - 16K+ GitHub stars
-  - $ai16z token (governance)
+  - $ELIZAOS token (migrated from $ai16z via Chainlink CCIP, Feb 4, 2026)
+  - Market cap ~$921K, price $0.0008 (Source: CoinGecko, 2026-02-25)
   - Widely adopted as agent framework
-- **Monetization:** Open-source (free). Revenue from $ai16z token ecosystem. No direct plugin marketplace fees.
+- **Recent Developments (Feb 2026):**
+  - **Token migration** (Feb 4) — AI16Z → ELIZAOS via Chainlink CCIP cross-chain
+  - **EVM ecosystem expansion** — Ethereum L2 integration for agent coordination (Q1 2026)
+  - **Generative Treasury** — AI agents autonomously managing liquidity and yield (Q1 2026)
+  - **Eliza Cloud** — unified platform with single API key for agent deployment (planned)
+  - **Plugin Registry** — public repository for AI agent plugins (TBA)
+- **Monetization:** Open-source (free). Revenue from $ELIZAOS token ecosystem. No direct plugin marketplace fees.
 - **Strengths:**
   - Largest open-source agent framework
   - Plugin ecosystem (268 plugins)
@@ -235,9 +252,10 @@ Category C: On-Chain Agent Services (infrastructure)
 - **Description:** Decentralized AI compute marketplace. Provides compute resources for AI agents. $MOR token for incentivizing compute providers.
 - **Chain / Ecosystem:** Multi-chain (Arbitrum, Ethereum)
 - **Data:**
-  - $320M TVL in staking
+  - $MOR market cap ~$4.6M, price $0.668 (Source: CoinGecko, 2026-02-25)
   - $MOR token live
   - Compute marketplace operational
+  - Note: Previous $320M TVL figure needs re-verification (DefiLlama API returned error 2026-02-25)
 - **Monetization:** $MOR token rewards for compute providers. Marketplace fees for AI compute.
 - **Strengths:**
   - Massive TVL ($320M) shows capital confidence
@@ -260,7 +278,7 @@ Category C: On-Chain Agent Services (infrastructure)
   - 3,286 published skills
   - 1.5M+ total downloads
   - FREE (no monetization)
-  - Part of OpenClaw ecosystem (214K+ GitHub stars)
+  - Part of OpenClaw ecosystem (135K+ GitHub stars)
 - **Monetization:** **None.** All skills are free to publish and install. Zero revenue.
 - **Strengths:**
   - Massive skill library (3,286 vs ClawFriend's 2)
@@ -365,10 +383,41 @@ Category C: On-Chain Agent Services (infrastructure)
 
 ---
 
+## Threat Matrix
+
+Xếp hạng mức độ đe dọa dựa trên 3 yếu tố: (1) Cùng chain BNB? (2) Cùng model bonding curve? (3) Quy mô user base.
+
+| # | Đối thủ | Cùng chain? | Cùng model? | User base | Threat Level | Lý do |
+|---|---------|-------------|-------------|-----------|-------------|-------|
+| 1 | **MyShell** | BNB (SAME) | Khác (no bonding curve) | 5M users | **CRITICAL** | Cùng chain, dominant user base, VC-backed, có thể thêm bonding curve bất cứ lúc nào |
+| 2 | **CreatorBid** | Base (khác) | SAME (bonding curve + agents) | 3,500 agents | **HIGH** | Model gần nhất với ClawFriend, nếu expand sang BNB = đối đầu trực tiếp |
+| 3 | **Virtuals Protocol** | Base/Solana (khác) | Partially (token + agent economy) | 18K agents, $39.5M rev | **MEDIUM** | Quá lớn để cạnh tranh trực tiếp, nhưng nếu expand sang BNB = crush |
+| 4 | **ElizaOS** | Chain-agnostic | Khác (framework, no economy) | 268 plugins, 16K GH stars | **MEDIUM** | Nếu launch plugin marketplace with monetization → cạnh tranh skill market |
+| 5 | **Griffin AI** | Solana (khác) | Khác (SaaS) | 265K signups | **LOW-MEDIUM** | Khác chain + khác model, nhưng nếu thêm BNB support = threat |
+| 6 | **Fetch.ai** | Cosmos (khác) | Khác (enterprise) | 2.5M agents | **LOW** | Enterprise focus, khác segment hoàn toàn |
+| 7 | **ClawHub** | N/A | Khác (free registry) | 3,286 skills | **LOW** | Complementary — không có monetization, ClawFriend là upgrade layer |
+| 8 | **Bittensor** | Substrate | Khác (compute) | 130 subnets | **LOW** | Infrastructure layer, không competitive |
+
+**Key insight:** Mối đe dọa lớn nhất là **MyShell** (cùng BNB Chain, 5M users, VC backing). Mối đe dọa thứ hai là **CreatorBid** (cùng bonding curve model, có thể expand chain). ClawFriend phải chiếm niche "OpenClaw skill economy on BNB" trước khi MyShell thêm bonding curve hoặc CreatorBid thêm BNB Chain.
+
+---
+
+## Market Sizing (TAM / SAM / SOM)
+
+| Metric | Size | Basis |
+|--------|------|-------|
+| **TAM** (Total Addressable Market) | **~$4.34B** | CoinGecko lists 550+ AI agent projects with combined market cap ~$4.34B (Feb 2026). Toàn bộ Web3 AI agent economy. |
+| **SAM** (Serviceable Addressable Market) | **~$200-400M** | BNB Chain AI segment: 58 AI projects on BNB Chain, ~1M daily active addresses. BNB Chain chiếm ~10% total crypto AI market cap. OpenClaw ecosystem (135K+ GitHub stars, 3,286 skills, 1.5M downloads) là primary addressable community. |
+| **SOM** (Serviceable Obtainable Market) | **~$2-5M Year 1** | Target capture 5-10% of ClawHub developers (164-329 skills ported), 1,000-5,000 active traders. At average $10 CAC and 5% protocol fee on estimated $40M-$100M annualized trading volume → $2-5M protocol revenue Year 1. |
+
+**Conservative math:** Nếu ClawFriend đạt 100 agents active, mỗi agent có 50 shareholders trung bình, trading volume 1 BNB/day/agent → 100 BNB/day × 5% protocol fee = 5 BNB/day = **~$3,000/day = ~$1.1M/year** protocol revenue.
+
+---
+
 ## Market Analysis
 
 **What stage is the market in?**
-> **Early Growth.** The Web3 AI agent marketplace is past the concept stage (2023-2024) and into early traction (2025-2026). Leaders like Virtuals have proven revenue ($39.5M), but most platforms are still pre-revenue. The market is consolidating around 3-4 leading platforms with room for niche players. Window of opportunity: **12-18 months** before the top 3 lock in market share.
+> **Early Growth.** The Web3 AI agent marketplace is past the concept stage (2023-2024) and into early traction (2025-2026). CoinGecko lists 550+ AI agent projects with ~$4.34B combined market cap. Leaders like Virtuals have proven revenue ($39.5M+), but most platforms are still pre-revenue. The market is consolidating around 3-4 leading platforms with room for niche players. Window of opportunity: **12-18 months** before the top 3 lock in market share.
 
 **Who is leading?**
 > **Virtuals Protocol** is the clear leader with $39.5M revenue, 18K agents, and multi-chain presence. **MyShell** leads in user count (5M) but targets a broader AI market. **Fetch.ai** leads in agent registrations (2.5M) but is infrastructure-focused. On BNB Chain specifically, **MyShell** dominates with 5M users vs ClawFriend's near-zero.
@@ -397,7 +446,7 @@ Category C: On-Chain Agent Services (infrastructure)
 > 1. **OpenClaw-native** — only economy platform built specifically for OpenClaw's skill ecosystem
 > 2. **BNB Chain agent economy** — uncontested niche (MyShell is broader, Virtuals is on Base/Solana)
 > 3. **Trading + Social + Skills** — only platform with all 3 layers integrated
-> 4. **Timing** — OpenClaw at 214K+ GitHub stars, BNB Chain investing in AI ($100K hackathon)
+> 4. **Timing** — OpenClaw at 135K+ GitHub stars, BNB Chain investing in AI ($100K hackathon)
 > 5. **Monetization gap exploit** — ClawHub has 3,286 free skills; ClawFriend can be the paid layer
 
 **Where ClawFriend is behind:**
@@ -411,13 +460,15 @@ Category C: On-Chain Agent Services (infrastructure)
 **Segment that competitors are leaving open:**
 > **Monetized OpenClaw skill marketplace on BNB Chain.** ClawHub has the skills (3,286) but charges $0. MCP has the servers (17K) but charges $0. ElizaOS has plugins (268) but charges $0. The entire skill/plugin ecosystem is running on FREE. ClawFriend can be the first to add a payment/gating layer (holder-gated skills via bonding curve keys).
 
-**Specific competitive advantages:**
-> 1. **First OpenClaw economy** — `npx clawhub@latest install clawfriend` integration already works
-> 2. **BNB gas advantage** — $0.01-0.05 per tx vs Base ($0.10-0.50) and Ethereum ($5-50)
-> 3. **Asian market access** — BNB Chain's 50M+ wallets are concentrated in SEA
-> 4. **Positive-sum design** — addresses friend.tech's fatal flaw (proved by its death in Sept 2024)
-> 5. **Skill gating via keys** — unique mechanism: hold agent keys to unlock premium skills
+**Specific competitive advantages (with spec data):**
+> 1. **First OpenClaw economy** — `npx clawhub@latest install clawfriend` integration already works. 3,286 ClawHub skills × $0 revenue = massive monetization gap for ClawFriend to fill.
+> 2. **BNB gas advantage** — $0.01-0.05 per tx vs Base ($0.10-0.50) and Ethereum ($5-50). 10x cheaper than CreatorBid on Base → frequent skill trading is economically viable.
+> 3. **Ultra-low barrier to entry** — First share costs only **0.0000625 BNB (~$0.04)** via bonding curve formula `price = supply²/16000`. Users can start participating for under $1.
+> 4. **Creator income model** — 5% creator fee on every trade. At $10K daily volume, a single agent creator earns **$500/day = $15,000/month** passive income (spec-documented projection).
+> 5. **Asian market access** — BNB Chain's 50M+ wallets are concentrated in SEA where ClawFriend operates under Hong Kong SAR law.
+> 6. **Positive-sum design** — 10% round-trip cost (~19% buy+sell) discourages short-term flipping, math favors longer holds. Addresses friend.tech's fatal flaw (proved by its death in Sept 2024).
+> 7. **Skill gating via shares** — unique mechanism: hold agent shares to unlock premium (holder-gated) skills. Creates genuine economic incentive to hold, not just speculate.
 
 ---
 
-_Data sources: [ClawFriend](https://clawfriend.ai), [Virtuals Protocol](https://www.virtuals.io), [MyShell](https://myshell.ai), [Fetch.ai](https://fetch.ai), [Olas](https://olas.network), [ElizaOS](https://elizaos.github.io/eliza/), [Griffin](https://griffain.com), [CreatorBid](https://creatorbid.com), [Morpheus](https://mor.org), [ClawHub](https://clawhub.com), [MCP](https://modelcontextprotocol.io), [Bittensor](https://bittensor.com), [CoinGecko](https://coingecko.com), [CoinMarketCap](https://coinmarketcap.com), [DeFiLlama](https://defillama.com). Accessed 2026-02-24._
+_Data sources: [ClawFriend](https://clawfriend.ai), [Virtuals Protocol](https://www.virtuals.io), [MyShell](https://myshell.ai), [Fetch.ai](https://fetch.ai), [Olas](https://olas.network), [ElizaOS](https://elizaos.github.io/eliza/), [Griffin](https://griffain.com), [CreatorBid](https://creatorbid.com), [Morpheus](https://mor.org), [ClawHub](https://clawhub.com), [MCP](https://modelcontextprotocol.io), [Bittensor](https://bittensor.com), [CoinGecko](https://coingecko.com), [CoinMarketCap](https://coinmarketcap.com), [DeFiLlama](https://defillama.com). Token prices updated 2026-02-25. Qualitative data accessed 2026-02-24._

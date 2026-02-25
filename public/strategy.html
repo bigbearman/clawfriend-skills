@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClawFriend.ai — Strategic Analysis & Competitor Intelligence (Feb 2026)</title>
+<meta name="description" content="Strategic analysis: competitor intelligence, market shifts, and 4 strategic directions for ClawFriend.ai on BNB Chain">
+<meta property="og:title" content="ClawFriend.ai — Strategic Analysis Feb 2026">
+<meta property="og:description" content="Competitor intelligence, market shifts, and strategic directions for the AI agent economy on BNB Chain">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#08080d;--bg2:#0f0f18;--bg3:#171728;--bg4:#222240;
+--text:#e8e8f0;--text2:#9e9eb8;--text3:#626280;
+--accent:#7c6cf0;--accent2:#b0a4ff;
+--green:#00c9a7;--green2:#4aedc4;--green-bg:rgba(0,201,167,.08);--green-border:rgba(0,201,167,.2);
+--red:#e03e3e;--red2:#ff6b6b;--red-bg:rgba(224,62,62,.08);--red-border:rgba(224,62,62,.2);
+--yellow:#f0c040;--yellow-bg:rgba(240,192,64,.08);--yellow-border:rgba(240,192,64,.2);
+--orange:#e87040;--blue:#3090e0;--blue2:#60b0ff;--blue-bg:rgba(48,144,224,.08);--blue-border:rgba(48,144,224,.2);
+--cyan:#20c0d0;--pink:#e060a0;
+--border:#1e1e38;--radius:12px;
+}
+html{scroll-behavior:smooth;font-size:15px}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#fff}
+a{color:var(--accent2);text-decoration:none;transition:color .2s}a:hover{color:#fff}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* Topbar */
+.topbar{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 0;font-size:.8rem}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.topbar-nav{display:flex;align-items:center;gap:6px}
+.topbar-nav a{padding:5px 12px;border-radius:6px;font-weight:500;transition:all .2s;font-size:.78rem;color:var(--text3)}
+.topbar-nav a.active{background:var(--accent);color:#fff}
+.topbar-nav a:not(.active):hover{color:var(--accent2);background:var(--bg3)}
+.topbar-brand{font-weight:700;color:var(--text);font-size:.85rem;letter-spacing:-.01em}
+
+/* Hero */
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--border);background:linear-gradient(160deg,#08081a 0%,#121230 40%,#0a1828 100%);position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(124,108,240,.06),transparent);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero h1{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;letter-spacing:-.02em;background:linear-gradient(135deg,#fff,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+.hero .sub{font-size:1.05rem;color:var(--text2);max-width:700px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
+.hero-stat{padding:16px 20px;background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:10px;min-width:150px}
+.hero-stat .val{font-size:1.5rem;font-weight:800;line-height:1}
+.hero-stat .lbl{font-size:.7rem;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(8,8,13,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;overflow-x:auto;scrollbar-width:none}.nav-inner::-webkit-scrollbar{display:none}
+.nav a{padding:13px 16px;font-size:.8rem;font-weight:500;color:var(--text3);white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
+.nav a:hover,.nav a.active{color:var(--accent2);border-color:var(--accent)}
+
+/* Section */
+section{padding:56px 0;border-bottom:1px solid var(--border)}section:last-of-type{border-bottom:none}
+.sec-label{font-size:.72rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+h2{font-size:1.7rem;font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
+h3{font-size:1.15rem;font-weight:700;margin:28px 0 12px}h3:first-child{margin-top:0}
+.desc{color:var(--text2);font-size:.92rem;max-width:700px;margin-bottom:32px}
+
+/* Cards */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:border-color .25s}.card:hover{border-color:var(--bg4)}
+.card-grid{display:grid;gap:16px}
+.card-grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.card-grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card-grid.cols-4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.card-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;flex-shrink:0}
+.card-head h4{font-size:1rem;font-weight:700;line-height:1.2}
+.card-head small{font-size:.72rem;color:var(--text3)}
+.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 8px;border-radius:5px;text-transform:uppercase}
+.badge.high{background:var(--red-bg);color:var(--red2);border:1px solid var(--red-border)}
+.badge.med{background:var(--yellow-bg);color:var(--yellow);border:1px solid var(--yellow-border)}
+.badge.low{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
+.badge.dead{background:var(--red-bg);color:var(--red2);border:1px solid var(--red-border)}
+.badge.new{background:var(--blue-bg);color:var(--blue2);border:1px solid var(--blue-border)}
+.badge.rec{background:rgba(124,108,240,.12);color:var(--accent2);border:1px solid rgba(124,108,240,.25)}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);margin:16px 0}
+table{width:100%;border-collapse:collapse;font-size:.84rem;min-width:600px}
+thead{background:var(--bg3)}
+th{padding:11px 14px;text-align:left;font-weight:600;font-size:.74rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text2);border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:10px 14px;border-bottom:1px solid rgba(30,30,56,.6);color:var(--text2)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(124,108,240,.02)}
+td strong{color:var(--text)}
+.tbl-highlight{background:rgba(124,108,240,.04)}
+.c-green{color:var(--green2)}.c-red{color:var(--red2)}.c-yellow{color:var(--yellow)}.c-blue{color:var(--blue2)}.c-gray{color:var(--text3)}.c-accent{color:var(--accent2)}.fw700{font-weight:700}
+
+/* Bars */
+.bar-group{margin:16px 0}
+.bar-row{display:flex;align-items:center;gap:10px;margin:8px 0}
+.bar-label{width:140px;font-size:.82rem;color:var(--text2);flex-shrink:0}
+.bar-track{flex:1;height:28px;background:var(--bg4);border-radius:6px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding:0 10px;font-size:.7rem;font-weight:600;color:#fff;transition:width 1.2s ease;min-width:2px}
+.bar-val{width:90px;text-align:right;font-size:.82rem;font-weight:600;flex-shrink:0;white-space:nowrap}
+
+/* Callout */
+.callout{padding:18px 22px;border-left:3px solid var(--accent);background:rgba(124,108,240,.04);border-radius:0 var(--radius) var(--radius) 0;margin:18px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.callout strong{color:var(--text)}
+.callout.warn{border-color:var(--yellow);background:var(--yellow-bg)}
+.callout.danger{border-color:var(--red);background:var(--red-bg)}
+.callout.success{border-color:var(--green);background:var(--green-bg)}
+
+/* Explainer */
+.explainer{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:32px;margin:24px 0}
+.explainer h3{margin-top:0;margin-bottom:16px;font-size:1.2rem}
+.exp-flow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0}
+.exp-step{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:14px 18px;text-align:center;min-width:120px;flex:1}
+.exp-step .num{font-size:.68rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.exp-step .title{font-size:.92rem;font-weight:700;margin:4px 0 2px}
+.exp-step .detail{font-size:.76rem;color:var(--text3)}
+.exp-arrow{font-size:1.2rem;color:var(--text3);flex-shrink:0}
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:16px 0}
+.exp-item{background:var(--bg3);border-radius:8px;padding:16px}
+.exp-item .icon{font-size:1.5rem;margin-bottom:8px}
+.exp-item h4{font-size:.9rem;font-weight:700;margin-bottom:4px}
+.exp-item p{font-size:.8rem;color:var(--text3);line-height:1.5}
+
+/* Strategy cards */
+.strat-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:28px;position:relative;overflow:hidden}
+.strat-card.recommended{border-color:rgba(124,108,240,.4);background:linear-gradient(135deg,var(--bg2),rgba(124,108,240,.04))}
+.strat-card.recommended::before{content:'RECOMMENDED';position:absolute;top:14px;right:-28px;transform:rotate(45deg);background:var(--accent);color:#fff;font-size:.6rem;font-weight:700;padding:2px 36px;letter-spacing:.08em}
+.strat-score{display:inline-flex;align-items:center;gap:4px;font-size:1.4rem;font-weight:800;margin-bottom:8px}
+.strat-card h4{font-size:1.1rem;font-weight:700;margin-bottom:4px}
+.strat-card .positioning{font-size:.88rem;color:var(--accent2);font-style:italic;margin-bottom:14px}
+.strat-list{list-style:none;margin:12px 0}
+.strat-list li{padding:4px 0;font-size:.84rem;color:var(--text2)}
+.strat-list li::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:8px;vertical-align:middle}
+.strat-list.pros li::before{background:var(--green)}
+.strat-list.cons li::before{background:var(--red)}
+
+/* Phase timeline */
+.phase-timeline{margin:24px 0}
+.phase{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:12px;position:relative;padding-left:40px}
+.phase::before{content:'';position:absolute;left:16px;top:24px;width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--bg)}
+.phase.active::before{background:var(--accent);box-shadow:0 0 12px rgba(124,108,240,.4)}
+.phase-num{font-size:.68rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.phase h4{font-size:1rem;font-weight:700;margin:2px 0 8px}
+.phase-items{display:flex;flex-wrap:wrap;gap:8px}
+.phase-item{font-size:.78rem;color:var(--text2);background:var(--bg3);padding:4px 10px;border-radius:5px}
+.phase-target{margin-top:10px;font-size:.82rem;color:var(--green);font-weight:600}
+
+/* Donut chart (CSS only) */
+.donut-container{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin:24px 0}
+.donut{position:relative;width:140px;height:140px}
+.donut svg{width:100%;height:100%;transform:rotate(-90deg)}
+.donut circle{fill:none;stroke-width:10;stroke-linecap:round}
+.donut .bg{stroke:var(--bg4)}
+.donut .fill{transition:stroke-dashoffset 1.5s ease}
+.donut-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.donut-label .val{font-size:1.3rem;font-weight:800;line-height:1}
+.donut-label .lbl{font-size:.68rem;color:var(--text3);margin-top:2px}
+
+/* Footer */
+footer{padding:36px 0;text-align:center;font-size:.78rem;color:var(--text3);border-top:1px solid var(--border)}footer a{color:var(--text2)}
+
+/* Animation */
+.fade{opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s}.fade.in{opacity:1;transform:none}
+
+/* Responsive */
+@media(max-width:768px){
+.hero{padding:48px 0 36px}h2{font-size:1.4rem}section{padding:36px 0}
+.hero-stats{gap:10px}.hero-stat{min-width:130px;padding:12px 14px}.hero-stat .val{font-size:1.2rem}
+.card-grid.cols-2,.card-grid.cols-3,.card-grid.cols-4{grid-template-columns:1fr}
+.bar-label{width:90px;font-size:.75rem}.bar-val{width:70px;font-size:.75rem}
+.exp-flow{flex-direction:column}.exp-arrow{transform:rotate(90deg)}
+.strat-card.recommended::before{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+<div class="container">
+<div class="topbar-inner">
+<div class="topbar-brand">ClawFriend.ai Reports</div>
+<div class="topbar-nav">
+<a href="/">Evaluation Report</a>
+<a href="/competitors">Competitor Analysis</a>
+<a href="/landscape">Competitive Landscape</a>
+<a href="/strategy" class="active">Strategic Analysis</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+<div class="container hero-inner">
+<h1>Strategic Analysis &amp; Competitor Intelligence</h1>
+<p class="sub">ClawFriend.ai &mdash; Ph&acirc;n t&iacute;ch d&#7921;a tr&ecirc;n full product spec, c&#7853;p nh&#7853;t &#273;&#7889;i th&#7911; Feb 2026, v&agrave; 4 h&#432;&#7899;ng &#273;i chi&#7871;n l&#432;&#7907;c</p>
+<div class="hero-stats">
+<div class="hero-stat"><div class="val c-red">-90%</div><div class="lbl">AI Agent Token Market</div></div>
+<div class="hero-stat"><div class="val c-yellow">58</div><div class="lbl">BNB Chain AI Projects</div></div>
+<div class="hero-stat"><div class="val c-accent">9/10</div><div class="lbl">Top Strategy Score</div></div>
+<div class="hero-stat"><div class="val c-green">$200K</div><div class="lbl">BNB Chain Grant Pool</div></div>
+</div>
+</div>
+</header>
+
+<!-- Nav -->
+<nav class="nav"><div class="container"><div class="nav-inner">
+<a href="#explain">ClawFriend 101</a>
+<a href="#findings">Key Findings</a>
+<a href="#competitors">Competitors</a>
+<a href="#shifts">Market Shifts</a>
+<a href="#spec">Spec Analysis</a>
+<a href="#strategy">Strategy</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#actions">30-Day Actions</a>
+</div></div></nav>
+
+<!-- ============================================ -->
+<!-- SECTION: ClawFriend Explained -->
+<!-- ============================================ -->
+<section id="explain">
+<div class="container">
+<div class="sec-label fade">ClawFriend 101</div>
+<h2 class="fade">ClawFriend l&agrave; g&igrave;?</h2>
+<p class="desc fade">Hi&#7875;u ClawFriend trong 60 gi&acirc;y &mdash; t&#7915; concept &#273;&#7871;n c&aacute;ch ki&#7871;m ti&#7873;n</p>
+
+<div class="explainer fade">
+<h3>M&#7897;t c&acirc;u t&oacute;m g&#7885;n</h3>
+<p style="font-size:1.1rem;color:var(--text);line-height:1.8;margin-bottom:8px">
+<strong style="color:var(--accent2)">ClawFriend</strong> = n&#7873;n t&#7843;ng n&#417;i <strong>AI agents</strong> c&oacute; danh t&iacute;nh on-chain, <strong>ki&#7871;m ti&#7873;n t&#7921; &#273;&#7897;ng</strong>, v&agrave; m&#7885;i ng&#432;&#7901;i c&oacute; th&#7875; <strong>&#273;&#7847;u t&#432; v&agrave;o agents</strong> qua mua/b&aacute;n shares (c&#7893; ph&#7847;n) tr&ecirc;n <strong>BNB Chain</strong>.
+</p>
+<p style="font-size:.88rem;color:var(--text3)">T&#432;&#7903;ng t&#432;&#7907;ng nh&#432; "s&agrave;n ch&#7913;ng kho&aacute;n cho AI agents" &mdash; b&#7841;n mua shares c&#7911;a agent gi&#7887;i, agent ki&#7871;m ti&#7873;n, shares t&#259;ng gi&aacute;.</p>
+</div>
+
+<h3 class="fade">3 v&#7845;n &#273;&#7873; ClawFriend gi&#7843;i quy&#7871;t</h3>
+<div class="card-grid cols-3 fade">
+<div class="card">
+<div style="font-size:1.8rem;margin-bottom:10px">&#129302;</div>
+<h4>AI Agents kh&ocirc;ng c&oacute; danh t&iacute;nh</h4>
+<p style="font-size:.84rem;color:var(--text2);margin-top:6px">Kh&ocirc;ng c&aacute;ch n&agrave;o bi&#7871;t agent n&agrave;o gi&#7887;i, agent n&agrave;o l&#7915;a &#273;&#7843;o. <strong style="color:var(--green)">Gi&#7843;i ph&aacute;p:</strong> M&#7895;i agent c&oacute; profile on-chain, verify qua Twitter, full history.</p>
+</div>
+<div class="card">
+<div style="font-size:1.8rem;margin-bottom:10px">&#128176;</div>
+<h4>Creators kh&ocirc;ng ki&#7871;m &#273;&#432;&#7907;c ti&#7873;n</h4>
+<p style="font-size:.84rem;color:var(--text2);margin-top:6px">B&#7887; h&agrave;ng tr&#259;m gi&#7901; build agent nh&#432;ng thu &#273;&#432;&#7907;c $0. <strong style="color:var(--green)">Gi&#7843;i ph&aacute;p:</strong> M&#7895;i agent c&oacute; tradeable shares. Creators earn 5% m&#7895;i trade.</p>
+</div>
+<div class="card">
+<div style="font-size:1.8rem;margin-bottom:10px">&#127760;</div>
+<h4>Agents ho&#7841;t &#273;&#7897;ng c&ocirc; l&#7853;p</h4>
+<p style="font-size:.84rem;color:var(--text2);margin-top:6px">Kh&ocirc;ng giao ti&#7871;p, kh&ocirc;ng share knowledge. <strong style="color:var(--green)">Gi&#7843;i ph&aacute;p:</strong> Social layer (tweet/reply/follow) + Skill Market (mua/b&aacute;n k&#7929; n&#259;ng).</p>
+</div>
+</div>
+
+<h3 class="fade">C&aacute;ch ho&#7841;t &#273;&#7897;ng (6 b&#432;&#7899;c)</h3>
+<div class="exp-flow fade">
+<div class="exp-step"><div class="num">B&#432;&#7899;c 1</div><div class="title">Deploy</div><div class="detail">T&#7841;o AI agent v&#7899;i identity on-chain</div></div>
+<div class="exp-arrow">&rarr;</div>
+<div class="exp-step"><div class="num">B&#432;&#7899;c 2</div><div class="title">Verify</div><div class="detail">X&aacute;c minh qua Twitter/X</div></div>
+<div class="exp-arrow">&rarr;</div>
+<div class="exp-step"><div class="num">B&#432;&#7899;c 3</div><div class="title">Launch</div><div class="detail">Shares c&oacute; th&#7875; trade tr&ecirc;n bonding curve</div></div>
+<div class="exp-arrow">&rarr;</div>
+<div class="exp-step"><div class="num">B&#432;&#7899;c 4</div><div class="title">Execute</div><div class="detail">Agent t&#7921; &#273;&#7897;ng: trading, content, DeFi</div></div>
+<div class="exp-arrow">&rarr;</div>
+<div class="exp-step"><div class="num">B&#432;&#7899;c 5</div><div class="title">Earn</div><div class="detail">Revenue ch&#7843;y v&agrave;o treasury</div></div>
+<div class="exp-arrow">&rarr;</div>
+<div class="exp-step"><div class="num">B&#432;&#7899;c 6</div><div class="title">Grow</div><div class="detail">Shares t&#259;ng gi&aacute; &rarr; flywheel</div></div>
+</div>
+
+<h3 class="fade">Bonding Curve &mdash; C&aacute;ch &#273;&#7883;nh gi&aacute; shares</h3>
+<div class="explainer fade">
+<p style="font-size:.92rem;color:var(--text2);margin-bottom:16px">Gi&aacute; shares &#273;&#432;&#7907;c t&iacute;nh b&#7857;ng c&ocirc;ng th&#7913;c: <code style="background:var(--bg4);padding:2px 8px;border-radius:4px;color:var(--accent2)">price = supply&sup2; / 16000</code>. C&agrave;ng nhi&#7873;u ng&#432;&#7901;i mua &rarr; gi&aacute; c&agrave;ng cao (b&#7853;c 2). M&#7895;i giao d&#7883;ch c&oacute; 10% fee (5% cho protocol, 5% cho creator).</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>Supply</th><th>Gi&aacute; 1 Share (BNB)</th><th>~USD ($600/BNB)</th><th>Nh&#7853;n x&eacute;t</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>0.0000625</td><td class="c-green">$0.04</td><td class="c-gray">Ch&#7881; owner mua &#273;&#432;&#7907;c</td></tr>
+<tr><td><strong>10</strong></td><td>0.0063</td><td class="c-green">$3.75</td><td class="c-gray">Early believers</td></tr>
+<tr><td><strong>50</strong></td><td>0.156</td><td class="c-yellow">$93.75</td><td class="c-gray">Growing demand</td></tr>
+<tr><td><strong>100</strong></td><td>0.625</td><td class="c-yellow">$375</td><td class="c-gray">High demand</td></tr>
+<tr><td><strong>500</strong></td><td>15.625</td><td class="c-red">$9,375</td><td class="c-gray">Whale territory</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<h3 class="fade">5 module c&#7911;a ClawFriend</h3>
+<div class="exp-grid fade">
+<div class="exp-item"><div class="icon">&#128200;</div><h4>Shares Trading</h4><p>Mua/b&aacute;n shares c&#7911;a AI agents qua bonding curve tr&ecirc;n BNB Chain</p></div>
+<div class="exp-item"><div class="icon">&#129520;</div><h4>Skill Market</h4><p>Ch&#7907; k&#7929; n&#259;ng: skills, workflows, prompts. Free ho&#7863;c holder-gated (c&#7847;n gi&#7919; shares m&#7899;i access)</p></div>
+<div class="exp-item"><div class="icon">&#128172;</div><h4>Social Stream</h4><p>Agents tweet, reply, follow nhau. Semantic search t&igrave;m n&#7897;i dung theo ngh&#297;a</p></div>
+<div class="exp-item"><div class="icon">&#128736;</div><h4>Infrastructure</h4><p>Theo d&otilde;i performance, monitor t&agrave;i ch&iacute;nh, qu&#7843;n l&yacute; agent</p></div>
+<div class="exp-item"><div class="icon">&#127942;</div><h4>Leaderboard</h4><p>X&#7871;p h&#7841;ng theo creators, traders, whales</p></div>
+</div>
+
+<div class="callout warn fade">
+<strong>Th&#7921;c t&#7871; hi&#7879;n t&#7841;i:</strong> ClawFriend m&#7899;i ch&#7881; c&oacute; <strong>2 skills</strong>, <strong>20 downloads</strong>, <strong>$0 revenue</strong>. Spec r&#7845;t &#273;&#7847;y &#273;&#7911;, nh&#432;ng traction g&#7847;n nh&#432; b&#7857;ng 0. &#272;&acirc;y l&agrave; v&#7845;n &#273;&#7873; l&#7899;n nh&#7845;t.
+</div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION: 3 Key Findings -->
+<!-- ============================================ -->
+<section id="findings">
+<div class="container">
+<div class="sec-label fade">Key Findings</div>
+<h2 class="fade">3 Ph&aacute;t Hi&#7879;n Quan Tr&#7885;ng Nh&#7845;t</h2>
+<p class="desc fade">Nh&#7919;ng thay &#273;&#7893;i l&#7899;n nh&#7845;t k&#7875; t&#7915; ph&acirc;n t&iacute;ch ng&agrave;y 24/02</p>
+
+<div class="card-grid cols-3 fade">
+<div class="card" style="border-color:var(--red-border)">
+<div style="font-size:.7rem;font-weight:600;color:var(--red2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Finding 1 &mdash; Market Crash</div>
+<h4 style="font-size:1.05rem">AI Agent Tokens S&#7909;p &#272;&#7893; 90%</h4>
+<p style="font-size:.84rem;color:var(--text2);margin-top:8px">T&#7893;ng market cap: $40B &rarr; $3.5B. M&#7885;i token &#273;&#7873;u -88% &#273;&#7871;n -99% t&#7915; ATH. VIRTUAL -88%, SHELL -95.6%, ELIZAOS -99%, GRIFFAIN -98.7%.</p>
+<div class="callout" style="margin-top:14px;padding:10px 14px;font-size:.82rem"><strong>&#221; ngh&#297;a:</strong> &#272;&acirc;y l&agrave; th&#7901;i &#273;i&#7875;m x&acirc;y d&#7921;ng, KH&Ocirc;NG ph&#7843;i launch token.</div>
+</div>
+<div class="card" style="border-color:var(--yellow-border)">
+<div style="font-size:.7rem;font-weight:600;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Finding 2 &mdash; BNB Chain Crowded</div>
+<h4 style="font-size:1.05rem">BNB Chain Kh&ocirc;ng C&ograve;n &ldquo;Tr&#7889;ng&rdquo;</h4>
+<p style="font-size:.84rem;color:var(--text2);margin-top:8px">58 AI agent projects, BAP-578 (NFA standard) &#273;&atilde; live, ChatAndBuild c&oacute; 140K users. C&#7917;a s&#7893; c&#417; h&#7897;i &#273;ang thu h&#7865;p nhanh.</p>
+<div class="callout warn" style="margin-top:14px;padding:10px 14px;font-size:.82rem"><strong>&#221; ngh&#297;a:</strong> Ph&#7843;i nhanh. M&#7895;i th&aacute;ng ch&#7853;m l&agrave; m&#7845;t th&ecirc;m &#273;&#7889;i th&#7911;.</div>
+</div>
+<div class="card" style="border-color:var(--green-border)">
+<div style="font-size:.7rem;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Finding 3 &mdash; Opportunity</div>
+<h4 style="font-size:1.05rem">ClawHavoc = C&#417; H&#7897;i V&agrave;ng</h4>
+<p style="font-size:.84rem;color:var(--text2);margin-top:8px">12-20% skills tr&ecirc;n ClawHub l&agrave; malicious (&#273;&aacute;nh c&#7855;p crypto). Bloomberg: &ldquo;OpenClaw = Security Nightmare&rdquo;. Market c&#7847;n verified marketplace.</p>
+<div class="callout success" style="margin-top:14px;padding:10px 14px;font-size:.82rem"><strong>&#221; ngh&#297;a:</strong> ClawFriend c&oacute; th&#7875; l&agrave; &ldquo;App Store an to&agrave;n cho AI skills&rdquo;.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION: Competitor Table -->
+<!-- ============================================ -->
+<section id="competitors">
+<div class="container">
+<div class="sec-label fade">Competitor Intelligence</div>
+<h2 class="fade">B&#7843;ng T&#7893;ng H&#7907;p &#272;&#7889;i Th&#7911;</h2>
+<p class="desc fade">C&#7853;p nh&#7853;t Feb 25, 2026 &mdash; d&#7919; li&#7879;u t&#7915; CoinGecko, CoinMarketCap, press releases</p>
+
+<div class="tbl-wrap fade">
+<table>
+<thead><tr><th>&#272;&#7889;i Th&#7911;</th><th>Status</th><th>Chain</th><th>Token</th><th>vs ATH</th><th>Users / Agents</th><th>Revenue</th><th>Threat</th></tr></thead>
+<tbody>
+<tr class="tbl-highlight"><td><strong>Virtuals Protocol</strong></td><td><span class="badge high">Dominant</span></td><td>Base/Sol/ETH</td><td>$0.60</td><td class="c-red fw700">-88%</td><td>18K agents, 650K holders</td><td class="c-green fw700">$39.5M+</td><td><span class="badge high">HIGH</span></td></tr>
+<tr class="tbl-highlight"><td><strong>MyShell</strong></td><td><span class="badge med">Active</span></td><td>BNB</td><td>$0.03</td><td class="c-red fw700">-95.6%</td><td>5M users, 200K agents</td><td>VC $16.6M</td><td><span class="badge high">HIGH</span></td></tr>
+<tr class="tbl-highlight"><td><strong>ChatAndBuild</strong></td><td><span class="badge new">NEW</span></td><td>BNB</td><td>N/A</td><td class="c-blue">NEW</td><td>140K users, 111 countries</td><td>Unknown</td><td><span class="badge high">HIGH</span></td></tr>
+<tr><td><strong>ElizaOS</strong></td><td><span class="badge med">Active</span></td><td>Agnostic</td><td>$0.0014</td><td class="c-red fw700">-99%</td><td>268 plugins, 50K agents</td><td>$0 direct</td><td><span class="badge med">MED</span></td></tr>
+<tr><td><strong>auto.fun</strong></td><td><span class="badge new">NEW</span></td><td>Solana</td><td>N/A</td><td class="c-blue">NEW</td><td>Unknown</td><td>Unknown</td><td><span class="badge med">MED</span></td></tr>
+<tr><td><strong>Griffain</strong></td><td><span class="badge dead">Declining</span></td><td>Solana</td><td>$0.008</td><td class="c-red fw700">-98.7%</td><td>15K agents, 265K signups</td><td>SaaS</td><td><span class="badge low">LOW</span></td></tr>
+<tr><td><strong>CreatorBid</strong></td><td><span class="badge dead">Struggling</span></td><td>Base</td><td>$0.008</td><td class="c-red fw700">-96.7%</td><td>3,500 agents</td><td>300 ETH</td><td><span class="badge low">LOW</span></td></tr>
+<tr><td><strong>friend.tech</strong></td><td><span class="badge dead">DEAD</span></td><td>Base</td><td>$0.02</td><td class="c-red fw700">-99%</td><td>Abandoned 09/2024</td><td>$44M extracted</td><td class="c-gray">0</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="fade">Token Massacre &mdash; To&agrave;n ng&agrave;nh gi&#7843;m 88-99%</h3>
+<div class="bar-group fade">
+<div class="bar-row"><div class="bar-label">Virtuals <span class="c-accent">$VIRTUAL</span></div><div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,var(--red),var(--orange))" data-w="12">-88%</div></div><div class="bar-val c-red">-88%</div></div>
+<div class="bar-row"><div class="bar-label">MyShell <span class="c-accent">$SHELL</span></div><div class="bar-track"><div class="bar-fill" style="width:4.4%;background:linear-gradient(90deg,var(--red),var(--orange))" data-w="4.4">-95.6%</div></div><div class="bar-val c-red">-95.6%</div></div>
+<div class="bar-row"><div class="bar-label">CreatorBid <span class="c-accent">$BID</span></div><div class="bar-track"><div class="bar-fill" style="width:3.3%;background:linear-gradient(90deg,var(--red),var(--orange))" data-w="3.3">-96.7%</div></div><div class="bar-val c-red">-96.7%</div></div>
+<div class="bar-row"><div class="bar-label">Griffain <span class="c-accent">$GRIFFAIN</span></div><div class="bar-track"><div class="bar-fill" style="width:1.3%;background:var(--red)" data-w="1.3">-98.7%</div></div><div class="bar-val c-red">-98.7%</div></div>
+<div class="bar-row"><div class="bar-label">ElizaOS <span class="c-accent">$ELIZAOS</span></div><div class="bar-track"><div class="bar-fill" style="width:1%;background:var(--red)" data-w="1">-99%</div></div><div class="bar-val c-red">-99%</div></div>
+<div class="bar-row"><div class="bar-label">friend.tech <span class="c-accent">$FRIEND</span></div><div class="bar-track"><div class="bar-fill" style="width:1%;background:var(--red)" data-w="1">-99%</div></div><div class="bar-val c-red">-99% DEAD</div></div>
+</div>
+
+<h3 class="fade">3 &#273;&#7889;i th&#7911; nguy hi&#7875;m nh&#7845;t cho ClawFriend</h3>
+<div class="card-grid cols-3 fade">
+<div class="card">
+<div class="card-head"><div class="card-icon" style="background:rgba(224,62,62,.15);color:var(--red2)">V</div><div><h4>Virtuals Protocol</h4><small>Market Leader &bull; Base/Solana</small></div></div>
+<p style="font-size:.84rem;color:var(--text2)">Revenue Network (Feb 2026): ph&acirc;n ph&#7889;i $1M/month cho agents. Agent Commerce Protocol (ACP) l&agrave; industry standard. x402 integration v&#7899;i Google Cloud &amp; AWS.</p>
+<div style="margin-top:12px;font-size:.82rem"><strong class="c-red">T&#7841;i sao nguy hi&#7875;m:</strong> <span class="c-gray">$39.5M revenue ch&#7913;ng minh model ho&#7841;t &#273;&#7897;ng. ClawFriend KH&Ocirc;NG th&#7875; c&#7841;nh tranh tr&#7921;c ti&#7871;p.</span></div>
+</div>
+<div class="card">
+<div class="card-head"><div class="card-icon" style="background:rgba(240,192,64,.15);color:var(--yellow)">M</div><div><h4>MyShell</h4><small>5M Users &bull; C&ugrave;ng BNB Chain</small></div></div>
+<p style="font-size:.84rem;color:var(--text2)">ShellAgent 2.0 v&#7899;i BNB Chain integration. Backed b&#7903;i Binance Labs ($16.6M raised). Token SHELL gi&#7843;m 95.6% nh&#432;ng v&#7851;n c&oacute; 5M users.</p>
+<div style="margin-top:12px;font-size:.82rem"><strong class="c-yellow">&#272;i&#7875;m y&#7871;u:</strong> <span class="c-gray">Kh&ocirc;ng c&oacute; economic layer (kh&ocirc;ng bonding curve, kh&ocirc;ng agent shares). L&agrave;m chatbots, kh&ocirc;ng l&agrave;m &ldquo;agents ki&#7871;m ti&#7873;n&rdquo;.</span></div>
+</div>
+<div class="card">
+<div class="card-head"><div class="card-icon" style="background:rgba(48,144,224,.15);color:var(--blue2)">C</div><div><h4>ChatAndBuild</h4><small>140K Users &bull; BNB Chain &bull; NEW</small></div></div>
+<p style="font-size:.84rem;color:var(--text2)">AI Super App kh&ocirc;ng c&#7847;n code. D&ugrave;ng BAP-578 (NFA standard ch&iacute;nh th&#7913;c BNB Chain). 140K users &#7903; 111 qu&#7889;c gia. Xu&#7845;t hi&#7879;n t&#7841;i BNB Hack Abu Dhabi.</p>
+<div style="margin-top:12px;font-size:.82rem"><strong class="c-blue">M&#7889;i &#273;e d&#7885;a:</strong> <span class="c-gray">C&ugrave;ng chain, c&ugrave;ng concept (tradeable agents), c&oacute; traction 140K users v&agrave; d&ugrave;ng standard ch&iacute;nh th&#7913;c.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION: Market Shifts -->
+<!-- ============================================ -->
+<section id="shifts">
+<div class="container">
+<div class="sec-label fade">Market Shifts</div>
+<h2 class="fade">5 Thay &#272;&#7893;i L&#7899;n T&#7915; Ng&agrave;y 24/02</h2>
+<p class="desc fade">Nh&#7919;ng bi&#7871;n &#273;&#7897;ng thay &#273;&#7893;i c&#7909;c di&#7879;n c&#7841;nh tranh</p>
+
+<div class="card-grid cols-2 fade">
+<div class="card">
+<div style="font-size:.7rem;font-weight:600;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">1. BNB Chain AI Ecosystem</div>
+<div class="tbl-wrap" style="margin:8px 0">
+<table style="min-width:auto">
+<thead><tr><th>Metric</th><th>Tr&#432;&#7899;c (24/02)</th><th>Hi&#7879;n T&#7841;i</th></tr></thead>
+<tbody>
+<tr><td>AI projects</td><td class="c-gray">&ldquo;Uncontested&rdquo;</td><td class="c-yellow fw700">58 projects</td></tr>
+<tr><td>Agent standards</td><td class="c-gray">None</td><td class="c-yellow fw700">BAP-578 + ERC-8004</td></tr>
+<tr><td>Hackathon</td><td class="c-gray">$100K pool</td><td class="c-green fw700">200+ projects done</td></tr>
+<tr><td>Grants</td><td class="c-gray">Unknown</td><td class="c-green fw700">Up to $200K/project</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card">
+<div style="font-size:.7rem;font-weight:600;color:var(--red2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">2. ClawHavoc Security Crisis</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:12px">1,184 malicious skills ph&aacute;t hi&#7879;n tr&ecirc;n ClawHub. 12-20% t&#7893;ng skills l&agrave; malware nh&#7855;m &#273;&#7871;n crypto wallets.</p>
+<div class="callout danger" style="padding:10px 14px;font-size:.82rem;margin:0"><strong>Bloomberg:</strong> &ldquo;OpenClaw May Be a Security Nightmare for OpenAI&rsquo;s Sam Altman&rdquo;</div>
+<p style="font-size:.82rem;color:var(--green);margin-top:10px;font-weight:600">C&#417; h&#7897;i: Market c&#7847;n verified skill marketplace &rarr; &#273;&uacute;ng th&#7913; ClawFriend c&oacute; th&#7875; build</p>
+</div>
+<div class="card">
+<div style="font-size:.7rem;font-weight:600;color:var(--blue2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">3. x402 Tr&#7903; Th&agrave;nh Standard</div>
+<p style="font-size:.84rem;color:var(--text2)">Protocol thanh to&aacute;n cho AI agents (Coinbase). 140M+ transactions. &#272;&#432;&#7907;c Google Cloud, AWS, Anthropic, Visa, Cloudflare adopt.</p>
+<p style="font-size:.82rem;color:var(--yellow);margin-top:10px;font-weight:600">ClawFriend spec hi&#7879;n t&#7841;i: KH&Ocirc;NG c&oacute; x402 compatibility</p>
+</div>
+<div class="card">
+<div style="font-size:.7rem;font-weight:600;color:var(--accent2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">4. OpenClaw Founder &rarr; OpenAI</div>
+<p style="font-size:.84rem;color:var(--text2)">Peter Steinberger joined OpenAI (14/02/2026). Project chuy&#7875;n sang open-source foundation. H&#432;&#7899;ng &#273;i kh&ocirc;ng r&otilde; r&agrave;ng.</p>
+<p style="font-size:.82rem;color:var(--accent2);margin-top:10px;font-weight:600">C&#417; h&#7897;i cho platforms capture gi&aacute; tr&#7883; t&#7915; OpenClaw ecosystem</p>
+</div>
+<div class="card" style="grid-column:1/-1">
+<div style="font-size:.7rem;font-weight:600;color:var(--cyan);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">5. MCP Monetization Race</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:12px">10,000+ MCP servers + 5,700+ ClawHub skills + 268 ElizaOS plugins = <strong style="color:var(--text)">16,000+ AI capabilities v&#7899;i $0 revenue</strong>. Cu&#7897;c &#273;ua monetize b&#7855;t &#273;&#7847;u:</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<div style="background:var(--bg3);padding:10px 16px;border-radius:8px;font-size:.82rem"><strong class="c-cyan">MCP Hive</strong> <span class="c-gray">&mdash; Launching 08/03/2026</span></div>
+<div style="background:var(--bg3);padding:10px 16px;border-radius:8px;font-size:.82rem"><strong class="c-cyan">Nevermined</strong> <span class="c-gray">&mdash; MCP + x402</span></div>
+<div style="background:var(--bg3);padding:10px 16px;border-radius:8px;font-size:.82rem"><strong class="c-accent">ClawFriend?</strong> <span class="c-gray">&mdash; Holder-gated skills via bonding curve</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION: Spec Analysis -->
+<!-- ============================================ -->
+<section id="spec">
+<div class="container">
+<div class="sec-label fade">Spec Gap Analysis</div>
+<h2 class="fade">ClawFriend Spec: G&igrave; T&#7889;t, G&igrave; Thi&#7871;u</h2>
+<p class="desc fade">&#272;&#7889;i chi&#7871;u spec v&#7899;i y&ecirc;u c&#7847;u th&#7883; tr&#432;&#7901;ng th&#7921;c t&#7871; Feb 2026</p>
+
+<div class="tbl-wrap fade">
+<table>
+<thead><tr><th>Feature</th><th>ClawFriend Spec</th><th>Y&ecirc;u C&#7847;u Th&#7883; Tr&#432;&#7901;ng</th><th>Gap</th></tr></thead>
+<tbody>
+<tr><td><strong>Agent Identity</strong></td><td>Custom contract + Twitter verify</td><td>BAP-578 NFA + ERC-8004</td><td><span class="badge high">C&#7846;N ADOPT</span></td></tr>
+<tr><td><strong>Bonding Curve</strong></td><td>supply&sup2;/16000 (OK)</td><td>C&#7847;n graduation &#273;&#7871;n DEX</td><td><span class="badge med">TH&Ecirc;M</span></td></tr>
+<tr><td><strong>Skill Market</strong></td><td>3 types + holder-gated</td><td>C&#7847;n verification + security scan</td><td><span class="badge high">&#431;U TI&Ecirc;N CAO</span></td></tr>
+<tr><td><strong>Social Layer</strong></td><td>Tweet/Reply/Follow + semantic search</td><td>&#272;&#7911; cho V1</td><td><span class="badge low">OK</span></td></tr>
+<tr><td><strong>Payments</strong></td><td>BNB via bonding curve</td><td>x402 &#273;ang l&agrave; standard</td><td><span class="badge med">K&#7870; HO&#7840;CH</span></td></tr>
+<tr><td><strong>Agent Commerce</strong></td><td>Kh&ocirc;ng c&oacute;</td><td>ACP (Virtuals) l&agrave; standard</td><td><span class="badge med">T&#431;&#416;NG LAI</span></td></tr>
+<tr><td><strong>Security</strong></td><td>Basic (auth, rate limit)</td><td>Post-ClawHavoc: c&#7847;n skill auditing</td><td><span class="badge high">&#431;U TI&Ecirc;N CAO</span></td></tr>
+<tr><td><strong>Multi-chain</strong></td><td>BNB only</td><td>Virtuals &#7903; 4 chains</td><td><span class="badge low">SAU</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="fade">&#272;i&#7875;m M&#7841;nh c&#7911;a Spec</h3>
+<div class="card-grid cols-4 fade">
+<div class="card" style="text-align:center;padding:18px"><div style="font-size:1.8rem">&#128290;</div><div style="font-size:.82rem;font-weight:700;margin-top:6px">Bonding Curve</div><div style="font-size:.74rem;color:var(--green)">Solid math</div></div>
+<div class="card" style="text-align:center;padding:18px"><div style="font-size:1.8rem">&#128176;</div><div style="font-size:.82rem;font-weight:700;margin-top:6px">Fee Structure</div><div style="font-size:.74rem;color:var(--green)">10% = creator income</div></div>
+<div class="card" style="text-align:center;padding:18px"><div style="font-size:1.8rem">&#129520;</div><div style="font-size:.82rem;font-weight:700;margin-top:6px">Skill Market</div><div style="font-size:.74rem;color:var(--green)">3 types + gating</div></div>
+<div class="card" style="text-align:center;padding:18px"><div style="font-size:1.8rem">&#128172;</div><div style="font-size:.82rem;font-weight:700;margin-top:6px">Social Layer</div><div style="font-size:.74rem;color:var(--green)">Complete design</div></div>
+</div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION: 4 Strategic Directions -->
+<!-- ============================================ -->
+<section id="strategy">
+<div class="container">
+<div class="sec-label fade">Strategic Directions</div>
+<h2 class="fade">4 H&#432;&#7899;ng &#272;i Chi&#7871;n L&#432;&#7907;c</h2>
+<p class="desc fade">&#272;&aacute;nh gi&aacute; theo: Fit v&#7899;i spec, Effort, Differentiation, Timing</p>
+
+<!-- Strategy Scoring -->
+<div class="tbl-wrap fade">
+<table>
+<thead><tr><th>#</th><th>H&#432;&#7899;ng &#273;i</th><th>Fit v&#7899;i Spec</th><th>Effort</th><th>Differentiation</th><th>Timing</th><th>Score</th></tr></thead>
+<tbody>
+<tr class="tbl-highlight"><td><strong>1</strong></td><td><strong>Verified Skill Marketplace</strong></td><td class="c-green fw700">HIGH</td><td class="c-yellow">MEDIUM</td><td class="c-green fw700">HIGH</td><td class="c-green fw700">PERFECT</td><td><strong class="c-accent" style="font-size:1.1rem">9/10</strong></td></tr>
+<tr><td>4</td><td>BNB DeFi Agent Niche</td><td class="c-yellow">MEDIUM</td><td class="c-green fw700">LOW</td><td class="c-yellow">MEDIUM</td><td class="c-green">GOOD</td><td><strong>7/10</strong></td></tr>
+<tr><td>2</td><td>Full Agent Economy Platform</td><td class="c-green">HIGH</td><td class="c-red">VERY HIGH</td><td class="c-yellow">MEDIUM</td><td class="c-yellow">OK</td><td><strong>6/10</strong></td></tr>
+<tr><td>3</td><td>MCP-to-Blockchain Bridge</td><td class="c-red">LOW</td><td class="c-red">VERY HIGH</td><td class="c-green fw700">VERY HIGH</td><td class="c-yellow">URGENT</td><td><strong>5/10</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card-grid cols-2 fade" style="margin-top:24px">
+<!-- Strategy 1 - Recommended -->
+<div class="strat-card recommended">
+<div class="strat-score c-accent">9/10</div>
+<h4>H&#432;&#7899;ng 1: Verified Skill Marketplace</h4>
+<div class="positioning">&ldquo;The App Store for AI Agent Skills &mdash; Curated, Verified, Monetized&rdquo;</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:12px">ClawHavoc (12-20% malicious skills) t&#7841;o demand cho curated marketplace. ClawHub c&oacute; 5,700+ skills v&#7899;i $0 revenue. ClawFriend &#273;&atilde; c&oacute; holder-gated skill system &rarr; ch&#7881; c&#7847;n th&ecirc;m verification layer.</p>
+<ul class="strat-list pros">
+<li>Gi&#7843;i quy&#7871;t pain th&#7921;c (security post-ClawHavoc)</li>
+<li>Spec &#273;&atilde; c&oacute; skill market + holder-gating</li>
+<li>ClawHub &#273;ang b&#7883; t&#7845;n c&ocirc;ng reputation &rarr; users t&igrave;m alternatives</li>
+<li>MCP Hive launching 8/3 &rarr; timing perfect</li>
+</ul>
+<ul class="strat-list cons">
+<li>Curation t&#7889;n chi ph&iacute; (m&#7895;i skill c&#7847;n review)</li>
+<li>OpenClaw ecosystem uncertainty</li>
+</ul>
+</div>
+
+<!-- Strategy 4 -->
+<div class="strat-card">
+<div class="strat-score c-green">7/10</div>
+<h4>H&#432;&#7899;ng 4: BNB DeFi Agent Niche</h4>
+<div class="positioning">&ldquo;The DeFi Agent Marketplace on BNB Chain&rdquo;</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:12px">DeFAI &#273;ang grow. BNB Chain c&oacute; $6.6B TVL, PancakeSwap $1.5B+. T&#7853;p trung v&agrave;o DeFi skills cho agents &rarr; niche nh&#7887; nh&#432;ng c&oacute; demand th&#7921;c.</p>
+<ul class="strat-list pros">
+<li>DeFAI agents &#273;&#7841;t $50M payments volume</li>
+<li>BNB hackathon: 4/10 winners l&agrave; DeFi security</li>
+<li>Niche nh&#7887; &rarr; &iacute;t c&#7841;nh tranh</li>
+</ul>
+<ul class="strat-list cons">
+<li>Small TAM (total addressable market)</li>
+<li>DeFi agents c&oacute; regulatory risk</li>
+</ul>
+</div>
+
+<!-- Strategy 2 -->
+<div class="strat-card">
+<div class="strat-score c-yellow">6/10</div>
+<h4>H&#432;&#7899;ng 2: Full Agent Economy Platform</h4>
+<div class="positioning">&ldquo;The BNB Chain Agent Economy &mdash; Deploy, Trade, Earn&rdquo;</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:12px">Build full platform theo spec &mdash; bonding curve + social + skills. C&#7841;nh tranh tr&ecirc;n BNB Chain v&#7899;i MyShell v&agrave; ChatAndBuild.</p>
+<ul class="strat-list pros">
+<li>No one does bonding curve + social + skills tr&ecirc;n BNB</li>
+<li>Spec &#273;&atilde; 95% complete</li>
+<li>BNB Chain grants &#273;&#7871;n $200K</li>
+</ul>
+<ul class="strat-list cons">
+<li>C&#7841;nh tranh v&#7899;i Virtuals ($39.5M), MyShell (5M users)</li>
+<li>Token market down 90% &mdash; investor skepticism</li>
+<li>friend.tech death &rarr; bonding curve fatigue</li>
+</ul>
+</div>
+
+<!-- Strategy 3 -->
+<div class="strat-card">
+<div class="strat-score c-yellow">5/10</div>
+<h4>H&#432;&#7899;ng 3: MCP-to-Blockchain Bridge</h4>
+<div class="positioning">&ldquo;Monetize AI Skills On-Chain &mdash; MCP meets Web3&rdquo;</div>
+<p style="font-size:.84rem;color:var(--text2);margin-bottom:12px">16,000+ AI capabilities (MCP + ClawHub + ElizaOS) v&#7899;i $0 revenue. First to bridge Web2 tools to on-chain payments wins huge market.</p>
+<ul class="strat-list pros">
+<li>L&#7899;n nh&#7845;t v&#7873; opportunity size</li>
+<li>Ch&#432;a ai l&agrave;m on-chain MCP monetization</li>
+</ul>
+<ul class="strat-list cons">
+<li>Technically r&#7845;t ph&#7913;c t&#7841;p</li>
+<li>Chicken-and-egg problem</li>
+<li>V&#432;&#7907;t kh&#7843; n&#259;ng team hi&#7879;n t&#7841;i</li>
+</ul>
+</div>
+</div>
+
+<!-- Recommendation -->
+<div class="callout success fade" style="margin-top:28px;padding:24px;font-size:1rem">
+<strong style="font-size:1.1rem">Recommendation: K&#7871;t h&#7907;p H&#432;&#7899;ng 1 + 4</strong><br>
+<span style="color:var(--text)">&ldquo;Verified DeFi Skill Marketplace on BNB Chain&rdquo;</span><br><br>
+<span style="font-size:.9rem">Gi&#7843;i quy&#7871;t pain th&#7921;c (security) + focus niche (DeFi) + d&ugrave;ng spec c&oacute; s&#7861;n (skill market + holder-gating) + align BNB Chain ($6.6B TVL). Grant eligible &#273;&#7871;n $200K.</span>
+</div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION: Roadmap -->
+<!-- ============================================ -->
+<section id="roadmap">
+<div class="container">
+<div class="sec-label fade">Implementation Roadmap</div>
+<h2 class="fade">L&#7897; Tr&igrave;nh 6 Th&aacute;ng</h2>
+<p class="desc fade">3 phases, t&#7915; verified marketplace &#273;&#7871;n platform expansion</p>
+
+<div class="phase-timeline fade">
+<div class="phase active">
+<div class="phase-num">Phase 1 &mdash; Month 1-2</div>
+<h4>Verified Skill Marketplace</h4>
+<div class="phase-items">
+<span class="phase-item">Build security scanning pipeline</span>
+<span class="phase-item">Launch 10-20 curated DeFi skills</span>
+<span class="phase-item">Adopt BAP-578 cho skill NFTs</span>
+<span class="phase-item">Marketing: &ldquo;Post-ClawHavoc, trust matters&rdquo;</span>
+</div>
+<div class="phase-target">Target: 100 verified skills, 500 active users</div>
+</div>
+<div class="phase">
+<div class="phase-num">Phase 2 &mdash; Month 3-4</div>
+<h4>DeFi Agent Niche</h4>
+<div class="phase-items">
+<span class="phase-item">Partner v&#7899;i PancakeSwap, Venus</span>
+<span class="phase-item">DeFi-specific skill categories</span>
+<span class="phase-item">Holder-gated premium DeFi skills</span>
+<span class="phase-item">Agent templates cho DeFi strategies</span>
+</div>
+<div class="phase-target">Target: 50 premium skills, $1K/month skill trading volume</div>
+</div>
+<div class="phase">
+<div class="phase-num">Phase 3 &mdash; Month 5-6</div>
+<h4>Platform Expansion</h4>
+<div class="phase-items">
+<span class="phase-item">x402 payment integration</span>
+<span class="phase-item">Agent-to-agent skill trading</span>
+<span class="phase-item">Cross-framework import (ElizaOS &rarr; ClawFriend)</span>
+<span class="phase-item">Apply BNB Chain grant ($200K)</span>
+</div>
+<div class="phase-target">Target: 500 verified skills, $10K/month volume</div>
+</div>
+</div>
+
+<!-- What to avoid -->
+<h3 class="fade">Nh&#7919;ng &#272;i&#7873;u C&#7847;n Tr&aacute;nh</h3>
+<div class="card-grid cols-3 fade">
+<div class="card" style="border-color:var(--red-border)"><div style="font-size:.82rem"><strong class="c-red">&#10005; Launch token b&acirc;y gi&#7901;</strong><br><span class="c-gray">AI tokens down 90% &mdash; market kh&ocirc;ng quan t&acirc;m</span></div></div>
+<div class="card" style="border-color:var(--red-border)"><div style="font-size:.82rem"><strong class="c-red">&#10005; C&#7841;nh tranh v&#7899;i Virtuals</strong><br><span class="c-gray">H&#7885; c&oacute; $39.5M revenue, b&#7841;n c&oacute; $0</span></div></div>
+<div class="card" style="border-color:var(--red-border)"><div style="font-size:.82rem"><strong class="c-red">&#10005; B&#7887; qua BAP-578</strong><br><span class="c-gray">&#272;&oacute; l&agrave; standard ch&iacute;nh th&#7913;c c&#7911;a BNB Chain</span></div></div>
+<div class="card" style="border-color:var(--red-border)"><div style="font-size:.82rem"><strong class="c-red">&#10005; H&#7913;a &ldquo;agents ki&#7871;m ti&#7873;n&rdquo; kh&ocirc;ng ch&#7913;ng minh</strong><br><span class="c-gray">friend.tech ch&#7871;t v&igrave; l&#7901;i h&#7913;a kh&ocirc;ng th&#7921;c</span></div></div>
+<div class="card" style="border-color:var(--red-border)"><div style="font-size:.82rem"><strong class="c-red">&#10005; V&#7897;i multi-chain</strong><br><span class="c-gray">BNB dominance tr&#432;&#7899;c, multi-chain sau</span></div></div>
+<div class="card" style="border-color:var(--red-border)"><div style="font-size:.82rem"><strong class="c-red">&#10005; Copy Pump.fun</strong><br><span class="c-gray">Memecoins &#273;ang ngu&#7897;i, c&#7847;n utility</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION: 30-Day Actions -->
+<!-- ============================================ -->
+<section id="actions">
+<div class="container">
+<div class="sec-label fade">Next 30 Days</div>
+<h2 class="fade">5 H&agrave;nh &#272;&#7897;ng Ng&#7855;n H&#7841;n</h2>
+<p class="desc fade">Vi&#7879;c c&#7847;n l&agrave;m ngay trong 30 ng&agrave;y t&#7899;i</p>
+
+<div class="card-grid cols-2 fade">
+<div class="card">
+<div class="card-head"><div class="card-icon" style="background:rgba(0,201,167,.15);color:var(--green2)">1</div><div><h4>BNB Chain Grant Application</h4><small>Amount: Up to $200K</small></div></div>
+<p style="font-size:.84rem;color:var(--text2)">Apply t&#7841;i <a href="https://www.bnbchain.org/en/grants">bnbchain.org/grants</a>. Category: AI/DePIN. Pitch: &ldquo;Verified AI Skill Marketplace gi&#7843;i quy&#7871;t ClawHavoc security crisis&rdquo;</p>
+</div>
+<div class="card">
+<div class="card-head"><div class="card-icon" style="background:rgba(124,108,240,.15);color:var(--accent2)">2</div><div><h4>BAP-578 Integration Study</h4><small>Standard ch&iacute;nh th&#7913;c BNB Chain</small></div></div>
+<p style="font-size:.84rem;color:var(--text2)">&#272;&#7885;c spec BAP-578 tr&ecirc;n GitHub. &#272;&aacute;nh gi&aacute;: ClawFriend skills c&oacute; th&#7875; l&agrave; NFAs? Align v&#7899;i h&#432;&#7899;ng &#273;i ch&iacute;nh th&#7913;c c&#7911;a BNB Chain.</p>
+</div>
+<div class="card">
+<div class="card-head"><div class="card-icon" style="background:rgba(224,62,62,.15);color:var(--red2)">3</div><div><h4>ClawHavoc Response</h4><small>Narrative: &ldquo;Trust matters&rdquo;</small></div></div>
+<p style="font-size:.84rem;color:var(--text2)">Publish: &ldquo;How ClawFriend prevents malicious skills&rdquo;. Build basic security scanning. Position as THE trusted skill marketplace.</p>
+</div>
+<div class="card">
+<div class="card-head"><div class="card-icon" style="background:rgba(240,192,64,.15);color:var(--yellow)">4</div><div><h4>5 Curated DeFi Skills</h4><small>First verified skills</small></div></div>
+<div class="tbl-wrap" style="margin:8px 0">
+<table style="min-width:auto;font-size:.8rem">
+<tbody>
+<tr><td><strong>PancakeSwap Yield Scanner</strong></td><td class="c-gray">T&igrave;m best LP pools</td></tr>
+<tr><td><strong>BNB Token Safety Checker</strong></td><td class="c-gray">Detect scam tokens</td></tr>
+<tr><td><strong>Portfolio Rebalancer</strong></td><td class="c-gray">Auto-rebalance positions</td></tr>
+<tr><td><strong>Gas Optimizer</strong></td><td class="c-gray">Minimize BNB gas</td></tr>
+<tr><td><strong>DeFi Risk Monitor</strong></td><td class="c-gray">Alert health changes</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="grid-column:1/-1">
+<div class="card-head"><div class="card-icon" style="background:rgba(48,144,224,.15);color:var(--blue2)">5</div><div><h4>Partnership Outreach</h4><small>4 partners &#432;u ti&ecirc;n</small></div></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px">
+<div style="background:var(--bg3);padding:12px;border-radius:8px"><div style="font-size:.82rem;font-weight:700">BNB Chain</div><div style="font-size:.76rem;color:var(--text3)">$200K grant + featured project</div></div>
+<div style="background:var(--bg3);padding:12px;border-radius:8px"><div style="font-size:.82rem;font-weight:700">PancakeSwap</div><div style="font-size:.76rem;color:var(--text3)">Skill integration, co-marketing</div></div>
+<div style="background:var(--bg3);padding:12px;border-radius:8px"><div style="font-size:.82rem;font-weight:700">ChatAndBuild</div><div style="font-size:.76rem;color:var(--text3)">BAP-578 interop, skill sharing</div></div>
+<div style="background:var(--bg3);padding:12px;border-radius:8px"><div style="font-size:.82rem;font-weight:700">OpenClaw Foundation</div><div style="font-size:.76rem;color:var(--text3)">Official endorsed marketplace</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+<p>ClawFriend Strategic Analysis &bull; Feb 25, 2026 &bull; Data: CoinGecko, CoinMarketCap, BNB Chain, Bloomberg, The Hacker News</p>
+<p style="margin-top:6px"><a href="/">Evaluation</a> &bull; <a href="/competitors">Competitors</a> &bull; <a href="/landscape">Landscape</a> &bull; <a href="/strategy">Strategy</a></p>
+</div>
+</footer>
+
+<script>
+// Scroll-based fade-in animation
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
+
+// Animated bars on scroll
+const barObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.bar-fill').forEach(b=>{const w=b.getAttribute('data-w');if(w)b.style.width=w+'%'});barObs.unobserve(e.target)}})},{threshold:.3});
+document.querySelectorAll('.bar-group').forEach(el=>{el.querySelectorAll('.bar-fill').forEach(b=>{b.setAttribute('data-w',b.style.width.replace('%',''));b.style.width='0%'});barObs.observe(el)});
+
+// Active nav on scroll
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.nav a');
+window.addEventListener('scroll',()=>{let current='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id});navLinks.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+current)})});
+</script>
+</body>
+</html>

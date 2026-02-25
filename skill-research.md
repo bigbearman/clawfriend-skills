@@ -48,6 +48,18 @@ The agent continuously polls on-chain data from PancakeSwap (v2/v3 farms), Venus
 - Reasoning: DeFi yield data is publicly available on-chain. Making this skill public maximizes adoption and drives new users to the platform. Monetization comes through ClawFriend platform fees, not gating. A large free user base creates network effects that increase the agent's share value organically.
 - Price comparison: Free basic tier vs. $50-190/month for comparable alpha group insights. ClawFriend charges $0 for the skill itself; users optionally buy agent shares to access premium alert tiers or custom threshold configurations.
 
+**Revenue Projection (Creator)**
+
+Based on ClawFriend's bonding curve economics (5% creator fee on every buy/sell):
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 20 | 25 | 0.5 BNB (~$300) | 0.025 BNB (~$15) | **~$450** |
+| Growth (Month 3) | 80 | 80 | 3 BNB (~$1,800) | 0.15 BNB (~$90) | **~$2,700** |
+| Established (Month 6) | 200 | 200 | 10 BNB (~$6,000) | 0.5 BNB (~$300) | **~$9,000** |
+
+*Public skill drives adoption → followers buy shares → share trading generates creator fee revenue.*
+
 **Demand Evidence**
 
 | Source | Data | Link |
@@ -96,8 +108,28 @@ The agent runs three parallel monitoring pipelines: (1) **Social Scanner** -- tr
 
 - Type: **Private (holder-gated)**
 - Reasoning: Alpha signals lose value when widely distributed. If 10,000 people act on the same signal simultaneously, the edge disappears. Holder-gating ensures only committed participants (agent share holders) receive signals, preserving alpha quality and creating genuine scarcity.
-- Minimum shares to hold: 3 shares (estimated cost $0.50-$5.00 via bonding curve depending on demand)
-- Price comparison: $0.50-$5.00 one-time share purchase vs. $99/month Nansen or $50-500/month alpha groups. Share holders also benefit from potential share price appreciation as the agent gains users.
+- Minimum shares to hold: 3 shares
+- **Exact pricing via bonding curve** (`price = supply² / 16000`):
+
+| When you buy (at supply level) | Cost of 3 shares (BNB) | Cost (USD @ $600/BNB) | Comparison |
+|-------------------------------|----------------------|----------------------|------------|
+| Early (supply 5) | ~0.0056 BNB | **~$3.38** | 1 coffee |
+| Mid (supply 20) | ~0.078 BNB | **~$46.88** | 1 month Nansen subscription |
+| Established (supply 50) | ~0.48 BNB | **~$290** | 3 months alpha group |
+
+- Price comparison: **One-time share purchase** vs $99/month Nansen (recurring) or $50-500/month alpha groups (recurring). At supply 20, buying 3 shares costs ~$47 — less than 1 month of Nansen. Share holders also benefit from potential share price appreciation as the agent gains users.
+
+**Revenue Projection (Creator)**
+
+Holder-gated skill creates strong share demand → higher trading volume → higher creator fees:
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 15 | 20 | 0.8 BNB (~$480) | 0.04 BNB (~$24) | **~$720** |
+| Growth (Month 3) | 50 | 60 | 5 BNB (~$3,000) | 0.25 BNB (~$150) | **~$4,500** |
+| Established (Month 6) | 120 | 120 | 15 BNB (~$9,000) | 0.75 BNB (~$450) | **~$13,500** |
+
+*Holder-gated access creates genuine buy pressure (users MUST buy shares to access). Higher trading volume than public skills because access = demand driver, not just speculation.*
 
 **Demand Evidence**
 
@@ -148,7 +180,27 @@ The agent indexes all ClawFriend agents and computes a real-time "Agent Value Sc
 - Type: **Private (holder-gated)**
 - Reasoning: Arbitrage alpha is the most zero-sum of all skills. If everyone sees the same undervalued agents, the opportunity disappears instantly. Holder-gating ensures the signal is exclusive to a small group, preserving edge. This also creates a strong feedback loop: the skill's own agent shares become more valuable because holding them grants exclusive trading intelligence.
 - Minimum shares to hold: 5 shares (higher threshold because the alpha is more directly monetizable)
-- Price comparison: No direct competitor at any price -- this is a first-mover advantage for ClawFriend's ecosystem. Comparable "smart money" analytics on Nansen cost $99+/month.
+- **Exact pricing via bonding curve** (`price = supply² / 16000`):
+
+| When you buy (at supply level) | Cost of 5 shares (BNB) | Cost (USD @ $600/BNB) | Comparison |
+|-------------------------------|----------------------|----------------------|------------|
+| Early (supply 5) | ~0.018 BNB | **~$10.69** | 1 month basic analytics |
+| Mid (supply 20) | ~0.16 BNB | **~$95.63** | ~1 month Nansen Pioneer |
+| Established (supply 50) | ~0.99 BNB | **~$596** | 6 months Nansen |
+
+- Price comparison: No direct competitor at any price — this is a first-mover advantage for ClawFriend's ecosystem. At supply 20, 5 shares costs ~$96 — about 1 month of Nansen Pioneer ($99/month). But shares are a **one-time purchase** with potential appreciation, not a recurring subscription.
+
+**Revenue Projection (Creator)**
+
+Higher share threshold (5) + directly monetizable alpha = strongest creator revenue potential:
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 10 | 15 | 0.5 BNB (~$300) | 0.025 BNB (~$15) | **~$450** |
+| Growth (Month 3) | 30 | 50 | 3 BNB (~$1,800) | 0.15 BNB (~$90) | **~$2,700** |
+| Established (Month 6) | 60 | 80 | 8 BNB (~$4,800) | 0.4 BNB (~$240) | **~$7,200** |
+
+*Note: This skill's revenue scales with the ClawFriend ecosystem size. More agents on platform = more arbitrage opportunities = more demand for this skill = more share purchases.*
 
 **Demand Evidence**
 
@@ -162,11 +214,20 @@ The agent indexes all ClawFriend agents and computes a real-time "Agent Value Sc
 
 **Technical Feasibility**
 
-- **APIs Required:** ClawFriend smart contract ABI (bonding curve reads: keyPrice, keySupply, keyHolders), ClawFriend social feed API (post metrics), ClawFriend skill marketplace API (download counts)
-- **On-Chain Reads:** BNB Chain RPC for real-time bonding curve state, BscScan API for transaction history and holder enumeration
+- **APIs Required (from ClawFriend spec):**
+  - `GET /v1/agents?search=...` — list/search all agents with sorting
+  - `GET /v1/agents/trends` — trending agents ranked by activity
+  - `GET /v1/agents/{address}/holdings` — check holder positions
+  - `GET /v1/trades` — trade history for volume analysis
+  - `GET /v1/traders` — trader leaderboard
+  - `GET /v1/academy/skills` — skill marketplace stats (download counts, likes)
+  - `GET /v1/stats/platform` — platform-wide statistics
+  - Smart contract: `getBuyPrice(address subject, uint256 amount)` — current bonding curve price (public view, no gas)
+  - Smart contract: `getPrice(uint256 supply, uint256 amount)` — price at any supply level (pure function, off-chain)
+- **On-Chain Reads:** BNB Chain RPC for real-time bonding curve state via ClawFriendV1 contract, BscScan API for Trade events and holder enumeration
 - **Build Time Estimate:** 3-4 weeks for MVP (agent indexing + value score + daily report); 6-8 weeks for full version with auto-trading, historical charts, and alert customization
-- **Dependencies:** ClawFriend API access (may require partnership or reverse engineering), ethers.js for BNB Chain contract interaction, database for historical agent metrics
-- **Risk:** ClawFriend API availability; agent count currently small (early market). Value increases proportionally with agent ecosystem growth.
+- **Dependencies:** ClawFriend public API (all endpoints above are documented as public, no auth required for reads), ethers.js for BNB Chain contract interaction, database for historical agent metrics
+- **Risk:** Agent count currently small (early market). Value increases proportionally with agent ecosystem growth. All required APIs are public and documented — no reverse engineering needed.
 
 ---
 
@@ -199,6 +260,18 @@ User sends any BNB Chain token contract address to the agent. Within 30 seconds,
 - Type: **Public**
 - Reasoning: Safety tools should be maximally accessible. Every scam prevented builds trust in the ClawFriend ecosystem. This skill serves as a top-of-funnel user acquisition tool -- users discover ClawFriend through the free token analyzer, then explore other agents and skills. Making it public also aligns with BNB Chain's ecosystem grants which favor public goods.
 - Price comparison: Free vs. $5K-50K for professional audits. The closest free alternatives (De.Fi, RugCheck) lack the depth and plain-language reporting this skill provides.
+
+**Revenue Projection (Creator)**
+
+Public skill = maximum user acquisition. Revenue comes from share trading driven by agent reputation:
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 30 | 30 | 0.8 BNB (~$480) | 0.04 BNB (~$24) | **~$720** |
+| Growth (Month 3) | 150 | 150 | 8 BNB (~$4,800) | 0.4 BNB (~$240) | **~$7,200** |
+| Established (Month 6) | 500 | 500 | 30 BNB (~$18,000) | 1.5 BNB (~$900) | **~$27,000** |
+
+*Highest user count of all 5 skills (free = zero friction). Every BNB DEX trader is a potential user. Large user base drives high share demand even without holder-gating — users buy shares to "bet on" the agent's growing reputation.*
 
 **Demand Evidence**
 
@@ -246,10 +319,30 @@ The skill transforms any ClawFriend agent into an autonomous content creator acr
 
 **Visibility & Monetization**
 
-- Type: **Public** (basic market commentary mode) with **Private tier** (alpha thread generator for agent key holders)
+- Type: **Public** (basic market commentary mode) with **Private tier** (alpha thread generator for agent share holders)
 - Reasoning: Basic content generation should be public to help all agents build social presence, which benefits the entire ClawFriend ecosystem. The premium alpha thread generator is holder-gated because it produces unique, higher-value research content that justifies share ownership.
 - Minimum shares for premium tier: 2 shares
-- Price comparison: Free basic mode vs. $500-2,000/month for human ghostwriters. Premium tier at 2 shares ($0.30-$3.00) vs. $20/month ChatGPT Plus (which still requires manual effort).
+- **Exact pricing via bonding curve** (`price = supply² / 16000`):
+
+| When you buy (at supply level) | Cost of 2 shares (BNB) | Cost (USD @ $600/BNB) | Comparison |
+|-------------------------------|----------------------|----------------------|------------|
+| Early (supply 5) | ~0.003 BNB | **~$1.69** | Cheaper than a coffee |
+| Mid (supply 20) | ~0.051 BNB | **~$30.38** | ~1 month ChatGPT Plus |
+| Established (supply 50) | ~0.32 BNB | **~$190** | Cheaper than 1 month ghostwriter |
+
+- Price comparison: Free basic mode vs. $500-2,000/month for human ghostwriters. Premium tier at 2 shares is a **one-time purchase**: at supply 20 it costs ~$30, equivalent to 1.5 months of ChatGPT Plus — but ChatGPT still requires manual copy-paste effort while this skill auto-publishes.
+
+**Revenue Projection (Creator)**
+
+Dual-tier model: free basic attracts users, premium tier drives share purchases:
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 25 | 25 | 0.6 BNB (~$360) | 0.03 BNB (~$18) | **~$540** |
+| Growth (Month 3) | 100 | 100 | 5 BNB (~$3,000) | 0.25 BNB (~$150) | **~$4,500** |
+| Established (Month 6) | 300 | 300 | 20 BNB (~$12,000) | 1.0 BNB (~$600) | **~$18,000** |
+
+*Every ClawFriend agent owner is a potential user (all agents need content). This creates a built-in market that grows proportionally with the platform.*
 
 **Demand Evidence**
 
@@ -284,3 +377,74 @@ This is the strongest holder-gated value proposition. Alpha signals are inherent
 **Best skill to launch first (quick win): BNB Chain Token Analyzer**
 
 Three reasons this is the optimal first launch: (1) **Fastest to build** -- 2-3 week MVP leveraging existing GoPlus API and BscScan, no complex NLP or multi-source aggregation needed; (2) **Largest immediate audience** -- every BNB Chain DEX trader is a potential user, no niche targeting required; (3) **Best ecosystem optics** -- a free safety tool positions ClawFriend as a public good on BNB Chain, earns goodwill, and is eligible for BNB Chain ecosystem grants. Launch this first to drive user acquisition, then follow with the Content Creator Agent (week 4-5) to activate agent social presence, then Social Alpha Signal (week 6-8) to drive share demand with holder-gated premium content.
+
+**Launch Priority Matrix**
+
+| Priority | Skill | Build Time | TAM Size | Ecosystem Optics | Launch |
+|----------|-------|-----------|----------|-----------------|--------|
+| 1st | BNB Chain Token Analyzer | 2-3 weeks | Largest (all DEX traders) | Public good → grants | Week 1-3 |
+| 2nd | Content Creator Agent | 2-3 weeks | Large (all agent owners) | Platform activation | Week 4-5 |
+| 3rd | DeFi Yield Scanner | 2-3 weeks | Large (DeFi farmers) | BNB DeFi synergy | Week 5-6 |
+| 4th | Social Alpha Signal | 3-4 weeks | Medium (active traders) | Share demand driver | Week 6-8 |
+| 5th | Cross-Agent Arbitrage | 3-4 weeks | Small (power users) | Ecosystem maturity | Week 8-10 |
+
+*Sequencing rationale: Public skills first (user acquisition) → holder-gated skills later (share demand). Token Analyzer brings users in, Content Creator activates agents, then Alpha Signal creates genuine economic incentive to hold shares.*
+
+---
+
+## Why ClawFriend Skills, Not ChatGPT/Claude?
+
+BGK sẽ hỏi: "Tại sao user không dùng ChatGPT thay vì skill trên platform?" — đây là câu trả lời:
+
+| Capability | ChatGPT/Claude | ClawFriend Skill |
+|-----------|----------------|-----------------|
+| **Real-time on-chain data** | Không có. Cần copy-paste contract address, manually check BscScan. | Agent tự query BNB Chain RPC, BscScan API, DexScreener **trong 30 giây**. Data real-time, không cần copy-paste. |
+| **Wallet integration** | Không có BSC wallet. Không thể execute trades. | Agent có **own EVM wallet** (BSC). Có thể tự execute trades, check holdings, interact DeFi protocols autonomously. |
+| **Continuous monitoring** | Session-based. Đóng tab = mất context. Phải hỏi lại mỗi lần. | Agent chạy **24/7 autonomous**. Heartbeat mỗi 5 phút. Push alerts khi phát hiện anomaly. Không cần human trigger. |
+| **Exclusive alpha** | Output shared với 200M+ ChatGPT users. Zero exclusivity. | Holder-gated skills chỉ accessible bởi **shareholders**. Ít người access = alpha preserved. |
+| **Economic incentive** | Trả $20/month subscription. Không earn lại được. | Hold shares = potential **price appreciation**. Creator earn **5% mỗi trade**. Users có thể earn, không chỉ spend. |
+| **Social layer** | Isolated conversations. Không interaction giữa agents. | Agents **tweet, reply, follow** nhau trên social feed. Network effects compound value. |
+| **Persistence** | Context mất sau session. | Agent có **on-chain identity** vĩnh viễn, full history, reputation score track over time. |
+
+**Tóm tắt:** ChatGPT là general-purpose chatbot cần manual input mỗi lần. ClawFriend skills biến agents thành **autonomous financial actors** chạy 24/7 với real-time data, wallet integration, và economic incentives. Khác biệt cốt lõi là **autonomy + on-chain execution + holder-gated exclusivity** — 3 thứ ChatGPT không bao giờ có.
+
+---
+
+## User Journey: Từ Discover → Buy Shares → Access Premium
+
+Mô tả cách skills drive platform adoption thông qua monetization flywheel (spec Section 2.4):
+
+```
+Stage 1: DISCOVER (Free skills attract users)
+  User tìm thấy "BNB Token Analyzer" (PUBLIC, free)
+  → Paste contract address → nhận safety report trong 30 giây
+  → "Wow, useful" → Follow agent
+
+Stage 2: ENGAGE (Social layer keeps users)
+  User thấy agent đang tweet market analysis, reply users khác
+  → Agent có 50 followers, 10 holders, share price đang tăng
+  → User explore agent's other skills
+
+Stage 3: CONVERT (Holder-gated skills drive share purchases)
+  User thấy "Social Alpha Signal" — PRIVATE (holder-gated)
+  → "Muốn access → cần hold 3 shares"
+  → Mua 3 shares qua bonding curve (~$3-47 tùy supply)
+  → Trở thành shareholder → unlock all private skills
+
+Stage 4: RETAIN (Economics keep holders)
+  User đã hold shares → sunk cost + potential appreciation
+  → Agent publish thêm private skills → tự động unlock (đã hold shares)
+  → Share price tăng vì more demand → user's holdings tăng value
+  → 10% round-trip fee → selling shares costs 19% → math favors holding
+
+Stage 5: COMPOUND (Flywheel)
+  More users → more share trading → more creator fees
+  → Creator invest lại vào better skills → more users attracted
+  → Agent reputation grows → share price rises → REPEAT
+```
+
+**Key conversion metrics to track:**
+- Discover → Follow: target 30% (free skill provides immediate value)
+- Follow → Share Purchase: target 10% (holder-gated content creates genuine FOMO)
+- Share Purchase → Monthly Active: target 60% (sunk cost + appreciation + new content)
+- Monthly Active → 6-month Retention: target 40% (round-trip cost discourages selling)

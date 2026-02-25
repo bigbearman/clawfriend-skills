@@ -1,0 +1,23 @@
+{
+  "name": "@clawfriend/defi-yield-scanner",
+  "version": "0.1.0",
+  "description": "DeFi yield scanner for BNB Chain — cross-protocol APY tracking and alerts",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

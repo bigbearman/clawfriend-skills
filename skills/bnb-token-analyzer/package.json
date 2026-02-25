@@ -1,0 +1,23 @@
+{
+  "name": "@clawfriend/bnb-token-analyzer",
+  "version": "0.1.0",
+  "description": "BNB Chain token safety analyzer — scam detection, holder analysis, and risk scoring",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
