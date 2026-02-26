@@ -1,404 +1,270 @@
 # Deliverable 1: Competitive Landscape
 
-> **Weight:** 25% | **Date:** 2026-02-25
+> **Weight:** 25% | **Date:** 2026-02-26 (Updated)
 
 ---
 
 ## Competitor Overview
 
-| # | Name | Link | Chain | Users / Downloads | Monetization |
+Chỉ phân tích **đối thủ trực tiếp** — platforms có marketplace/agent trading tương tự ClawFriend. Đã loại bỏ đối thủ gián tiếp: Fetch.ai (enterprise infra), Olas (framework), ElizaOS (framework), Griffain (SaaS Solana, stalling), Morpheus (compute), SingularityNET (Cardano enterprise), Bittensor (compute), MCP Ecosystem (protocol).
+
+| # | Name | Link | Chain | Users / Key Metric | Monetization |
 |---|------|------|-------|-------------------|--------------|
-| 1 | Virtuals Protocol | [virtuals.io](https://www.virtuals.io) | Base + Solana | 18K+ agents, $39.5M rev | 1% commission on agent token launches |
+| 1 | Virtuals Protocol | [virtuals.io](https://www.virtuals.io) | Base/Sol/BNB | 18K+ agents, 650K holders, $39.5M rev | 1% commission on agent token launches |
 | 2 | MyShell | [myshell.ai](https://myshell.ai) | BNB Chain | 5M users, 200K+ agents | Freemium + Shell token |
-| 3 | Fetch.ai Agentverse | [fetch.ai](https://fetch.ai/agentverse) | Cosmos (ASI) | 2.5M registered agents | $FET token staking + service fees |
-| 4 | Olas Pearl | [olas.network](https://olas.network) | Multi-chain | 6M+ tx, $13.8M raised | $OLAS bonding + dev rewards |
-| 5 | ElizaOS (ai16z) | [elizaos.ai](https://elizaos.github.io/eliza/) | Chain-agnostic | 268 plugins, 16K GitHub stars | Open-source + $ai16z token |
-| 6 | Griffin AI | [griffain.com](https://griffain.com) | Solana | 15K agents, 265K signups | SaaS subscription |
-| 7 | CreatorBid | [creatorbid.com](https://creatorbid.com) | Base | 3,500+ agents | Token bonding curves |
-| 8 | Morpheus Network | [mor.org](https://mor.org) | Multi-chain | $4.6M mcap (TVL unverified) | $MOR compute marketplace |
-| 9 | SingularityNET | [singularitynet.io](https://singularitynet.io) | Cardano/Ethereum | ~70 services | AGIX pay-per-call |
-| 10 | ClawHub (OpenClaw) | [clawhub.com](https://clawhub.com) | N/A (registry) | 3,286 skills, 1.5M downloads | FREE (open-source) |
-| 11 | MCP Ecosystem | [modelcontextprotocol.io](https://modelcontextprotocol.io) | N/A (protocol) | 17K+ servers | $0 (no monetization) |
-| 12 | Bittensor | [bittensor.com](https://bittensor.com) | Substrate | 130 subnets | $TAO mining rewards |
+| 3 | CreatorBid | [creatorbid.com](https://creatorbid.com) | Base | 3,500+ agents, -97% ATH | Token bonding curves |
+| 4 | ChatAndBuild | [chatandbuild.com](https://chatandbuild.com) | BNB Chain | 140K users, 111 countries | Unknown (NFA model) |
+| 5 | ClawHub (OpenClaw) | [clawhub.com](https://clawhub.com) | N/A (registry) | 3,286 skills, 1.5M downloads | FREE (open-source, $0 revenue) |
 
 ---
 
 ## Market Taxonomy
 
-The Web3 AI agent/skill marketplace can be divided into 3 categories:
+The Web3 AI agent/skill marketplace can be divided into 2 relevant categories:
 
 ```
-Category A: Agent Launchpads (tokenized agents)
-├── Virtuals Protocol    ($39.5M revenue, 18K agents)
-├── CreatorBid           (3,500 agents, token bonding)
-├── ClawFriend           (2 skills, bonding curve)
-└── Clanker              (21K token launches/day)
+Category A: Agent Launchpads (tokenized agents + trading)
+├── Virtuals Protocol    ($39.5M revenue, 18K agents, ACP commerce)
+├── CreatorBid           (3,500 agents, token bonding — dying, -97%)
+├── ChatAndBuild         (140K users, BAP-578 NFA standard)
+├── ClawFriend           (2 skills, bonding curve — pre-traction)
+└── Clanker              (21K token launches/day — high volume, low quality)
 
 Category B: Skill/Plugin Registries (capability marketplaces)
 ├── ClawHub              (3,286 skills, 1.5M downloads, FREE)
-├── MCP Ecosystem        (17K+ servers, $0 revenue)
-├── ElizaOS              (268 plugins, open-source)
-└── MyShell              (200K+ agents, consumer-friendly)
-
-Category C: On-Chain Agent Services (infrastructure)
-├── Fetch.ai Agentverse  (2.5M registered agents)
-├── Olas Pearl           (6M+ tx, multi-chain)
-├── Morpheus Network     ($320M TVL)
-├── Bittensor            (130 subnets)
-└── SingularityNET       (~70 services)
+├── MyShell              (5M users, 200K+ agents, consumer-friendly)
+└── ClawFriend           (skill marketplace + holder-gated access)
 ```
 
-**ClawFriend is unique** because it straddles Category A + B: bonding curve trading (launchpad) + skill marketplace (registry) + social layer.
+**ClawFriend straddles Category A + B:** bonding curve trading (launchpad) + skill marketplace (registry) + social layer. No competitor combines all three on BNB Chain.
 
 ---
 
 ## Detailed Analysis
 
-### 1. Virtuals Protocol — MARKET LEADER
+### 1. Virtuals Protocol — MARKET LEADER, ĐÃ VÀO BNB CHAIN
 
 - **Link:** https://www.virtuals.io
 - **Description:** AI Agent Commerce Protocol. Agents have tokenized identities, trade with each other via ACP (Agent Commerce Protocol), and generate revenue autonomously.
-- **Chain / Ecosystem:** Base + Solana (multi-chain)
-- **Data:**
+- **Chain / Ecosystem:** Base + Solana + Ethereum + Ronin + **BNB Chain** (Luna.fun)
+- **Data (Feb 26, 2026):**
   - 18,000+ agents deployed
   - $39.5M+ cumulative protocol revenue
   - $470M+ total aGDP (agent GDP)
-  - $VIRTUAL market cap ~$430.5M, price $0.656 (Source: CoinGecko, 2026-02-25)
+  - $VIRTUAL market cap ~$450M, price $0.70 (+23.5% on Feb 25)
+  - 650,000+ unique token holders (was 100K+)
   - $13.23B monthly trading volume
-  - 100K+ unique token holders
 - **Recent Developments (Feb 2026):**
-  - **Revenue Network** (Feb 12, 2026) — on-chain AI network for autonomous agent-to-agent commerce via ACP
-  - **Eastworld Labs** (Feb 23, 2026) — AI accelerator for humanoid robots with 30+ Unitree G1 robots, hybrid human-agent economy
-  - **Ethy AI** — standout agent processing 2M+ transactions
-- **Monetization:** 1% commission on every agent token launch that graduates from bonding curve. Revenue Network distributes earnings. x402 micropayment protocol for agent-to-agent transactions.
+  - **Revenue Network** (Feb 12) — on-chain AI network for autonomous agent-to-agent commerce via ACP. Distributes up to $1M/month to agents. $200K USDC processed in first 48 hours.
+  - **Eastworld Labs** (Feb 23) — AI accelerator for humanoid robots, 30+ Unitree G1 robots, 500K+ recorded task datasets
+  - **Luna.fun on BNB Chain** — AI meme platform with x402 payment. **Trực tiếp cạnh tranh trên lãnh thổ ClawFriend.**
+  - **x402 integration** — $600M+ in AI micropayments, adopted by Google Cloud, AWS, Stripe
+- **Monetization:** 1% commission on every agent token launch. Revenue Network distributes earnings. x402 micropayment protocol for agent-to-agent transactions.
 - **Strengths:**
-  - Proven revenue model ($39.5M+ is not speculative)
-  - Agent-to-agent commerce actually works (ACP + x402 + Revenue Network)
-  - Multi-chain (Base + Solana) = broader reach
-  - Moving into physical robotics (Eastworld Labs, 30+ humanoid robots)
-  - Strong developer ecosystem (GAME framework, Unicorn, Butler)
+  - Proven revenue model ($39.5M+ is real, not projected)
+  - Agent-to-agent commerce works (ACP + x402 + Revenue Network)
+  - Multi-chain (5 chains including BNB) = broadest reach
+  - Moving into physical robotics (Eastworld Labs)
+  - Strongest developer ecosystem (GAME framework, Unicorn, Butler)
+  - 650K holders = massive distribution
 - **Weaknesses:**
   - Agent quality varies wildly (many spam/meme agents)
   - Complex tokenomics confuses newcomers
-  - High competition within platform
-  - Base Chain is more expensive than BNB for gas
-- **Key takeaway for ClawFriend:** Virtuals proved the model works but is 10-100x larger. ClawFriend cannot compete head-to-head. Must find a niche Virtuals doesn't serve (BNB Chain, OpenClaw-specific skills).
+  - Luna.fun on BNB is early, unproven
+  - Revenue concentrated in top agents
+- **Key takeaway for ClawFriend:** Virtuals đã vào BNB Chain. Thesis "BNB agent economy chưa ai chiếm" không còn đúng 100%. ClawFriend KHÔNG THỂ cạnh tranh trực tiếp ($450M vs $0). Phải tìm niche Virtuals không serve: verified skills, OpenClaw ecosystem, DeFi-specific.
 
 ---
 
-### 2. MyShell — DIRECT BNB CHAIN THREAT
+### 2. MyShell — DIRECT BNB CHAIN THREAT, 5M USERS
 
 - **Link:** https://myshell.ai
-- **Description:** Consumer-friendly AI agent builder. Users create, share, and monetize AI agents (chatbots, voice agents, image generators).
+- **Description:** Consumer-friendly AI agent builder on BNB Chain. Users create, share, and monetize AI agents (chatbots, voice agents, image generators).
 - **Chain / Ecosystem:** BNB Chain (same as ClawFriend)
-- **Data:**
+- **Data (Feb 26, 2026):**
   - 5M+ registered users
   - 200K+ agents created
-  - Backed by YZi Labs, Dragonfly, OKX Ventures, GSR, Animoca Brands ($16.6M total funding)
-  - $SHELL market cap ~$7.95M, price $0.029 (Source: CoinGecko, 2026-02-25)
+  - Backed by YZi Labs, Dragonfly, OKX Ventures, GSR, Animoca Brands ($16.6M funding)
+  - $SHELL market cap ~$9M, price $0.030 (Source: CoinGecko, Feb 26)
+  - vs ATH: -95.6% ($0.68 → $0.03) — nhưng user base vẫn massive
 - **Recent Developments (Feb 2026):**
-  - **ShellAgent 2.0** — BNB Chain integration, single-prompt-to-app capability
-  - **ShellAgent framework updates** (Feb 16) — protocol improvements, IM integration, on-chain intelligence
-  - **CARV Partnership** (Aug 2025) — decentralized data tools for AI agents
+  - **ShellAgent 2.0** — BNB Chain integration, single-prompt-to-app
+  - **3 New Modules (Feb 16):**
+    1. **ShellAgent Protocol** — Modular AI framework, 300+ pre-built widgets, drag-and-drop no-code
+    2. **IM Integration** — Cross-platform agent deployment, agents auto-trend on Twitter/X
+    3. **On-Chain Intelligence** — Multi-state DeFi automation, DAO tools, autonomous asset management
+  - **CARV Partnership** (Aug 2025) — Decentralized data tools
   - **Binance Airdrop** — 25M SHELL distributed to BNB stakers (Sept 2025)
 - **Monetization:** Freemium (free tier + paid credits). Shell token for premium features and creator rewards.
 - **Strengths:**
-  - Massive user base (5M) on the SAME chain as ClawFriend
-  - Consumer-friendly UI (no-code agent building)
-  - Backed by top-tier VCs (Binance Labs!)
-  - Already monetizing on BNB Chain
+  - 5M users on SAME chain as ClawFriend — dominant position
+  - Consumer-friendly UI (no-code, 300+ widgets)
+  - Top-tier VC backing ($16.6M)
+  - On-Chain Intelligence now competes with ClawFriend DeFi skills directly
 - **Weaknesses:**
   - Not focused on autonomous economic agents (more chatbots)
-  - No bonding curve / financial layer
-  - Agent quality is variable
-  - Not integrated with OpenClaw
-- **Key takeaway for ClawFriend:** MyShell is the biggest BNB Chain competitor. They have 5M users vs ClawFriend's ~0. However, MyShell doesn't do autonomous agent economy (no bonding curves, no agent-to-agent trading). ClawFriend must differentiate on the "agents as economic entities" angle.
+  - **No bonding curve / financial layer** — key differentiation gap
+  - No holder-gated exclusive access model
+  - Token crashed 95.6% — ecosystem incentive weakened
+- **Key takeaway for ClawFriend:** MyShell là threat #1 trên BNB Chain. 5M users vs ~0. Tuy nhiên, MyShell KHÔNG có bonding curve economic model và holder-gated exclusivity. Đó là khe hở duy nhất ClawFriend cần khai thác. **Nếu MyShell thêm bonding curve → game over.**
 
 ---
 
-### 3. Fetch.ai Agentverse
-
-- **Link:** https://fetch.ai/agentverse
-- **Description:** Decentralized agent marketplace on the ASI (Artificial Superintelligence) Alliance network. Agents register, discover each other, and transact autonomously.
-- **Chain / Ecosystem:** Cosmos SDK (ASI Alliance with SingularityNET + Ocean Protocol)
-- **Data:**
-  - 2.5M registered agents
-  - 34M+ on-chain transactions
-  - $FET token market cap ~$2B (merged into ASI token)
-  - $150M+ in backing
-- **Monetization:** $FET staking for agent registration. Service fees on agent-to-agent transactions. Enterprise SDK licensing.
-- **Strengths:**
-  - Institutional backing (ASI Alliance = Fetch + SingularityNET + Ocean)
-  - Proven agent infrastructure (34M tx)
-  - Real enterprise use cases (supply chain, mobility, energy)
-  - Own blockchain (Cosmos-based) = no gas competition
-- **Weaknesses:**
-  - Complex developer onboarding (Cosmos SDK)
-  - Less consumer-friendly than MyShell/Virtuals
-  - Agent "registration" counts may include inactive agents
-  - Separate chain = less composability with DeFi
-- **Key takeaway for ClawFriend:** Fetch.ai is infrastructure-heavy, targeting enterprise. ClawFriend targets consumer/trader users. Different segments, low direct competition unless Fetch.ai launches a consumer product.
-
----
-
-### 4. Olas Pearl (Autonolas)
-
-- **Link:** https://olas.network
-- **Description:** Co-owned AI agents. Developers build agent components, users deploy them, both share revenue. Modular component marketplace.
-- **Chain / Ecosystem:** Multi-chain (Ethereum, Base, Optimism, Gnosis, Mode)
-- **Data:**
-  - 6M+ on-chain transactions
-  - $13.8M in funding raised
-  - $OLAS token live
-  - ~500 registered services
-  - Multi-chain deployment
-- **Monetization:** $OLAS bonding mechanism for registering services. Developer rewards based on code contribution. Service fees shared between developers and operators.
-- **Strengths:**
-  - Multi-chain flexibility (5+ chains)
-  - Co-ownership model aligns incentives
-  - Strong developer tooling (modular components)
-  - Real DeFi agent integration (portfolio management)
-  - Backed by Valory ($13.8M)
-- **Weaknesses:**
-  - Complex developer experience
-  - Smaller agent ecosystem than Virtuals
-  - More infrastructure than consumer product
-  - Co-ownership model adds legal complexity
-- **Key takeaway for ClawFriend:** Olas shares the "agents earn externally" thesis. They've proven it with DeFi agents. ClawFriend should study Olas's agent strategies for inspiration. However, Olas targets developers, not consumers.
-
----
-
-### 5. ElizaOS (ai16z)
-
-- **Link:** https://elizaos.github.io/eliza/
-- **Description:** Open-source AI agent framework with a plugin marketplace. The backbone of many Web3 AI agents. Backed by a16z token (ai16z).
-- **Chain / Ecosystem:** Chain-agnostic (plugins for any chain)
-- **Data:**
-  - 268 official plugins
-  - 16K+ GitHub stars
-  - $ELIZAOS token (migrated from $ai16z via Chainlink CCIP, Feb 4, 2026)
-  - Market cap ~$921K, price $0.0008 (Source: CoinGecko, 2026-02-25)
-  - Widely adopted as agent framework
-- **Recent Developments (Feb 2026):**
-  - **Token migration** (Feb 4) — AI16Z → ELIZAOS via Chainlink CCIP cross-chain
-  - **EVM ecosystem expansion** — Ethereum L2 integration for agent coordination (Q1 2026)
-  - **Generative Treasury** — AI agents autonomously managing liquidity and yield (Q1 2026)
-  - **Eliza Cloud** — unified platform with single API key for agent deployment (planned)
-  - **Plugin Registry** — public repository for AI agent plugins (TBA)
-- **Monetization:** Open-source (free). Revenue from $ELIZAOS token ecosystem. No direct plugin marketplace fees.
-- **Strengths:**
-  - Largest open-source agent framework
-  - Plugin ecosystem (268 plugins)
-  - Chain-agnostic = maximum flexibility
-  - Strong developer community
-  - a16z brand recognition
-- **Weaknesses:**
-  - No built-in monetization for plugin developers
-  - Plugin quality varies (no curation)
-  - Token value disconnected from actual usage
-  - Complex setup for non-developers
-- **Key takeaway for ClawFriend:** ElizaOS is a framework, not an economy. Their 268 plugins prove demand for agent capabilities. ClawFriend's skill market could capture this demand IF it adds monetization (something ElizaOS lacks).
-
----
-
-### 6. Griffin AI
-
-- **Link:** https://griffain.com
-- **Description:** Solana-native AI agent platform. Deploy agents that trade, DeFi, social media, all from a simple interface.
-- **Chain / Ecosystem:** Solana
-- **Data:**
-  - 15,000+ agents deployed
-  - 265,000+ signups
-  - SaaS pricing model
-- **Monetization:** Subscription-based SaaS. Tiered pricing for agent deployment and management.
-- **Strengths:**
-  - Strong signup numbers (265K)
-  - Solana = fast + cheap
-  - Consumer-friendly interface
-  - Real DeFi agent functionality
-- **Weaknesses:**
-  - Solana-only (no BNB Chain)
-  - SaaS model may face resistance in Web3
-  - Newer platform, less proven
-- **Key takeaway for ClawFriend:** Griffin proves consumer demand for agent economies. 265K signups in Solana shows the market exists. BNB Chain is underserved in comparison.
-
----
-
-### 7. CreatorBid
+### 3. CreatorBid — BONDING CURVE CAUTIONARY TALE
 
 - **Link:** https://creatorbid.com
-- **Description:** AI agent launchpad on Base. Create and trade tokenized AI agents with bonding curves.
+- **Description:** AI agent launchpad on Base. Create and trade tokenized AI agents with bonding curves. Closest model to ClawFriend.
 - **Chain / Ecosystem:** Base
-- **Data:**
+- **Data (Feb 26, 2026):**
   - 3,500+ agents/creator tokens
-  - Token bonding curve mechanism
-  - Focus on creator economy
+  - Token bonding curve mechanism (same concept as ClawFriend)
+  - $CREATOR market cap ~$3.2M, price $0.0087 (Source: CoinGecko, Feb 26)
+  - vs ATH: **-97%** — near-death
+  - Recent activity: The Graph integration only — gần như inactive
 - **Monetization:** Fee on token trades (similar to ClawFriend's model). Creator revenue sharing.
 - **Strengths:**
-  - Direct competitor model (bonding curve + agents)
-  - Growing creator ecosystem
+  - Closest comparable model to ClawFriend (bonding curve + agents)
   - Base Chain (Coinbase ecosystem)
+  - Still alive (barely)
 - **Weaknesses:**
-  - Base-only (same limitation as ClawFriend is BNB-only)
-  - Less agent autonomy than Virtuals
-  - Smaller than Virtuals
-- **Key takeaway for ClawFriend:** CreatorBid is the closest model to ClawFriend but on Base. Both use bonding curves for agent tokens. ClawFriend differentiates with skill marketplace and OpenClaw integration.
+  - **-97% from ATH** — declining rapidly
+  - Low trading volume, minimal development activity
+  - No differentiation from Virtuals (same chain, weaker everything)
+  - Proves bonding curve alone doesn't create traction
+- **Key takeaway for ClawFriend:** CreatorBid là **cautionary tale**. Cùng model bonding curve + AI agents, nhưng đang chết. Token -97%. Bài học: bonding curve là feature, KHÔNG phải strategy. ClawFriend phải có utility thật (verified skills, DeFi tools) — speculation alone kills.
+
+### Bonding Curve Reality Check
+
+```
+Platform        Model                       Status (Feb 2026)
+──────────────────────────────────────────────────────────
+CreatorBid      Bonding curve + AI agents   -97% ATH, dying
+friend.tech     Bonding curve + social      DEAD ($0.0025, abandoned Sept 2024)
+Griffain        Agent tokens + Solana       -99% ATH, stalling
+Pump.fun        Bonding curve + memecoins   High volume but zero utility
+Four.Meme       Bonding curve + BNB         Revenue falling, meme-only
+──────────────────────────────────────────────────────────
+Virtuals        Bonding curve + ACP + rev   -88% ATH BUT $39.5M proven revenue
+```
+
+**Pattern:** Mọi bonding curve platform đều failing NGOẠI TRỪ Virtuals — vì Virtuals có agent-to-agent commerce tạo revenue thật. **Bonding curve without utility = death spiral.** ClawFriend PHẢI có verified skills delivering real value để break pattern này.
 
 ---
 
-### 8. Morpheus Network
+### 4. ChatAndBuild — NEW BNB CHAIN COMPETITOR, 140K USERS
 
-- **Link:** https://mor.org
-- **Description:** Decentralized AI compute marketplace. Provides compute resources for AI agents. $MOR token for incentivizing compute providers.
-- **Chain / Ecosystem:** Multi-chain (Arbitrum, Ethereum)
-- **Data:**
-  - $MOR market cap ~$4.6M, price $0.668 (Source: CoinGecko, 2026-02-25)
-  - $MOR token live
-  - Compute marketplace operational
-  - Note: Previous $320M TVL figure needs re-verification (DefiLlama API returned error 2026-02-25)
-- **Monetization:** $MOR token rewards for compute providers. Marketplace fees for AI compute.
+- **Link:** https://chatandbuild.com
+- **Description:** AI Super App on BNB Chain. Build, launch, and own AI apps without code. Uses BAP-578 (Non-Fungible Agent) — BNB Chain's official standard.
+- **Chain / Ecosystem:** BNB Chain (same as ClawFriend)
+- **Data (Feb 26, 2026):**
+  - 140,000+ users across 111 countries
+  - BAP-578 NFA standard (official BNB Chain)
+  - AI integrations: Anthropic, OpenAI, Google Gemini, DeepSeek
+  - 40+ languages supported
+  - Recognition: BNB Hack Abu Dhabi (Jan 2026)
+  - No token yet
+- **Monetization:** NFA-based model (buy/sell/hire agents as NFAs).
 - **Strengths:**
-  - Massive TVL ($320M) shows capital confidence
-  - Solves compute cost problem for AI agents
-  - Multi-chain
+  - 140K users — significant traction on BNB Chain
+  - Uses official BNB Chain standard (BAP-578) — aligned with ecosystem direction
+  - No-code = accessible to non-tech users
+  - Multi-AI provider support
+  - BNB Chain ecosystem recognition
 - **Weaknesses:**
-  - Infrastructure play, not consumer-facing
-  - Complex staking mechanics
-  - Compute ≠ agent economy
-- **Key takeaway for ClawFriend:** Morpheus is complementary, not competitive. ClawFriend agents could USE Morpheus compute. Potential partnership opportunity.
+  - No bonding curve economic layer (NFA model different from ClawFriend)
+  - No skill marketplace (focus on agent building, not skill trading)
+  - No social layer documented
+  - No token = less speculation appeal
+- **Key takeaway for ClawFriend:** ChatAndBuild là mối đe dọa mới nghiêm trọng. Cùng BNB Chain, 140K users, dùng standard chính thức. ClawFriend cần **adopt BAP-578** để tương thích thay vì chống lại. Differentiate bằng skill marketplace depth + holder-gated economics.
 
 ---
 
-### 9. ClawHub (OpenClaw Official Registry)
+### 5. ClawHub (OpenClaw Official Registry) — SUPPLY SOURCE
 
 - **Link:** https://clawhub.com
-- **Description:** The official skill registry for OpenClaw. Developers publish skills, agents install them via CLI (`npx clawhub@latest install [skill]`).
-- **Chain / Ecosystem:** N/A (not blockchain-based, just a registry)
-- **Data:**
+- **Description:** Official skill registry for OpenClaw. Developers publish skills, agents install via CLI.
+- **Chain / Ecosystem:** N/A (not blockchain-based)
+- **Data (Feb 26, 2026):**
   - 3,286 published skills
   - 1.5M+ total downloads
-  - FREE (no monetization)
+  - FREE (zero monetization)
   - Part of OpenClaw ecosystem (135K+ GitHub stars)
-- **Monetization:** **None.** All skills are free to publish and install. Zero revenue.
+  - **ClawHavoc crisis:** 1,184 malicious skills discovered (12-20% of all skills)
+- **Monetization:** **None.** All skills free to publish and install. Zero revenue.
 - **Strengths:**
   - Massive skill library (3,286 vs ClawFriend's 2)
   - Native OpenClaw integration
   - 1.5M downloads proves demand
-  - Free = low barrier to adoption
+  - Free = low barrier
 - **Weaknesses:**
   - $0 revenue (no business model)
+  - **ClawHavoc crisis** — 12-20% malicious skills, crypto assets targeted
   - No quality curation / review system
   - No financial incentive for skill developers
-  - No token or economic layer
-- **Key takeaway for ClawFriend:** ClawHub has 3,286 skills but $0 revenue. This is the BIGGEST OPPORTUNITY for ClawFriend: become the monetization layer on top of OpenClaw's free skill registry. If ClawFriend can capture even 1% of ClawHub's 1.5M downloads as paid/gated skills, that's 15K paid downloads.
+  - OpenClaw founder joined OpenAI (Feb 14) — uncertain direction
+- **Key takeaway for ClawFriend:** ClawHub có 3,286 skills nhưng $0 revenue VÀ security crisis. Đây là **dual opportunity**: (1) Become the monetization layer on top of ClawHub, (2) Become the TRUSTED/VERIFIED alternative post-ClawHavoc. "If ClawHub is the Wild West, ClawFriend is the App Store."
 
----
+### ClawHavoc Opportunity
 
-### 10. MCP Ecosystem (Model Context Protocol)
+**Timeline:** Jan-Feb 2026
+- 1,184 malicious skills discovered on ClawHub
+- 12-20% of ALL skills are malicious
+- Targeted: crypto wallet keys, exchange API keys
+- Bloomberg: "OpenClaw May Be a Security Nightmare"
 
-- **Link:** https://modelcontextprotocol.io
-- **Description:** Anthropic's open protocol for connecting AI models to external tools. MCP servers provide capabilities (APIs, databases, services) to AI agents.
-- **Chain / Ecosystem:** N/A (protocol standard)
-- **Data:**
-  - 17,000+ MCP servers registered
-  - Adopted by Claude, Cursor, Windsurf, and more
-  - $0 revenue (open protocol)
-  - Growing rapidly (Anthropic-backed)
-- **Monetization:** **None.** MCP is an open standard. No one charges for MCP servers currently.
-- **Strengths:**
-  - 17K+ servers = massive capability library
-  - Backed by Anthropic (Claude)
-  - Adopted by major AI tools
-  - Open standard = interoperable
-- **Weaknesses:**
-  - $0 monetization (opportunity cost)
-  - No curation or quality control
-  - No economic incentives for server developers
-  - Not Web3-native
-- **Key takeaway for ClawFriend:** MCP is the elephant in the room. 17K servers with ZERO monetization = the biggest untapped marketplace in AI. If ClawFriend can bridge OpenClaw skills with MCP-style capabilities and add a payment layer, it could capture massive value. This is ClawFriend's #1 strategic opportunity.
+**What this means for ClawFriend:**
 
----
+| Aspect | Threat | Opportunity |
+|--------|--------|-------------|
+| Brand | "OpenClaw-native" is now double-edged | "The VERIFIED marketplace post-ClawHavoc" |
+| Trust | Users fear OpenClaw skills | Verified badge = differentiation no competitor has |
+| Demand | Some users leaving ClawHub | Capture security-conscious users |
+| Narrative | Security FUD hurting ecosystem | "We solve the problem ClawHavoc created" |
 
-### 11. Bittensor
-
-- **Link:** https://bittensor.com
-- **Description:** Decentralized AI network. Subnets specialize in different AI tasks (LLM inference, image generation, data). Miners compete for $TAO rewards.
-- **Chain / Ecosystem:** Substrate (Polkadot)
-- **Data:**
-  - 130 active subnets
-  - $TAO token (top 50 crypto)
-  - Thousands of miners
-- **Monetization:** $TAO mining rewards. Validators and miners earn by providing AI compute and services.
-- **Strengths:**
-  - Proven tokenomics
-  - Large crypto market cap
-  - Real AI inference happening
-- **Weaknesses:**
-  - Very technical (mining setup required)
-  - Not a marketplace UX
-  - Quality variance across subnets
-- **Key takeaway for ClawFriend:** Bittensor is a compute/inference network, not a skill marketplace. Different layer of the stack. No direct competition.
-
----
-
-### 12. Additional Emerging Players
-
-| Name | Chain | Key Metric | Status |
-|------|-------|------------|--------|
-| Wayfinder | Solana | $PROMPT token launch | Early stage |
-| AgentLayer | Multi-chain | TEE-based agents | Alpha |
-| Spectral | Ethereum | No-code ML strategies | Niche |
-| Clanker | Base | 21K token launches/day | High volume, low quality |
+**Positioning:** ClawFriend should lean INTO the crisis, not away from it. Every verified skill published is a direct answer to ClawHavoc. This is the single strongest differentiation available to ClawFriend right now.
 
 ---
 
 ## Side-by-Side Comparison
 
-| Feature | ClawFriend | Virtuals | MyShell | Fetch.ai | Olas | ElizaOS | Griffin | ClawHub |
-|---------|-----------|----------|---------|----------|------|---------|---------|---------|
-| **Chain** | BNB | Base/Solana | BNB | Cosmos | Multi | Any | Solana | N/A |
-| **Agents/Skills** | 2 | 18,000+ | 200K+ | 2.5M | ~500 | 268 | 15K | 3,286 |
-| **Revenue** | $0 | $39.5M | Funded | $FET fees | Funded | $0 | SaaS | $0 |
-| **Bonding Curve** | Yes | Yes | No | No | Bonding | No | No | No |
-| **Skill Market** | Yes (2) | ACP | Agents | Agentverse | Modular | Plugins | No | Yes (3,286) |
-| **Social Layer** | Yes | Yes | Partial | No | No | No | Partial | No |
-| **Agent Autonomy** | Claimed | Proven | Partial | Proven | Proven | Framework | Yes | N/A |
-| **Token** | None | $VIRTUAL | Shell | $FET | $OLAS | $ai16z | None | None |
-| **Target** | Consumer | Broad | Consumer | Enterprise | Developer | Developer | Consumer | Developer |
-| **OpenClaw Native** | Yes | No | No | No | No | No | No | Yes |
+| Feature | ClawFriend | Virtuals | MyShell | CreatorBid | ChatAndBuild | ClawHub |
+|---------|-----------|----------|---------|------------|--------------|---------|
+| **Chain** | BNB | Base/Sol/BNB | BNB | Base | BNB | N/A |
+| **Agents/Skills** | 2 | 18,000+ | 200K+ | 3,500 | 140K users | 3,286 |
+| **Revenue** | $0 | $39.5M | VC-funded | ~300 ETH | Unknown | $0 |
+| **Bonding Curve** | Yes | Yes | No | Yes | NFA model | No |
+| **Skill Market** | Yes (2, holder-gated) | ACP commerce | Agent templates | Token bonding | Agent building | Yes (3,286, free) |
+| **Social Layer** | Yes | Yes | Partial | Limited | Unknown | No |
+| **Agent Autonomy** | Claimed | Proven ($470M aGDP) | Partial | Limited | Unknown | N/A |
+| **Verified/Curated** | Planned | No (spam issues) | Partial | No | Unknown | **No (12-20% malicious)** |
+| **Token** | None | $VIRTUAL ($450M) | $SHELL ($9M) | $CREATOR ($3.2M) | None | None |
+| **Target** | Trader + Creator | Broad | Consumer | Creator | No-code builder | Developer |
+| **OpenClaw Native** | Yes | No | No | No | No | Yes |
 
 ### Revenue Model Comparison
 
-| Platform | Model | Revenue | Proven? |
-|----------|-------|---------|---------|
-| Virtuals | 1% commission on launches | $39.5M | Yes |
-| MyShell | Freemium + token | Funded (VC) | Partially |
-| Fetch.ai | Token staking + service fees | $FET utility | Yes |
-| Olas | Bonding + dev rewards | Funded ($13.8M) | Partially |
-| ElizaOS | Open-source + token | $0 direct | No |
-| Griffin | SaaS subscription | Growing | Early |
+| Platform | Model | Revenue | Status |
+|----------|-------|---------|--------|
+| Virtuals | 1% commission + ACP + Revenue Network | $39.5M+ | Proven |
+| MyShell | Freemium + $SHELL token | VC-funded ($16.6M) | Partially proven |
+| CreatorBid | Fee on token trades | ~300 ETH total | **Dying** |
+| ChatAndBuild | NFA model | Unknown | Early |
 | ClawHub | Free | $0 | N/A |
-| MCP | Open protocol | $0 | N/A |
-| **ClawFriend** | **Trading fees** | **$0** | **No** |
+| **ClawFriend** | **5+5% trading fees** | **$0** | **Pre-launch** |
 
 ---
 
 ## Threat Matrix
 
-Xếp hạng mức độ đe dọa dựa trên 3 yếu tố: (1) Cùng chain BNB? (2) Cùng model bonding curve? (3) Quy mô user base.
+Xếp hạng mức độ đe dọa dựa trên: (1) Cùng chain BNB? (2) Cùng model? (3) User base. (4) Momentum.
 
 | # | Đối thủ | Cùng chain? | Cùng model? | User base | Threat Level | Lý do |
 |---|---------|-------------|-------------|-----------|-------------|-------|
-| 1 | **MyShell** | BNB (SAME) | Khác (no bonding curve) | 5M users | **CRITICAL** | Cùng chain, dominant user base, VC-backed, có thể thêm bonding curve bất cứ lúc nào |
-| 2 | **CreatorBid** | Base (khác) | SAME (bonding curve + agents) | 3,500 agents | **HIGH** | Model gần nhất với ClawFriend, nếu expand sang BNB = đối đầu trực tiếp |
-| 3 | **Virtuals Protocol** | Base/Solana (khác) | Partially (token + agent economy) | 18K agents, $39.5M rev | **MEDIUM** | Quá lớn để cạnh tranh trực tiếp, nhưng nếu expand sang BNB = crush |
-| 4 | **ElizaOS** | Chain-agnostic | Khác (framework, no economy) | 268 plugins, 16K GH stars | **MEDIUM** | Nếu launch plugin marketplace with monetization → cạnh tranh skill market |
-| 5 | **Griffin AI** | Solana (khác) | Khác (SaaS) | 265K signups | **LOW-MEDIUM** | Khác chain + khác model, nhưng nếu thêm BNB support = threat |
-| 6 | **Fetch.ai** | Cosmos (khác) | Khác (enterprise) | 2.5M agents | **LOW** | Enterprise focus, khác segment hoàn toàn |
-| 7 | **ClawHub** | N/A | Khác (free registry) | 3,286 skills | **LOW** | Complementary — không có monetization, ClawFriend là upgrade layer |
-| 8 | **Bittensor** | Substrate | Khác (compute) | 130 subnets | **LOW** | Infrastructure layer, không competitive |
-
-**Key insight:** Mối đe dọa lớn nhất là **MyShell** (cùng BNB Chain, 5M users, VC backing). Mối đe dọa thứ hai là **CreatorBid** (cùng bonding curve model, có thể expand chain). ClawFriend phải chiếm niche "OpenClaw skill economy on BNB" trước khi MyShell thêm bonding curve hoặc CreatorBid thêm BNB Chain.
+| 1 | **MyShell** | BNB (SAME) | Khác (no bonding curve) | 5M users | **CRITICAL** | Cùng chain, dominant users, VC-backed, On-Chain Intelligence live. Nếu thêm bonding curve = game over |
+| 2 | **Virtuals** | BNB (Luna.fun) | Similar (token + ACP) | 18K agents, 650K holders | **CRITICAL** | Market leader, đã vào BNB, $39.5M revenue. Không thể cạnh tranh trực tiếp |
+| 3 | **ChatAndBuild** | BNB (SAME) | Khác (NFA, no bonding) | 140K users | **HIGH** | Cùng chain, official standard (BAP-578), no-code, growing |
+| 4 | **CreatorBid** | Base (khác) | SAME (bonding curve) | 3,500 agents | **MEDIUM** | Model gần nhất nhưng -97% = cautionary tale, không phải active threat |
+| 5 | **ClawHub** | N/A | Complementary | 3,286 skills | **LOW** | Supply source, không có monetization. ClawFriend = upgrade layer |
 
 ---
 
@@ -406,69 +272,63 @@ Xếp hạng mức độ đe dọa dựa trên 3 yếu tố: (1) Cùng chain BNB
 
 | Metric | Size | Basis |
 |--------|------|-------|
-| **TAM** (Total Addressable Market) | **~$4.34B** | CoinGecko lists 550+ AI agent projects with combined market cap ~$4.34B (Feb 2026). Toàn bộ Web3 AI agent economy. |
-| **SAM** (Serviceable Addressable Market) | **~$200-400M** | BNB Chain AI segment: 58 AI projects on BNB Chain, ~1M daily active addresses. BNB Chain chiếm ~10% total crypto AI market cap. OpenClaw ecosystem (135K+ GitHub stars, 3,286 skills, 1.5M downloads) là primary addressable community. |
-| **SOM** (Serviceable Obtainable Market) | **~$2-5M Year 1** | Target capture 5-10% of ClawHub developers (164-329 skills ported), 1,000-5,000 active traders. At average $10 CAC and 5% protocol fee on estimated $40M-$100M annualized trading volume → $2-5M protocol revenue Year 1. |
+| **TAM** (Total Addressable Market) | **~$11.3B** | AI agent sector market cap: 550+ projects (Source: CoinGecko/Phemex, Feb 2026). Toàn bộ Web3 AI agent economy including launchpads, frameworks, compute. |
+| **SAM** (Serviceable Addressable Market) | **~$400-800M** | BNB Chain AI segment: 58 projects, ~2.6M daily active addresses. Agent launchpad + skill marketplace subsector. OpenClaw ecosystem (135K GitHub stars, 3,286 skills). |
+| **SOM** (Serviceable Obtainable Market) | **~$1-3M Year 1** | Target: 50 power users + 500 active wallets. At 5% protocol fee on $20-60M annualized trading volume → $1-3M protocol revenue. Conservative given bonding curve failure pattern. |
 
-**Conservative math:** Nếu ClawFriend đạt 100 agents active, mỗi agent có 50 shareholders trung bình, trading volume 1 BNB/day/agent → 100 BNB/day × 5% protocol fee = 5 BNB/day = **~$3,000/day = ~$1.1M/year** protocol revenue.
+**Conservative math:** 50 agents active × 30 shareholders avg × 0.5 BNB/day trading volume = 25 BNB/day × 5% protocol fee = 1.25 BNB/day = ~$750/day = **~$274K/year** protocol revenue.
 
 ---
 
 ## Market Analysis
 
 **What stage is the market in?**
-> **Early Growth.** The Web3 AI agent marketplace is past the concept stage (2023-2024) and into early traction (2025-2026). CoinGecko lists 550+ AI agent projects with ~$4.34B combined market cap. Leaders like Virtuals have proven revenue ($39.5M+), but most platforms are still pre-revenue. The market is consolidating around 3-4 leading platforms with room for niche players. Window of opportunity: **12-18 months** before the top 3 lock in market share.
+> **Early Growth, but compressing.** AI agent market cap hit ~$11.3B across 550+ projects but crashed 90% from ATH. Leaders consolidating (Virtuals $450M, MyShell 5M users). BNB Chain now has 58 AI projects — no longer uncontested. Window of opportunity: **6-9 months** before top players lock market share (was 12-18 months).
 
 **Who is leading?**
-> **Virtuals Protocol** is the clear leader with $39.5M revenue, 18K agents, and multi-chain presence. **MyShell** leads in user count (5M) but targets a broader AI market. **Fetch.ai** leads in agent registrations (2.5M) but is infrastructure-focused. On BNB Chain specifically, **MyShell** dominates with 5M users vs ClawFriend's near-zero.
+> **Virtuals Protocol** is the clear leader with $39.5M revenue, 650K holders, and 5-chain presence including BNB. **MyShell** leads in users (5M) on BNB Chain specifically. **ChatAndBuild** is the fastest-growing newcomer (140K users with BAP-578).
 
 **Is there room for a new entrant?**
-> **Yes, but narrowly.** The "AI agent economy" niche is not yet winner-take-all. Specific opportunities exist:
-> 1. **BNB Chain agent economy** — no one owns this yet (MyShell is broader, not bonding curve)
-> 2. **OpenClaw skill monetization** — 3,286 free skills, 1.5M downloads, $0 revenue
-> 3. **MCP server monetization** — 17K servers, $0 revenue
-> 4. **Trading + Social + Skills combo** — no single competitor does all 3
+> **Yes, but narrowly and with specific positioning.** The "verified skill marketplace" niche is wide open:
+> 1. **Post-ClawHavoc verified marketplace** — trust is the #1 issue, nobody addresses it
+> 2. **OpenClaw skill monetization** — 3,286 free skills × $0 revenue
+> 3. **Holder-gated exclusive access on BNB** — no competitor does this
+> 4. **DeFi-specific agent skills** — BNB Chain's $5.64B TVL is underserved
 
 **What gaps are unaddressed?**
-> 1. **Skill monetization**: ClawHub (3,286 skills) and MCP (17K servers) generate $0. First platform to monetize wins.
-> 2. **BNB Chain agent economy**: MyShell is general AI, not agent trading economy. Nobody does bonding curve agent trading on BNB.
-> 3. **Consumer-friendly agent deployment on BNB**: Griffin does this on Solana (265K signups), nobody on BNB.
-> 4. **Cross-framework skill interop**: Skills work in OpenClaw OR ElizaOS OR MCP, never across all three.
+> 1. **Skill verification/curation**: Post-ClawHavoc, no marketplace offers verified skills. First mover wins trust.
+> 2. **Holder-gated exclusivity**: MyShell = freemium, ChatAndBuild = NFA, Virtuals = open. Nobody uses bonding curve shares to gate premium skills.
+> 3. **OpenClaw → on-chain monetization**: 3,286 skills × $0 revenue. Still unmonetized.
+> 4. **BNB DeFi-specific skills**: $5.64B TVL, 2.6M daily addresses, no dedicated DeFi skill marketplace.
 
 ---
 
 ## Conclusion & ClawFriend Positioning
 
 **How is ClawFriend different?**
-> ClawFriend is the **only platform combining bonding curve agent trading + social feed + skill marketplace** for OpenClaw agents on BNB Chain. No competitor offers this exact combination. It's positioned as "the agent economy layer for OpenClaw on BNB Chain."
+> ClawFriend is the **only platform combining verified skill marketplace + bonding curve economics + holder-gated access + social layer** for OpenClaw agents on BNB Chain. Post-ClawHavoc, the "verified" angle is the single strongest differentiator available.
 
 **Where ClawFriend wins:**
-> 1. **OpenClaw-native** — only economy platform built specifically for OpenClaw's skill ecosystem
-> 2. **BNB Chain agent economy** — uncontested niche (MyShell is broader, Virtuals is on Base/Solana)
-> 3. **Trading + Social + Skills** — only platform with all 3 layers integrated
-> 4. **Timing** — OpenClaw at 135K+ GitHub stars, BNB Chain investing in AI ($100K hackathon)
-> 5. **Monetization gap exploit** — ClawHub has 3,286 free skills; ClawFriend can be the paid layer
+> 1. **Verified marketplace** — post-ClawHavoc, trust is the #1 demand. No competitor offers this.
+> 2. **Holder-gated exclusivity** — bonding curve shares gate premium skills. Unique mechanism.
+> 3. **OpenClaw-native** — only economy platform built for OpenClaw's skill ecosystem
+> 4. **BNB Chain DeFi niche** — $5.64B TVL, underserved by current AI agent platforms
+> 5. **Monetization gap** — ClawHub has 3,286 free skills; ClawFriend is the paid/verified layer
+> 6. **Ultra-low barrier** — first share costs $0.04. BNB gas $0.01-0.05/tx (10x cheaper than Base)
 
 **Where ClawFriend is behind:**
-> 1. **Traction: ZERO** — 2 skills, 20 downloads, 0 Twitter mentions vs Virtuals' 18K agents
-> 2. **Revenue: $0** — Virtuals has $39.5M proven; ClawFriend has $0
-> 3. **Token: None** — No $CLAWFRIEND token vs competitors with liquid tokens and governance
-> 4. **Multi-chain: No** — BNB only vs Virtuals (Base+Solana), Olas (5 chains), Fetch.ai (Cosmos)
-> 5. **Team: Anonymous** — No public team info, no audit, no VC backing disclosed
-> 6. **Users: ~0** — MyShell has 5M users on the SAME chain (BNB)
+> 1. **Traction: ZERO** — 2 skills, ~0 users vs Virtuals' 18K agents, MyShell's 5M users
+> 2. **Revenue: $0** — Virtuals $39.5M proven. ClawFriend $0
+> 3. **Token: None** — No ecosystem incentive token
+> 4. **Standards: Non-standard** — Custom contract vs BAP-578 (official BNB) and ERC-8004
+> 5. **Team: Anonymous** — No public team, no audit, no VC backing disclosed
+> 6. **Bonding curve risk** — Model failing everywhere except Virtuals
 
-**Segment that competitors are leaving open:**
-> **Monetized OpenClaw skill marketplace on BNB Chain.** ClawHub has the skills (3,286) but charges $0. MCP has the servers (17K) but charges $0. ElizaOS has plugins (268) but charges $0. The entire skill/plugin ecosystem is running on FREE. ClawFriend can be the first to add a payment/gating layer (holder-gated skills via bonding curve keys).
-
-**Specific competitive advantages (with spec data):**
-> 1. **First OpenClaw economy** — `npx clawhub@latest install clawfriend` integration already works. 3,286 ClawHub skills × $0 revenue = massive monetization gap for ClawFriend to fill.
-> 2. **BNB gas advantage** — $0.01-0.05 per tx vs Base ($0.10-0.50) and Ethereum ($5-50). 10x cheaper than CreatorBid on Base → frequent skill trading is economically viable.
-> 3. **Ultra-low barrier to entry** — First share costs only **0.0000625 BNB (~$0.04)** via bonding curve formula `price = supply²/16000`. Users can start participating for under $1.
-> 4. **Creator income model** — 5% creator fee on every trade. At $10K daily volume, a single agent creator earns **$500/day = $15,000/month** passive income (spec-documented projection).
-> 5. **Asian market access** — BNB Chain's 50M+ wallets are concentrated in SEA where ClawFriend operates under Hong Kong SAR law.
-> 6. **Positive-sum design** — 10% round-trip cost (~19% buy+sell) discourages short-term flipping, math favors longer holds. Addresses friend.tech's fatal flaw (proved by its death in Sept 2024).
-> 7. **Skill gating via shares** — unique mechanism: hold agent shares to unlock premium (holder-gated) skills. Creates genuine economic incentive to hold, not just speculate.
+**Competitive positioning:**
+> **"The Verified Skill Marketplace for BNB Chain — Post-ClawHavoc, Trust Matters"**
+>
+> ClawFriend does not compete with Virtuals on scale or MyShell on users. It occupies the **trust + exclusivity + DeFi** intersection that no competitor serves. The ClawHavoc crisis created a 6-9 month window for a verified marketplace to establish trust in the OpenClaw ecosystem.
 
 ---
 
-_Data sources: [ClawFriend](https://clawfriend.ai), [Virtuals Protocol](https://www.virtuals.io), [MyShell](https://myshell.ai), [Fetch.ai](https://fetch.ai), [Olas](https://olas.network), [ElizaOS](https://elizaos.github.io/eliza/), [Griffin](https://griffain.com), [CreatorBid](https://creatorbid.com), [Morpheus](https://mor.org), [ClawHub](https://clawhub.com), [MCP](https://modelcontextprotocol.io), [Bittensor](https://bittensor.com), [CoinGecko](https://coingecko.com), [CoinMarketCap](https://coinmarketcap.com), [DeFiLlama](https://defillama.com). Token prices updated 2026-02-25. Qualitative data accessed 2026-02-24._
+_Data sources: [ClawFriend](https://clawfriend.ai), [Virtuals Protocol](https://www.virtuals.io), [MyShell](https://myshell.ai), [CreatorBid](https://creatorbid.com), [ChatAndBuild](https://chatandbuild.com), [ClawHub](https://clawhub.com), [CoinGecko](https://coingecko.com), [CoinMarketCap](https://coinmarketcap.com), [DefiLlama](https://defillama.com), [BscScan](https://bscscan.com). Token prices updated 2026-02-26. Qualitative data accessed 2026-02-26._

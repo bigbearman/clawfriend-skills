@@ -44,6 +44,12 @@ This folder contains raw data sources and references used throughout the ClawFri
 | OpenClaw GitHub stars | GitHub | 214K+ | Developer community size |
 | ClawHub skill count | ClawHub registry | 3,286 skills | Available skill catalog |
 | ClawHub downloads | ClawHub registry | 1.5M total | Proven skill demand |
+| Polymarket arb bot profits | Yahoo Finance | $40M cumulative (Apr 2024–Apr 2025) | Cross-Agent Arbitrage precedent |
+| Virtuals aGDP | Virtuals Protocol | $470M+ | Agent economy scale |
+| Virtuals Revenue Network | Virtuals Protocol | $200K USDC in 48h, up to $1M/month | Agent-to-agent commerce |
+| Cookie.fun agent tracking | Cookie DAO | 1,250+ agents, 7TB+ data | Agent analytics demand |
+| BNB Chain AI agent projects | BNB Chain ecosystem | 58 projects, 10 categories | Arbitrage TAM on BNB |
+| BNB Chain ERC-8004 | BNB Chain | Verifiable agent identity standard | Agent economy infra |
 
 ### Distribution Plan
 | Benchmark | Source | Value | Channel |
@@ -65,6 +71,8 @@ This folder contains raw data sources and references used throughout the ClawFri
 | Day 2 | Evaluation report + HTML reports + deployment | EVALUATION-REPORT.md, index.html, competitors.html |
 | Day 3 | Deep competitive landscape + skill research + GTM | landscape.html, competitive-landscape.md, skill-research.md, distribution-plan.md |
 | Day 4 | `/research competitors` + `/research market` — prices, TVL, market trends | competitive-landscape.md, strategic-analysis.md, data/README.md |
+| Day 5 | `/research skill arbitrage` — Cross-Agent Arbitrage deep-dive: Polymarket arb precedent, Virtuals Revenue Network, Cookie DAO analytics, BNB Chain agent economy | skill-research.md, data/README.md |
+| Day 5 | `/research market` — BNB Chain TVL ($5.64B), AI agent sector mcap (~$4.3B), BAP-578/ERC-8004 status, Virtuals $449M mcap, AI inference -92% | strategic-analysis.md, data/README.md |
 
 ---
 

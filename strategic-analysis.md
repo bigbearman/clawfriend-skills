@@ -1,14 +1,14 @@
 # ClawFriend Strategic Analysis — Feb 2026
 
 > **Dựa trên:** CLAWFRIEND_SPEC.md (full product spec, 12 sections, 18+ pages docs)
-> **Ngày:** 2026-02-25
+> **Ngày:** 2026-02-26
 > **Mục tiêu:** Phân tích đối thủ dựa trên spec mới + tìm hướng đi chiến lược
 
 ---
 
 ## TL;DR — 3 Phát Hiện Quan Trọng Nhất
 
-1. **Thị trường AI agent token sụp đổ 90%** ($40B → ~$4.3B, 550+ projects) — mọi token đều -88% đến -99% từ ATH. Nhưng builder activity vẫn tiếp tục. DeFAI đạt $50M payments volume trên x402. Đây là thời điểm xây dựng, KHÔNG phải thời điểm launch token.
+1. **Thị trường AI agent token sụp đổ 90%** ($40B → ~$4.3B, 550+ projects) — mọi token đều -88% đến -99% từ ATH. Nhưng builder activity vẫn tiếp tục. DeFAI đạt $50M payments volume trên x402. AI inference costs giảm 92% ($30 → $0.10-2.50/1M tokens). Đây là thời điểm xây dựng, KHÔNG phải thời điểm launch token.
 
 2. **BNB Chain không còn "uncontested"** — 58 AI agent projects, BAP-578 (Non-Fungible Agent standard) đã live, ChatAndBuild có 140K users. Cửa sổ cơ hội đang thu hẹp.
 
@@ -22,7 +22,7 @@
 
 | Đối thủ | Status | Chain | Token (Feb 2026) | vs ATH | Users/Agents | Revenue |
 |---------|--------|-------|-------------------|--------|--------------|---------|
-| **Virtuals** | DOMINANT | Base/Sol/ETH/Ronin | $0.656 (+13.2% 24h) | -88% | 18K agents, $430.5M mcap | $39.5M+ |
+| **Virtuals** | DOMINANT | Base/Sol/ETH/Ronin | $0.685 (+2.1% 24h) | -88% | 18K+ agents, $449M mcap | $39.5M+ rev, $470M+ aGDP |
 | **MyShell** | Active | BNB | $0.029 (+5.6% 24h) | -95.7% | 5M users, 200K agents, $7.95M mcap | VC-funded ($16.6M) |
 | **ElizaOS** | Active | Agnostic | $0.0008 (migrated ELIZAOS) | -99.5% | 268 plugins, $921K mcap | $0 direct |
 | **Griffain** | Declining | Solana | $0.0077 | -98.7% | 15K agents, $7.77M mcap | SaaS |
@@ -35,7 +35,7 @@
 
 | Mức Độ | Đối Thủ | Lý Do |
 |--------|---------|-------|
-| **HIGH** | Virtuals Protocol | Market leader ($430.5M mcap), Revenue Network + Eastworld Labs (Feb 2026), $13.23B monthly volume, x402 |
+| **HIGH** | Virtuals Protocol | Market leader ($449M mcap), Revenue Network live ($200K USDC/48h, up to $1M/month ACP), Eastworld Labs (Feb 2026), x402 |
 | **HIGH** | MyShell | 5M users **cùng BNB Chain**, ShellAgent 2.0, backed by YZi Labs/Dragonfly ($16.6M) |
 | **HIGH** | ChatAndBuild | 140K users, BNB Chain, NFA standard (BAP-578), BNB Hack Abu Dhabi |
 | **MEDIUM-HIGH** | BAP-578 + ERC-8004 | 58 projects BNB Chain, cả hai standards đã live trên mainnet |
@@ -134,14 +134,16 @@
 
 ### 2.1 BNB Chain AI Ecosystem Đã Lớn
 
-| Metric | Trước (Feb 24) | Hiện tại (Feb 25) |
+| Metric | Trước (Feb 24) | Hiện tại (Feb 26) |
 |--------|----------------|-------------------|
-| BNB Chain TVL | $6.6B | **$5.45B** (giảm 17.4%, Source: DefiLlama) |
+| BNB Chain TVL | $6.6B | **$5.64B** (giảm 14.5%, Source: DefiLlama, 2026-02-26) |
 | AI projects on BNB | "Uncontested" | **58 projects, 10 categories** |
-| Agent standards | None official | **BAP-578 + ERC-8004 live on mainnet** |
+| Agent standards | None official | **BAP-578 + ERC-8004 live on mainnet** (hybrid on-chain/off-chain architecture) |
 | Hackathon | $100K prize pool | **Completed — 200+ projects, 600+ builders** (Zhentan, Strike, ShieldBot top 3) |
 | Grants | Unknown | **Up to $200K per project** |
-| AI agent sector | $3.5B mcap | **~$4.34B mcap, 550+ projects** (Source: CoinGecko) |
+| AI agent sector | $3.5B mcap | **~$4.3B mcap, 550+ projects** (Source: CoinGecko/Phemex, 2026-02-26) |
+| Virtuals aGDP | $466M | **$470M+** (Revenue Network live Feb 12, $200K USDC in 48h) |
+| AI inference costs | $30/1M tokens (2023) | **$0.10-2.50/1M tokens** (giảm 92% trong 3 năm) |
 
 ### 2.2 ClawHavoc — Security Crisis = Opportunity
 
@@ -211,7 +213,7 @@
 | **Graduation Mechanism** | Bonding curve doesn't graduate to DEX | Pump.fun, Four.Meme |
 | **Security / Audit Framework** | Không có skill verification system | Market demand post-ClawHavoc |
 | **Multi-chain** | BNB only | Virtuals (4 chains), ElizaOS (agnostic) |
-| **Agent Revenue Proof** | Spec claims "agents earn externally" — zero evidence | Virtuals has $470M aGDP |
+| **Agent Revenue Proof** | Spec claims "agents earn externally" — zero evidence | Virtuals has $470M+ aGDP, Revenue Network paying up to $1M/month |
 | **Roadmap / Vision** | 95% coverage nhưng thiếu Vision & Roadmap page | Most competitors have public roadmap |
 
 ---
@@ -299,7 +301,7 @@ Featured listing → Creator pays cho visibility
 | Component | Chi Tiết |
 |-----------|----------|
 | **Core product** | Full agent economy: deploy → verify → trade → earn |
-| **Differentiator** | Bonding curve shares + social layer + skill market (combo) |
+| **Differentiator** | Bonding curve shares + social layer + skill market (combo unique trên BNB) |
 | **Monetization** | 5% protocol fee + 5% creator fee on every trade |
 | **Standards** | Adopt BAP-578 + ERC-8004 cho BNB Chain native identity |
 | **Payment** | Integrate x402 cho agent-to-agent micropayments |
@@ -540,8 +542,11 @@ Based on BNB Chain ecosystem demand:
 - DeFAI trends: Polkadot blog, Tiger Research, AMBCrypto, Ledger Academy
 - Cambrian Report: AI DeFi agents $50M volume (mpost.io)
 - Market disruption: $2T SaaS wipeout (Feb 2026), AI inference costs -92% in 3 years
-- Token prices: CoinGecko API (2026-02-25)
-- BNB Chain TVL: DefiLlama API (2026-02-25, $5.45B)
+- Token prices: CoinGecko API (2026-02-25, updated 2026-02-26)
+- BNB Chain TVL: DefiLlama API (2026-02-26, $5.64B)
+- AI agent sector: Phemex top 10 AI agent tokens (Feb 14, 2026), CoinGecko categories
+- AI inference costs: Multiple sources, Feb 2026 ($0.10-2.50/1M tokens, -92% in 3 years)
+- ARC surge: Blockchain Magazine (Feb 25, 2026, +21.8% to $0.1147)
 
 ### Security
 - ClawHavoc: The Hacker News, CyberPress, Conscia, Bloomberg

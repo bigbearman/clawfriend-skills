@@ -1,6 +1,6 @@
 # Deliverable 2: Skill Research
 
-> **Weight:** 25% | **Date:** 2026-02-24
+> **Weight:** 25% | **Date:** 2026-02-26 (Updated)
 
 ---
 
@@ -13,6 +13,33 @@
 | 3 | Cross-Agent Arbitrage | ClawFriend key traders and speculators | Private (holder-gated) | 4/7 |
 | 4 | BNB Chain Token Analyzer | New crypto investors needing safety checks | Public | 7/7 |
 | 5 | Content Creator Agent | Agent owners building social presence / KOL-style | Public | 5/7 |
+
+---
+
+## Verified Skill Angle
+
+Post-ClawHavoc (Jan-Feb 2026: 1,184 malicious skills on ClawHub, 12-20% of all skills), every ClawFriend skill MUST include a **Verified badge** as the primary trust signal:
+
+| Verification Layer | Description | Implementation |
+|-------------------|-------------|----------------|
+| **Automated Scan** | Static analysis + dependency audit + known malicious pattern detection | Pre-publish gate, blocks known threats |
+| **Manual Review** | Human review of skill logic, data access patterns, wallet interactions | Required for holder-gated skills |
+| **Community Rating** | User ratings + flag system + reputation score | Post-publish ongoing |
+| **Audit Trail** | On-chain verification hash, version history, transparent changelog | Immutable record via BNB Chain |
+
+**Each skill below includes a "Verified Skill" section** describing how verification applies to that specific skill's risk profile.
+
+## Revenue Caveat — Bonding Curve Reality
+
+Revenue projections below assume growing holder bases and trading volume. However, the bonding curve failure pattern is well-documented:
+
+```
+CreatorBid:  -97% ATH, dying     (same bonding curve model)
+friend.tech: DEAD, abandoned     (bonding curve + social)
+Griffain:    -99% ATH, stalling  (agent tokens)
+```
+
+**Only Virtuals ($39.5M revenue) survived** — because it built real agent-to-agent commerce (ACP, Revenue Network), not just speculation. Revenue projections below are **aspirational** and depend entirely on skills delivering genuine utility. Without real utility, bonding curve speculation collapses within 3-6 months (friend.tech precedent).
 
 ---
 
@@ -35,6 +62,7 @@ BNB Chain hosts $6.6B in DeFi TVL across dozens of protocols with constantly cha
 | DefiLlama | Free | Data only, no alerts, no BNB-specific filtering |
 | Beefy Finance | Free (protocol fees) | Auto-compounds existing positions but does not recommend new ones |
 | Autofarm AutoStrategy AI | Free (protocol fees) | Vault-locked, cannot compare across protocols freely |
+| **MyShell On-Chain Intelligence** | Free / $SHELL credits | **NEW (Feb 2026):** Multi-state DeFi automation on BNB. 5M users. But: no holder-gated exclusivity, no bonding curve economics, general-purpose not yield-focused |
 | Manual checking (DApp hopping) | Free (time cost ~1hr/day) | Unsustainable, error-prone, misses short windows |
 | Paid alpha groups (Telegram) | $50-190/month | Generic calls, rarely BNB-specific yield data |
 
@@ -78,6 +106,11 @@ Based on ClawFriend's bonding curve economics (5% creator fee on every buy/sell)
 - **Dependencies:** Node.js ethers.js/viem for BNB Chain RPC calls, scheduled cron for polling, ClawFriend agent message API for delivering alerts
 - **Risk:** Rate limits on free RPC endpoints; mitigated by using dedicated BNB Chain RPC nodes ($20-50/month)
 
+**Verified Skill Profile:**
+- **Risk level:** LOW — reads on-chain data only, no wallet access, no transaction execution
+- **Verification focus:** Ensure APY calculations are accurate (no inflated numbers), data sources are legitimate (official subgraphs only), no hidden data exfiltration
+- **ClawHavoc relevance:** Yield scanner skills were among ClawHavoc attack vectors (fake yield → phishing). ClawFriend's verified version prevents this pattern
+
 ---
 
 ### Skill 2: Social Alpha Signal
@@ -99,6 +132,7 @@ Crypto market alpha is fragmented across Twitter/X threads, Telegram groups, Dis
 | Arkham Intelligence | Free | Entity tracking only, no automated signal generation |
 | Paid Telegram alpha groups | $50-500/month | Human-curated, delayed, limited coverage, quality varies wildly |
 | AIXBT (Virtuals) | Token holding required ($500M peak mcap) | Monitors 400+ KOLs but outputs on Base chain, not BNB-native |
+| **Virtuals ACP agents** | Various token holdings | **NEW:** Revenue Network enables agent-to-agent alpha trading. $200K USDC in 48h. But: Base-first, BNB presence (Luna.fun) is early/meme-focused |
 
 **How the Skill Solves It**
 
@@ -149,6 +183,11 @@ Holder-gated skill creates strong share demand → higher trading volume → hig
 - **Dependencies:** Twitter API access ($100/month Basic tier for filtered stream), reliable BNB Chain RPC, message queue for parallel pipeline processing
 - **Risk:** Twitter API rate limits and policy changes; mitigated by caching and fallback to scraping public feeds
 
+**Verified Skill Profile:**
+- **Risk level:** MEDIUM — processes financial signals that users act on. Inaccurate signals = financial loss
+- **Verification focus:** Signal accuracy backtesting required (minimum 30-day backtest with documented win rate), no fake urgency mechanics, no pump-and-dump coordination, transparent methodology
+- **ClawHavoc relevance:** Malicious "alpha signal" skills on ClawHub directed users to scam tokens. Verified badge ensures signal sources are legitimate and methodology is transparent
+
 ---
 
 ### Skill 3: Cross-Agent Arbitrage
@@ -159,7 +198,7 @@ ClawFriend power user and speculator who actively trades agent keys (shares) on 
 
 **Problem**
 
-ClawFriend's bonding curve pricing creates mathematical price relationships between agents, but there is no analytics dashboard to compare agent "fundamentals" (follower count, post frequency, engagement rate, skill downloads, revenue generated) against their key prices. In Virtuals Protocol, with 17,000+ agents, top performers like AIXBT reached $500M market cap while most agents sit at near-zero value -- the spread between overvalued and undervalued agents is enormous. Without analytics, key traders rely on gut feeling and FOMO, leading to poor allocation. As ClawFriend scales, the number of agents will make manual comparison impossible.
+ClawFriend's bonding curve pricing creates mathematical price relationships between agents, but there is no analytics dashboard to compare agent "fundamentals" (follower count, post frequency, engagement rate, skill downloads, revenue generated) against their key prices. In Virtuals Protocol, with 18,000+ agents and $470M+ aGDP (Source: Virtuals Protocol, 2026-02-26), top performers like AIXBT reached $500M market cap while most agents sit at near-zero value -- the spread between overvalued and undervalued agents is enormous. The newly launched Virtuals Revenue Network (Feb 2026) processed $200K USDC in its first 48 hours of agent-to-agent commerce, further proving that agent economies generate real trading volume that needs analytics. Without analytics, key traders rely on gut feeling and FOMO, leading to poor allocation. As ClawFriend scales, the number of agents will make manual comparison impossible. The precedent from Polymarket is instructive: arbitrage bots generated $40M in cumulative profits (Apr 2024–Apr 2025), proving that automated value-discovery in token markets is enormously profitable (Source: Yahoo Finance, 2026).
 
 **Current Alternative**
 
@@ -167,9 +206,11 @@ ClawFriend's bonding curve pricing creates mathematical price relationships betw
 |------|------|------------|
 | Manual browsing on ClawFriend | Free | No sorting by metrics, no comparative view, no historical price data |
 | Virtuals Protocol dashboard | Free | Only for Virtuals agents, not ClawFriend-native |
+| Cookie.fun (Cookie DAO) | Free / $COOKIE gated | Tracks 1,250+ AI agents across chains with 7TB+ live data; analytics dashboard ranks agents by mcap, social engagement, holder growth. But: multi-chain focus, no ClawFriend-specific metrics, no arbitrage signals (Source: Cookie DAO, 2026-02-26) |
+| AIXBT Terminal | Token holding required | Social AI analytics + market commentary; limited to sentiment, no cross-agent value scoring (Source: AIXBT, 2026) |
 | DexScreener / DEXTools | Free | Tracks token prices but not agent-specific metrics (social, skills, engagement) |
 | Custom spreadsheets | Free (time cost) | Manual data entry, no real-time updates, not scalable past 20 agents |
-| Nothing (no direct competitor exists) | N/A | This is a greenfield opportunity specific to ClawFriend |
+| Polymarket-style arb bots | $15K-200K+ dev cost | Production crypto arbitrage bots cost $60K-200K+ to build; opportunity windows down to 2.7 seconds avg; 73% of profits captured by sub-100ms bots — not accessible to retail users (Source: PixelPlex, 2026) |
 
 **How the Skill Solves It**
 
@@ -206,10 +247,13 @@ Higher share threshold (5) + directly monetizable alpha = strongest creator reve
 
 | Source | Data | Link |
 |--------|------|------|
-| Virtuals Protocol Precedent | 17,000+ agents created, $39.5M cumulative protocol revenue, $466M total Agent GDP; proves agent economy demand exists | [Virtuals Protocol](https://www.virtuals.io/) |
+| Virtuals Protocol Precedent | 18,000+ agents, $470M+ aGDP, $39.5M+ cumulative protocol revenue; Revenue Network launched Feb 2026 distributing up to $1M/month to agents via ACP; $200K USDC processed in first 48 hours (Source: Virtuals, 2026-02-26) | [Virtuals Revenue Network](https://www.prnewswire.com/news-releases/virtuals-protocol-launches-first-revenue-network-to-expand-agent-to-agent-ai-commerce-at-internet-scale-302686821.html) |
+| Polymarket Arbitrage Precedent | Arbitrage bots generated $40M cumulative profits on Polymarket (Apr 2024–Apr 2025); one bot turned $313 into $414K in a single month; win rates 95-98% for calibrated bots. Proves massive demand for automated value-discovery in token markets (Source: Yahoo Finance, 2026) | [Yahoo Finance](https://finance.yahoo.com/news/arbitrage-bots-dominate-polymarket-millions-100000888.html) |
+| Cookie DAO Agent Analytics | Cookie.fun tracks 1,250+ AI agents across chains with 7TB+ live data; analytics dashboard ranks agents by mcap, social engagement, holder growth — proves demand for agent-level analytics tools (Source: Cookie DAO, 2026-02-26) | [Cookie.fun](https://agents.cookie.fun) |
+| BNB Chain Agent Economy | 58 AI agent projects across 10 categories on BNB Chain; ERC-8004 (verifiable agent identity) and BAP-578 (NFA standard) both advancing; BNB Chain OpenClaw Hackathon awarded $100K to 10 AI agent projects (Source: BNB Chain, 2026-02) | [BNB Chain ERC-8004](https://chainwire.org/2026/02/04/bnb-chain-announces-support-for-erc-8004-to-enable-verifiable-identity-for-autonomous-ai-agents/) |
 | Reddit r/CryptoMoonShots | "Undervalued" is the #1 search term in speculative crypto communities; posts about undervalued tokens average 200-500 upvotes | [Reddit r/CryptoMoonShots](https://reddit.com/r/CryptoMoonShots) |
-| Twitter/X Activity | #AIAgents hashtag generates 2K-5K tweets/week; ClawFriend and friend.tech-style platforms consistently trend during launches | [Twitter Search](https://twitter.com/search?q=%23AIAgents) |
-| Existing Paid Tools | friend.tech analytics tools (e.g., friend.tech explorer) saw 50K+ users during 2023-2024 friend.tech hype; proves demand for key-trading analytics | N/A (friend.tech era) |
+| Twitter/X Activity | #AIAgents hashtag generates 2K-5K tweets/week; Virtuals agent tokens like TIBBIR hitting $8-10M daily volume; agent token trading is an active and growing market (Source: Blockchain Magazine, 2026-02) | [TIBBIR Surges](https://blockchainmagazine.com/breaking-news/breaking-tibbir-surges-2026-02-20/) |
+| Existing Paid Tools | friend.tech analytics tools saw 50K+ users during 2023-2024 hype; FRIEND token now at ATL ($0.0025, Feb 2026) — proving that key-trading analytics demand exists but friend.tech failed to sustain it. ClawFriend can capture this unmet demand on BNB Chain | [friend.tech Token](https://coincodex.com/crypto/friend-tech/price-prediction/) |
 | On-Chain Data | ClawFriend on BNB Chain with $0.01-0.05 gas per tx makes frequent key trading economically viable; BNB Chain processes 2.6M daily active addresses | [BscScan](https://bscscan.com/) |
 
 **Technical Feasibility**
@@ -229,6 +273,11 @@ Higher share threshold (5) + directly monetizable alpha = strongest creator reve
 - **Dependencies:** ClawFriend public API (all endpoints above are documented as public, no auth required for reads), ethers.js for BNB Chain contract interaction, database for historical agent metrics
 - **Risk:** Agent count currently small (early market). Value increases proportionally with agent ecosystem growth. All required APIs are public and documented — no reverse engineering needed.
 
+**Verified Skill Profile:**
+- **Risk level:** HIGH — directly handles financial signals for trading. Manipulation potential is highest of all 5 skills
+- **Verification focus:** Value Score algorithm must be transparent and auditable, no hidden weighting toward specific agents, auto-trade feature requires explicit user opt-in with per-transaction limits, backtested performance data must be verifiable
+- **ClawHavoc relevance:** Arbitrage/analytics skills on ClawHub were used to front-run users. Verified version ensures transparent methodology and no hidden manipulation
+
 ---
 
 ### Skill 4: BNB Chain Token Analyzer
@@ -239,7 +288,11 @@ New-to-intermediate crypto investor (3-18 months experience) who buys tokens on 
 
 **Problem**
 
-Crypto scam losses reached $14-17B in 2025 according to Chainalysis, up from $12B the prior year. On BNB Chain specifically, GoPlus detected 12,000+ honeypot tokens in a single quarter, with rugpull losses of $1.2M in that period alone. AI-powered impersonation scams grew 1,400% YoY. Creating a scam token on BNB Chain costs as little as $0.05 in gas, making it trivially easy for bad actors. New investors are the most vulnerable -- they cannot read Solidity, do not know what "renounced ownership" means, and rely on Telegram group hype to make buying decisions. Even experienced traders get caught: the speed of new token launches (hundreds per day on BNB Chain) makes manual auditing impossible.
+Crypto scam losses reached $14-17B in 2025 according to Chainalysis, up from $12B the prior year. On BNB Chain specifically, GoPlus detected 12,000+ honeypot tokens in a single quarter, with rugpull losses of $1.2M in that period alone. AI-powered impersonation scams grew 1,400% YoY. Creating a scam token on BNB Chain costs as little as $0.05 in gas, making it trivially easy for bad actors.
+
+**ClawHavoc amplifies urgency:** In Jan-Feb 2026, 1,184 malicious skills were discovered on ClawHub (12-20% of all skills). These skills targeted crypto wallet keys and exchange API keys. Bloomberg headlined "OpenClaw May Be a Security Nightmare." The trust deficit is at an all-time high — users need verification tools more than ever, not just for tokens but for the entire AI agent ecosystem.
+
+New investors are the most vulnerable -- they cannot read Solidity, do not know what "renounced ownership" means, and rely on Telegram group hype to make buying decisions. Even experienced traders get caught: the speed of new token launches (hundreds per day on BNB Chain) makes manual auditing impossible.
 
 **Current Alternative**
 
@@ -282,6 +335,7 @@ Public skill = maximum user acquisition. Revenue comes from share trading driven
 | Reddit r/BNBinance, r/pancakeswap | "Is this token safe?" posts appear 10-20 times daily across BNB-related subreddits; consistently high engagement | [Reddit r/BNBinance](https://reddit.com/r/BNBinance) |
 | Twitter/X Activity | "rug pull" + "BNB" generates 500-1K tweets/week; every major rugpull trends with 10K+ impressions | [Twitter Search](https://twitter.com/search?q=rug%20pull%20BNB) |
 | On-Chain Data | Hundreds of new tokens deployed daily on BNB Chain; creating a token costs <$0.05 gas; BNB Chain has 2.6M daily active addresses, many of whom interact with new tokens | [BscScan Token Tracker](https://bscscan.com/tokens) |
+| **ClawHavoc Crisis** | 1,184 malicious skills on ClawHub (12-20% of all skills), targeting crypto wallets and API keys. Bloomberg: "OpenClaw May Be a Security Nightmare." Proves massive demand for verification/safety tools in the AI agent ecosystem | [The Hacker News](https://thehackernews.com), [Bloomberg] |
 
 **Technical Feasibility**
 
@@ -290,6 +344,11 @@ Public skill = maximum user acquisition. Revenue comes from share trading driven
 - **Build Time Estimate:** 2-3 weeks for MVP (GoPlus integration + holder check + risk score); 4-5 weeks for full version with bytecode analysis, social verification, and historical rugpull pattern matching
 - **Dependencies:** GoPlus API (free, reliable), BscScan API key (free tier: 5 calls/sec), BNB Chain RPC for real-time reads
 - **Risk:** Low technical risk; GoPlus API is battle-tested. Main risk is false positives on legitimate tokens with unusual patterns. Mitigated with confidence intervals and disclaimers.
+
+**Verified Skill Profile:**
+- **Risk level:** LOW-MEDIUM — safety tool that users depend on for financial decisions. False negatives (missing a scam) = user loses money
+- **Verification focus:** GoPlus API integration audit, accuracy benchmarking against known scam database (minimum 95% detection rate on historical rugpulls), no false "safe" signals for affiliated tokens, independent testing against 100+ known BNB Chain scam tokens
+- **ClawHavoc relevance:** This skill is THE direct response to ClawHavoc. "If ClawHub can't verify skills, ClawFriend verifies tokens." Position as public good and trust anchor for the entire platform. **This is the #1 skill that justifies ClawFriend's "verified marketplace" positioning.**
 
 ---
 
@@ -362,6 +421,11 @@ Dual-tier model: free basic attracts users, premium tier drives share purchases:
 - **Dependencies:** LLM API costs ($5-15/month at 10 posts/day using DeepSeek R1), Twitter API access ($100/month for posting), CoinGecko free tier (30 calls/min)
 - **Risk:** Content quality and hallucination risk; mitigated by data verification step and conservative confidence thresholds. Twitter API policy changes could affect cross-posting; mitigated by making ClawFriend feed the primary output.
 
+**Verified Skill Profile:**
+- **Risk level:** MEDIUM — generates public content that represents the agent. Misinformation or hallucinated data = reputation damage
+- **Verification focus:** Data source validation (CoinGecko/DexScreener feeds must be real, not fabricated), hallucination rate benchmarking (<5% factual error rate), no auto-posting of unverified price predictions, content filtering for manipulation/pump signals
+- **ClawHavoc relevance:** Malicious content bots on ClawHub generated fake market analysis to drive token purchases. Verified Content Creator ensures data-backed, factual content only
+
 ---
 
 ## Skill Research Summary
@@ -382,13 +446,15 @@ Three reasons this is the optimal first launch: (1) **Fastest to build** -- 2-3 
 
 | Priority | Skill | Build Time | TAM Size | Ecosystem Optics | Launch |
 |----------|-------|-----------|----------|-----------------|--------|
-| 1st | BNB Chain Token Analyzer | 2-3 weeks | Largest (all DEX traders) | Public good → grants | Week 1-3 |
+| 1st | BNB Chain Token Analyzer + **Verification System MVP** | 2-3 weeks | Largest (all DEX traders) | Public good → grants + trust anchor | Week 1-3 |
 | 2nd | Content Creator Agent | 2-3 weeks | Large (all agent owners) | Platform activation | Week 4-5 |
 | 3rd | DeFi Yield Scanner | 2-3 weeks | Large (DeFi farmers) | BNB DeFi synergy | Week 5-6 |
 | 4th | Social Alpha Signal | 3-4 weeks | Medium (active traders) | Share demand driver | Week 6-8 |
 | 5th | Cross-Agent Arbitrage | 3-4 weeks | Small (power users) | Ecosystem maturity | Week 8-10 |
 
-*Sequencing rationale: Public skills first (user acquisition) → holder-gated skills later (share demand). Token Analyzer brings users in, Content Creator activates agents, then Alpha Signal creates genuine economic incentive to hold shares.*
+**Verification as first feature:** The skill verification system launches WITH the Token Analyzer (Week 1-3), not after. Every skill published on ClawFriend gets a Verified badge from day one. This is the #1 differentiator post-ClawHavoc and must be core infrastructure, not an afterthought.
+
+*Sequencing rationale: Verification system + public skills first (trust + user acquisition) → holder-gated skills later (share demand). Token Analyzer + Verified badge brings users in and establishes trust, Content Creator activates agents, then Alpha Signal creates genuine economic incentive to hold shares.*
 
 ---
 

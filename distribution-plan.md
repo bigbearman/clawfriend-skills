@@ -1,7 +1,81 @@
 # Deliverable 3: Distribution Plan
 
-> **Weight:** 40% | **Date:** 2026-02-24
+> **Weight:** 40% | **Date:** 2026-02-26 (Updated)
 > **Month 1 Budget:** $10,000
+
+---
+
+## Key Updates (Feb 26, 2026)
+
+- **Messaging pivot:** "Trusted verified marketplace post-ClawHavoc" replaces generic "AI Agent Skill Marketplace"
+- **Target revised:** Quality > quantity — 50 power users + 500 wallet connects (was 1,000)
+- **Hero agent strategy:** $3-5K investment in 1 killer agent instead of $100 × 10 bounties
+- **BNB landscape update:** 58 AI projects, BAP-578/ERC-8004 live, Virtuals entered BNB (Luna.fun)
+- **User segments:** Hybrid tech-first → non-tech timeline added
+- **Window compressed:** 6-9 months (was 12-18)
+
+---
+
+## User Segment Analysis
+
+### Non-Tech vs Tech Users
+
+| | Non-Tech (99% of market) | Tech (1%, creates 100% supply) |
+|---|---|---|
+| **Profile** | Trader, investor, degen, KOL follower | Developer, builder, on-chain analyst |
+| **Motivation** | Kiếm tiền, tránh scam, alpha sớm | Build + earn creator fee |
+| **Count on BNB** | ~2.6M daily active addresses | ~5,000-20,000 active devs |
+| **Wants** | "Token này scam không?", "Alpha nào?", "Yield cao hơn?" | "Có user thật không?", "Earn bao nhiêu?", "Port mất bao lâu?" |
+| **Barrier** | Concept quá mới, trust thấp, UX complexity | Revenue chưa proven, user base ~0, docs thiếu |
+
+### Messaging by Segment
+
+| Segment | Wrong Message | Right Message |
+|---------|---------------|---------------|
+| Non-tech | "AI Agent Skill Marketplace on BNB Chain" | "Paste token address → biết ngay scam hay không. Free." |
+| Non-tech | "Buy shares via bonding curve" | "Hold 3 shares (~$3) → nhận alpha signals 24/7" |
+| Tech | "Earn up to $9,000/month" (projection) | "Dev A earned 0.5 BNB trong tuần đầu" (real data) |
+| Tech | "$100 bounty cho mọi skill" | "$1,000 cho 1 quality skill, co-build với team" |
+
+### Hybrid Timeline: Tech-First → Non-Tech Push
+
+```
+Tuần 1-2: TECH FIRST (Build supply)
+  ├── Team tự build hero agent (Token Analyzer + real track record)
+  ├── Recruit 3 top ClawHub devs ($1,000 each, co-build)
+  ├── Ensure 5 verified skills live before pushing users
+  └── Target: 5 skills, 3 agents active, verification system live
+
+Tuần 3-4: NON-TECH PUSH (Drive demand)
+  ├── Launch Token Analyzer public (free, no share required)
+  ├── KOL posts focus on USE CASE, not technology
+  ├── Message: "Post-ClawHavoc, trust matters. Verified skills only."
+  ├── Upsell: "Muốn alpha signals? Hold 3 shares (~$3)"
+  └── Target: 500 wallet connects, 50 share buyers
+
+Tuần 5+: FLYWHEEL
+  ├── Non-tech creates trading volume
+  ├── Tech sees volume → builds more skills
+  └── More skills → more non-tech users → repeat
+```
+
+---
+
+## Hero Agent Strategy
+
+**Problem:** $100 bounty × 10 devs = 10 mediocre skills, zero proof the model works.
+
+**Solution:** Invest $3,000-5,000 in building **1 killer agent** that demonstrates the entire value chain:
+
+| Aspect | Details |
+|--------|---------|
+| **Agent** | BNB Token Analyzer + Social Alpha Signal combo |
+| **Investment** | $3-5K (developer time + data feeds + backtesting) |
+| **Track record** | Minimum 30-day backtest with documented win rate 60%+ |
+| **Proof** | Real revenue data: "This agent earned X BNB in first week" |
+| **Why** | **1 agent with real results > 100 agents with zero traction.** $50 revenue thật > $50,000 projected |
+
+**Where in budget:** Reallocate from Ch.1 bounty reserve ($1,000) + Ch.2 KOL Wave 3 ($500) + Ch.5 partnership materials ($500) = $2,000 internal + $1-3K additional hero agent investment.
 
 ---
 
@@ -100,7 +174,7 @@ Crypto Twitter (CT) remains the dominant discovery and narrative-setting platfor
 | Week | Actions | Budget | Deliverables |
 |------|---------|--------|-------------|
 | **Week 1** | Identify and vet 10 mid-tier crypto KOLs (10K-50K followers) focused on AI, BNB Chain, or DeFi narratives. Negotiate rates for 3-5 confirmed partnerships. Create campaign brief: key messages, visual assets, and thread templates. Set up ClawFriend Twitter/X account with branded profile, pinned thread explaining the platform. | $200 (design assets) | KOL shortlist, 3-5 confirmed, campaign brief, Twitter account live |
-| **Week 2** | Launch KOL Campaign Wave 1: 2 KOL thread posts explaining "What is ClawFriend — the AI Agent Economy on BNB Chain." Each thread includes a demo video (30-60 sec screen recording of skill trading). Run 1 promoted tweet ($500 budget) targeting #BNBChain, #AI, #Web3 audiences. | $1,300 (2 KOL posts @ $400 avg + $500 promoted tweet) | 2 KOL threads live, 1 promoted tweet running |
+| **Week 2** | Launch KOL Campaign Wave 1: 2 KOL thread posts explaining "ClawFriend — the Trusted Verified Skill Marketplace on BNB Chain (post-ClawHavoc)." Each thread includes demo video (Token Analyzer in action). Angle: "After 1,184 malicious skills on ClawHub, we built the verified alternative." Run 1 promoted tweet ($500 budget) targeting #BNBChain, #AI, #ClawHavoc audiences. | $1,300 (2 KOL posts @ $400 avg + $500 promoted tweet) | 2 KOL threads live, 1 promoted tweet running |
 | **Week 3** | KOL Campaign Wave 2: 2 additional KOL posts focused on "How developers earn from AI skills" angle. Launch a Twitter Space co-hosted with 1 KOL: "The Future of AI Agent Economies." Run daily organic tweets (memes, skill showcases, trading volume updates). Engage in quote-tweet threads with BNB Chain ecosystem accounts. | $1,000 (2 KOL posts @ $400 avg + Twitter Space promotion $200) | 2 more KOL threads, Twitter Space completed, daily tweet cadence established |
 | **Week 4** | KOL Campaign Wave 3: 1 final KOL post as a "Month 1 recap" thread showing traction metrics. Run retargeting promoted tweet to users who engaged with previous content. Compile campaign analytics. A/B test top-performing content formats for Month 2. | $500 (1 KOL post $300 + $200 retargeting ads) | Final KOL thread, retargeting campaign, full analytics report |
 
@@ -154,19 +228,21 @@ Crypto Twitter (CT) remains the dominant discovery and narrative-setting platfor
 
 ### Why This Channel?
 
-BNB Chain is not just a deployment target — it is a distribution channel with built-in infrastructure for project discovery:
+BNB Chain is not just a deployment target — it is a distribution channel with built-in infrastructure for project discovery. **However, the landscape is now crowded (58 AI projects) and requires sharper positioning:**
 
-- **1M+ daily active addresses** — BNB Chain is the second-largest EVM chain by active users, behind only Ethereum L2s combined. This is a built-in audience of on-chain active wallets.
-- **BNB Chain MVB (Most Valuable Builder) accelerator** accepts projects quarterly and provides marketing support, technical grants, and ecosystem listing. Past MVB cohorts have seen 10-50x user growth during the program.
-- **Ecosystem directories drive real traffic.** BNBChain.org's ecosystem page, DappBay, and the BNB Chain Telegram (400K+ members) are primary discovery channels for BNB-native users.
-- **DeFi partnerships create utility loops.** PancakeSwap (3M+ monthly users) and Venus Protocol (500K+ users) represent massive user bases that could interact with DeFi-focused AI skills on ClawFriend.
-- **Hackathon participation converts developers.** BNB Chain hackathons typically attract 500-2,000 developers; prize-winning projects receive $5K-50K grants and ecosystem spotlight.
+- **2.6M daily active addresses** — BNB Chain is the second-largest EVM chain by active users. Built-in audience of on-chain wallets.
+- **58 AI agent projects across 10 categories** — BNB Chain is no longer "uncontested." Includes MyShell (5M users), ChatAndBuild (140K users), and Virtuals' Luna.fun. ClawFriend must differentiate sharply.
+- **BAP-578 (NFA) + ERC-8004 live on mainnet** — Official agent standards. ChatAndBuild uses BAP-578. ClawFriend should adopt for ecosystem alignment.
+- **BNB Hack completed:** 200+ projects, 600+ builders, $100K prizes. Top 3: Zhentan, Strike, ShieldBot (security focus validates ClawFriend's verified marketplace angle).
+- **Grants up to $200K per project** — AI/DePIN category. ClawFriend's "verified marketplace post-ClawHavoc" pitch is grant-eligible.
+- **DeFi partnerships remain key.** PancakeSwap ($1.22B TVL), Venus ($1.4B TVL) = massive user bases for DeFi-focused skills.
+- **Virtuals entered BNB (Luna.fun)** — Market leader now competes on ClawFriend's home chain. Makes differentiation (verified skills, OpenClaw-native) more critical than ever.
 
 ### Action Plan
 
 | Week | Actions | Budget | Deliverables |
 |------|---------|--------|-------------|
-| **Week 1** | Submit ClawFriend to BNB Chain ecosystem directory (DappBay, BNBChain.org/ecosystem). Apply to MVB Season 8 accelerator program. Register for upcoming BNB Chain hackathon. Join BNB Chain official Discord and Telegram; introduce ClawFriend in #new-projects channels. | $200 (application materials, deck design) | Ecosystem directory submissions, MVB application, hackathon registration |
+| **Week 1** | Submit ClawFriend to BNB Chain ecosystem directory (DappBay, BNBChain.org/ecosystem). Apply to MVB accelerator. Apply for AI/DePIN grant ($200K available) with pitch: "Verified AI Skill Marketplace addressing ClawHavoc security crisis." Study BAP-578 for skill NFT integration. Join BNB Chain Discord/Telegram; position as "trusted alternative post-ClawHavoc" in #new-projects. | $200 (application materials, deck design) | Ecosystem directory submissions, MVB + grant applications, BAP-578 study |
 | **Week 2** | Begin hackathon preparation: build a showcase DeFi skill (e.g., "PancakeSwap LP Optimizer Agent") that demonstrates ClawFriend's value within BNB DeFi. Reach out to PancakeSwap and Venus community managers for potential skill collaboration. Post in BNB Chain Telegram about ClawFriend launch. | $500 (hackathon prep, developer time) | DeFi showcase skill built, partnership outreach initiated, Telegram post |
 | **Week 3** | Participate in BNB Chain hackathon or demo day. Submit ClawFriend for BNB Chain "Project of the Week" spotlight. Publish a case study: "How AI Agents Enhance DeFi on BNB Chain" — distribute through BNB ecosystem channels. Engage with BNB Chain ambassador program for regional promotion (SEA focus). | $800 (hackathon participation, case study production, ambassador engagement) | Hackathon submission, case study published, ambassador connections made |
 | **Week 4** | Follow up on MVB application and hackathon results. Secure listing on at least 2 BNB Chain ecosystem aggregator sites. Negotiate co-marketing with 1 BNB Chain DeFi protocol (PancakeSwap mini-app or Venus integration showcase). Compile BNB ecosystem traction metrics. | $500 (listing fees, co-marketing materials) | Ecosystem listings live, co-marketing deal in progress, traction report |
@@ -334,13 +410,13 @@ OpenClaw is not just a technology dependency — it is the single most strategic
 
 ## Month 1 — Overall Timeline
 
-| Week | OpenClaw Devs (Ch.1) | Crypto Twitter (Ch.2) | BNB Ecosystem (Ch.3) | Content/SEO (Ch.4) | OpenClaw Partnership (Ch.5) | Weekly Signup Target |
-|------|---------------------|----------------------|---------------------|--------------------|-----------------------------|---------------------|
-| **Week 1** | Developer list, landing page, GitHub Discussion draft | KOL identification, campaign brief, Twitter account setup | Ecosystem directory submissions, MVB application | Keyword research, Article 1 published | Research, partnership deck drafted | 50 |
-| **Week 2** | GitHub Discussion live, 30 devs contacted, bounty launched | KOL Wave 1 (2 posts), promoted tweet launched | Hackathon prep, DeFi showcase skill, Telegram post | Articles 2-3, Video 1 | Proposal sent, meeting scheduled | 200 |
-| **Week 3** | Twitter Space/AMA, 5 devs building, quickstart guide | KOL Wave 2 (2 posts), Twitter Space with KOL | Hackathon participation, case study, ambassador outreach | Articles 4-7, Video 2 | Partnership meeting, terms negotiated | 350 |
-| **Week 4** | Bounty payouts, dev testimonials, spotlight series | KOL Wave 3 (1 post), retargeting ads, analytics | Ecosystem listings live, co-marketing deal | Articles 8-10, newsletter outreach, SEO baseline | Partnership announced, co-branded content | 400 |
-| **Cumulative** | 50 dev signups, 10 skills | 500 signups, 2K+ followers | 200 signups, 3+ listings | 100 signups, 10 articles, 2 videos | 50-100 signups, partnership secured | **1,000 total** |
+| Week | Phase | OpenClaw Devs (Ch.1) | Crypto Twitter (Ch.2) | BNB Ecosystem (Ch.3) | Content/SEO (Ch.4) | OpenClaw Partnership (Ch.5) | Weekly Target |
+|------|-------|---------------------|----------------------|---------------------|--------------------|-----------------------------|--------------|
+| **Week 1** | TECH-FIRST | Developer list, hero agent build starts, recruit 3 top devs ($1K each) | KOL identification, campaign brief, Twitter setup | Ecosystem submissions, MVB + grant applications, BAP-578 study | Keyword research, Article 1 published | Research, partnership deck | 5 verified skills started |
+| **Week 2** | TECH-FIRST | Hero agent MVP live, GitHub Discussion, verification system | KOL Wave 1 (2 posts: "Post-ClawHavoc verified marketplace") | Telegram post, DeFi showcase prep | Articles 2-3, Video 1 | Proposal sent, meeting scheduled | Hero agent with track record |
+| **Week 3** | NON-TECH PUSH | Twitter Space/AMA, 3+ devs building, quickstart guide | KOL Wave 2 (2 posts), Twitter Space | Case study, ambassador outreach | Articles 4-7, Video 2 | Partnership meeting, terms negotiated | 300 wallet connects |
+| **Week 4** | NON-TECH PUSH | Dev testimonials, spotlight series | KOL Wave 3 (1 post), retargeting ads | Ecosystem listings live, grant follow-up | Articles 8-10, newsletter outreach | Partnership announced, co-branded content | 200 more connects |
+| **Cumulative** | | 30 dev signups, 5 verified skills | 300 signups, 2K+ followers | 100 signups, 3+ listings | 50 signups, 10 articles, 2 videos | 20-50 signups, partnership secured | **500 total, 50 power users** |
 
 ---
 
@@ -348,12 +424,14 @@ OpenClaw is not just a technology dependency — it is the single most strategic
 
 | Source | Budget | Expected Clicks/Visits | Conv. Rate | Expected Signups | CAC |
 |--------|--------|----------------------|------------|-----------------|-----|
-| OpenClaw Developer Outreach | $2,500 | 500 developer touchpoints | 10% | 50 | $50.00 |
-| Crypto Twitter / X Campaign | $3,000 | 4,000 link clicks | 12.5% | 500 | $6.00 |
-| BNB Chain Ecosystem Integration | $2,000 | 2,000 referral visits | 10% | 200 | $10.00 |
-| Content Marketing + SEO | $1,500 | 2,000 content visits | 5% | 100 | $15.00 |
-| OpenClaw Official Partnership | $1,000 | 1,000 referral visits | 10% | 100 | $10.00 |
-| **Total** | **$10,000** | **9,500** | **10% avg** | **950-1,050** | **$10.00 avg** |
+| OpenClaw Developer Outreach | $2,500 | 300 developer touchpoints | 10% | 30 devs | $83.33 |
+| Crypto Twitter / X Campaign | $3,000 | 3,000 link clicks | 10% | 300 | $10.00 |
+| BNB Chain Ecosystem Integration | $2,000 | 1,500 referral visits | 7% | 100 | $20.00 |
+| Content Marketing + SEO | $1,500 | 1,500 content visits | 3% | 50 | $30.00 |
+| OpenClaw Official Partnership | $1,000 | 500 referral visits | 4% | 20 | $50.00 |
+| **Total** | **$10,000** | **6,800** | **7.4% avg** | **~500** | **$20.00 avg** |
+
+**Note on revised CAC:** Higher CAC ($20 vs $10) reflects quality-over-quantity approach. 50 power users at $20 CAC = $1,000 — insignificant if each generates 0.1 BNB/month in protocol fees ($60/user/month). LTV:CAC ratio = 36:1 over 12 months. Developer CAC ($83) is high but each dev creates 1+ skills → attracts 10-100 users.
 
 ### Conversion Rate Sources & Benchmarks
 
@@ -375,22 +453,26 @@ Tất cả conversion rate trên đều dựa trên industry benchmarks có ngu�
 
 ---
 
-## Month 1 Success Metrics
+## Month 1 Success Metrics (Updated: Quality > Quantity)
 
 | Metric | Target | Stretch Goal | Measurement |
 |--------|--------|-------------|-------------|
-| Total signups (wallet connects) | 1,000 | 1,500 | Platform analytics dashboard |
-| New skills published | 10 | 15 | ClawFriend marketplace count |
+| Total signups (wallet connects) | **500** | 800 | Platform analytics dashboard |
+| **Power users** (hold shares in ≥3 agents) | **50** | 80 | Wallet analytics |
+| New skills published (**verified**) | **5 verified** | 8 | ClawFriend marketplace + verification system |
+| Hero agent revenue (real) | **>0 BNB** | 1 BNB | Smart contract analytics |
 | Skill downloads / interactions | 100 | 200 | Platform analytics |
 | Twitter/X followers | 2,000 | 3,500 | Twitter Analytics |
 | Content pieces published | 12 (10 articles + 2 videos) | 15 | Content calendar tracker |
 | Total impressions (all channels) | 500,000 | 750,000 | Aggregated channel analytics |
 | Ecosystem directory listings | 3 | 5 | Manual tracking |
-| Developer bounties completed | 8 | 10 | Internal bounty tracker |
+| BNB Chain grant application | Submitted | Accepted | Application status |
 | Partnership status (OpenClaw) | MOU signed | Co-marketing live | CRM / email records |
 | Community members (Discord/Telegram) | 500 | 1,000 | Platform member counts |
 | On-chain transactions (skill trading) | 50 | 100 | BscScan smart contract analytics |
-| Average CAC | $10.00 | $7.50 | Budget / signups |
+| Average CAC | $20.00 | $12.50 | Budget / signups (higher CAC OK for quality) |
+
+**Why lower signup target:** 50 power users actively using skills and trading shares > 1,000 wallet connects that bounce. Hero agent with real revenue proves the model. Quality metrics (power users, verified skills, real revenue) matter more than vanity metrics (total signups).
 
 ---
 
@@ -408,7 +490,9 @@ Tất cả conversion rate trên đều dựa trên industry benchmarks có ngu�
 
 **Why Wallet Connect = Signup:** In Web3, wallet connect is the equivalent of email signup in Web2. It's the lowest meaningful conversion bar — user has expressed intent and connected their identity. ClawFriend's first share costs only **$0.04**, so the barrier from signup to activation is nearly zero.
 
-**Expected funnel:** 9,500 visits → 1,000 signups (10.5%) → 200 activated (20%) → 120 monthly active (60%) → 30 power users (15%)
+**Updated funnel (quality > quantity):** 5,000 visits → 500 signups (10%) → 150 activated (30%) → 90 monthly active (60%) → 50 power users (33% of activated)
+
+**Why higher activation rate:** Hybrid timeline (tech-first → non-tech) means users arrive when skills already exist. Hero agent with real track record converts better than empty marketplace.
 
 ---
 
@@ -416,14 +500,14 @@ Tất cả conversion rate trên đều dựa trên industry benchmarks có ngu�
 
 Nếu conversion rate thấp hơn dự kiến, plan vẫn viable:
 
-| Scenario | Conv. Rate | Total Signups | CAC | Activated Users | Action Plan |
-|----------|-----------|---------------|-----|-----------------|-------------|
-| **Optimistic** | 15% avg | 1,425 | $7.02 | 285 | Scale Twitter/KOL budget. Double bounty slots. |
-| **Base Case** | 10% avg | 950 | $10.53 | 190 | Continue as planned. |
-| **Pessimistic** | 5% avg | 475 | $21.05 | 95 | Reallocate $1K from Twitter Ads → dev bounties (higher-value signups). Cut KOL Wave 3. Focus on organic. |
-| **Worst Case** | 3% avg | 285 | $35.09 | 57 | Pivot: pause all paid. Double down on OpenClaw partnership + developer outreach. $10K budget stretches further on high-value developer signups ($50 CAC but 10x LTV). |
+| Scenario | Conv. Rate | Total Signups | CAC | Power Users | Action Plan |
+|----------|-----------|---------------|-----|-------------|-------------|
+| **Optimistic** | 12% avg | 800 | $12.50 | 80 | Scale Twitter/KOL. Expand hero agent to 2nd skill. |
+| **Base Case** | 7.4% avg | 500 | $20.00 | 50 | Continue as planned. Hero agent proves model. |
+| **Pessimistic** | 4% avg | 270 | $37.00 | 25 | Cut KOL Wave 3, redirect to dev grants. Focus on hero agent track record. |
+| **Worst Case** | 2% avg | 135 | $74.00 | 10 | Pivot: pause all paid. Hero agent becomes sole focus. 10 true believers > 0 engaged users. |
 
-**Break-even analysis:** ClawFriend needs minimum **50 activated users** trading an average of 0.5 BNB/day to generate 1.25 BNB/day (~$750/day) in protocol fees. At $10K budget, break-even is reached in ~13 days of trading activity post-launch. Even the worst-case scenario (57 activated users) exceeds this threshold.
+**Break-even analysis:** ClawFriend needs minimum **25 power users** trading 0.5 BNB/day avg to generate 0.625 BNB/day (~$375/day) in protocol fees. At $10K budget, break-even reached in ~27 days. Even worst-case (10 power users) generates 0.25 BNB/day — slow but proves model for grant applications.
 
 **Decision triggers:**
 - If Week 1 conv. rate < 5% → pause KOL Wave 2, redirect budget to bounties
@@ -471,8 +555,8 @@ Nếu conversion rate thấp hơn dự kiến, plan vẫn viable:
 
 | Week | Acquisition Actions | Retention Actions | Target Retention |
 |------|-------------------|-------------------|-----------------|
-| **Week 1** | KOL posts, dev outreach, ecosystem listings | Onboarding flow optimization, first free skill live (Token Analyzer) | - |
-| **Week 2** | KOL Wave 1, bounty launch, content | "Welcome back" notifications for inactive users (>48h). Display trending agents feed. | 50% Day-7 |
+| **Week 1** | Hero agent build, dev recruitment, ecosystem listings | Verification system MVP, hero agent track record building | - |
+| **Week 2** | Hero agent live, KOL Wave 1 ("Post-ClawHavoc verified marketplace"), content | Token Analyzer live (free), "Welcome back" notifications, trending agents feed. Hero agent real results displayed. | 50% Day-7 |
 | **Week 3** | KOL Wave 2, hackathon, Twitter Space | Launch first **holder-gated skill** (Social Alpha Signal). Send notification to all shareholders. Weekly "Agent Performance Report" email. | 40% Day-14 |
 | **Week 4** | KOL Wave 3, retargeting, partnerships | "Your shares gained X%" portfolio update email. Launch "Skill of the Week" spotlight. Community AMA on skill performance. | **35% Day-30** |
 
@@ -531,16 +615,16 @@ This progressive scaling ensures that Month 1 learnings directly inform Month 2 
 
 BGK sẽ hỏi: "$10K có scale được lên 10K users không?" — đây là math:
 
-| Month | Budget | New Signups (Paid) | Organic Compound | Cumulative Users | Key Driver |
-|-------|--------|-------------------|-----------------|-----------------|------------|
-| **Month 1** | $10,000 | 950 | 50 (word-of-mouth) | **1,000** | KOL + dev outreach |
-| **Month 2** | $20,000 | 1,500 | 300 (SEO + referral) | **2,800** | Scale proven channels + developer grants |
-| **Month 3** | $20,000 | 1,200 | 600 (organic compound) | **4,600** | Content SEO kicks in + skill-drives-user flywheel |
-| **Month 4** | $15,000 | 800 | 1,000 (organic > paid) | **6,400** | Reduce paid as organic grows |
-| **Month 5** | $10,000 | 500 | 1,200 (flywheel) | **8,100** | Skill marketplace has 50+ skills → self-sustaining discovery |
-| **Month 6** | $10,000 | 500 | 1,400 (network effects) | **10,000** | 10K target achieved |
+| Month | Budget | New Signups (Paid) | Organic Compound | Cumulative Users | Power Users | Key Driver |
+|-------|--------|-------------------|-----------------|-----------------|-------------|------------|
+| **Month 1** | $10,000 | 450 | 50 | **500** | **50** | Hero agent + verified marketplace launch |
+| **Month 2** | $15,000 | 800 | 200 | **1,500** | **120** | Scale proven channels + developer grants |
+| **Month 3** | $15,000 | 700 | 400 | **2,600** | **200** | SEO kicks in + skill flywheel |
+| **Month 4** | $10,000 | 500 | 600 (organic > paid) | **3,700** | **300** | Reduce paid, organic grows |
+| **Month 5** | $10,000 | 400 | 800 | **4,900** | **400** | 20+ verified skills → self-sustaining |
+| **Month 6** | $10,000 | 400 | 1,000 (network effects) | **6,300** | **500** | Grant funding ($200K) accelerates |
 
-**Total 6-month budget: ~$85,000** | **Blended CAC: $8.50** (decreasing as organic compounds)
+**Total 6-month budget: ~$70,000** | **Blended CAC: $11.11** | **Power user CAC: $140** (but LTV:CAC = 36:1)
 
 **Why organic compounds:**
 1. **SEO content** (10 articles/month × 6 months = 60 articles) → long-tail search traffic grows 20%/month
@@ -549,3 +633,37 @@ BGK sẽ hỏi: "$10K có scale được lên 10K users không?" — đây là m
 4. **Network effects**: More agents + more skills + more traders → more content indexed → more search traffic
 
 **Conservative assumption:** This model assumes NO token launch, NO additional VC funding, and NO viral moment. A token launch or major partnership (e.g., official BNB Chain MVB selection) would accelerate the timeline significantly.
+
+---
+
+## Competitive Positioning Update (Feb 26)
+
+### Post-Virtuals BNB Entry
+
+Virtuals Protocol launched Luna.fun on BNB Chain in Feb 2026. This invalidates the thesis "BNB Chain agent economy is uncontested." Updated positioning:
+
+| Old Positioning | New Positioning |
+|----------------|-----------------|
+| "The agent economy on BNB Chain" | "The VERIFIED skill marketplace on BNB Chain" |
+| "First mover on BNB" | "Trust-first in a crowded landscape (58 projects)" |
+| "Bonding curve is our advantage" | "Verification + holder-gated utility is our advantage" |
+
+### 5 Direct Competitors — Distribution Response
+
+| Competitor | Their Advantage | ClawFriend Response |
+|-----------|----------------|---------------------|
+| **Virtuals** ($450M, BNB via Luna.fun) | Scale, ACP, revenue | Don't compete. Niche into verified OpenClaw skills |
+| **MyShell** (5M users, BNB) | User base, VC backing | Differentiate: bonding curve + holder-gated (MyShell has neither) |
+| **ChatAndBuild** (140K users, BNB) | BAP-578, no-code | Adopt BAP-578. Differentiate: skill marketplace depth |
+| **CreatorBid** (-97%, dying) | Same model (cautionary tale) | Learn: utility before economics. Don't repeat their mistakes |
+| **ClawHub** (3,286 skills, $0 rev) | Supply (skills) + ClawHavoc problem | Be the verified monetization layer. "ClawHub is npm, ClawFriend is the App Store" |
+
+### Window: 6-9 Months (Was 12-18)
+
+The competitive landscape compressed significantly:
+- 58 AI projects on BNB (was "uncontested")
+- Virtuals entered BNB
+- ChatAndBuild reached 140K users
+- BAP-578/ERC-8004 standards established
+
+**Implication for distribution:** Speed matters more than perfection. Phase 1 (verified marketplace + hero agent) must ship within 60 days. KOL messaging must emphasize "post-ClawHavoc trust" narrative immediately — this window is time-sensitive (ClawHavoc is Feb 2026 news).
