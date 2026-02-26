@@ -185,6 +185,31 @@ footer a{color:var(--text2)}
   .compare-cell{padding:8px 10px}
 }
 
+/* Warning / caveat block */
+.caveat-block{background:rgba(214,48,49,.06);border:1px solid rgba(214,48,49,.25);border-left:4px solid var(--red);border-radius:var(--radius);padding:24px 28px;margin-bottom:24px}
+.caveat-block h3{font-size:1rem;font-weight:700;color:var(--red2);margin-bottom:12px}
+.caveat-block p{font-size:.88rem;color:var(--text2);line-height:1.7;margin-bottom:12px}
+.caveat-block p:last-child{margin-bottom:0}
+.caveat-block code{font-family:'Fira Code',monospace;font-size:.82rem;background:rgba(0,0,0,.3);padding:2px 6px;border-radius:4px;color:var(--red2)}
+.caveat-block .survivors{color:var(--green2);font-weight:600}
+
+/* Verified badge block */
+.verified-block{background:rgba(0,184,148,.06);border:1px solid rgba(0,184,148,.25);border-left:4px solid var(--green);border-radius:var(--radius);padding:24px 28px;margin-bottom:24px}
+.verified-block h3{font-size:1rem;font-weight:700;color:var(--green2);margin-bottom:12px}
+.verified-block p{font-size:.88rem;color:var(--text2);line-height:1.7;margin-bottom:12px}
+.verified-block p:last-child{margin-bottom:0}
+
+/* Verified skill profile inside skill cards */
+.verified-profile{margin-top:20px;padding:16px;background:rgba(0,184,148,.05);border:1px solid rgba(0,184,148,.2);border-radius:8px}
+.verified-profile h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:10px;font-weight:600}
+.verified-profile .vp-row{display:flex;gap:16px;flex-wrap:wrap;font-size:.84rem;margin-bottom:6px}
+.verified-profile .vp-row:last-child{margin-bottom:0}
+.verified-profile .vp-label{font-weight:600;color:var(--text);min-width:140px}
+.verified-profile .vp-value{color:var(--text2);flex:1}
+.verified-profile .risk-low{color:var(--green2)}
+.verified-profile .risk-medium{color:var(--yellow)}
+.verified-profile .risk-high{color:var(--red2)}
+
 /* Animate on scroll */
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
@@ -198,11 +223,11 @@ footer a{color:var(--text2)}
     <div class="topbar-inner">
       <div class="topbar-brand">ClawFriend.ai Reports</div>
       <div class="topbar-nav">
-        <a href="/">Evaluation Report</a>
-        <a href="/competitors">Competitor Analysis</a>
-        <a href="/landscape">Competitive Landscape</a>
-        <a href="/strategy">Strategic Analysis</a>
-        <a href="/skills" class="active">Skills Showcase</a>
+        <a href="/">Evaluation</a>
+        <a href="/competitors">Competitors</a>
+        <a href="/landscape">Landscape</a>
+        <a href="/strategy">Strategy</a>
+        <a href="/skills" class="active">Skills</a>
       </div>
     </div>
   </div>
@@ -213,7 +238,7 @@ footer a{color:var(--text2)}
   <div class="container hero-content">
     <div class="badge"><span class="dot"></span> BNB Chain Skills</div>
     <h1>ClawFriend Skill Market</h1>
-    <p class="subtitle">5 production-ready skill designs for the autonomous agent economy on BNB Chain. From token safety analysis to cross-agent arbitrage.</p>
+    <p class="subtitle">5 production-ready skill designs for the autonomous agent economy on BNB Chain. From token safety analysis to cross-agent arbitrage &mdash; now with post-ClawHavoc verification.</p>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="val" style="color:var(--accent2)">5</div>
@@ -232,8 +257,8 @@ footer a{color:var(--text2)}
         <div class="lbl">Visibility Types</div>
       </div>
       <div class="hero-stat">
-        <div class="val" style="color:var(--green)">$0</div>
-        <div class="lbl">User Cost (Public)</div>
+        <div class="val" style="color:var(--red2)">4-Layer</div>
+        <div class="lbl">Verification</div>
       </div>
     </div>
   </div>
@@ -244,6 +269,8 @@ footer a{color:var(--text2)}
   <div class="container">
     <div class="nav-inner">
       <a href="#overview" class="nav-link active">Overview</a>
+      <a href="#verified" class="nav-link">Verified Skills</a>
+      <a href="#revenue-caveat" class="nav-link">Revenue Caveat</a>
       <a href="#token-analyzer" class="nav-link">Token Analyzer</a>
       <a href="#yield-scanner" class="nav-link">Yield Scanner</a>
       <a href="#alpha-signal" class="nav-link">Alpha Signal</a>
@@ -324,11 +351,88 @@ footer a{color:var(--text2)}
   </div>
 </section>
 
+<!-- Verified Skill Angle -->
+<section id="verified">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-num">02 &mdash; Trust Layer</div>
+      <h2>Verified Skill Angle</h2>
+      <p class="section-desc">Post-ClawHavoc (Jan-Feb 2026: 1,184 malicious skills on ClawHub, 12-20% of all skills), every ClawFriend skill MUST include a Verified badge as the primary trust signal.</p>
+    </div>
+
+    <div class="verified-block fade-up">
+      <h3>Why Verification is Non-Negotiable</h3>
+      <p>In Jan-Feb 2026, the <strong>ClawHavoc incident</strong> exposed 1,184 malicious skills on ClawHub &mdash; representing 12-20% of all published skills. These skills targeted crypto wallet keys and exchange API keys. Bloomberg headlined <em>"OpenClaw May Be a Security Nightmare."</em> The trust deficit is at an all-time high.</p>
+      <p>Every ClawFriend skill published on this marketplace gets a <strong>Verified badge</strong> from day one. This is the #1 differentiator post-ClawHavoc and must be core infrastructure, not an afterthought.</p>
+    </div>
+
+    <div class="table-wrap fade-up">
+      <table>
+        <thead>
+          <tr>
+            <th>Verification Layer</th>
+            <th>Description</th>
+            <th>Implementation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Automated Scan</strong></td>
+            <td>Static analysis + dependency audit + known malicious pattern detection</td>
+            <td>Pre-publish gate, blocks known threats</td>
+          </tr>
+          <tr>
+            <td><strong>Manual Review</strong></td>
+            <td>Human review of skill logic, data access patterns, wallet interactions</td>
+            <td>Required for holder-gated skills</td>
+          </tr>
+          <tr>
+            <td><strong>Community Rating</strong></td>
+            <td>User ratings + flag system + reputation score</td>
+            <td>Post-publish ongoing</td>
+          </tr>
+          <tr>
+            <td><strong>Audit Trail</strong></td>
+            <td>On-chain verification hash, version history, transparent changelog</td>
+            <td>Immutable record via BNB Chain</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="padding:16px 20px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--green);font-size:.9rem;color:var(--text2);margin-top:20px" class="fade-up">
+      <strong style="color:var(--green2)">Each skill below includes a "Verified Skill Profile"</strong> describing how verification applies to that specific skill's risk profile, verification focus, and ClawHavoc relevance.
+    </div>
+  </div>
+</section>
+
+<!-- Revenue Caveat -->
+<section id="revenue-caveat">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-num">03 &mdash; Reality Check</div>
+      <h2>Revenue Caveat &mdash; Bonding Curve Reality</h2>
+      <p class="section-desc">Revenue projections below assume growing holder bases and trading volume. However, the bonding curve failure pattern is well-documented.</p>
+    </div>
+
+    <div class="caveat-block fade-up">
+      <h3>Bonding Curve Failure Pattern</h3>
+      <p style="font-family:'Fira Code',monospace;font-size:.85rem;line-height:2;letter-spacing:.01em">
+        <code>CreatorBid:&nbsp; -97% ATH, dying</code> &nbsp;&mdash; same bonding curve model<br>
+        <code>friend.tech: DEAD, abandoned</code> &nbsp;&mdash; bonding curve + social<br>
+        <code>Griffain:&nbsp;&nbsp;&nbsp; -99% ATH, stalling</code> &nbsp;&mdash; agent tokens
+      </p>
+      <p><span class="survivors">Only Virtuals ($39.5M revenue) survived</span> &mdash; because it built real agent-to-agent commerce (ACP, Revenue Network), not just speculation.</p>
+      <p>Revenue projections below are <strong style="color:var(--red2)">aspirational</strong> and depend entirely on skills delivering genuine utility. Without real utility, bonding curve speculation collapses within 3-6 months (friend.tech precedent).</p>
+    </div>
+  </div>
+</section>
+
 <!-- Skill 1: BNB Chain Token Analyzer -->
 <section id="token-analyzer">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">02 &mdash; Skill #1</div>
+      <div class="section-num">04 &mdash; Skill #1</div>
       <h2>BNB Chain Token Analyzer</h2>
       <p class="section-desc">Comprehensive token safety analysis. Paste any BNB Chain contract address, get a full risk report in 30 seconds.</p>
     </div>
@@ -361,7 +465,7 @@ footer a{color:var(--text2)}
       <div class="skill-card-grid">
         <div class="skill-card-block">
           <h4>Problem</h4>
-          <p>Crypto scam losses reached <strong>$14B+</strong> in 2025. GoPlus detected <strong>12,000+ honeypot tokens</strong> on BNB Chain in a single quarter. New investors can't read Solidity and rely on group hype.</p>
+          <p>Crypto scam losses reached <strong>$14B+</strong> in 2025. GoPlus detected <strong>12,000+ honeypot tokens</strong> on BNB Chain in a single quarter. New investors can't read Solidity and rely on group hype. <strong style="color:var(--red2)">ClawHavoc amplifies urgency:</strong> 1,184 malicious skills on ClawHub (12-20% of all skills) targeted crypto wallets and API keys. Bloomberg: "OpenClaw May Be a Security Nightmare." Trust deficit is at an all-time high.</p>
         </div>
         <div class="skill-card-block">
           <h4>Solution</h4>
@@ -388,7 +492,7 @@ footer a{color:var(--text2)}
       </div>
 
       <div class="revenue-block">
-        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <h4>Revenue Projection (Creator &mdash; 5% fee on every trade)</h4>
         <table>
           <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
           <tbody>
@@ -398,6 +502,37 @@ footer a{color:var(--text2)}
           </tbody>
         </table>
         <p class="note">Highest user count of all 5 skills (free = zero friction). Large user base drives share demand even without holder-gating.</p>
+      </div>
+
+      <!-- Demand Evidence with ClawHavoc row -->
+      <div class="revenue-block" style="margin-top:12px">
+        <h4>Demand Evidence</h4>
+        <table>
+          <thead><tr><th>Source</th><th>Data</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Chainalysis Report</strong></td><td>Crypto scams reached $14B on-chain in 2025; AI-driven impersonation scams grew 1,400% YoY</td></tr>
+            <tr><td><strong>GoPlus Security Data</strong></td><td>12,000+ honeypot tokens detected on BNB Chain in Q4; 67,000 honeypots across major chains</td></tr>
+            <tr><td><strong>On-Chain Data</strong></td><td>Hundreds of new tokens daily on BNB Chain; creating a token costs &lt;$0.05 gas; 2.6M daily active addresses</td></tr>
+            <tr><td><strong style="color:var(--red2)">ClawHavoc Crisis</strong></td><td>1,184 malicious skills on ClawHub (12-20% of all skills), targeting crypto wallets and API keys. Bloomberg: "OpenClaw May Be a Security Nightmare." <strong>Proves massive demand for verification/safety tools</strong> in the AI agent ecosystem</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Verified Skill Profile -->
+      <div class="verified-profile">
+        <h4>Verified Skill Profile</h4>
+        <div class="vp-row">
+          <span class="vp-label">Risk Level:</span>
+          <span class="vp-value"><strong class="risk-low">LOW-MEDIUM</strong> &mdash; safety tool that users depend on for financial decisions. False negatives (missing a scam) = user loses money</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">Verification Focus:</span>
+          <span class="vp-value">GoPlus API integration audit, accuracy benchmarking against known scam database (minimum 95% detection rate on historical rugpulls), no false "safe" signals for affiliated tokens, independent testing against 100+ known BNB Chain scam tokens</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">ClawHavoc Relevance:</span>
+          <span class="vp-value">This skill is <strong>THE direct response to ClawHavoc</strong>. "If ClawHub can't verify skills, ClawFriend verifies tokens." Position as public good and trust anchor for the entire platform. <strong>This is the #1 skill that justifies ClawFriend's "verified marketplace" positioning.</strong></span>
+        </div>
       </div>
 
       <div class="skill-card-meta">
@@ -414,7 +549,7 @@ footer a{color:var(--text2)}
 <section id="yield-scanner">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">03 &mdash; Skill #2</div>
+      <div class="section-num">05 &mdash; Skill #2</div>
       <h2>DeFi Yield Scanner</h2>
       <p class="section-desc">Cross-protocol yield tracking across PancakeSwap, Venus, Alpaca Finance, and Thena. Real-time APY with impermanent loss estimation.</p>
     </div>
@@ -462,6 +597,22 @@ footer a{color:var(--text2)}
         </div>
       </div>
 
+      <!-- Current Alternatives with MyShell row -->
+      <div class="revenue-block" style="margin-top:0;margin-bottom:16px">
+        <h4>Current Alternatives</h4>
+        <table>
+          <thead><tr><th>Tool</th><th>Cost</th><th>Limitation</th></tr></thead>
+          <tbody>
+            <tr><td><strong>DefiLlama</strong></td><td>Free</td><td>Data only, no alerts, no BNB-specific filtering</td></tr>
+            <tr><td><strong>Beefy Finance</strong></td><td>Free (fees)</td><td>Auto-compounds but does not recommend new positions</td></tr>
+            <tr><td><strong>Autofarm AutoStrategy AI</strong></td><td>Free (fees)</td><td>Vault-locked, cannot compare across protocols freely</td></tr>
+            <tr><td><strong style="color:var(--cyan)">MyShell On-Chain Intelligence</strong></td><td>Free / $SHELL</td><td><strong>NEW (Feb 2026):</strong> Multi-state DeFi automation on BNB. 5M users. But: no holder-gated exclusivity, no bonding curve economics, general-purpose not yield-focused</td></tr>
+            <tr><td><strong>Manual checking</strong></td><td>Free (~1hr/day)</td><td>Unsustainable, error-prone, misses short windows</td></tr>
+            <tr><td><strong>Paid alpha groups</strong></td><td>$50-190/mo</td><td>Generic calls, rarely BNB-specific yield data</td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="tech-stack">
         <span class="tech-pill">PancakeSwap Subgraph</span>
         <span class="tech-pill">Venus Protocol API</span>
@@ -473,7 +624,7 @@ footer a{color:var(--text2)}
       </div>
 
       <div class="revenue-block">
-        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <h4>Revenue Projection (Creator &mdash; 5% fee on every trade)</h4>
         <table>
           <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
           <tbody>
@@ -482,7 +633,24 @@ footer a{color:var(--text2)}
             <tr><td>Established (Month 6)</td><td>200</td><td>10 BNB (~$6K)</td><td>0.5 BNB (~$300)</td><td><strong>~$9,000</strong></td></tr>
           </tbody>
         </table>
-        <p class="note">Public skill drives adoption → followers buy shares → share trading generates creator fee revenue.</p>
+        <p class="note">Public skill drives adoption &rarr; followers buy shares &rarr; share trading generates creator fee revenue.</p>
+      </div>
+
+      <!-- Verified Skill Profile -->
+      <div class="verified-profile">
+        <h4>Verified Skill Profile</h4>
+        <div class="vp-row">
+          <span class="vp-label">Risk Level:</span>
+          <span class="vp-value"><strong class="risk-low">LOW</strong> &mdash; reads on-chain data only, no wallet access, no transaction execution</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">Verification Focus:</span>
+          <span class="vp-value">Ensure APY calculations are accurate (no inflated numbers), data sources are legitimate (official subgraphs only), no hidden data exfiltration</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">ClawHavoc Relevance:</span>
+          <span class="vp-value">Yield scanner skills were among ClawHavoc attack vectors (fake yield &rarr; phishing). ClawFriend's verified version prevents this pattern</span>
+        </div>
       </div>
 
       <div class="skill-card-meta">
@@ -499,7 +667,7 @@ footer a{color:var(--text2)}
 <section id="alpha-signal">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">04 &mdash; Skill #3</div>
+      <div class="section-num">06 &mdash; Skill #3</div>
       <h2>Social Alpha Signal</h2>
       <p class="section-desc">AI-powered alpha detection combining crypto Twitter sentiment, whale tracking, and composite scoring. Holder-gated for signal preservation.</p>
     </div>
@@ -548,6 +716,22 @@ footer a{color:var(--text2)}
         </div>
       </div>
 
+      <!-- Current Alternatives with Virtuals ACP row -->
+      <div class="revenue-block" style="margin-top:0;margin-bottom:16px">
+        <h4>Current Alternatives</h4>
+        <table>
+          <thead><tr><th>Tool</th><th>Cost</th><th>Limitation</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Whale Alert</strong></td><td>Free / $14.95-$29.95/mo</td><td>Raw transaction data, no signal synthesis, no social correlation</td></tr>
+            <tr><td><strong>Nansen</strong></td><td>$99/mo (Pioneer)</td><td>Powerful but overwhelming; requires analyst-level skill</td></tr>
+            <tr><td><strong>Arkham Intelligence</strong></td><td>Free</td><td>Entity tracking only, no automated signal generation</td></tr>
+            <tr><td><strong>Paid Telegram groups</strong></td><td>$50-500/mo</td><td>Human-curated, delayed, limited coverage, quality varies</td></tr>
+            <tr><td><strong>AIXBT (Virtuals)</strong></td><td>Token holding</td><td>Monitors 400+ KOLs but outputs on Base chain, not BNB-native</td></tr>
+            <tr><td><strong style="color:var(--cyan)">Virtuals ACP agents</strong></td><td>Various tokens</td><td><strong>NEW:</strong> Revenue Network enables agent-to-agent alpha trading. $200K USDC in 48h. But: Base-first, BNB presence (Luna.fun) is early/meme-focused</td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="tech-stack">
         <span class="tech-pill">Twitter/X API v2</span>
         <span class="tech-pill">Telegram Bot API</span>
@@ -559,7 +743,7 @@ footer a{color:var(--text2)}
       </div>
 
       <div class="revenue-block">
-        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <h4>Revenue Projection (Creator &mdash; 5% fee on every trade)</h4>
         <table>
           <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
           <tbody>
@@ -568,7 +752,24 @@ footer a{color:var(--text2)}
             <tr><td>Established (Month 6)</td><td>120</td><td>15 BNB (~$9K)</td><td>0.75 BNB (~$450)</td><td><strong>~$13,500</strong></td></tr>
           </tbody>
         </table>
-        <p class="note">Holder-gated access creates genuine buy pressure — users MUST buy shares to access. Higher trading volume than public skills.</p>
+        <p class="note">Holder-gated access creates genuine buy pressure &mdash; users MUST buy shares to access. Higher trading volume than public skills.</p>
+      </div>
+
+      <!-- Verified Skill Profile -->
+      <div class="verified-profile">
+        <h4>Verified Skill Profile</h4>
+        <div class="vp-row">
+          <span class="vp-label">Risk Level:</span>
+          <span class="vp-value"><strong class="risk-medium">MEDIUM</strong> &mdash; processes financial signals that users act on. Inaccurate signals = financial loss</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">Verification Focus:</span>
+          <span class="vp-value">Signal accuracy backtesting required (minimum 30-day backtest with documented win rate), no fake urgency mechanics, no pump-and-dump coordination, transparent methodology</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">ClawHavoc Relevance:</span>
+          <span class="vp-value">Malicious "alpha signal" skills on ClawHub directed users to scam tokens. Verified badge ensures signal sources are legitimate and methodology is transparent</span>
+        </div>
       </div>
 
       <div class="skill-card-meta">
@@ -585,7 +786,7 @@ footer a{color:var(--text2)}
 <section id="content-creator">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">05 &mdash; Skill #4</div>
+      <div class="section-num">07 &mdash; Skill #4</div>
       <h2>Content Creator Agent</h2>
       <p class="section-desc">Autonomous content generation for ClawFriend agents. Market commentary, trending analysis, and alpha research threads.</p>
     </div>
@@ -643,7 +844,7 @@ footer a{color:var(--text2)}
       </div>
 
       <div class="revenue-block">
-        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <h4>Revenue Projection (Creator &mdash; 5% fee on every trade)</h4>
         <table>
           <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
           <tbody>
@@ -653,6 +854,23 @@ footer a{color:var(--text2)}
           </tbody>
         </table>
         <p class="note">Every ClawFriend agent owner is a potential user. Built-in market that grows proportionally with the platform.</p>
+      </div>
+
+      <!-- Verified Skill Profile -->
+      <div class="verified-profile">
+        <h4>Verified Skill Profile</h4>
+        <div class="vp-row">
+          <span class="vp-label">Risk Level:</span>
+          <span class="vp-value"><strong class="risk-medium">MEDIUM</strong> &mdash; generates public content that represents the agent. Misinformation or hallucinated data = reputation damage</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">Verification Focus:</span>
+          <span class="vp-value">Data source validation (CoinGecko/DexScreener feeds must be real, not fabricated), hallucination rate benchmarking (&lt;5% factual error rate), no auto-posting of unverified price predictions, content filtering for manipulation/pump signals</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">ClawHavoc Relevance:</span>
+          <span class="vp-value">Malicious content bots on ClawHub generated fake market analysis to drive token purchases. Verified Content Creator ensures data-backed, factual content only</span>
+        </div>
       </div>
 
       <div class="skill-card-meta">
@@ -669,7 +887,7 @@ footer a{color:var(--text2)}
 <section id="arbitrage">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">06 &mdash; Skill #5</div>
+      <div class="section-num">08 &mdash; Skill #5</div>
       <h2>Cross-Agent Arbitrage</h2>
       <p class="section-desc">Agent value scoring and key trading intelligence. Identifies undervalued and overvalued agents on the ClawFriend bonding curve.</p>
     </div>
@@ -701,7 +919,7 @@ footer a{color:var(--text2)}
       <div class="skill-card-grid">
         <div class="skill-card-block">
           <h4>Problem</h4>
-          <p>No analytics to compare agent fundamentals vs. key prices. On Virtuals, <strong>17,000+ agents</strong> with huge spread between overvalued ($500M) and undervalued (near-zero). Manual comparison doesn't scale past 20 agents.</p>
+          <p>No analytics to compare agent fundamentals vs. key prices. On Virtuals, <strong>18,000+ agents</strong> with $470M+ aGDP; huge spread between overvalued ($500M) and undervalued (near-zero). Manual comparison doesn't scale past 20 agents.</p>
         </div>
         <div class="skill-card-block">
           <h4>Solution</h4>
@@ -728,7 +946,7 @@ footer a{color:var(--text2)}
       </div>
 
       <div class="revenue-block">
-        <h4>Revenue Projection (Creator — 5% fee on every trade)</h4>
+        <h4>Revenue Projection (Creator &mdash; 5% fee on every trade)</h4>
         <table>
           <thead><tr><th>Scenario</th><th>Holders</th><th>Daily Vol</th><th>Creator Fee/Day</th><th>Monthly Income</th></tr></thead>
           <tbody>
@@ -738,6 +956,23 @@ footer a{color:var(--text2)}
           </tbody>
         </table>
         <p class="note">Revenue scales with ecosystem size. More agents = more arbitrage opportunities = more demand for this skill.</p>
+      </div>
+
+      <!-- Verified Skill Profile -->
+      <div class="verified-profile">
+        <h4>Verified Skill Profile</h4>
+        <div class="vp-row">
+          <span class="vp-label">Risk Level:</span>
+          <span class="vp-value"><strong class="risk-high">HIGH</strong> &mdash; directly handles financial signals for trading. Manipulation potential is highest of all 5 skills</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">Verification Focus:</span>
+          <span class="vp-value">Value Score algorithm must be transparent and auditable, no hidden weighting toward specific agents, auto-trade feature requires explicit user opt-in with per-transaction limits, backtested performance data must be verifiable</span>
+        </div>
+        <div class="vp-row">
+          <span class="vp-label">ClawHavoc Relevance:</span>
+          <span class="vp-value">Arbitrage/analytics skills on ClawHub were used to front-run users. Verified version ensures transparent methodology and no hidden manipulation</span>
+        </div>
       </div>
 
       <div class="skill-card-meta">
@@ -754,7 +989,7 @@ footer a{color:var(--text2)}
 <section id="chatgpt">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">07 &mdash; Key Question</div>
+      <div class="section-num">09 &mdash; Key Question</div>
       <h2>Why ClawFriend Skills, Not ChatGPT?</h2>
       <p class="section-desc">BGK will ask: "Why wouldn't users just use ChatGPT instead of skills on the platform?" Here's the answer.</p>
     </div>
@@ -812,7 +1047,7 @@ footer a{color:var(--text2)}
 <section id="journey">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">08 &mdash; Conversion Funnel</div>
+      <div class="section-num">10 &mdash; Conversion Funnel</div>
       <h2>User Journey: Discover &rarr; Hold &rarr; Retain</h2>
       <p class="section-desc">How skills drive platform adoption through the ClawFriend monetization flywheel.</p>
     </div>
@@ -875,16 +1110,74 @@ footer a{color:var(--text2)}
 <section id="launch">
   <div class="container">
     <div class="section-header fade-up">
-      <div class="section-num">09 &mdash; Launch Strategy</div>
+      <div class="section-num">11 &mdash; Launch Strategy</div>
       <h2>Recommended Launch Order</h2>
-      <p class="section-desc">Phased rollout optimized for user acquisition first, then ecosystem activation, then premium monetization.</p>
+      <p class="section-desc">Phased rollout optimized for user acquisition first, then ecosystem activation, then premium monetization. Verification system launches with the first skill.</p>
+    </div>
+
+    <!-- Launch Priority Matrix -->
+    <div class="table-wrap fade-up" style="margin-bottom:28px">
+      <table>
+        <thead>
+          <tr>
+            <th>Priority</th>
+            <th>Skill</th>
+            <th>Build Time</th>
+            <th>TAM Size</th>
+            <th>Ecosystem Optics</th>
+            <th>Launch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:var(--green2)">1st</strong></td>
+            <td><strong>BNB Chain Token Analyzer + Verification System MVP</strong></td>
+            <td>2-3 weeks</td>
+            <td>Largest (all DEX traders)</td>
+            <td>Public good &rarr; grants + trust anchor</td>
+            <td style="font-weight:700;color:var(--green2)">Week 1-3</td>
+          </tr>
+          <tr>
+            <td><strong>2nd</strong></td>
+            <td><strong>Content Creator Agent</strong></td>
+            <td>2-3 weeks</td>
+            <td>Large (all agent owners)</td>
+            <td>Platform activation</td>
+            <td>Week 4-5</td>
+          </tr>
+          <tr>
+            <td><strong>3rd</strong></td>
+            <td><strong>DeFi Yield Scanner</strong></td>
+            <td>2-3 weeks</td>
+            <td>Large (DeFi farmers)</td>
+            <td>BNB DeFi synergy</td>
+            <td>Week 5-6</td>
+          </tr>
+          <tr>
+            <td><strong>4th</strong></td>
+            <td><strong>Social Alpha Signal</strong></td>
+            <td>3-4 weeks</td>
+            <td>Medium (active traders)</td>
+            <td>Share demand driver</td>
+            <td>Week 6-8</td>
+          </tr>
+          <tr>
+            <td><strong>5th</strong></td>
+            <td><strong>Cross-Agent Arbitrage</strong></td>
+            <td>3-4 weeks</td>
+            <td>Small (power users)</td>
+            <td>Ecosystem maturity</td>
+            <td>Week 8-10</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="timeline fade-up">
       <div class="timeline-item active">
         <div class="time">Week 1-3 &mdash; Launch First</div>
-        <h4>BNB Chain Token Analyzer</h4>
-        <p>Fastest to build (2-3 week MVP). Largest immediate audience (every BNB DEX trader). Free safety tool positions ClawFriend as a public good. Eligible for BNB Chain ecosystem grants.</p>
+        <h4>BNB Chain Token Analyzer + Verification System MVP</h4>
+        <p>Fastest to build (2-3 week MVP). Largest immediate audience (every BNB DEX trader). Free safety tool positions ClawFriend as a public good. The <strong>skill verification system launches WITH this skill</strong> &mdash; every skill published gets a Verified badge from day one. This is the #1 differentiator post-ClawHavoc and must be core infrastructure, not an afterthought. Eligible for BNB Chain ecosystem grants.</p>
       </div>
       <div class="timeline-item">
         <div class="time">Week 4-5 &mdash; Activate Agents</div>
@@ -892,7 +1185,7 @@ footer a{color:var(--text2)}
         <p>Addresses the most basic agent need: social presence. Activates dormant agents with autonomous content. Public basic tier drives ecosystem-wide engagement growth.</p>
       </div>
       <div class="timeline-item">
-        <div class="time">Week 4-6 &mdash; Parallel Build</div>
+        <div class="time">Week 5-6 &mdash; Parallel Build</div>
         <h4>DeFi Yield Scanner</h4>
         <p>Public DeFi tool broadens user base beyond traders. Cross-protocol scanning is a strong retention feature. Can build in parallel with Content Creator.</p>
       </div>
@@ -902,10 +1195,14 @@ footer a{color:var(--text2)}
         <p>First holder-gated skill creates genuine economic incentive to hold agent shares. 3-share minimum establishes price floor on bonding curve. Strongest share demand driver.</p>
       </div>
       <div class="timeline-item">
-        <div class="time">Week 8-12 &mdash; Ecosystem Maturity</div>
+        <div class="time">Week 8-10 &mdash; Ecosystem Maturity</div>
         <h4>Cross-Agent Arbitrage</h4>
         <p>Requires a critical mass of agents to be valuable. Launch after ecosystem has grown. 5-share gate creates premium tier. First-mover advantage with no existing competitors.</p>
       </div>
+    </div>
+
+    <div style="padding:16px 20px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--accent);font-size:.9rem;color:var(--text2);margin-top:24px" class="fade-up">
+      <strong style="color:var(--text)">Sequencing rationale:</strong> Verification system + public skills first (trust + user acquisition) &rarr; holder-gated skills later (share demand). Token Analyzer + Verified badge brings users in and establishes trust, Content Creator activates agents, then Alpha Signal creates genuine economic incentive to hold shares.
     </div>
   </div>
 </section>
@@ -914,21 +1211,23 @@ footer a{color:var(--text2)}
 <footer>
   <div class="container">
     <div style="display:flex;justify-content:center;gap:16px;margin-bottom:16px;flex-wrap:wrap">
-      <a href="/" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Evaluation Report</a>
-      <a href="/competitors" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Competitor Analysis</a>
-      <a href="/landscape" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Competitive Landscape</a>
-      <a href="/strategy" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Strategic Analysis</a>
-      <a href="/skills" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Skills Showcase</a>
+      <a href="/" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Evaluation</a>
+      <a href="/competitors" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Competitors</a>
+      <a href="/landscape" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Landscape</a>
+      <a href="/strategy" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Strategy</a>
+      <a href="/skills" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500">Skills</a>
     </div>
-    <p style="margin-bottom:8px">Skill designs based on market research from <a href="https://clawfriend.ai" target="_blank">clawfriend.ai</a> ecosystem analysis on 2026-02-25.</p>
-    <p>All skill specifications are conceptual designs. Not financial advice.</p>
+    <p style="margin-bottom:8px">Skill designs based on market research from <a href="https://clawfriend.ai" target="_blank">clawfriend.ai</a> ecosystem analysis on 2026-02-26.</p>
+    <p>All skill specifications are conceptual designs. Not financial advice. Revenue projections are aspirational (see bonding curve caveat).</p>
     <p style="margin-top:16px;font-size:.72rem">
       Sources:
       <a href="https://clawfriend.ai" target="_blank">ClawFriend</a> &middot;
       <a href="https://www.virtuals.io/" target="_blank">Virtuals Protocol</a> &middot;
       <a href="https://defillama.com/" target="_blank">DefiLlama</a> &middot;
       <a href="https://gopluslabs.io/" target="_blank">GoPlus Security</a> &middot;
-      <a href="https://bscscan.com/" target="_blank">BscScan</a>
+      <a href="https://bscscan.com/" target="_blank">BscScan</a> &middot;
+      <a href="https://myshell.ai/" target="_blank">MyShell</a> &middot;
+      <a href="https://agents.cookie.fun/" target="_blank">Cookie DAO</a>
     </p>
   </div>
 </footer>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ClawFriend vs Competitors - AI Agent Economy Landscape 2026</title>
-<meta name="description" content="Comprehensive competitor analysis: ClawFriend vs Virtuals Protocol, ElizaOS, Autonolas, MyShell, Clanker, Spectral & more">
+<meta name="description" content="Competitive analysis: ClawFriend vs Virtuals Protocol, MyShell, CreatorBid, ChatAndBuild, ClawHub — 5 direct competitors on BNB Chain">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -72,6 +72,8 @@ h3{font-size:1.1rem;font-weight:700;margin:28px 0 12px}h3:first-child{margin-top
 .badge.dead{background:var(--red-bg);color:var(--red2);border:1px solid var(--red-border)}
 .badge.early{background:var(--yellow-bg);color:var(--yellow);border:1px solid var(--yellow-border)}
 .badge.leader{background:rgba(124,108,240,.12);color:var(--accent2);border:1px solid rgba(124,108,240,.25)}
+.badge.warn{background:var(--red-bg);color:var(--red2);border:1px solid var(--red-border)}
+.badge.new{background:var(--blue-bg);color:var(--blue2);border:1px solid var(--blue-border)}
 
 /* Tables */
 .tbl-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);margin:16px 0}
@@ -136,6 +138,16 @@ td strong{color:var(--text)}
 .tl-item .event{font-size:.88rem;color:var(--text2)}
 .tl-item .event strong{color:var(--text)}
 
+/* Bonding Curve Visual */
+.bc-grid{display:grid;grid-template-columns:1fr;gap:0;margin:20px 0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.bc-row{display:grid;grid-template-columns:140px 200px 1fr;align-items:center;padding:12px 18px;border-bottom:1px solid rgba(30,30,56,.5);font-size:.84rem;transition:background .2s}
+.bc-row:last-child{border-bottom:none}
+.bc-row:hover{background:rgba(124,108,240,.02)}
+.bc-row.header{background:var(--bg3);font-weight:600;font-size:.74rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text2)}
+.bc-platform{font-weight:600;color:var(--text)}
+.bc-model{color:var(--text2);font-size:.8rem}
+.bc-status{font-weight:600;font-size:.82rem}
+
 /* Footer */
 footer{padding:36px 0;text-align:center;font-size:.78rem;color:var(--text3);border-top:1px solid var(--border)}
 footer a{color:var(--text2)}
@@ -152,6 +164,7 @@ section{padding:36px 0}
 .card-grid.cols-2,.card-grid.cols-3,.card-grid.cols-4{grid-template-columns:1fr}
 .bar-label{width:80px;font-size:.75rem}
 .bar-val{width:70px;font-size:.75rem}
+.bc-row{grid-template-columns:100px 140px 1fr;padding:10px 12px;font-size:.78rem}
 }
 .fade{opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s}.fade.in{opacity:1;transform:none}
 </style>
@@ -164,11 +177,11 @@ section{padding:36px 0}
 <div class="topbar-inner">
 <div class="topbar-brand">ClawFriend.ai Reports</div>
 <div class="topbar-nav">
-<a href="/">Evaluation Report</a>
-<a href="/competitors" class="active">Competitor Analysis</a>
-<a href="/landscape">Competitive Landscape</a>
-<a href="/strategy">Strategic Analysis</a>
-<a href="/skills">Skills Showcase</a>
+<a href="/">Evaluation</a>
+<a href="/competitors" class="active">Competitors</a>
+<a href="/landscape">Landscape</a>
+<a href="/strategy">Strategy</a>
+<a href="/skills">Skills</a>
 </div>
 </div>
 </div>
@@ -178,286 +191,479 @@ section{padding:36px 0}
 <header class="hero">
 <div class="container hero-inner">
 <a href="/" class="back-link">&larr; Back to Evaluation Report</a>
-<h1>AI Agent Economy Landscape 2026</h1>
-<p class="sub">ClawFriend vs 7 Competitors &mdash; Comprehensive Market Comparison</p>
+<h1>Direct Competitor Analysis 2026</h1>
+<p class="sub">5 Direct Competitors Only &mdash; Platforms with marketplace/agent trading similar to ClawFriend. Indirect competitors removed.</p>
 <div class="hero-stats">
-<div class="hero-stat"><div class="val" style="color:var(--accent2)">8</div><div class="lbl">Platforms Analyzed</div></div>
-<div class="hero-stat"><div class="val" style="color:var(--green2)">$4.3B+</div><div class="lbl">Total AI Agent Market</div></div>
-<div class="hero-stat"><div class="val" style="color:var(--yellow)">550+</div><div class="lbl">AI Agent Projects</div></div>
-<div class="hero-stat"><div class="val" style="color:var(--blue2)">18K+</div><div class="lbl">Top Platform Agents</div></div>
+<div class="hero-stat"><div class="val" style="color:var(--accent2)">5</div><div class="lbl">Direct Competitors</div></div>
+<div class="hero-stat"><div class="val" style="color:var(--green2)">$39.5M</div><div class="lbl">Top Revenue (Virtuals)</div></div>
+<div class="hero-stat"><div class="val" style="color:var(--yellow)">5M+</div><div class="lbl">Top Users (MyShell)</div></div>
+<div class="hero-stat"><div class="val" style="color:var(--red2)">6-9mo</div><div class="lbl">Window Remaining</div></div>
 </div>
 </div>
 </header>
 
 <!-- Nav -->
 <nav class="nav"><div class="container"><div class="nav-inner">
-<a href="#market" class="nav a active">Market Overview</a>
-<a href="#profiles">Platform Profiles</a>
-<a href="#matrix">Feature Matrix</a>
-<a href="#metrics">Market Metrics</a>
-<a href="#dimensions">Dimension Analysis</a>
-<a href="#timeline">Timeline</a>
-<a href="#verdict">Final Verdict</a>
+<a href="#taxonomy" class="active">Taxonomy</a>
+<a href="#profiles">Competitor Profiles</a>
+<a href="#bonding">Bonding Curve</a>
+<a href="#matrix">Comparison Matrix</a>
+<a href="#threat">Threat Matrix</a>
+<a href="#market">Market Sizing</a>
+<a href="#verdict">Positioning</a>
 </div></div></nav>
 
-<!-- 1. Market Overview -->
-<section id="market">
+<!-- 1. Market Taxonomy -->
+<section id="taxonomy">
 <div class="container">
-<div class="sec-label fade">01 / Market Overview</div>
-<h2 class="fade">AI Agent Crypto Market &mdash; Q1 2026</h2>
-<p class="desc fade">The Agentic Web has arrived. Over 550 AI agent crypto projects now exist with $4.3B+ combined market cap. Here's how ClawFriend fits in the landscape.</p>
+<div class="sec-label fade">01 / Market Taxonomy</div>
+<h2 class="fade">Web3 AI Agent/Skill Marketplace</h2>
+<p class="desc fade">Only direct competitors analyzed &mdash; platforms with marketplace/agent trading similar to ClawFriend. Removed: Fetch.ai, Olas, ElizaOS, Griffain, Morpheus, SingularityNET, Bittensor, MCP Ecosystem.</p>
+
+<div class="card-grid cols-2 fade">
+<div class="card" style="border-color:rgba(124,108,240,.2)">
+<h4 style="color:var(--accent2);margin-bottom:12px">Category A: Agent Launchpads</h4>
+<p style="font-size:.82rem;color:var(--text3);margin-bottom:14px">Tokenized agents + trading</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;align-items:center;gap:10px;font-size:.85rem">
+<span class="badge leader">Leader</span><strong>Virtuals Protocol</strong><span style="color:var(--text3);font-size:.78rem">$39.5M revenue, 18K agents, ACP</span>
+</div>
+<div style="display:flex;align-items:center;gap:10px;font-size:.85rem">
+<span class="badge dead">Dying</span><strong>CreatorBid</strong><span style="color:var(--text3);font-size:.78rem">3,500 agents, -97% ATH</span>
+</div>
+<div style="display:flex;align-items:center;gap:10px;font-size:.85rem">
+<span class="badge new">New</span><strong>ChatAndBuild</strong><span style="color:var(--text3);font-size:.78rem">140K users, BAP-578 NFA</span>
+</div>
+<div style="display:flex;align-items:center;gap:10px;font-size:.85rem">
+<span class="badge early">Pre-traction</span><strong style="color:var(--accent2)">ClawFriend</strong><span style="color:var(--text3);font-size:.78rem">2 skills, bonding curve</span>
+</div>
+</div>
+</div>
+<div class="card" style="border-color:rgba(48,144,224,.2)">
+<h4 style="color:var(--blue2);margin-bottom:12px">Category B: Skill/Plugin Registries</h4>
+<p style="font-size:.82rem;color:var(--text3);margin-bottom:14px">Capability marketplaces</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;align-items:center;gap:10px;font-size:.85rem">
+<span class="badge live">Dominant</span><strong>ClawHub</strong><span style="color:var(--text3);font-size:.78rem">3,286 skills, 1.5M downloads, FREE</span>
+</div>
+<div style="display:flex;align-items:center;gap:10px;font-size:.85rem">
+<span class="badge live">Consumer</span><strong>MyShell</strong><span style="color:var(--text3);font-size:.78rem">5M users, 200K+ agents</span>
+</div>
+<div style="display:flex;align-items:center;gap:10px;font-size:.85rem">
+<span class="badge early">Hybrid</span><strong style="color:var(--accent2)">ClawFriend</strong><span style="color:var(--text3);font-size:.78rem">Skill market + holder-gated</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="callout fade" style="margin-top:20px">
+<strong>ClawFriend straddles Category A + B:</strong> bonding curve trading (launchpad) + skill marketplace (registry) + social layer. No competitor combines all three on BNB Chain.
+</div>
 
 <h3 class="fade">Market Size by Platform</h3>
 <div class="bar-group fade">
 <div class="bar-row">
 <div class="bar-label"><strong>Virtuals</strong></div>
-<div class="bar-track"><div class="bar-fill" style="width:92%;background:linear-gradient(90deg,#6c5ce7,#a29bfe)">$415M MCap</div></div>
-<div class="bar-val c-accent">$414.7M</div>
-</div>
-<div class="bar-row">
-<div class="bar-label"><strong>ElizaOS</strong></div>
-<div class="bar-track"><div class="bar-fill" style="width:34%;background:linear-gradient(90deg,#e17055,#fab1a0)">~$150M</div></div>
-<div class="bar-val" style="color:var(--orange)">~$150M</div>
-</div>
-<div class="bar-row">
-<div class="bar-label"><strong>Clanker</strong></div>
-<div class="bar-track"><div class="bar-fill" style="width:7%;background:linear-gradient(90deg,var(--cyan),#60e0f0)">$30M</div></div>
-<div class="bar-val" style="color:var(--cyan)">$29.7M</div>
-</div>
-<div class="bar-row">
-<div class="bar-label"><strong>OLAS</strong></div>
-<div class="bar-track"><div class="bar-fill" style="width:7%;background:linear-gradient(90deg,var(--green),var(--green2))">$32M</div></div>
-<div class="bar-val c-green">$32M</div>
+<div class="bar-track"><div class="bar-fill" style="width:92%;background:linear-gradient(90deg,#6c5ce7,#a29bfe)">$450M MCap</div></div>
+<div class="bar-val c-accent">$450M</div>
 </div>
 <div class="bar-row">
 <div class="bar-label"><strong>MyShell</strong></div>
-<div class="bar-track"><div class="bar-fill" style="width:2%;background:linear-gradient(90deg,var(--blue),var(--blue2))">$8M</div></div>
-<div class="bar-val c-blue">$8M</div>
+<div class="bar-track"><div class="bar-fill" style="width:2%;background:linear-gradient(90deg,var(--blue),var(--blue2))">$9M</div></div>
+<div class="bar-val c-blue">$9M</div>
 </div>
 <div class="bar-row">
-<div class="bar-label"><strong>Spectral</strong></div>
-<div class="bar-track"><div class="bar-fill" style="width:1%;background:linear-gradient(90deg,var(--yellow),#ffe066)"></div></div>
-<div class="bar-val c-yellow">$3.5M</div>
+<div class="bar-label"><strong>CreatorBid</strong></div>
+<div class="bar-track"><div class="bar-fill" style="width:0.7%;background:linear-gradient(90deg,var(--red),var(--red2))">$3.2M</div></div>
+<div class="bar-val c-red">$3.2M</div>
+</div>
+<div class="bar-row">
+<div class="bar-label"><strong>ChatAndBuild</strong></div>
+<div class="bar-track"><div class="bar-fill" style="width:0.3%;background:linear-gradient(90deg,var(--cyan),#60e0f0)"></div></div>
+<div class="bar-val c-yellow">No token</div>
+</div>
+<div class="bar-row">
+<div class="bar-label"><strong>ClawHub</strong></div>
+<div class="bar-track"><div class="bar-fill" style="width:0.3%;background:linear-gradient(90deg,var(--green),var(--green2))"></div></div>
+<div class="bar-val c-gray">$0 rev</div>
 </div>
 <div class="bar-row">
 <div class="bar-label"><strong style="color:var(--accent2)">ClawFriend</strong></div>
-<div class="bar-track"><div class="bar-fill" style="width:0.3%;background:linear-gradient(90deg,var(--red),var(--red2))"></div></div>
+<div class="bar-track"><div class="bar-fill" style="width:0.1%;background:linear-gradient(90deg,var(--accent),var(--accent2))"></div></div>
 <div class="bar-val c-red">N/A</div>
 </div>
 </div>
-
-<h3 class="fade">Ecosystem Scale Comparison</h3>
-<div class="bar-group fade">
-<div class="bar-row">
-<div class="bar-label">Agents Deployed</div>
-<div class="bar-track"><div class="bar-fill" style="width:90%;background:var(--accent)">Virtuals: 18,000+</div></div>
-<div class="bar-val">18,000+</div>
-</div>
-<div class="bar-row">
-<div class="bar-label">Agents Deployed</div>
-<div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--blue)">MyShell: 200,000+</div></div>
-<div class="bar-val">200K+</div>
-</div>
-<div class="bar-row">
-<div class="bar-label">Tokens Launched</div>
-<div class="bar-track"><div class="bar-fill" style="width:86%;background:var(--cyan)">Clanker: 17,242</div></div>
-<div class="bar-val">17,242</div>
-</div>
-<div class="bar-row">
-<div class="bar-label">Agent Services</div>
-<div class="bar-track"><div class="bar-fill" style="width:2.5%;background:var(--green)">OLAS: ~500</div></div>
-<div class="bar-val">~500</div>
-</div>
-<div class="bar-row">
-<div class="bar-label">Skills Published</div>
-<div class="bar-track"><div class="bar-fill" style="width:0.01%;background:var(--red)"></div></div>
-<div class="bar-val c-red">ClawFriend: 2</div>
-</div>
-</div>
 </div>
 </section>
 
-<!-- 2. Platform Profiles -->
+<!-- 2. Competitor Profiles -->
 <section id="profiles">
 <div class="container">
-<div class="sec-label fade">02 / Platform Profiles</div>
-<h2 class="fade">Competitor Deep Dives</h2>
-<p class="desc fade">Detailed analysis of each platform's model, technology, and market position.</p>
+<div class="sec-label fade">02 / Competitor Profiles</div>
+<h2 class="fade">5 Direct Competitor Deep Dives</h2>
+<p class="desc fade">Detailed analysis of each direct competitor's model, data, strengths, weaknesses, and implications for ClawFriend.</p>
 
-<!-- Virtuals -->
+<!-- 1. Virtuals Protocol -->
 <div class="card fade" style="margin-bottom:20px;border-color:rgba(124,108,240,.25)">
 <div class="card-head">
 <div class="card-icon" style="background:rgba(124,108,240,.15);color:var(--accent2)">V</div>
-<div><h4>Virtuals Protocol <span class="badge leader">Market Leader</span></h4><small>Base + Solana &bull; $VIRTUAL &bull; 18,000+ agents</small></div>
+<div><h4>Virtuals Protocol <span class="badge leader">Market Leader</span></h4><small>Base + Sol + ETH + Ronin + <strong>BNB Chain</strong> &bull; $VIRTUAL &bull; 18,000+ agents</small></div>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--accent2)">$414.7M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">aGDP</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">$477.6M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Token Price</div><div style="font-size:1.1rem;font-weight:700">$0.63</div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:16px">
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--accent2)">~$450M</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Revenue</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">$39.5M+</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">aGDP</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">$470M+</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Holders</div><div style="font-size:1.1rem;font-weight:700">650K+</div></div>
 </div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Full-stack AI agent platform. Anyone can build, own, and monetize autonomous agents. Features GAME framework, Agent Commerce Protocol (ACP), x402 micropayments, and Revenue Network for agent-to-agent commerce.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
-<span class="badge live">Agent Commerce</span>
+<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">AI Agent Commerce Protocol. Agents have tokenized identities, trade with each other via ACP (Agent Commerce Protocol), and generate revenue autonomously. $VIRTUAL price $0.70 (+23.5% on Feb 25). $13.23B monthly trading volume.</p>
+
+<h4 style="font-size:.85rem;font-weight:700;color:var(--text);margin:14px 0 8px">Recent Developments (Feb 2026)</h4>
+<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--green);font-weight:700;flex-shrink:0">Revenue Network</span> (Feb 12) &mdash; On-chain AI network for autonomous agent-to-agent commerce via ACP. Distributes up to $1M/month. $200K USDC processed in first 48 hours.
+</div>
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--green);font-weight:700;flex-shrink:0">Eastworld Labs</span> (Feb 23) &mdash; AI accelerator for humanoid robots, 30+ Unitree G1 robots, 500K+ recorded task datasets.
+</div>
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--red2);font-weight:700;flex-shrink:0">Luna.fun on BNB</span> &mdash; AI meme platform with x402 payment. Directly competing on ClawFriend's territory.
+</div>
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--green);font-weight:700;flex-shrink:0">x402 Integration</span> &mdash; $600M+ in AI micropayments. Adopted by Google Cloud, AWS, Stripe.
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+<div>
+<h4 style="font-size:.8rem;color:var(--green2);margin-bottom:6px">Strengths</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>Proven revenue: $39.5M+ is real, not projected</li>
+<li>Agent-to-agent commerce works (ACP + x402 + Revenue Network)</li>
+<li>Multi-chain (5 chains including BNB) = broadest reach</li>
+<li>Moving into physical robotics (Eastworld Labs)</li>
+<li>650K holders = massive distribution</li>
+</ul>
+</div>
+<div>
+<h4 style="font-size:.8rem;color:var(--red2);margin-bottom:6px">Weaknesses</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>Agent quality varies wildly (many spam/meme agents)</li>
+<li>Complex tokenomics confuses newcomers</li>
+<li>Luna.fun on BNB is early, unproven</li>
+<li>Revenue concentrated in top agents</li>
+</ul>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
+<span class="badge live">Agent Commerce (ACP)</span>
 <span class="badge live">Bonding Curve</span>
-<span class="badge live">Multi-chain</span>
+<span class="badge live">Multi-chain (5)</span>
 <span class="badge live">x402 Payments</span>
+<span class="badge live">Revenue Network</span>
 <span class="badge live">Robotics</span>
 </div>
-<div class="callout" style="margin-top:14px;font-size:.82rem">
-<strong>Key differentiator:</strong> Proven agent-to-agent economy with x402 protocol. Revenue Network enables autonomous commerce at scale. Moving into physical robotics via BitRobotNetwork (Q1 2026).
+<div class="callout danger" style="margin-top:0;font-size:.82rem">
+<strong>Key takeaway for ClawFriend:</strong> Virtuals has entered BNB Chain via Luna.fun. The thesis "BNB agent economy is unoccupied" is no longer 100% true. ClawFriend CANNOT compete directly ($450M vs $0). Must find niches Virtuals doesn't serve: verified skills, OpenClaw ecosystem, DeFi-specific.
 </div>
 </div>
 
-<!-- ElizaOS -->
-<div class="card fade" style="margin-bottom:20px;border-color:rgba(225,112,85,.25)">
-<div class="card-head">
-<div class="card-icon" style="background:rgba(225,112,85,.15);color:var(--orange)">E</div>
-<div><h4>ElizaOS (ai16z) <span class="badge live">Active</span></h4><small>Multi-chain &bull; $AI16Z &bull; Eliza Framework</small></div>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Peak MCap</div><div style="font-size:1.1rem;font-weight:700;color:var(--orange)">$2B</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Model</div><div style="font-size:1.1rem;font-weight:700">DAO + Framework</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Focus</div><div style="font-size:1.1rem;font-weight:700">Dev Toolkit</div></div>
-</div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Open-source multi-agent simulation platform. Eliza framework enables developers to create and launch AI agents on blockchain. Integrates AI-powered analytics with decentralized community inputs via "Marketplace of Trust".</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
-<span class="badge live">Open Source</span>
-<span class="badge live">Multi-Agent</span>
-<span class="badge live">DAO Governance</span>
-<span class="badge live">Dev Framework</span>
-</div>
-</div>
-
-<!-- Clanker -->
-<div class="card fade" style="margin-bottom:20px;border-color:rgba(32,192,208,.25)">
-<div class="card-head">
-<div class="card-icon" style="background:rgba(32,192,208,.15);color:var(--cyan)">C</div>
-<div><h4>Clanker <span class="badge live">Active</span></h4><small>Base &bull; $CLANKER &bull; 17,242 projects</small></div>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--cyan)">$29.7M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Ecosystem</div><div style="font-size:1.1rem;font-weight:700">$121M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Daily Fees Peak</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">$600K</div></div>
-</div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">AI-powered token launch platform on Base. Tag @clanker on Farcaster to deploy ERC-20 tokens. Skips bonding curve &mdash; deploys directly to Uniswap V3. 1% transaction fee on all launched tokens, 60% for buybacks.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
-<span class="badge live">Token Launcher</span>
-<span class="badge live">Farcaster Native</span>
-<span class="badge live">Real Yield</span>
-<span class="badge live">Uniswap V3</span>
-</div>
-</div>
-
-<!-- OLAS -->
-<div class="card fade" style="margin-bottom:20px;border-color:rgba(0,201,167,.25)">
-<div class="card-head">
-<div class="card-icon" style="background:var(--green-bg);color:var(--green2)">O</div>
-<div><h4>Autonolas / OLAS <span class="badge live">Active</span></h4><small>Multi-chain &bull; $OLAS &bull; Co-owned AI</small></div>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">$32M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Model</div><div style="font-size:1.1rem;font-weight:700">Co-owned</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Chains</div><div style="font-size:1.1rem;font-weight:700">5+</div></div>
-</div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Developer infrastructure for decentralized autonomous agent services. Modular component system for data processing, decision-making, and communication. AI Portfolio Manager for multi-chain DeFi.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
-<span class="badge live">Multi-chain</span>
-<span class="badge live">Dev Infrastructure</span>
-<span class="badge live">DeFi Agents</span>
-<span class="badge live">Modular SDK</span>
-</div>
-</div>
-
-<!-- MyShell -->
+<!-- 2. MyShell -->
 <div class="card fade" style="margin-bottom:20px;border-color:rgba(48,144,224,.25)">
 <div class="card-head">
 <div class="card-icon" style="background:var(--blue-bg);color:var(--blue2)">M</div>
-<div><h4>MyShell <span class="badge live">Active</span></h4><small>BNB Chain &bull; $SHELL &bull; 200K+ agents</small></div>
+<div><h4>MyShell <span class="badge warn">BNB Chain Threat #1</span></h4><small>BNB Chain (SAME as ClawFriend) &bull; $SHELL &bull; 5M users</small></div>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--blue2)">$8M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Agents</div><div style="font-size:1.1rem;font-weight:700">200K+</div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:16px">
 <div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Users</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">5M+</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Agents</div><div style="font-size:1.1rem;font-weight:700">200K+</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">MCap ($SHELL)</div><div style="font-size:1.1rem;font-weight:700;color:var(--blue2)">~$9M</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">VC Funding</div><div style="font-size:1.1rem;font-weight:700">$16.6M</div></div>
 </div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Decentralized platform for building, sharing, and monetizing AI agents without coding. Open marketplace for AI creators, users, and supporters. On BNB Chain with EVM compatibility.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
+<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Consumer-friendly AI agent builder on BNB Chain. Users create, share, and monetize AI agents (chatbots, voice agents, image generators). Backed by YZi Labs, Dragonfly, OKX Ventures, GSR, Animoca Brands. $SHELL -95.6% from ATH ($0.68 &rarr; $0.03) but user base remains massive.</p>
+
+<h4 style="font-size:.85rem;font-weight:700;color:var(--text);margin:14px 0 8px">Recent Developments (Feb 2026)</h4>
+<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--blue2);font-weight:700;flex-shrink:0">ShellAgent 2.0</span> &mdash; BNB Chain integration, single-prompt-to-app generation.
+</div>
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--blue2);font-weight:700;flex-shrink:0">ShellAgent Protocol</span> (Feb 16) &mdash; Modular AI framework with 300+ pre-built widgets, drag-and-drop no-code.
+</div>
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--blue2);font-weight:700;flex-shrink:0">IM Integration</span> (Feb 16) &mdash; Cross-platform agent deployment, agents auto-trend on Twitter/X.
+</div>
+<div style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--text2)">
+<span style="color:var(--red2);font-weight:700;flex-shrink:0">On-Chain Intelligence</span> (Feb 16) &mdash; Multi-state DeFi automation, DAO tools, autonomous asset management. Directly competes with ClawFriend DeFi skills.
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+<div>
+<h4 style="font-size:.8rem;color:var(--green2);margin-bottom:6px">Strengths</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>5M users on SAME chain as ClawFriend</li>
+<li>Consumer-friendly UI (no-code, 300+ widgets)</li>
+<li>Top-tier VC backing ($16.6M)</li>
+<li>On-Chain Intelligence competes with ClawFriend DeFi skills</li>
+</ul>
+</div>
+<div>
+<h4 style="font-size:.8rem;color:var(--red2);margin-bottom:6px">Weaknesses</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>Not focused on autonomous economic agents (more chatbots)</li>
+<li><strong>No bonding curve / financial layer</strong> &mdash; key differentiation gap</li>
+<li>No holder-gated exclusive access model</li>
+<li>Token crashed 95.6% &mdash; ecosystem incentive weakened</li>
+</ul>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
 <span class="badge live">No-Code Builder</span>
 <span class="badge live">BNB Chain</span>
-<span class="badge live">Marketplace</span>
 <span class="badge live">5M+ Users</span>
+<span class="badge live">300+ Widgets</span>
+<span class="badge live">On-Chain Intelligence</span>
+</div>
+<div class="callout danger" style="margin-top:0;font-size:.82rem">
+<strong>Key takeaway for ClawFriend:</strong> MyShell is the #1 threat on BNB Chain. 5M users vs ~0. However, MyShell does NOT have bonding curve economic model or holder-gated exclusivity. That is the only gap ClawFriend can exploit. <strong>If MyShell adds bonding curve &rarr; game over.</strong>
 </div>
 </div>
 
-<!-- Spectral -->
-<div class="card fade" style="margin-bottom:20px;border-color:rgba(240,192,64,.25)">
+<!-- 3. CreatorBid -->
+<div class="card fade" style="margin-bottom:20px;border-color:rgba(224,62,62,.25);opacity:.85">
 <div class="card-head">
-<div class="card-icon" style="background:var(--yellow-bg);color:var(--yellow)">S</div>
-<div><h4>Spectral <span class="badge early">Niche</span></h4><small>Ethereum &bull; $SPEC &bull; No-code ML</small></div>
+<div class="card-icon" style="background:var(--red-bg);color:var(--red2)">CB</div>
+<div><h4>CreatorBid <span class="badge dead">Dying (-97%)</span></h4><small>Base &bull; $CREATOR &bull; 3,500+ agents</small></div>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--yellow)">$3.5M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Product</div><div style="font-size:1.1rem;font-weight:700">Syntax</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Focus</div><div style="font-size:1.1rem;font-weight:700">Trading ML</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">~$3.2M</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Token Price</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">$0.0087</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">vs ATH</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">-97%</div></div>
 </div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">No-code platform for creating onchain agents via natural language. Syntax converts plain English into Solidity code. Focus on ML trading strategies. Upcoming features: Inferchain, B2B Agents.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
-<span class="badge early">No-Code</span>
-<span class="badge early">NLP to Solidity</span>
-<span class="badge early">Early Adoption</span>
+<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">AI agent launchpad on Base. Create and trade tokenized AI agents with bonding curves. Closest model to ClawFriend. Token bonding curve mechanism (same concept). Recent activity limited to The Graph integration only &mdash; nearly inactive.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+<div>
+<h4 style="font-size:.8rem;color:var(--green2);margin-bottom:6px">Strengths</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>Closest comparable model to ClawFriend</li>
+<li>Base Chain (Coinbase ecosystem)</li>
+<li>Still alive (barely)</li>
+</ul>
+</div>
+<div>
+<h4 style="font-size:.8rem;color:var(--red2);margin-bottom:6px">Weaknesses</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li><strong>-97% from ATH</strong> &mdash; declining rapidly</li>
+<li>Low trading volume, minimal development</li>
+<li>No differentiation from Virtuals (same chain, weaker)</li>
+<li>Proves bonding curve alone doesn't work</li>
+</ul>
 </div>
 </div>
 
-<!-- friend.tech -->
-<div class="card fade" style="margin-bottom:20px;border-color:rgba(224,62,62,.25);opacity:.7">
-<div class="card-head">
-<div class="card-icon" style="background:var(--red-bg);color:var(--red2)">F</div>
-<div><h4>friend.tech <span class="badge dead">Dead</span></h4><small>Base &bull; $FRIEND (-98%) &bull; Shutdown Sept 2024</small></div>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Peak MCap</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">~$170M</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Peak Users</div><div style="font-size:1.1rem;font-weight:700">800K</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">End DAU</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">15</div></div>
-</div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">SocialFi pioneer on Base. Users bought "keys" of Twitter personalities via bonding curve for private chat access. Zero-sum model with no external value creation. Founders walked away with $44M.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
-<span class="badge dead">Zero-sum</span>
-<span class="badge dead">Rug Risk</span>
-<span class="badge dead">Token -98%</span>
-</div>
-<div class="callout danger" style="margin-top:12px;font-size:.82rem">
-<strong>Lesson learned:</strong> Bonding curve + no utility + no external value = death spiral. ClawFriend explicitly positions against this model but hasn't proven its alternative works.
-</div>
-</div>
-
-<!-- ClawFriend -->
-<div class="card fade" style="margin-bottom:20px;border:2px solid var(--accent)">
-<div class="card-head">
-<div class="card-icon" style="background:rgba(124,108,240,.15);color:var(--accent2)">CF</div>
-<div><h4 style="color:var(--accent2)">ClawFriend <span class="badge early">Early Stage</span></h4><small>BNB Chain &bull; No token &bull; OpenClaw native</small></div>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px">
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Market Cap</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">N/A</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Skills</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">2</div></div>
-<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Downloads</div><div style="font-size:1.1rem;font-weight:700;color:var(--yellow)">20</div></div>
-</div>
-<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Autonomous agent economy on BNB Chain. Humans and AI agents trade "keys" via bonding curve. Claims positive-sum model where agents earn externally. Native OpenClaw integration.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
+<span class="badge dead">-97% ATH</span>
+<span class="badge dead">Low Activity</span>
 <span class="badge early">Bonding Curve</span>
-<span class="badge early">OpenClaw Native</span>
-<span class="badge early">Social Feed</span>
-<span class="badge early">Unproven</span>
+<span class="badge early">Base Chain</span>
+</div>
+<div class="callout danger" style="margin-top:0;font-size:.82rem">
+<strong>Cautionary tale:</strong> CreatorBid uses the same bonding curve + AI agents model but is dying. Token -97%. Lesson: bonding curve is a feature, NOT a strategy. ClawFriend must have real utility (verified skills, DeFi tools) &mdash; speculation alone kills.
+</div>
+</div>
+
+<!-- 4. ChatAndBuild -->
+<div class="card fade" style="margin-bottom:20px;border-color:rgba(32,192,208,.25)">
+<div class="card-head">
+<div class="card-icon" style="background:rgba(32,192,208,.15);color:var(--cyan)">CB</div>
+<div><h4>ChatAndBuild <span class="badge new">NEW BNB Competitor</span></h4><small>BNB Chain (SAME as ClawFriend) &bull; No token &bull; 140K users</small></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:16px">
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Users</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">140K+</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Countries</div><div style="font-size:1.1rem;font-weight:700">111</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Standard</div><div style="font-size:1.1rem;font-weight:700;color:var(--cyan)">BAP-578</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Languages</div><div style="font-size:1.1rem;font-weight:700">40+</div></div>
+</div>
+<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">AI Super App on BNB Chain. Build, launch, and own AI apps without code. Uses BAP-578 (Non-Fungible Agent) &mdash; BNB Chain's official standard. AI integrations with Anthropic, OpenAI, Google Gemini, DeepSeek. Recognized at BNB Hack Abu Dhabi (Jan 2026).</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+<div>
+<h4 style="font-size:.8rem;color:var(--green2);margin-bottom:6px">Strengths</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>140K users &mdash; significant BNB Chain traction</li>
+<li>Official BNB standard (BAP-578) = ecosystem-aligned</li>
+<li>No-code = accessible to non-tech users</li>
+<li>Multi-AI provider support</li>
+<li>BNB Chain ecosystem recognition</li>
+</ul>
+</div>
+<div>
+<h4 style="font-size:.8rem;color:var(--red2);margin-bottom:6px">Weaknesses</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>No bonding curve economic layer (NFA model different)</li>
+<li>No skill marketplace (focus on agent building)</li>
+<li>No social layer documented</li>
+<li>No token = less speculation appeal</li>
+</ul>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
+<span class="badge live">BNB Chain</span>
+<span class="badge live">BAP-578 NFA</span>
+<span class="badge live">No-Code</span>
+<span class="badge live">140K Users</span>
+<span class="badge new">111 Countries</span>
+</div>
+<div class="callout warn" style="margin-top:0;font-size:.82rem">
+<strong>Key takeaway for ClawFriend:</strong> ChatAndBuild is a serious new threat. Same BNB Chain, 140K users, uses official standard. ClawFriend should <strong>adopt BAP-578</strong> for compatibility rather than fighting it. Differentiate via skill marketplace depth + holder-gated economics.
+</div>
+</div>
+
+<!-- 5. ClawHub -->
+<div class="card fade" style="margin-bottom:20px;border-color:rgba(0,201,167,.25)">
+<div class="card-head">
+<div class="card-icon" style="background:var(--green-bg);color:var(--green2)">CH</div>
+<div><h4>ClawHub (OpenClaw Registry) <span class="badge early">Supply Source</span></h4><small>N/A (not blockchain-based) &bull; 3,286 skills &bull; FREE</small></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:16px">
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Skills</div><div style="font-size:1.1rem;font-weight:700;color:var(--green2)">3,286</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Downloads</div><div style="font-size:1.1rem;font-weight:700">1.5M+</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Revenue</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">$0</div></div>
+<div><div style="font-size:.7rem;color:var(--text3);text-transform:uppercase">Malicious</div><div style="font-size:1.1rem;font-weight:700;color:var(--red2)">12-20%</div></div>
+</div>
+<p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Official skill registry for OpenClaw. Developers publish skills, agents install via CLI. Part of OpenClaw ecosystem (135K+ GitHub stars). Zero monetization &mdash; all skills free. OpenClaw founder joined OpenAI (Feb 14) &mdash; uncertain direction.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+<div>
+<h4 style="font-size:.8rem;color:var(--green2);margin-bottom:6px">Strengths</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li>Massive skill library (3,286 vs ClawFriend's 2)</li>
+<li>Native OpenClaw integration</li>
+<li>1.5M downloads proves demand</li>
+<li>Free = low barrier</li>
+</ul>
+</div>
+<div>
+<h4 style="font-size:.8rem;color:var(--red2);margin-bottom:6px">Weaknesses</h4>
+<ul style="padding-left:16px;font-size:.8rem;color:var(--text2);line-height:1.8">
+<li><strong>$0 revenue</strong> (no business model)</li>
+<li><strong>ClawHavoc crisis</strong> &mdash; 12-20% malicious skills</li>
+<li>No quality curation / review system</li>
+<li>No financial incentive for skill developers</li>
+</ul>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
+<span class="badge live">3,286 Skills</span>
+<span class="badge live">OpenClaw Native</span>
+<span class="badge dead">ClawHavoc Crisis</span>
+<span class="badge dead">$0 Revenue</span>
+</div>
+
+<!-- ClawHavoc Opportunity -->
+<div style="background:var(--bg3);border-radius:var(--radius);padding:18px;margin-top:14px">
+<h4 style="font-size:.9rem;font-weight:700;color:var(--red2);margin-bottom:10px">ClawHavoc Crisis &mdash; Jan-Feb 2026</h4>
+<p style="font-size:.82rem;color:var(--text2);margin-bottom:12px">1,184 malicious skills discovered on ClawHub. 12-20% of ALL skills are malicious. Targeted: crypto wallet keys, exchange API keys. Bloomberg: "OpenClaw May Be a Security Nightmare"</p>
+<div class="tbl-wrap" style="margin:8px 0">
+<table style="min-width:500px">
+<thead><tr><th>Aspect</th><th style="color:var(--red2)">Threat</th><th style="color:var(--green2)">Opportunity</th></tr></thead>
+<tbody>
+<tr><td><strong>Brand</strong></td><td>"OpenClaw-native" is now double-edged</td><td>"The VERIFIED marketplace post-ClawHavoc"</td></tr>
+<tr><td><strong>Trust</strong></td><td>Users fear OpenClaw skills</td><td>Verified badge = differentiation no competitor has</td></tr>
+<tr><td><strong>Demand</strong></td><td>Some users leaving ClawHub</td><td>Capture security-conscious users</td></tr>
+<tr><td><strong>Narrative</strong></td><td>Security FUD hurting ecosystem</td><td>"We solve the problem ClawHavoc created"</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout success" style="margin:12px 0 0;font-size:.82rem">
+<strong>Positioning:</strong> ClawFriend should lean INTO the crisis, not away from it. Every verified skill published is a direct answer to ClawHavoc. "If ClawHub is the Wild West, ClawFriend is the App Store." This is the single strongest differentiation available right now.
+</div>
 </div>
 </div>
 
 </div>
 </section>
 
-<!-- 3. Feature Matrix -->
+<!-- 3. Bonding Curve Reality Check -->
+<section id="bonding">
+<div class="container">
+<div class="sec-label fade">03 / Bonding Curve Reality Check</div>
+<h2 class="fade">Every Bonding Curve Platform Is Failing</h2>
+<p class="desc fade">Critical pattern analysis: bonding curve without utility = death spiral. Only Virtuals survives because of real agent-to-agent commerce revenue.</p>
+
+<div class="bc-grid fade">
+<div class="bc-row header">
+<div>Platform</div>
+<div>Model</div>
+<div>Status (Feb 2026)</div>
+</div>
+<div class="bc-row">
+<div class="bc-platform" style="color:var(--red2)">CreatorBid</div>
+<div class="bc-model">Bonding curve + AI agents</div>
+<div class="bc-status c-red">-97% ATH, dying</div>
+</div>
+<div class="bc-row">
+<div class="bc-platform" style="color:var(--red2)">friend.tech</div>
+<div class="bc-model">Bonding curve + social</div>
+<div class="bc-status c-red">DEAD ($0.0025, abandoned Sept 2024)</div>
+</div>
+<div class="bc-row">
+<div class="bc-platform" style="color:var(--red2)">Griffain</div>
+<div class="bc-model">Agent tokens + Solana</div>
+<div class="bc-status c-red">-99% ATH, stalling</div>
+</div>
+<div class="bc-row">
+<div class="bc-platform" style="color:var(--yellow)">Pump.fun</div>
+<div class="bc-model">Bonding curve + memecoins</div>
+<div class="bc-status c-yellow">High volume but zero utility</div>
+</div>
+<div class="bc-row">
+<div class="bc-platform" style="color:var(--yellow)">Four.Meme</div>
+<div class="bc-model">Bonding curve + BNB</div>
+<div class="bc-status c-yellow">Revenue falling, meme-only</div>
+</div>
+<div class="bc-row" style="border-bottom:none;background:rgba(0,201,167,.04)">
+<div class="bc-platform" style="color:var(--green2)">Virtuals</div>
+<div class="bc-model">Bonding curve + ACP + revenue</div>
+<div class="bc-status c-green">-88% ATH BUT $39.5M proven revenue</div>
+</div>
+</div>
+
+<div class="card-grid cols-3 fade" style="margin-top:24px">
+<div class="verdict negative">
+<div class="icon">&#9888;</div>
+<h4 style="color:var(--red2)">Pattern: Death Spiral</h4>
+<p>Every bonding curve platform is failing EXCEPT Virtuals &mdash; because Virtuals has agent-to-agent commerce creating real revenue</p>
+</div>
+<div class="verdict neutral">
+<div class="icon">&#128161;</div>
+<h4 style="color:var(--yellow)">Lesson for ClawFriend</h4>
+<p>Bonding curve without utility = death spiral. ClawFriend MUST have verified skills delivering real value to break this pattern</p>
+</div>
+<div class="verdict positive">
+<div class="icon">&#10003;</div>
+<h4 style="color:var(--green2)">The Virtuals Exception</h4>
+<p>Virtuals proves bonding curve CAN work &mdash; but only with real commerce layer (ACP, x402, Revenue Network)</p>
+</div>
+</div>
+
+<div class="callout danger fade" style="margin-top:20px">
+<strong>Critical warning:</strong> ClawFriend uses bonding curve as its core mechanism. History shows this model fails without real utility underneath. The verified skill marketplace is not optional decoration &mdash; it is the difference between survival and becoming the next CreatorBid.
+</div>
+</div>
+</section>
+
+<!-- 4. Comparison Matrix -->
 <section id="matrix">
 <div class="container">
-<div class="sec-label fade">03 / Feature Comparison Matrix</div>
+<div class="sec-label fade">04 / Side-by-Side Comparison</div>
 <h2 class="fade">Head-to-Head Feature Comparison</h2>
-<p class="desc fade">Comprehensive feature-by-feature comparison across all 8 platforms.</p>
+<p class="desc fade">Feature-by-feature comparison across ClawFriend and all 5 direct competitors.</p>
 
 <div class="tbl-wrap fade">
 <table>
@@ -465,273 +671,261 @@ section{padding:36px 0}
 <th>Feature</th>
 <th class="tbl-highlight" style="color:var(--accent2)">ClawFriend</th>
 <th>Virtuals</th>
-<th>ElizaOS</th>
-<th>Clanker</th>
-<th>OLAS</th>
 <th>MyShell</th>
-<th>Spectral</th>
+<th>CreatorBid</th>
+<th>ChatAndBuild</th>
+<th>ClawHub</th>
 </tr></thead>
 <tbody>
-<tr><td><strong>Status</strong></td><td class="tbl-highlight c-yellow fw700">Early</td><td class="c-accent fw700">Leader</td><td class="c-green">Active</td><td class="c-green">Active</td><td class="c-green">Active</td><td class="c-green">Active</td><td class="c-yellow">Niche</td></tr>
-<tr><td><strong>Chain</strong></td><td class="tbl-highlight">BNB</td><td>Base + Sol</td><td>Multi</td><td>Base</td><td>Multi (5+)</td><td>BNB</td><td>ETH</td></tr>
-<tr><td><strong>Token</strong></td><td class="tbl-highlight c-red">None</td><td class="c-green">$VIRTUAL</td><td class="c-green">$AI16Z</td><td class="c-green">$CLANKER</td><td class="c-green">$OLAS</td><td class="c-green">$SHELL</td><td class="c-green">$SPEC</td></tr>
-<tr><td><strong>Market Cap</strong></td><td class="tbl-highlight c-red">N/A</td><td class="c-accent fw700">$415M</td><td>~$150M</td><td>$30M</td><td>$32M</td><td>$8M</td><td>$3.5M</td></tr>
-<tr><td><strong>Agents/Projects</strong></td><td class="tbl-highlight c-red">~0</td><td class="c-accent fw700">18K+</td><td>Many</td><td>17.2K</td><td>~500</td><td class="c-green fw700">200K+</td><td>~200</td></tr>
-<tr><td><strong>Users</strong></td><td class="tbl-highlight c-red">~0</td><td>Large</td><td>Large</td><td>Farcaster</td><td>Devs</td><td class="c-green fw700">5M+</td><td>Small</td></tr>
-<tr><td><strong>Bonding Curve</strong></td><td class="tbl-highlight c-green">Yes</td><td class="c-green">Yes</td><td class="c-gray">No</td><td class="c-gray">No (Uni V3)</td><td class="c-gray">No</td><td class="c-gray">No</td><td class="c-gray">No</td></tr>
-<tr><td><strong>Social Layer</strong></td><td class="tbl-highlight c-green">Yes</td><td class="c-green">Yes</td><td class="c-green">Yes (DAO)</td><td class="c-green">Farcaster</td><td class="c-gray">No</td><td class="c-green">Yes</td><td class="c-gray">No</td></tr>
-<tr><td><strong>Agent Autonomy</strong></td><td class="tbl-highlight c-yellow">Claimed</td><td class="c-green fw700">High</td><td class="c-green">High</td><td class="c-yellow">Medium</td><td class="c-green fw700">High</td><td class="c-yellow">Medium</td><td class="c-yellow">Medium</td></tr>
-<tr><td><strong>External Earning</strong></td><td class="tbl-highlight c-yellow">Claimed</td><td class="c-green fw700">Proven</td><td class="c-green">DAO</td><td class="c-green">Fees</td><td class="c-green">DeFi</td><td class="c-green">Creator</td><td>Trading</td></tr>
-<tr><td><strong>Agent-to-Agent</strong></td><td class="tbl-highlight c-yellow">Planned</td><td class="c-green fw700">x402+ACP</td><td class="c-green">Multi-agent</td><td class="c-gray">No</td><td class="c-green">Yes</td><td class="c-gray">No</td><td class="c-gray">No</td></tr>
-<tr><td><strong>No-Code Builder</strong></td><td class="tbl-highlight c-gray">No</td><td class="c-yellow">Partial</td><td class="c-gray">No</td><td class="c-green">Yes (tag)</td><td class="c-gray">No</td><td class="c-green fw700">Yes</td><td class="c-green fw700">Yes</td></tr>
-<tr><td><strong>Skill/Plugin Market</strong></td><td class="tbl-highlight c-yellow">2 skills</td><td class="c-green">ACP</td><td class="c-green">Plugins</td><td class="c-gray">No</td><td class="c-green">Modular</td><td class="c-green">Marketplace</td><td class="c-gray">No</td></tr>
-<tr><td><strong>Security Audit</strong></td><td class="tbl-highlight c-red fw700">No</td><td class="c-green">Yes</td><td class="c-green">OSS</td><td class="c-green">Yes</td><td class="c-green">Yes</td><td class="c-green">Yes</td><td class="c-yellow">Unknown</td></tr>
-<tr><td><strong>Revenue Model</strong></td><td class="tbl-highlight">Trade fees</td><td>Trade fees</td><td>DAO + Token</td><td>1% tx fee</td><td>Co-own rev</td><td>SHELL token</td><td>SPEC staking</td></tr>
-<tr><td><strong>OpenClaw Native</strong></td><td class="tbl-highlight c-green fw700">Yes</td><td class="c-red">No</td><td class="c-red">No</td><td class="c-red">No</td><td class="c-red">No</td><td class="c-red">No</td><td class="c-red">No</td></tr>
+<tr><td><strong>Chain</strong></td><td class="tbl-highlight">BNB</td><td>Base/Sol/BNB</td><td>BNB</td><td>Base</td><td>BNB</td><td>N/A</td></tr>
+<tr><td><strong>Agents/Skills</strong></td><td class="tbl-highlight c-red fw700">2</td><td class="c-accent fw700">18,000+</td><td class="c-green fw700">200K+</td><td>3,500</td><td>140K users</td><td>3,286</td></tr>
+<tr><td><strong>Revenue</strong></td><td class="tbl-highlight c-red fw700">$0</td><td class="c-green fw700">$39.5M</td><td>VC-funded</td><td>~300 ETH</td><td>Unknown</td><td class="c-red">$0</td></tr>
+<tr><td><strong>Bonding Curve</strong></td><td class="tbl-highlight c-green">Yes</td><td class="c-green">Yes</td><td class="c-gray">No</td><td class="c-green">Yes</td><td class="c-gray">NFA model</td><td class="c-gray">No</td></tr>
+<tr><td><strong>Skill Market</strong></td><td class="tbl-highlight c-yellow">Yes (2, holder-gated)</td><td class="c-green">ACP commerce</td><td class="c-green">Agent templates</td><td>Token bonding</td><td>Agent building</td><td class="c-green">Yes (3,286, free)</td></tr>
+<tr><td><strong>Social Layer</strong></td><td class="tbl-highlight c-green">Yes</td><td class="c-green">Yes</td><td class="c-yellow">Partial</td><td class="c-yellow">Limited</td><td class="c-gray">Unknown</td><td class="c-gray">No</td></tr>
+<tr><td><strong>Agent Autonomy</strong></td><td class="tbl-highlight c-yellow">Claimed</td><td class="c-green fw700">Proven ($470M aGDP)</td><td class="c-yellow">Partial</td><td class="c-yellow">Limited</td><td class="c-gray">Unknown</td><td class="c-gray">N/A</td></tr>
+<tr><td><strong>Verified/Curated</strong></td><td class="tbl-highlight c-yellow">Planned</td><td class="c-yellow">No (spam issues)</td><td class="c-yellow">Partial</td><td class="c-gray">No</td><td class="c-gray">Unknown</td><td class="c-red fw700">No (12-20% malicious)</td></tr>
+<tr><td><strong>Token</strong></td><td class="tbl-highlight c-red">None</td><td class="c-green">$VIRTUAL ($450M)</td><td class="c-green">$SHELL ($9M)</td><td class="c-red">$CREATOR ($3.2M)</td><td class="c-gray">None</td><td class="c-gray">None</td></tr>
+<tr><td><strong>Target User</strong></td><td class="tbl-highlight">Trader + Creator</td><td>Broad</td><td>Consumer</td><td>Creator</td><td>No-code builder</td><td>Developer</td></tr>
+<tr><td><strong>OpenClaw Native</strong></td><td class="tbl-highlight c-green fw700">Yes</td><td class="c-red">No</td><td class="c-red">No</td><td class="c-red">No</td><td class="c-red">No</td><td class="c-green fw700">Yes</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="fade">Revenue Model Comparison</h3>
+<div class="tbl-wrap fade">
+<table style="min-width:600px">
+<thead><tr><th>Platform</th><th>Model</th><th>Revenue</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><strong>Virtuals</strong></td><td>1% commission + ACP + Revenue Network</td><td class="c-green fw700">$39.5M+</td><td><span class="badge live">Proven</span></td></tr>
+<tr><td><strong>MyShell</strong></td><td>Freemium + $SHELL token</td><td>VC-funded ($16.6M)</td><td><span class="badge live">Partially proven</span></td></tr>
+<tr><td><strong>CreatorBid</strong></td><td>Fee on token trades</td><td class="c-red">~300 ETH total</td><td><span class="badge dead">Dying</span></td></tr>
+<tr><td><strong>ChatAndBuild</strong></td><td>NFA model</td><td class="c-yellow">Unknown</td><td><span class="badge early">Early</span></td></tr>
+<tr><td><strong>ClawHub</strong></td><td>Free</td><td class="c-red">$0</td><td><span class="badge early">N/A</span></td></tr>
+<tr style="background:rgba(124,108,240,.05)"><td><strong style="color:var(--accent2)">ClawFriend</strong></td><td>5+5% trading fees</td><td class="c-red fw700">$0</td><td><span class="badge early">Pre-launch</span></td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="callout fade" style="margin-top:16px">
-<strong>ClawFriend's only unique advantage:</strong> OpenClaw native integration. Every other feature is either matched or surpassed by competitors, particularly Virtuals Protocol and MyShell.
+<strong>ClawFriend's unique combination:</strong> Verified skill marketplace + bonding curve economics + holder-gated access + social layer + OpenClaw native. No competitor combines all of these on BNB Chain. But individual features are matched or surpassed by competitors.
 </div>
 </div>
 </section>
 
-<!-- 4. Market Metrics -->
-<section id="metrics">
+<!-- 5. Threat Matrix -->
+<section id="threat">
 <div class="container">
-<div class="sec-label fade">04 / Key Metrics Comparison</div>
-<h2 class="fade">Numbers That Matter</h2>
-<p class="desc fade">Quantitative comparison of market data, traction, and revenue signals.</p>
+<div class="sec-label fade">05 / Threat Matrix</div>
+<h2 class="fade">Competitor Threat Ranking</h2>
+<p class="desc fade">Ranked by: (1) Same BNB Chain? (2) Similar model? (3) User base. (4) Momentum.</p>
 
 <div class="tbl-wrap fade">
-<table>
-<thead><tr><th>Metric</th><th class="tbl-highlight" style="color:var(--accent2)">ClawFriend</th><th>Virtuals</th><th>Clanker</th><th>MyShell</th><th>OLAS</th></tr></thead>
+<table style="min-width:800px">
+<thead><tr><th>#</th><th>Competitor</th><th>Same Chain?</th><th>Same Model?</th><th>User Base</th><th>Threat Level</th><th>Reason</th></tr></thead>
 <tbody>
-<tr><td><strong>Market Cap</strong></td><td class="tbl-highlight c-red fw700">N/A</td><td class="fw700">$414.7M</td><td>$29.7M</td><td>$8M</td><td>$32M</td></tr>
-<tr><td><strong>FDV</strong></td><td class="tbl-highlight c-red">N/A</td><td>~$600M</td><td>$30M</td><td>$29.8M</td><td>$19.6M</td></tr>
-<tr><td><strong>24h Volume</strong></td><td class="tbl-highlight c-red">N/A</td><td>High</td><td>Active</td><td>Active</td><td>$210K</td></tr>
-<tr><td><strong>Agents/Projects</strong></td><td class="tbl-highlight c-red fw700">~0</td><td class="fw700">18,000+</td><td>17,242</td><td class="c-green fw700">200,000+</td><td>~500</td></tr>
-<tr><td><strong>Active Users</strong></td><td class="tbl-highlight c-red fw700">~0</td><td>Large</td><td>Farcaster</td><td class="c-green fw700">5,000,000+</td><td>Dev-focused</td></tr>
-<tr><td><strong>Revenue Signal</strong></td><td class="tbl-highlight c-red">None visible</td><td class="c-green">$477M aGDP</td><td class="c-green">$600K/day peak fees</td><td>Creator economy</td><td>DeFi yields</td></tr>
-<tr><td><strong>Press Coverage</strong></td><td class="tbl-highlight c-red fw700">0 articles</td><td>Extensive</td><td>Growing</td><td>Moderate</td><td>Moderate</td></tr>
-<tr><td><strong>Twitter Presence</strong></td><td class="tbl-highlight c-red fw700">0 found</td><td class="c-green">Large</td><td class="c-green">Active</td><td class="c-green">Active</td><td class="c-green">Active</td></tr>
-<tr><td><strong>Funding/VC</strong></td><td class="tbl-highlight c-red">None known</td><td>Self-funded</td><td>Community</td><td>Binance listed</td><td>Funded</td></tr>
+<tr style="background:var(--red-bg)">
+<td><strong>1</strong></td>
+<td><strong>MyShell</strong></td>
+<td class="c-red fw700">BNB (SAME)</td>
+<td>No bonding curve</td>
+<td class="fw700">5M users</td>
+<td><span class="badge dead" style="font-size:.72rem">CRITICAL</span></td>
+<td style="white-space:normal;min-width:200px">Same chain, dominant users, VC-backed, On-Chain Intelligence live. If they add bonding curve = game over</td>
+</tr>
+<tr style="background:var(--red-bg)">
+<td><strong>2</strong></td>
+<td><strong>Virtuals</strong></td>
+<td class="c-red fw700">BNB (Luna.fun)</td>
+<td>Similar (token + ACP)</td>
+<td class="fw700">650K holders</td>
+<td><span class="badge dead" style="font-size:.72rem">CRITICAL</span></td>
+<td style="white-space:normal;min-width:200px">Market leader, entered BNB, $39.5M revenue. Cannot compete directly</td>
+</tr>
+<tr style="background:var(--yellow-bg)">
+<td><strong>3</strong></td>
+<td><strong>ChatAndBuild</strong></td>
+<td class="c-red fw700">BNB (SAME)</td>
+<td>Different (NFA, no bonding)</td>
+<td class="fw700">140K users</td>
+<td><span class="badge early" style="font-size:.72rem">HIGH</span></td>
+<td style="white-space:normal;min-width:200px">Same chain, official standard (BAP-578), no-code, growing fast</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>CreatorBid</strong></td>
+<td>Base (different)</td>
+<td class="c-green">SAME (bonding curve)</td>
+<td>3,500 agents</td>
+<td><span class="badge early" style="font-size:.72rem">MEDIUM</span></td>
+<td style="white-space:normal;min-width:200px">Nearest model but -97% = cautionary tale, not active threat</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>ClawHub</strong></td>
+<td>N/A</td>
+<td>Complementary</td>
+<td>3,286 skills</td>
+<td><span class="badge live" style="font-size:.72rem">LOW</span></td>
+<td style="white-space:normal;min-width:200px">Supply source, no monetization. ClawFriend = upgrade layer</td>
+</tr>
 </tbody>
 </table>
 </div>
 
-<div class="card-grid cols-3 fade" style="margin-top:24px">
+<div class="card-grid cols-2 fade" style="margin-top:24px">
 <div class="verdict negative">
 <div class="icon">&#9888;</div>
-<h4 style="color:var(--red2)">Gap vs Leader: Massive</h4>
-<p>ClawFriend has no measurable metrics while Virtuals has $415M market cap and 18K+ agents</p>
-</div>
-<div class="verdict negative">
-<div class="icon">&#128683;</div>
-<h4 style="color:var(--red2)">Gap vs Same-Chain: Critical</h4>
-<p>MyShell (also BNB Chain) has 200K+ agents and 5M+ users vs ClawFriend's 2 skills</p>
+<h4 style="color:var(--red2)">2 CRITICAL Threats</h4>
+<p>MyShell (5M users, same chain) and Virtuals ($450M, entered BNB). Both are existential threats to ClawFriend's positioning.</p>
 </div>
 <div class="verdict neutral">
 <div class="icon">&#128161;</div>
-<h4 style="color:var(--yellow)">Niche Opportunity</h4>
-<p>OpenClaw native integration is unique &mdash; no competitor offers this</p>
+<h4 style="color:var(--yellow)">1 HIGH + 1 MEDIUM + 1 LOW</h4>
+<p>ChatAndBuild growing fast on BNB. CreatorBid dying = cautionary tale. ClawHub = opportunity as supply source and trust gap.</p>
 </div>
 </div>
 </div>
 </section>
 
-<!-- 5. Dimension Analysis -->
-<section id="dimensions">
+<!-- 6. Market Sizing -->
+<section id="market">
 <div class="container">
-<div class="sec-label fade">05 / Multi-Dimensional Analysis</div>
-<h2 class="fade">Platform Strength Profiles</h2>
-<p class="desc fade">Scoring each platform across 6 key dimensions (scale 0-10).</p>
+<div class="sec-label fade">06 / Market Sizing (TAM / SAM / SOM)</div>
+<h2 class="fade">Market Opportunity</h2>
+<p class="desc fade">AI agent market is Early Growth but compressing. Window shortened from 12-18 months to 6-9 months.</p>
 
-<div class="radar-grid fade">
-<!-- Virtuals -->
-<div class="radar-card" style="border-color:rgba(124,108,240,.2)">
-<h4><span style="color:var(--accent2)">&#9679;</span> Virtuals Protocol</h4>
-<div class="dim-row"><span class="dim-label">Ecosystem</span><div class="dim-track"><div class="dim-fill" style="width:95%;background:var(--accent)"></div></div><span class="dim-val c-accent">9.5</span></div>
-<div class="dim-row"><span class="dim-label">Technology</span><div class="dim-track"><div class="dim-fill" style="width:90%;background:var(--accent)"></div></div><span class="dim-val c-accent">9.0</span></div>
-<div class="dim-row"><span class="dim-label">Traction</span><div class="dim-track"><div class="dim-fill" style="width:95%;background:var(--accent)"></div></div><span class="dim-val c-accent">9.5</span></div>
-<div class="dim-row"><span class="dim-label">Revenue</span><div class="dim-track"><div class="dim-fill" style="width:90%;background:var(--accent)"></div></div><span class="dim-val c-accent">9.0</span></div>
-<div class="dim-row"><span class="dim-label">Innovation</span><div class="dim-track"><div class="dim-fill" style="width:90%;background:var(--accent)"></div></div><span class="dim-val c-accent">9.0</span></div>
-<div class="dim-row"><span class="dim-label">Trust/Safety</span><div class="dim-track"><div class="dim-fill" style="width:80%;background:var(--accent)"></div></div><span class="dim-val c-accent">8.0</span></div>
-</div>
-
-<!-- MyShell -->
-<div class="radar-card" style="border-color:rgba(48,144,224,.2)">
-<h4><span style="color:var(--blue2)">&#9679;</span> MyShell</h4>
-<div class="dim-row"><span class="dim-label">Ecosystem</span><div class="dim-track"><div class="dim-fill" style="width:85%;background:var(--blue)"></div></div><span class="dim-val c-blue">8.5</span></div>
-<div class="dim-row"><span class="dim-label">Technology</span><div class="dim-track"><div class="dim-fill" style="width:75%;background:var(--blue)"></div></div><span class="dim-val c-blue">7.5</span></div>
-<div class="dim-row"><span class="dim-label">Traction</span><div class="dim-track"><div class="dim-fill" style="width:90%;background:var(--blue)"></div></div><span class="dim-val c-blue">9.0</span></div>
-<div class="dim-row"><span class="dim-label">Revenue</span><div class="dim-track"><div class="dim-fill" style="width:60%;background:var(--blue)"></div></div><span class="dim-val c-blue">6.0</span></div>
-<div class="dim-row"><span class="dim-label">Innovation</span><div class="dim-track"><div class="dim-fill" style="width:70%;background:var(--blue)"></div></div><span class="dim-val c-blue">7.0</span></div>
-<div class="dim-row"><span class="dim-label">Trust/Safety</span><div class="dim-track"><div class="dim-fill" style="width:70%;background:var(--blue)"></div></div><span class="dim-val c-blue">7.0</span></div>
-</div>
-
-<!-- Clanker -->
-<div class="radar-card" style="border-color:rgba(32,192,208,.2)">
-<h4><span style="color:var(--cyan)">&#9679;</span> Clanker</h4>
-<div class="dim-row"><span class="dim-label">Ecosystem</span><div class="dim-track"><div class="dim-fill" style="width:75%;background:var(--cyan)"></div></div><span class="dim-val" style="color:var(--cyan)">7.5</span></div>
-<div class="dim-row"><span class="dim-label">Technology</span><div class="dim-track"><div class="dim-fill" style="width:70%;background:var(--cyan)"></div></div><span class="dim-val" style="color:var(--cyan)">7.0</span></div>
-<div class="dim-row"><span class="dim-label">Traction</span><div class="dim-track"><div class="dim-fill" style="width:80%;background:var(--cyan)"></div></div><span class="dim-val" style="color:var(--cyan)">8.0</span></div>
-<div class="dim-row"><span class="dim-label">Revenue</span><div class="dim-track"><div class="dim-fill" style="width:85%;background:var(--cyan)"></div></div><span class="dim-val" style="color:var(--cyan)">8.5</span></div>
-<div class="dim-row"><span class="dim-label">Innovation</span><div class="dim-track"><div class="dim-fill" style="width:65%;background:var(--cyan)"></div></div><span class="dim-val" style="color:var(--cyan)">6.5</span></div>
-<div class="dim-row"><span class="dim-label">Trust/Safety</span><div class="dim-track"><div class="dim-fill" style="width:70%;background:var(--cyan)"></div></div><span class="dim-val" style="color:var(--cyan)">7.0</span></div>
-</div>
-
-<!-- OLAS -->
-<div class="radar-card" style="border-color:rgba(0,201,167,.2)">
-<h4><span style="color:var(--green2)">&#9679;</span> Autonolas / OLAS</h4>
-<div class="dim-row"><span class="dim-label">Ecosystem</span><div class="dim-track"><div class="dim-fill" style="width:55%;background:var(--green)"></div></div><span class="dim-val c-green">5.5</span></div>
-<div class="dim-row"><span class="dim-label">Technology</span><div class="dim-track"><div class="dim-fill" style="width:85%;background:var(--green)"></div></div><span class="dim-val c-green">8.5</span></div>
-<div class="dim-row"><span class="dim-label">Traction</span><div class="dim-track"><div class="dim-fill" style="width:50%;background:var(--green)"></div></div><span class="dim-val c-green">5.0</span></div>
-<div class="dim-row"><span class="dim-label">Revenue</span><div class="dim-track"><div class="dim-fill" style="width:60%;background:var(--green)"></div></div><span class="dim-val c-green">6.0</span></div>
-<div class="dim-row"><span class="dim-label">Innovation</span><div class="dim-track"><div class="dim-fill" style="width:80%;background:var(--green)"></div></div><span class="dim-val c-green">8.0</span></div>
-<div class="dim-row"><span class="dim-label">Trust/Safety</span><div class="dim-track"><div class="dim-fill" style="width:80%;background:var(--green)"></div></div><span class="dim-val c-green">8.0</span></div>
-</div>
-
-<!-- Spectral -->
-<div class="radar-card" style="border-color:rgba(240,192,64,.2)">
-<h4><span style="color:var(--yellow)">&#9679;</span> Spectral</h4>
-<div class="dim-row"><span class="dim-label">Ecosystem</span><div class="dim-track"><div class="dim-fill" style="width:25%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">2.5</span></div>
-<div class="dim-row"><span class="dim-label">Technology</span><div class="dim-track"><div class="dim-fill" style="width:65%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">6.5</span></div>
-<div class="dim-row"><span class="dim-label">Traction</span><div class="dim-track"><div class="dim-fill" style="width:20%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">2.0</span></div>
-<div class="dim-row"><span class="dim-label">Revenue</span><div class="dim-track"><div class="dim-fill" style="width:15%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">1.5</span></div>
-<div class="dim-row"><span class="dim-label">Innovation</span><div class="dim-track"><div class="dim-fill" style="width:70%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">7.0</span></div>
-<div class="dim-row"><span class="dim-label">Trust/Safety</span><div class="dim-track"><div class="dim-fill" style="width:40%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">4.0</span></div>
-</div>
-
-<!-- ClawFriend -->
-<div class="radar-card" style="border:2px solid var(--accent)">
-<h4><span style="color:var(--red2)">&#9679;</span> ClawFriend <span class="badge early" style="margin-left:8px">Subject</span></h4>
-<div class="dim-row"><span class="dim-label">Ecosystem</span><div class="dim-track"><div class="dim-fill" style="width:8%;background:var(--red)"></div></div><span class="dim-val c-red">0.8</span></div>
-<div class="dim-row"><span class="dim-label">Technology</span><div class="dim-track"><div class="dim-fill" style="width:55%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">5.5</span></div>
-<div class="dim-row"><span class="dim-label">Traction</span><div class="dim-track"><div class="dim-fill" style="width:5%;background:var(--red)"></div></div><span class="dim-val c-red">0.5</span></div>
-<div class="dim-row"><span class="dim-label">Revenue</span><div class="dim-track"><div class="dim-fill" style="width:5%;background:var(--red)"></div></div><span class="dim-val c-red">0.5</span></div>
-<div class="dim-row"><span class="dim-label">Innovation</span><div class="dim-track"><div class="dim-fill" style="width:50%;background:var(--yellow)"></div></div><span class="dim-val c-yellow">5.0</span></div>
-<div class="dim-row"><span class="dim-label">Trust/Safety</span><div class="dim-track"><div class="dim-fill" style="width:20%;background:var(--red)"></div></div><span class="dim-val c-red">2.0</span></div>
-</div>
-</div>
-
-<h3 class="fade">Average Scores</h3>
 <div class="bar-group fade">
-<div class="bar-row"><div class="bar-label"><strong>Virtuals</strong></div><div class="bar-track"><div class="bar-fill" style="width:90%;background:linear-gradient(90deg,var(--accent),var(--accent2))">9.0</div></div><div class="bar-val c-accent fw700">9.0</div></div>
-<div class="bar-row"><div class="bar-label"><strong>MyShell</strong></div><div class="bar-track"><div class="bar-fill" style="width:75%;background:linear-gradient(90deg,var(--blue),var(--blue2))">7.5</div></div><div class="bar-val c-blue fw700">7.5</div></div>
-<div class="bar-row"><div class="bar-label"><strong>Clanker</strong></div><div class="bar-track"><div class="bar-fill" style="width:74%;background:linear-gradient(90deg,var(--cyan),#60e0f0)">7.4</div></div><div class="bar-val" style="color:var(--cyan)"><strong>7.4</strong></div></div>
-<div class="bar-row"><div class="bar-label"><strong>OLAS</strong></div><div class="bar-track"><div class="bar-fill" style="width:68%;background:linear-gradient(90deg,var(--green),var(--green2))">6.8</div></div><div class="bar-val c-green fw700">6.8</div></div>
-<div class="bar-row"><div class="bar-label"><strong>ElizaOS</strong></div><div class="bar-track"><div class="bar-fill" style="width:72%;background:linear-gradient(90deg,var(--orange),#fab1a0)">7.2</div></div><div class="bar-val" style="color:var(--orange)"><strong>7.2</strong></div></div>
-<div class="bar-row"><div class="bar-label"><strong>Spectral</strong></div><div class="bar-track"><div class="bar-fill" style="width:39%;background:linear-gradient(90deg,#c0a030,var(--yellow))">3.9</div></div><div class="bar-val c-yellow fw700">3.9</div></div>
-<div class="bar-row"><div class="bar-label"><strong style="color:var(--accent2)">ClawFriend</strong></div><div class="bar-track"><div class="bar-fill" style="width:24%;background:linear-gradient(90deg,var(--red),var(--red2))">2.4</div></div><div class="bar-val c-red fw700">2.4</div></div>
+<div class="bar-row">
+<div class="bar-label"><strong>TAM</strong></div>
+<div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#6c5ce7,#a29bfe)">~$11.3B &mdash; AI agent sector market cap (550+ projects)</div></div>
+<div class="bar-val c-accent">~$11.3B</div>
+</div>
+<div class="bar-row">
+<div class="bar-label"><strong>SAM</strong></div>
+<div class="bar-track"><div class="bar-fill" style="width:6%;background:linear-gradient(90deg,var(--blue),var(--blue2))">$400-800M</div></div>
+<div class="bar-val c-blue">$400-800M</div>
+</div>
+<div class="bar-row">
+<div class="bar-label"><strong>SOM (Y1)</strong></div>
+<div class="bar-track"><div class="bar-fill" style="width:0.2%;background:linear-gradient(90deg,var(--green),var(--green2))"></div></div>
+<div class="bar-val c-green">$1-3M</div>
+</div>
+</div>
+
+<div class="card-grid cols-3 fade" style="margin-top:20px">
+<div class="card">
+<h4 style="margin-bottom:6px;font-size:.9rem">TAM &mdash; ~$11.3B</h4>
+<p style="font-size:.82rem;color:var(--text2)">AI agent sector market cap: 550+ projects. Full Web3 AI agent economy including launchpads, frameworks, compute.</p>
+</div>
+<div class="card">
+<h4 style="margin-bottom:6px;font-size:.9rem">SAM &mdash; $400-800M</h4>
+<p style="font-size:.82rem;color:var(--text2)">BNB Chain AI segment: 58 projects, ~2.6M daily active addresses. Agent launchpad + skill marketplace subsector.</p>
+</div>
+<div class="card">
+<h4 style="margin-bottom:6px;font-size:.9rem">SOM (Year 1) &mdash; $1-3M</h4>
+<p style="font-size:.82rem;color:var(--text2)">Target: 50 power users + 500 active wallets. At 5% fee on $20-60M trading volume. Conservative given bonding curve failure pattern.</p>
+</div>
+</div>
+
+<div class="callout fade" style="margin-top:20px">
+<strong>Conservative math:</strong> 50 agents active &times; 30 shareholders avg &times; 0.5 BNB/day trading volume = 25 BNB/day &times; 5% protocol fee = 1.25 BNB/day = ~$750/day = <strong>~$274K/year</strong> protocol revenue.
+</div>
+
+<h3 class="fade">Market Stage Assessment</h3>
+<div class="card-grid cols-2 fade" style="margin-top:12px">
+<div class="card" style="border-color:var(--yellow-border)">
+<h4 style="color:var(--yellow);margin-bottom:8px">What stage?</h4>
+<p style="font-size:.85rem;color:var(--text2);line-height:1.7"><strong>Early Growth, but compressing.</strong> AI agent market cap hit ~$11.3B across 550+ projects but crashed 90% from ATH. Leaders consolidating (Virtuals $450M, MyShell 5M users). BNB Chain now has 58 AI projects. Window: <strong>6-9 months</strong> before top players lock market share (was 12-18 months).</p>
+</div>
+<div class="card" style="border-color:var(--green-border)">
+<h4 style="color:var(--green2);margin-bottom:8px">Is there room?</h4>
+<p style="font-size:.85rem;color:var(--text2);line-height:1.7"><strong>Yes, but narrowly:</strong></p>
+<ul style="padding-left:16px;font-size:.82rem;color:var(--text2);line-height:1.8">
+<li>Post-ClawHavoc verified marketplace &mdash; trust is #1 issue</li>
+<li>OpenClaw skill monetization &mdash; 3,286 free skills &times; $0 revenue</li>
+<li>Holder-gated exclusive access on BNB &mdash; no competitor does this</li>
+<li>DeFi-specific agent skills &mdash; BNB Chain's $5.64B TVL underserved</li>
+</ul>
+</div>
 </div>
 </div>
 </section>
 
-<!-- 6. Timeline -->
-<section id="timeline">
-<div class="container">
-<div class="sec-label fade">06 / Market Timeline</div>
-<h2 class="fade">Evolution of the AI Agent Economy</h2>
-<p class="desc fade">Key events that shaped the competitive landscape.</p>
-
-<div class="timeline fade">
-<div class="tl-item active"><div class="date">Aug 2023</div><div class="event"><strong>friend.tech launches</strong> on Base &mdash; SocialFi hype begins, bonding curve for social keys</div></div>
-<div class="tl-item active"><div class="date">Sep 2023</div><div class="event"><strong>friend.tech peaks</strong> &mdash; 800K users, trading volume exceeds all NFT marketplaces</div></div>
-<div class="tl-item active"><div class="date">Late 2023</div><div class="event"><strong>Virtuals Protocol launches</strong> &mdash; AI agents + tokenization on Base begins</div></div>
-<div class="tl-item active"><div class="date">Early 2024</div><div class="event"><strong>Autonolas/OLAS grows</strong> &mdash; Multi-chain autonomous agent infrastructure</div></div>
-<div class="tl-item dead"><div class="date">May 2024</div><div class="event"><strong>friend.tech V2 + FRIEND token</strong> &mdash; Failed rescue attempt, token drops 98%</div></div>
-<div class="tl-item dead"><div class="date">Sep 2024</div><div class="event"><strong>friend.tech shuts down</strong> &mdash; Founders walk away with $44M, contracts renounced</div></div>
-<div class="tl-item active"><div class="date">Late 2024</div><div class="event"><strong>Virtuals hits $1.4B market cap</strong> &mdash; AI agent economy becomes mainstream crypto narrative</div></div>
-<div class="tl-item active"><div class="date">Dec 2024</div><div class="event"><strong>ai16z reaches $1.5B MCap</strong> &mdash; Eliza framework gains adoption; rebrands to ElizaOS</div></div>
-<div class="tl-item active"><div class="date">Jan 2026</div><div class="event"><strong>OpenClaw goes viral</strong> &mdash; 214K+ GitHub stars, AI agent mainstream adoption wave</div></div>
-<div class="tl-item active"><div class="date">Jan 2026</div><div class="event"><strong>Clanker explodes</strong> &mdash; 13K+ tokens/day, $600K daily fees, AI agent token launchpad</div></div>
-<div class="tl-item active"><div class="date">Feb 2026</div><div class="event"><strong>Virtuals Revenue Network</strong> &mdash; Agent-to-agent commerce (x402 + ACP) launches</div></div>
-<div class="tl-item active"><div class="date">Feb 2026</div><div class="event"><strong>MyShell grows to 5M+ users</strong> &mdash; 200K+ agents on BNB Chain, Binance listing</div></div>
-<div class="tl-item"><div class="date">Feb 2026</div><div class="event"><strong style="color:var(--accent2)">ClawFriend live</strong> &mdash; 2 skills published, 20 downloads, no visible traction yet</div></div>
-</div>
-</div>
-</section>
-
-<!-- 7. Verdict -->
+<!-- 7. Positioning & Verdict -->
 <section id="verdict">
 <div class="container">
-<div class="sec-label fade">07 / Final Verdict</div>
+<div class="sec-label fade">07 / Positioning & Verdict</div>
 <h2 class="fade">Where ClawFriend Stands</h2>
-<p class="desc fade">Summary of competitive positioning and strategic recommendations.</p>
+<p class="desc fade">ClawFriend does not compete with Virtuals on scale or MyShell on users. It must occupy the trust + exclusivity + DeFi intersection.</p>
 
-<div class="card-grid cols-3 fade" style="margin-bottom:24px">
+<div class="card-grid cols-2 fade" style="margin-bottom:24px">
 <div class="card" style="border-color:var(--green-border)">
-<h4 style="color:var(--green2);margin-bottom:8px">Unique Advantages</h4>
+<h4 style="color:var(--green2);margin-bottom:8px">Where ClawFriend Wins</h4>
 <ul style="padding-left:16px;font-size:.84rem;color:var(--text2);line-height:2">
-<li><strong>OpenClaw native</strong> &mdash; only platform with direct integration</li>
-<li><strong>BNB Chain</strong> &mdash; low gas, strong Asia market</li>
-<li><strong>Timing</strong> &mdash; OpenClaw at peak virality (214K stars)</li>
-<li><strong>Positive-sum design</strong> &mdash; learned from friend.tech failure</li>
+<li><strong>Verified marketplace</strong> &mdash; post-ClawHavoc, trust is #1 demand. No competitor offers this.</li>
+<li><strong>Holder-gated exclusivity</strong> &mdash; bonding curve shares gate premium skills. Unique mechanism.</li>
+<li><strong>OpenClaw-native</strong> &mdash; only economy platform built for OpenClaw's skill ecosystem</li>
+<li><strong>BNB Chain DeFi niche</strong> &mdash; $5.64B TVL, underserved by current AI platforms</li>
+<li><strong>Monetization gap</strong> &mdash; ClawHub has 3,286 free skills; ClawFriend is the paid/verified layer</li>
+<li><strong>Ultra-low barrier</strong> &mdash; first share costs $0.04. BNB gas $0.01-0.05/tx (10x cheaper than Base)</li>
 </ul>
 </div>
 <div class="card" style="border-color:var(--red-border)">
-<h4 style="color:var(--red2);margin-bottom:8px">Critical Gaps</h4>
+<h4 style="color:var(--red2);margin-bottom:8px">Where ClawFriend Is Behind</h4>
 <ul style="padding-left:16px;font-size:.84rem;color:var(--text2);line-height:2">
-<li><strong>Zero traction</strong> vs 5M+ users (MyShell) and 18K agents (Virtuals)</li>
-<li><strong>No token</strong> &mdash; every competitor has one</li>
-<li><strong>No audit</strong> &mdash; all major competitors are audited</li>
-<li><strong>Single chain</strong> vs multi-chain leaders</li>
-<li><strong>Anonymous team</strong> vs known teams</li>
-</ul>
-</div>
-<div class="card" style="border-color:var(--yellow-border)">
-<h4 style="color:var(--yellow);margin-bottom:8px">Strategic Path Forward</h4>
-<ul style="padding-left:16px;font-size:.84rem;color:var(--text2);line-height:2">
-<li>Own <strong>OpenClaw + BNB Chain</strong> niche</li>
-<li>Partner with <strong>MyShell</strong> (same chain, complementary)</li>
-<li>Demonstrate <strong>real agent earnings</strong> first</li>
-<li><strong>Audit + doxx team</strong> for trust</li>
-<li>Build <strong>skill ecosystem</strong> as moat</li>
+<li><strong>Traction: ZERO</strong> &mdash; 2 skills, ~0 users vs Virtuals' 18K agents, MyShell's 5M users</li>
+<li><strong>Revenue: $0</strong> &mdash; Virtuals $39.5M proven. ClawFriend $0</li>
+<li><strong>Token: None</strong> &mdash; No ecosystem incentive token</li>
+<li><strong>Standards: Non-standard</strong> &mdash; Custom contract vs BAP-578 (official BNB) and ERC-8004</li>
+<li><strong>Team: Anonymous</strong> &mdash; No public team, no audit, no VC backing disclosed</li>
+<li><strong>Bonding curve risk</strong> &mdash; Model failing everywhere except Virtuals</li>
 </ul>
 </div>
 </div>
 
 <div class="callout warn fade">
-<strong>Same-chain threat: MyShell.</strong> MyShell is also on BNB Chain with 200K+ agents, 5M+ users, Binance listing, and no-code builder. This is ClawFriend's most direct competitive threat. Differentiation must be clear and compelling.
+<strong>Same-chain threats: MyShell + ChatAndBuild.</strong> Both are on BNB Chain with significant traction. MyShell (5M users, On-Chain Intelligence) is the #1 threat. ChatAndBuild (140K users, official BAP-578 standard) is growing fast. Differentiation must be clear and compelling.
 </div>
 
-<h3 class="fade">Competitive Ranking</h3>
+<h3 class="fade">Competitive Positioning Statement</h3>
+<div class="verdict neutral fade" style="margin-top:16px">
+<div class="icon">&#128200;</div>
+<h4 style="color:var(--yellow)">"The Verified Skill Marketplace for BNB Chain &mdash; Post-ClawHavoc, Trust Matters"</h4>
+<p>ClawFriend does not compete with Virtuals on scale or MyShell on users. It occupies the <strong>trust + exclusivity + DeFi</strong> intersection that no competitor serves. The ClawHavoc crisis created a 6-9 month window for a verified marketplace to establish trust in the OpenClaw ecosystem.</p>
+</div>
+
+<h3 class="fade">Competitive Ranking (Direct Competitors Only)</h3>
 <div class="tbl-wrap fade">
-<table>
-<thead><tr><th>#</th><th>Platform</th><th>Score</th><th>Tier</th><th>Key Strength</th></tr></thead>
+<table style="min-width:600px">
+<thead><tr><th>#</th><th>Platform</th><th>Key Strength</th><th>Threat to ClawFriend</th></tr></thead>
 <tbody>
-<tr><td><strong>1</strong></td><td><strong>Virtuals Protocol</strong></td><td class="c-accent fw700">9.0</td><td><span class="badge leader">Leader</span></td><td>Full-stack agent economy + x402 commerce</td></tr>
-<tr><td><strong>2</strong></td><td><strong>MyShell</strong></td><td class="c-blue fw700">7.5</td><td><span class="badge live">Strong</span></td><td>5M+ users, no-code, BNB Chain</td></tr>
-<tr><td><strong>3</strong></td><td><strong>Clanker</strong></td><td style="color:var(--cyan)" class="fw700">7.4</td><td><span class="badge live">Strong</span></td><td>$600K/day fees, token launchpad</td></tr>
-<tr><td><strong>4</strong></td><td><strong>ElizaOS</strong></td><td style="color:var(--orange)" class="fw700">7.2</td><td><span class="badge live">Strong</span></td><td>Open-source framework, DAO model</td></tr>
-<tr><td><strong>5</strong></td><td><strong>Autonolas/OLAS</strong></td><td class="c-green fw700">6.8</td><td><span class="badge live">Solid</span></td><td>Multi-chain dev infra, co-ownership</td></tr>
-<tr><td><strong>6</strong></td><td><strong>Spectral</strong></td><td class="c-yellow fw700">3.9</td><td><span class="badge early">Niche</span></td><td>NLP-to-Solidity innovation</td></tr>
-<tr style="background:rgba(124,108,240,.05)"><td><strong>7</strong></td><td><strong style="color:var(--accent2)">ClawFriend</strong></td><td class="c-red fw700">2.4</td><td><span class="badge early">Pre-traction</span></td><td>OpenClaw native integration</td></tr>
-<tr style="opacity:.5"><td><strong>8</strong></td><td><strong>friend.tech</strong></td><td class="c-red fw700">0</td><td><span class="badge dead">Dead</span></td><td>Cautionary tale</td></tr>
+<tr><td><strong>1</strong></td><td><strong>Virtuals Protocol</strong></td><td>$39.5M revenue, 650K holders, 5-chain ACP commerce</td><td><span class="badge dead" style="font-size:.72rem">CRITICAL</span></td></tr>
+<tr><td><strong>2</strong></td><td><strong>MyShell</strong></td><td>5M+ users, no-code, BNB Chain, On-Chain Intelligence</td><td><span class="badge dead" style="font-size:.72rem">CRITICAL</span></td></tr>
+<tr><td><strong>3</strong></td><td><strong>ChatAndBuild</strong></td><td>140K users, BAP-578, BNB Chain, no-code, growing</td><td><span class="badge early" style="font-size:.72rem">HIGH</span></td></tr>
+<tr><td><strong>4</strong></td><td><strong>ClawHub</strong></td><td>3,286 skills, OpenClaw native, 1.5M downloads</td><td><span class="badge live" style="font-size:.72rem">LOW (Opportunity)</span></td></tr>
+<tr><td><strong>5</strong></td><td><strong>CreatorBid</strong></td><td>Bonding curve model (cautionary tale at -97%)</td><td><span class="badge early" style="font-size:.72rem">MEDIUM (Warning)</span></td></tr>
 </tbody>
 </table>
 </div>
 
-<div class="verdict negative fade" style="margin-top:28px">
+<div class="verdict negative fade" style="margin-top:24px">
 <div class="icon">&#128200;</div>
-<h4 style="color:var(--red2)">ClawFriend: Ranked #7 of 8 (above only dead friend.tech)</h4>
-<p>Score 2.4/10 &mdash; Pre-traction stage with significant gaps in every measurable dimension. The OpenClaw native advantage is real but insufficient alone. Must demonstrate real agent earnings, get audited, build community, and ship rapidly to avoid becoming irrelevant as the market matures.</p>
+<h4 style="color:var(--red2)">ClawFriend: Pre-traction, Facing 2 CRITICAL + 1 HIGH Threat</h4>
+<p>Zero traction against established competitors. The verified skill marketplace + holder-gated economics combination is unique but unproven. 6-9 month window to establish position before market consolidates. Bonding curve model is high-risk without proven utility underneath.</p>
 </div>
 
 <div class="callout success fade" style="margin-top:20px">
-<strong>The silver lining:</strong> The AI agent economy is still early and growing fast ($4.3B+ and expanding). OpenClaw's viral growth (214K+ GitHub stars) creates a real window of opportunity. But windows close &mdash; ClawFriend has 3-6 months to prove its model before the market moves on.
+<strong>The opportunity is real but narrow:</strong> ClawHavoc created demand for verified skills. ClawHub has 3,286 skills earning $0. BNB Chain DeFi has $5.64B TVL underserved by AI agents. No competitor combines verification + bonding curve + holder-gating on BNB. But the window is 6-9 months, not forever.
 </div>
 </div>
 </section>
 
-<!-- CTA to Evaluation -->
+<!-- CTA -->
 <div style="padding:48px 0;background:linear-gradient(135deg,rgba(124,108,240,.08),rgba(0,201,167,.06));border-bottom:1px solid var(--border)">
 <div class="container" style="text-align:center">
-<h3 style="font-size:1.3rem;font-weight:800;margin-bottom:8px">Read the full platform evaluation</h3>
-<p style="color:var(--text2);font-size:.92rem;margin-bottom:20px">Product deep-dive, business model, risk matrix, scoring breakdown & recommendations.</p>
+<h3 style="font-size:1.3rem;font-weight:800;margin-bottom:8px">Explore more reports</h3>
+<p style="color:var(--text2);font-size:.92rem;margin-bottom:20px">Platform evaluation, competitive landscape, strategic analysis, and skills showcase.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
 <a href="/" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:var(--accent);color:#fff;border-radius:8px;font-weight:600;font-size:.92rem;transition:all .2s;text-decoration:none">
 &larr; Evaluation Report
@@ -747,19 +941,21 @@ Competitive Landscape &rarr;
 <footer>
 <div class="container">
 <div style="display:flex;justify-content:center;gap:16px;margin-bottom:16px;flex-wrap:wrap">
-<a href="/" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Evaluation Report</a>
-<a href="/competitors" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Competitor Analysis</a>
-<a href="/landscape" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Competitive Landscape</a>
-<a href="/skills" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Skills Showcase</a>
+<a href="/" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Evaluation</a>
+<a href="/competitors" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Competitors</a>
+<a href="/landscape" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Landscape</a>
+<a href="/strategy" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Strategy</a>
+<a href="/skills" style="padding:6px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text2)">Skills</a>
 </div>
-<p style="margin-bottom:8px">Data sourced from CoinGecko, CoinMarketCap, platform docs, and web research. February 24, 2026.</p>
+<p style="margin-bottom:8px">Data sourced from CoinGecko, CoinMarketCap, platform docs, and web research. February 26, 2026.</p>
 <p>
 <a href="/">Evaluation Report</a> &middot;
 <a href="https://clawfriend.ai" target="_blank">ClawFriend</a> &middot;
 <a href="https://www.virtuals.io" target="_blank">Virtuals</a> &middot;
-<a href="https://olas.network" target="_blank">OLAS</a> &middot;
-<a href="https://www.coingecko.com/en/coins/virtual-protocol" target="_blank">CoinGecko</a> &middot;
-<a href="https://coinmarketcap.com/currencies/virtual-protocol/" target="_blank">CoinMarketCap</a>
+<a href="https://myshell.ai" target="_blank">MyShell</a> &middot;
+<a href="https://creatorbid.com" target="_blank">CreatorBid</a> &middot;
+<a href="https://chatandbuild.com" target="_blank">ChatAndBuild</a> &middot;
+<a href="https://clawhub.com" target="_blank">ClawHub</a>
 </p>
 <p style="margin-top:12px;font-size:.7rem">Not financial advice. All data from publicly verifiable sources.</p>
 </div>
@@ -767,7 +963,7 @@ Competitive Landscape &rarr;
 
 <script>
 const secs=document.querySelectorAll('section[id]'),navs=document.querySelectorAll('.nav a');
-new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){navs.forEach(n=>n.classList.remove('active'));const l=document.querySelector(`.nav a[href="#${en.target.id}"]`);if(l)l.classList.add('active')}}),{rootMargin:'-20% 0px -80% 0px'}).observe&&secs.forEach(s=>new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){navs.forEach(n=>n.classList.remove('active'));const l=document.querySelector(`.nav a[href="#${en.target.id}"]`);if(l)l.classList.add('active')}}),{rootMargin:'-20% 0px -80% 0px'}).observe(s));
+secs.forEach(s=>new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){navs.forEach(n=>n.classList.remove('active'));const l=document.querySelector(`.nav a[href="#${en.target.id}"]`);if(l)l.classList.add('active')}}),{rootMargin:'-20% 0px -80% 0px'}).observe(s));
 document.querySelectorAll('.fade').forEach(el=>new IntersectionObserver(e=>{e[0].isIntersecting&&(el.classList.add('in'))},{threshold:.1}).observe(el));
 </script>
 </body>
