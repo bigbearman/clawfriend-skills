@@ -3,10 +3,11 @@
   "checkpoint_id": "63d9ead1ecad",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 4,
+  "checkpoints_count": 6,
   "files_touched": [
     "competitive-landscape.md",
     "competitor-update-feb2026.md",
+    "data/README.md",
     "distribution-plan.md",
     "skill-research.md",
     "strategic-analysis.md",
@@ -34,13 +35,20 @@
       "context": "/63/d9ead1ecad/2/context.md",
       "content_hash": "/63/d9ead1ecad/2/content_hash.txt",
       "prompt": "/63/d9ead1ecad/2/prompt.txt"
+    },
+    {
+      "metadata": "/63/d9ead1ecad/3/metadata.json",
+      "transcript": "/63/d9ead1ecad/3/full.jsonl",
+      "context": "/63/d9ead1ecad/3/context.md",
+      "content_hash": "/63/d9ead1ecad/3/content_hash.txt",
+      "prompt": "/63/d9ead1ecad/3/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 3647,
-    "cache_creation_tokens": 480098,
-    "cache_read_tokens": 19416877,
-    "output_tokens": 73212,
-    "api_call_count": 185
+    "input_tokens": 6545,
+    "cache_creation_tokens": 544020,
+    "cache_read_tokens": 20903832,
+    "output_tokens": 84125,
+    "api_call_count": 209
   }
 }
