@@ -1,0 +1,35 @@
+{
+  "cli_version": "0.4.6",
+  "checkpoint_id": "63d9ead1ecad",
+  "session_id": "7083be33-afd4-4316-8588-e43238c81b2e",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-26T07:37:35.288169Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "competitive-landscape.md",
+    "competitor-update-feb2026.md",
+    "distribution-plan.md",
+    "skill-research.md",
+    "strategic-summary.md",
+    "user-acquisition-analysis.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "ed3f1944bdeb",
+  "token_usage": {
+    "input_tokens": 61,
+    "cache_creation_tokens": 105479,
+    "cache_read_tokens": 5592756,
+    "output_tokens": 29101,
+    "api_call_count": 57
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-26T07:37:33.178089Z",
+    "agent_lines": 1502,
+    "human_added": 25,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1527,
+    "agent_percentage": 98.36280288146693
+  }
+}

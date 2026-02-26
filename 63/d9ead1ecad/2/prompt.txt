@@ -1,0 +1,96 @@
+Implement the following plan:
+
+# Plan: Tổng hợp Research & Cập nhật 3 Deliverables
+
+## Context
+
+ClawFriend có 6 file research riêng lẻ chứa ~180KB nội dung. Nhiều insight mới (Feb 26) chưa merge vào deliverables gốc. Cần tổng hợp + cập nhật.
+
+**Nguyên tắc:** Chỉ phân tích **đối thủ trực tiếp** — platforms có marketplace/agent trading tương tự ClawFriend. Loại bỏ hoàn toàn đối thủ gián tiếp (infra, framework, compute, analytics, enterprise).
+
+## Đối thủ trực tiếp (GIỮ)
+
+| # | Đối thủ | Lý do trực tiếp |
+|---|---------|-----------------|
+| 1 | **Virtuals Protocol** | Agent launchpad + ACP commerce + bonding curve + social. Đã vào BNB (Luna.fun) |
+| 2 | **MyShell** | Agent marketplace trên BNB Chain. 5M users. Cùng chain, cùng target |
+| 3 | **CreatorBid** | Bonding curve + agent tokens. Model gần nhất với ClawFriend |
+| 4 | **ChatAndBuild** | Agent marketplace trên BNB Chain. 140K users. BAP-578 NFA |
+| 5 | **ClawHub** | Skill registry nguồn (3,286 skills, $0 revenue). Supply source cho ClawFriend |
+
+## Đối thủ loại bỏ (BỎ)
+
+Fetch.ai (enterprise infra), Olas (framework), ElizaOS (framework), Griffain (SaaS Solana, stalling), Morpheus (compute), SingularityNET (Cardano enterprise), Bittensor (compute), MCP Ecosystem (protocol), Cookie DAO (analytics), Nous Research (infra), ai.com (chưa Web3 marketplace)
+
+---
+
+## Các file cần tạo/sửa
+
+### File 1: `strategic-summary.md` (TẠO MỚI)
+
+Tổng hợp toàn bộ research thành 1 document duy nhất:
+
+- **Executive Summary** — TL;DR: thị trường, 5 đối thủ trực tiếp, cơ hội, chiến lược
+- **Market Context** — AI agent market $11.3B, BNB Chain 58 projects, ClawHavoc crisis, bonding curve failure pattern
+- **5 Đối thủ trực tiếp** — Virtuals, MyShell, CreatorBid, ChatAndBuild, ClawHub. So sánh side-by-side
+- **User Analysis** — Non-tech vs Tech, cold-start problem, hero agent strategy
+- **Skill Strategy** — 5 skills + priority + verified layer angle
+- **Distribution Strategy** — $10K budget, hybrid tech-first → non-tech, hero agent
+- **Strategic Recommendation** — Verified DeFi Skill Marketplace, 3 phases
+- **Risks & Mitigations**
+
+### File 2: `competitive-landscape.md` (REWRITE Deliverable 1 — 25%)
+
+Viết lại chỉ tập trung vào 5 đối thủ trực tiếp:
+
+**Thay đổi chính:**
+- Bỏ: Fetch.ai, Olas, ElizaOS, Griffain, Morpheus, SingularityNET, Bittensor, MCP
+- Thêm: ChatAndBuild (mới), ai.com mention ngắn trong "emerging"
+- Cập nhật Virtuals: Luna.fun BNB, Revenue Network, Eastworld Labs, $450M, 650K holders
+- Cập nhật MyShell: ShellAgent 2.0, On-Chain Intelligence, 3 new modules
+- Cập nhật CreatorBid: -97% ATH, dying — cautionary tale cho bonding curve
+- Cập nhật ClawHub: ClawHavoc crisis (1,184 malicious, 12-20%)
+- Market taxonomy: chỉ giữ Category A (Agent Launchpads) + Category B (Skill Registries) — bỏ Category C (Infrastructure)
+- Threat matrix: chỉ 5 đối thủ
+- Cập nhật TAM: $11.3B (was $4.34B)
+- Cập nhật window: 6-9 tháng (was 12-18)
+- Thêm: "Bonding Curve Reality Check" section
+- Thêm: "ClawHavoc Opportunity" section
+
+### File 3: `skill-research.md` (CẬP NHẬT Deliverable 2 — 25%)
+
+- Cập nhật competitor context trong alternatives tables (thêm MyShell On-Chain Intelligence, Virtuals ACP)
+- Strengthen Token Analyzer với ClawHavoc data
+- Thêm "Verified Skill" angle cho mỗi skill
+- Thêm caveat revenue từ bonding curve failure pattern
+- Cập nhật launch priority với verification as first feature
+
+### File 4: `distribution-plan.md` (CẬP NHẬT Deliverable 3 — 40%)
+
+- Cập nhật messaging: "trusted verified marketplace post-ClawHavoc"
+- Thêm user segment analysis (non-tech vs tech, hybrid timeline)
+- Thêm hero agent strategy ($3-5K cho 1 killer agent)
+- Cập nhật targets: quality over quantity (50 power users + 500 wallets)
+- Cập nhật Ch.3 BNB: 58 projects, BAP-578/ERC-8004, crowded landscape
+- Cập nhật competitive positioning post-Virtuals BNB entry
+
+## Execution Order
+
+1. `strategic-summary.md` — tạo mới
+2. `competitive-landscape.md` — rewrite với 5 đối thủ trực tiếp only
+3. `skill-research.md` — cập nhật
+4. `distribution-plan.md` — cập nhật
+
+## Verification
+
+- Chỉ 5 đối thủ trực tiếp, không có gián tiếp
+- Data có source, token prices Feb 26, 2026
+- Nhất quán giữa 4 files
+- Format: Vietnamese analysis, English data tables
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /Users/kienduong/.claude/projects/-Users-kienduong-works-kien-ai-space-projects-clawfriend-skill/1d8f3f1a-de35-421b-b7b1-43a54b05aa61.jsonl
+
+---
+
+commit va push it -> sau do tao html day len vercel
